@@ -10,7 +10,7 @@ pocket_y_spacing = pocket_xy + 3.8;
 m2_tap_drill_d = 1.6;
 m2_clearance_drill_d = 2.2;
 holder_thicknes = 3;
-stopper_thicknes = 1;
+stopper_thicknes = 1.016;
 
 module rounded_square(d=1,a=10){
     // identical to (because freecad doesn't support this):
