@@ -41,7 +41,7 @@ $EXTMIN
   9
 $EXTMAX
  10
-52.58708537147537
+52.58708537147536
  20
 31.99999999999909
  30
@@ -101,7 +101,7 @@ Standard
   9
 $CLAYER
   8
-kmlt_spacer
+glassOutline
   9
 $CELTYPE
   6
@@ -501,19 +501,19 @@ $TDUCREATE
   9
 $TDUPDATE
  40
-2458909.355085718
+2458909.375456366
   9
 $TDUUPDATE
  40
-2458909.355085718
+2458909.375456366
   9
 $TDINDWG
  40
-0.0591093403
+0.0591093634
   9
 $TDUSRTIMER
  40
-0.0063929167
+0.0022906481
   9
 $USRTIMER
  70
@@ -553,7 +553,7 @@ $SPLINESEGS
   9
 $HANDSEED
   5
-3349
+3396
   9
 $SURFTAB1
  70
@@ -1389,9 +1389,9 @@ AcDbViewportTableRecord
  21
 1.0
  12
-49.4135652967922
+44.76012194092942
  22
-33.14116349779
+34.26297573536404
  13
 0.0
  23
@@ -1413,7 +1413,7 @@ AcDbViewportTableRecord
  17
 -27.66959356597957
  27
--19.53870295786212
+-19.53870295786211
  37
 0.0
  40
@@ -1853,7 +1853,7 @@ lightMask-small-lower
  70
      0
  62
-    -2
+     2
   6
 Continuous
 370
@@ -2033,7 +2033,7 @@ lightMask-large-upper
  70
      0
  62
-    -2
+     2
   6
 Continuous
 370
@@ -2341,7 +2341,7 @@ pcb_cutout
  70
      0
  62
-    -7
+     7
   6
 Continuous
 370
@@ -13451,9 +13451,9 @@ AcDbMText
   3
 pect ratio is ~1.61:1\P-corner fillet radius is fr=0.50 [mm]\P-area   is as=25.00 [mm^ 2]\P-height is hs=hb=(ab-fr^ 2*(pi-4))/wb [mm]\P-width  is ws=(as-fr^ 2*(pi-4))/hs [mm]\P             =wb*(as-fr^ 2*(pi-4))/(ab-fr^ 2*(pi-4)) [mm]\P\P\Ldark areas\P\l-a
   3
-re found \FARSimp.shx|c0;empirically by inspection of this drawing\FARMono.shx|c0;\P-large pixel dab~=113.9196 [mm^ 2] (~114% of light area)\P-small pixel das~= 30.8744 [mm^ 2] (~123% of light area)\P\P\Lleds\P\l-area ~= (3.6305*2) + (1*2.3306) ~= 9.59
+rea found \FARSimp.shx|c0;empirically by inspection of this drawing\FARMono.shx|c0;\P-large pixel dab~=113.9196 [mm^ 2] (~114% of light area)\P-small pixel das~= 30.8744 [mm^ 2] (~123% of light area)\P\P\Lleds\P\l-area ~= (3.6305*2) + (1*2.3306) ~= 9.5
   1
-16 mm^ 2\P-head ~= 3.6305 x 2 [mm]\P-neck ~= 1 x 2.3306 [mm]}
+916 mm^ 2\P-head ~= 3.6305 x 2 [mm]\P-neck ~= 1 x 2.3306 [mm]}
  73
      1
  44
@@ -18918,10 +18918,6 @@ AcDbPolyline
 LWPOLYLINE
   5
 3289
-102
-{ACAD_REACTORS
-102
-}
 330
 1F
 100
@@ -19117,40 +19113,6 @@ AcDbPolyline
  20
 11.66942786426501
   0
-LWPOLYLINE
-  5
-333B
-330
-1F
-100
-AcDbEntity
-  8
-kmlt_spacer
-100
-AcDbPolyline
- 90
-        4
- 70
-     1
- 43
-0.0
- 10
-0.0
- 20
-0.0
- 10
-30.0
- 20
-0.0
- 10
-30.0
- 20
-29.99999999999909
- 10
-0.0
- 20
-29.99999999999909
-  0
 ENDSEC
   0
 SECTION
@@ -19229,7 +19191,7 @@ ACAD_VISUALSTYLE
   3
 ACDB_RECOMPOSE_DATA
 350
-3348
+3395
   3
 AcDbVariableDictionary
 350
@@ -19849,7 +19811,7 @@ EA
   0
 XRECORD
   5
-3348
+3395
 102
 {ACAD_REACTORS
 330
@@ -20249,7 +20211,7 @@ Model
  34
 0.0
  15
-52.58708537147537
+52.58708537147536
  25
 31.99999999999909
  35
@@ -21691,7 +21653,7 @@ TABLESTYLE
 102
 {ACAD_XDICTIONARY
 360
-3346
+3393
 102
 }
 330
@@ -28805,7 +28767,7 @@ DictionaryVariables
   0
 DICTIONARY
   5
-3346
+3393
 330
 87
 100
@@ -28817,19 +28779,19 @@ AcDbDictionary
   3
 ACAD_ROUNDTRIP_2008_TABLESTYLE_CELLSTYLEMAP
 360
-3347
+3394
   0
 CELLSTYLEMAP
   5
-3347
+3394
 102
 {ACAD_REACTORS
 330
-3346
+3393
 102
 }
 330
-3346
+3393
 100
 AcDbCellStyleMap
  90
