@@ -501,19 +501,19 @@ $TDUCREATE
   9
 $TDUPDATE
  40
-2458909.375456366
+2458909.351811285
   9
 $TDUUPDATE
  40
-2458909.375456366
+2458909.351811285
   9
 $TDINDWG
  40
-0.0591093634
+0.0591093981
   9
 $TDUSRTIMER
  40
-0.0022906481
+0.0075035185
   9
 $USRTIMER
  70
@@ -553,7 +553,7 @@ $SPLINESEGS
   9
 $HANDSEED
   5
-3396
+36CF
   9
 $SURFTAB1
  70
@@ -1389,9 +1389,9 @@ AcDbViewportTableRecord
  21
 1.0
  12
-44.76012194092942
+54.13591647111431
  22
-34.26297573536404
+33.59144490666029
  13
 0.0
  23
@@ -1411,15 +1411,15 @@ AcDbViewportTableRecord
  36
 1.0
  17
--27.66959356597957
+-27.66959356597974
  27
--19.53870295786211
+-19.53870295786205
  37
 0.0
  40
-35.93954020376162
+35.9395402037616
  41
-1.741040462427746
+1.797136038186157
  42
 50.0
  43
@@ -1595,7 +1595,7 @@ LAYER
 100
 AcDbSymbolTable
  70
-    28
+    27
   0
 LAYER
   5
@@ -1637,7 +1637,7 @@ pixel-electrodes-small-lower
  70
      0
  62
-     4
+    -4
   6
 Continuous
 370
@@ -1709,7 +1709,7 @@ encapsulation
  70
      0
  62
-    -3
+     3
   6
 Continuous
 370
@@ -1745,7 +1745,7 @@ lightMask-small-upper
  70
      0
  62
-    -2
+     2
   6
 Continuous
 370
@@ -1853,7 +1853,7 @@ lightMask-small-lower
  70
      0
  62
-     2
+    -2
   6
 Continuous
 370
@@ -1961,7 +1961,7 @@ pixel-electrode-large-lower
  70
      0
  62
-    -4
+     4
   6
 Continuous
 370
@@ -2033,7 +2033,7 @@ lightMask-large-upper
  70
      0
  62
-     2
+    -2
   6
 Continuous
 370
@@ -2069,7 +2069,7 @@ lightMask-large-lower
  70
      0
  62
-    -2
+     2
   6
 Continuous
 370
@@ -2341,7 +2341,7 @@ pcb_cutout
  70
      0
  62
-     7
+    -7
   6
 Continuous
 370
@@ -2518,42 +2518,6 @@ AcDbSymbolTableRecord
 AcDbLayerTableRecord
   2
 leds
- 70
-     0
- 62
-    -4
-  6
-Continuous
-370
-    -3
-390
-F
-347
-98
-348
-0
-1001
-AcAecLayerStandard
-1000
-
-1000
-
-1001
-ACCMTRANSPARENCY
-1071
-        0
-  0
-LAYER
-  5
-2E10
-330
-2
-100
-AcDbSymbolTableRecord
-100
-AcDbLayerTableRecord
-  2
-led_necks
  70
      0
  62
@@ -14077,7 +14041,7 @@ AcDbCircle
  30
 0.0
  40
-0.4230373395172647
+0.535
   0
 CIRCLE
   5
@@ -14097,7 +14061,7 @@ AcDbCircle
  30
 0.0
  40
-0.4230373395172647
+0.535
   0
 LWPOLYLINE
   5
@@ -14185,7 +14149,7 @@ AcDbCircle
  30
 0.0
  40
-0.4230373395172647
+0.535
   0
 CIRCLE
   5
@@ -14205,7 +14169,7 @@ AcDbCircle
  30
 0.0
  40
-0.4230373395172647
+0.535
   0
 CIRCLE
   5
@@ -14225,7 +14189,7 @@ AcDbCircle
  30
 0.0
  40
-0.4230373395172647
+0.535
   0
 CIRCLE
   5
@@ -14245,7 +14209,7 @@ AcDbCircle
  30
 0.0
  40
-0.4230373395172647
+0.535
   0
 CIRCLE
   5
@@ -14265,7 +14229,7 @@ AcDbCircle
  30
 0.0
  40
-0.4230373395172647
+0.535
   0
 CIRCLE
   5
@@ -14285,7 +14249,7 @@ AcDbCircle
  30
 0.0
  40
-0.4230373395172647
+0.535
   0
 CIRCLE
   5
@@ -14305,7 +14269,7 @@ AcDbCircle
  30
 0.0
  40
-0.4230373395172647
+0.535
   0
 CIRCLE
   5
@@ -14325,7 +14289,7 @@ AcDbCircle
  30
 0.0
  40
-0.4230373395172647
+0.535
   0
 CIRCLE
   5
@@ -14345,7 +14309,7 @@ AcDbCircle
  30
 0.0
  40
-0.4230373395172647
+0.535
   0
 CIRCLE
   5
@@ -14365,7 +14329,7 @@ AcDbCircle
  30
 0.0
  40
-0.4230373395172647
+0.535
   0
 CIRCLE
   5
@@ -14385,7 +14349,7 @@ AcDbCircle
  30
 0.0
  40
-0.4230373395172647
+0.535
   0
 CIRCLE
   5
@@ -14405,7 +14369,7 @@ AcDbCircle
  30
 0.0
  40
-0.4230373395172647
+0.535
   0
 CIRCLE
   5
@@ -14425,7 +14389,7 @@ AcDbCircle
  30
 0.0
  40
-0.4230373395172647
+0.535
   0
 CIRCLE
   5
@@ -14445,7 +14409,7 @@ AcDbCircle
  30
 0.0
  40
-0.4230373395172647
+0.535
   0
 CIRCLE
   5
@@ -14465,7 +14429,7 @@ AcDbCircle
  30
 0.0
  40
-0.4230373395172647
+0.535
   0
 CIRCLE
   5
@@ -14485,7 +14449,7 @@ AcDbCircle
  30
 0.0
  40
-0.4230373395172647
+0.535
   0
 CIRCLE
   5
@@ -14505,7 +14469,7 @@ AcDbCircle
  30
 0.0
  40
-0.4230373395172647
+0.535
   0
 CIRCLE
   5
@@ -14525,7 +14489,7 @@ AcDbCircle
  30
 0.0
  40
-0.4230373395172647
+0.535
   0
 LWPOLYLINE
   5
@@ -18455,90 +18419,6 @@ AcDbPolyline
   0
 LWPOLYLINE
   5
-2EC1
-330
-1F
-100
-AcDbEntity
-  8
-led_necks
-100
-AcDbPolyline
- 90
-        4
- 70
-     1
- 43
-0.0
- 10
-14.5
- 20
-22.66114427146906
- 10
-14.5
- 20
-20.85044077708135
- 42
--0.1602631692858845
- 10
-15.5
- 20
-20.85044032510057
- 10
-15.5
- 20
-22.66114427146906
-  0
-LWPOLYLINE
-  5
-3050
-330
-1F
-100
-AcDbEntity
-  8
-led_necks
-100
-AcDbPolyline
- 90
-        6
- 70
-     1
- 43
-0.0
- 10
-22.8664019003724
- 20
-20.9205466787482
- 42
-0.1467976925799343
- 10
-22.02057962141306
- 20
-20.55942656853919
- 42
-0.0497138766858662
- 10
-21.22999687419491
- 20
-22.41114427146906
- 10
-21.22999687419491
- 20
-22.66114427146906
- 10
-22.22999779947439
- 20
-22.66114427146906
- 10
-22.22999779947439
- 20
-22.41114427146906
- 42
-0.0631731038782545
-  0
-LWPOLYLINE
-  5
 31D9
 330
 1F
@@ -19113,6 +18993,406 @@ AcDbPolyline
  20
 11.66942786426501
   0
+CIRCLE
+  5
+33AD
+330
+1F
+100
+AcDbEntity
+  8
+pinPlacements
+100
+AcDbCircle
+ 10
+3.590000000000673
+ 20
+26.74999999999907
+ 30
+0.0
+ 40
+0.1
+  0
+CIRCLE
+  5
+33C9
+330
+1F
+100
+AcDbEntity
+  8
+pinPlacements
+100
+AcDbCircle
+ 10
+6.090000000000673
+ 20
+26.74999999999907
+ 30
+0.0
+ 40
+0.1
+  0
+CIRCLE
+  5
+33E5
+330
+1F
+100
+AcDbEntity
+  8
+pinPlacements
+100
+AcDbCircle
+ 10
+8.670000000000595
+ 20
+26.74999999999907
+ 30
+0.0
+ 40
+0.1
+  0
+CIRCLE
+  5
+3401
+330
+1F
+100
+AcDbEntity
+  8
+pinPlacements
+100
+AcDbCircle
+ 10
+11.1700000000006
+ 20
+26.74999999999908
+ 30
+0.0
+ 40
+0.1
+  0
+CIRCLE
+  5
+341D
+330
+1F
+100
+AcDbEntity
+  8
+pinPlacements
+100
+AcDbCircle
+ 10
+13.75000000000095
+ 20
+26.74999999999908
+ 30
+0.0
+ 40
+0.1
+  0
+CIRCLE
+  5
+3439
+330
+1F
+100
+AcDbEntity
+  8
+pinPlacements
+100
+AcDbCircle
+ 10
+16.25000000000095
+ 20
+26.74999999999908
+ 30
+0.0
+ 40
+0.1
+  0
+CIRCLE
+  5
+3455
+330
+1F
+100
+AcDbEntity
+  8
+pinPlacements
+100
+AcDbCircle
+ 10
+18.8300000000013
+ 20
+26.74999999999908
+ 30
+0.0
+ 40
+0.1
+  0
+CIRCLE
+  5
+3471
+330
+1F
+100
+AcDbEntity
+  8
+pinPlacements
+100
+AcDbCircle
+ 10
+21.3300000000013
+ 20
+26.74999999999902
+ 30
+0.0
+ 40
+0.1
+  0
+CIRCLE
+  5
+348D
+330
+1F
+100
+AcDbEntity
+  8
+pinPlacements
+100
+AcDbCircle
+ 10
+23.91000000000122
+ 20
+26.74999999999913
+ 30
+0.0
+ 40
+0.1
+  0
+CIRCLE
+  5
+34A9
+330
+1F
+100
+AcDbEntity
+  8
+pinPlacements
+100
+AcDbCircle
+ 10
+26.41000000000123
+ 20
+26.74999999999914
+ 30
+0.0
+ 40
+0.1
+  0
+CIRCLE
+  5
+34C5
+330
+1F
+100
+AcDbEntity
+  8
+pinPlacements
+100
+AcDbCircle
+ 10
+3.590000000000676
+ 20
+3.25000000000002
+ 30
+0.0
+ 40
+0.1
+  0
+CIRCLE
+  5
+34E1
+330
+1F
+100
+AcDbEntity
+  8
+pinPlacements
+100
+AcDbCircle
+ 10
+6.090000000000675
+ 20
+3.25000000000002
+ 30
+0.0
+ 40
+0.1
+  0
+CIRCLE
+  5
+34FD
+330
+1F
+100
+AcDbEntity
+  8
+pinPlacements
+100
+AcDbCircle
+ 10
+8.670000000000599
+ 20
+3.250000000000017
+ 30
+0.0
+ 40
+0.1
+  0
+CIRCLE
+  5
+3519
+330
+1F
+100
+AcDbEntity
+  8
+pinPlacements
+100
+AcDbCircle
+ 10
+11.1700000000006
+ 20
+3.250000000000017
+ 30
+0.0
+ 40
+0.1
+  0
+CIRCLE
+  5
+3535
+330
+1F
+100
+AcDbEntity
+  8
+pinPlacements
+100
+AcDbCircle
+ 10
+13.75000000000095
+ 20
+3.250000000000017
+ 30
+0.0
+ 40
+0.1
+  0
+CIRCLE
+  5
+3551
+330
+1F
+100
+AcDbEntity
+  8
+pinPlacements
+100
+AcDbCircle
+ 10
+16.25000000000095
+ 20
+3.250000000000017
+ 30
+0.0
+ 40
+0.1
+  0
+CIRCLE
+  5
+356D
+330
+1F
+100
+AcDbEntity
+  8
+pinPlacements
+100
+AcDbCircle
+ 10
+18.8300000000013
+ 20
+3.250000000000052
+ 30
+0.0
+ 40
+0.1
+  0
+CIRCLE
+  5
+3589
+330
+1F
+100
+AcDbEntity
+  8
+pinPlacements
+100
+AcDbCircle
+ 10
+21.3300000000013
+ 20
+3.250000000000017
+ 30
+0.0
+ 40
+0.1
+  0
+CIRCLE
+  5
+35A5
+330
+1F
+100
+AcDbEntity
+  8
+pinPlacements
+100
+AcDbCircle
+ 10
+23.91000000000122
+ 20
+3.249999999999968
+ 30
+0.0
+ 40
+0.1
+  0
+CIRCLE
+  5
+35C1
+330
+1F
+100
+AcDbEntity
+  8
+pinPlacements
+100
+AcDbCircle
+ 10
+26.41000000000123
+ 20
+3.249999999999955
+ 30
+0.0
+ 40
+0.1
+  0
 ENDSEC
   0
 SECTION
@@ -19191,7 +19471,7 @@ ACAD_VISUALSTYLE
   3
 ACDB_RECOMPOSE_DATA
 350
-3395
+36CE
   3
 AcDbVariableDictionary
 350
@@ -19251,7 +19531,7 @@ ACAD_LAYERSTATES
   3
 ACLYDICTIONARY
 360
-2EDD
+36A8
   0
 DICTIONARY
   5
@@ -19811,7 +20091,7 @@ EA
   0
 XRECORD
   5
-3395
+36CE
 102
 {ACAD_REACTORS
 330
@@ -19915,7 +20195,7 @@ AcDbDictionary
   0
 DICTIONARY
   5
-2EDD
+36A8
 102
 {ACAD_REACTORS
 330
@@ -21653,7 +21933,7 @@ TABLESTYLE
 102
 {ACAD_XDICTIONARY
 360
-3393
+36CC
 102
 }
 330
@@ -28767,7 +29047,7 @@ DictionaryVariables
   0
 DICTIONARY
   5
-3393
+36CC
 330
 87
 100
@@ -28779,19 +29059,19 @@ AcDbDictionary
   3
 ACAD_ROUNDTRIP_2008_TABLESTYLE_CELLSTYLEMAP
 360
-3394
+36CD
   0
 CELLSTYLEMAP
   5
-3394
+36CD
 102
 {ACAD_REACTORS
 330
-3393
+36CC
 102
 }
 330
-3393
+36CC
 100
 AcDbCellStyleMap
  90
