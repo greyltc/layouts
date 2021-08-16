@@ -41,7 +41,7 @@ $EXTMIN
   9
 $EXTMAX
  10
-54.13333333333331
+55.13333333333331
  20
 31.99999999999909
  30
@@ -101,7 +101,7 @@ Standard
   9
 $CLAYER
   8
-contact_pin_diameter
+0
   9
 $CELTYPE
   6
@@ -441,7 +441,7 @@ $SKETCHINC
   9
 $FILLETRAD
  40
-0.5
+2.0
   9
 $AUNITS
  70
@@ -501,19 +501,19 @@ $TDUCREATE
   9
 $TDUPDATE
  40
-2458909.408086979
+2458909.366908484
   9
 $TDUUPDATE
  40
-2458909.408086979
+2458909.366908484
   9
 $TDINDWG
  40
-0.0591097222
+0.0591097338
   9
 $TDUSRTIMER
  40
-0.0592846644
+0.001799537
   9
 $USRTIMER
  70
@@ -553,7 +553,7 @@ $SPLINESEGS
   9
 $HANDSEED
   5
-4596
+462B
   9
 $SURFTAB1
  70
@@ -843,7 +843,7 @@ $PLIMMIN
  10
 -0.25
  20
--0.7499999999999999
+-0.7500000000000001
   9
 $PLIMMAX
  10
@@ -1349,6 +1349,22 @@ ObjectDBX Classes
 281
      0
   0
+CLASS
+  1
+ACDB_MTEXTOBJECTCONTEXTDATA_CLASS
+  2
+AcDbMTextObjectContextData
+  3
+ObjectDBX Classes
+ 90
+     1153
+ 91
+        3
+280
+     0
+281
+     0
+  0
 ENDSEC
   0
 SECTION
@@ -1389,9 +1405,9 @@ AcDbViewportTableRecord
  21
 1.0
  12
-55.30027264010107
+55.33979590854974
  22
-34.14611654214639
+33.79409223775715
  13
 0.0
  23
@@ -1411,13 +1427,13 @@ AcDbViewportTableRecord
  36
 1.0
  17
--27.66959356598004
+-27.66959356598005
  27
--19.53870295786233
+-19.53870295786228
  37
 0.0
  40
-35.80715349403751
+35.80715349403749
  41
 1.707482993197279
  42
@@ -1595,7 +1611,7 @@ LAYER
 100
 AcDbSymbolTable
  70
-    37
+    36
   0
 LAYER
   5
@@ -1671,7 +1687,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-TC-etch-lines-chemical
+tc-etch-lines-chemical
  70
      0
  62
@@ -1711,7 +1727,7 @@ encapsulation
  70
      0
  62
-     3
+    -3
   6
 Continuous
 370
@@ -1743,7 +1759,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-lightMask-small-upper
+lightmask-small-upper
  70
      0
  62
@@ -1779,7 +1795,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-contact_pin_diameter
+contact-pin-diameter
  70
      0
  62
@@ -1815,7 +1831,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-glassOutline
+glass-outline
  70
      0
  62
@@ -1851,7 +1867,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-lightMask-small-lower
+lightmask-small-lower
  70
      0
  62
@@ -1923,7 +1939,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-TC-metal
+tc-metal
  70
      0
  62
@@ -2031,7 +2047,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-lightMask-large-upper
+lightmask-large-upper
  70
      0
  62
@@ -2067,7 +2083,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-lightMask-large-lower
+lightmask-large-lower
  70
      0
  62
@@ -2103,7 +2119,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-TC-etch-lines-laser
+tc-etch-lines-laser
  70
      0
  62
@@ -2307,7 +2323,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-conn_mounts
+conn-mounts
  70
      0
  62
@@ -2339,7 +2355,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-pcb_cutout
+pcb-cutout
  70
      0
  62
@@ -2436,42 +2452,6 @@ AcAecLayerStandard
 ACCMTRANSPARENCY
 1071
  33554687
-  0
-LAYER
-  5
-2B81
-330
-2
-100
-AcDbSymbolTableRecord
-100
-AcDbLayerTableRecord
-  2
-kmlt_spacer
- 70
-     0
- 62
-    -3
-  6
-Continuous
-370
-    -3
-390
-F
-347
-98
-348
-0
-1001
-AcAecLayerStandard
-1000
-
-1000
-
-1001
-ACCMTRANSPARENCY
-1071
-        0
   0
 LAYER
   5
@@ -2847,7 +2827,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-contact_point
+contact-point
  70
      0
  62
@@ -3491,7 +3471,7 @@ AcDbSymbolTableRecord
 100
 AcDbBlockTableRecord
   2
-*D1
+*D0
 340
 0
  70
@@ -3511,7 +3491,7 @@ AcDbSymbolTableRecord
 100
 AcDbBlockTableRecord
   2
-*D2
+*D1
 340
 0
  70
@@ -3531,7 +3511,7 @@ AcDbSymbolTableRecord
 100
 AcDbBlockTableRecord
   2
-*D3
+*D2
 340
 0
  70
@@ -3551,7 +3531,7 @@ AcDbSymbolTableRecord
 100
 AcDbBlockTableRecord
   2
-*D4
+*D3
 340
 0
  70
@@ -3571,7 +3551,7 @@ AcDbSymbolTableRecord
 100
 AcDbBlockTableRecord
   2
-*D5
+*D4
 340
 0
  70
@@ -3591,7 +3571,7 @@ AcDbSymbolTableRecord
 100
 AcDbBlockTableRecord
   2
-*D6
+*D5
 340
 0
  70
@@ -3611,7 +3591,7 @@ AcDbSymbolTableRecord
 100
 AcDbBlockTableRecord
   2
-*D7
+*D6
 340
 0
  70
@@ -3631,7 +3611,7 @@ AcDbSymbolTableRecord
 100
 AcDbBlockTableRecord
   2
-*D8
+*D7
 340
 0
  70
@@ -3651,7 +3631,7 @@ AcDbSymbolTableRecord
 100
 AcDbBlockTableRecord
   2
-*D9
+*D8
 340
 0
  70
@@ -3671,7 +3651,7 @@ AcDbSymbolTableRecord
 100
 AcDbBlockTableRecord
   2
-*D10
+*D9
 340
 0
  70
@@ -3691,7 +3671,7 @@ AcDbSymbolTableRecord
 100
 AcDbBlockTableRecord
   2
-*D11
+*D10
 340
 0
  70
@@ -3711,7 +3691,7 @@ AcDbSymbolTableRecord
 100
 AcDbBlockTableRecord
   2
-*D12
+*D11
 340
 0
  70
@@ -3731,7 +3711,7 @@ AcDbSymbolTableRecord
 100
 AcDbBlockTableRecord
   2
-*D13
+*D12
 340
 0
  70
@@ -3751,7 +3731,7 @@ AcDbSymbolTableRecord
 100
 AcDbBlockTableRecord
   2
-*D14
+*D13
 340
 0
  70
@@ -3771,7 +3751,7 @@ AcDbSymbolTableRecord
 100
 AcDbBlockTableRecord
   2
-*D15
+*D14
 340
 0
  70
@@ -3791,7 +3771,7 @@ AcDbSymbolTableRecord
 100
 AcDbBlockTableRecord
   2
-*D16
+*D15
 340
 0
  70
@@ -3811,7 +3791,7 @@ AcDbSymbolTableRecord
 100
 AcDbBlockTableRecord
   2
-*D17
+*D16
 340
 0
  70
@@ -3831,7 +3811,7 @@ AcDbSymbolTableRecord
 100
 AcDbBlockTableRecord
   2
-*D18
+*D17
 340
 0
  70
@@ -3851,7 +3831,7 @@ AcDbSymbolTableRecord
 100
 AcDbBlockTableRecord
   2
-*D19
+*D18
 340
 0
  70
@@ -3871,7 +3851,7 @@ AcDbSymbolTableRecord
 100
 AcDbBlockTableRecord
   2
-*D20
+*D19
 340
 0
  70
@@ -3891,7 +3871,7 @@ AcDbSymbolTableRecord
 100
 AcDbBlockTableRecord
   2
-*D21
+*D20
 340
 0
  70
@@ -3911,7 +3891,7 @@ AcDbSymbolTableRecord
 100
 AcDbBlockTableRecord
   2
-*D22
+*D21
 340
 0
  70
@@ -3931,7 +3911,7 @@ AcDbSymbolTableRecord
 100
 AcDbBlockTableRecord
   2
-*D23
+*D22
 340
 0
  70
@@ -3951,7 +3931,7 @@ AcDbSymbolTableRecord
 100
 AcDbBlockTableRecord
   2
-*D24
+*D23
 340
 0
  70
@@ -3971,7 +3951,7 @@ AcDbSymbolTableRecord
 100
 AcDbBlockTableRecord
   2
-*D25
+*D24
 340
 0
  70
@@ -3991,7 +3971,7 @@ AcDbSymbolTableRecord
 100
 AcDbBlockTableRecord
   2
-*D26
+*D25
 340
 0
  70
@@ -4011,7 +3991,7 @@ AcDbSymbolTableRecord
 100
 AcDbBlockTableRecord
   2
-*D27
+*D26
 340
 0
  70
@@ -4031,7 +4011,7 @@ AcDbSymbolTableRecord
 100
 AcDbBlockTableRecord
   2
-*D28
+*D27
 340
 0
  70
@@ -4051,7 +4031,7 @@ AcDbSymbolTableRecord
 100
 AcDbBlockTableRecord
   2
-*D29
+*D28
 340
 0
  70
@@ -4071,7 +4051,7 @@ AcDbSymbolTableRecord
 100
 AcDbBlockTableRecord
   2
-*D30
+*D29
 340
 0
  70
@@ -4091,7 +4071,7 @@ AcDbSymbolTableRecord
 100
 AcDbBlockTableRecord
   2
-*D31
+*D30
 340
 0
  70
@@ -4111,7 +4091,7 @@ AcDbSymbolTableRecord
 100
 AcDbBlockTableRecord
   2
-*D32
+*D31
 340
 0
  70
@@ -4131,7 +4111,7 @@ AcDbSymbolTableRecord
 100
 AcDbBlockTableRecord
   2
-*D33
+*D32
 340
 0
  70
@@ -4151,7 +4131,7 @@ AcDbSymbolTableRecord
 100
 AcDbBlockTableRecord
   2
-*D34
+*D33
 340
 0
  70
@@ -4171,7 +4151,7 @@ AcDbSymbolTableRecord
 100
 AcDbBlockTableRecord
   2
-*D35
+*D34
 340
 0
  70
@@ -4191,7 +4171,7 @@ AcDbSymbolTableRecord
 100
 AcDbBlockTableRecord
   2
-*D36
+*D35
 340
 0
  70
@@ -4211,7 +4191,7 @@ AcDbSymbolTableRecord
 100
 AcDbBlockTableRecord
   2
-*D37
+*D36
 340
 0
  70
@@ -4231,7 +4211,7 @@ AcDbSymbolTableRecord
 100
 AcDbBlockTableRecord
   2
-*D38
+*D37
 340
 0
  70
@@ -4251,7 +4231,7 @@ AcDbSymbolTableRecord
 100
 AcDbBlockTableRecord
   2
-*D39
+*D38
 340
 0
  70
@@ -4271,7 +4251,7 @@ AcDbSymbolTableRecord
 100
 AcDbBlockTableRecord
   2
-*D40
+*D39
 340
 0
  70
@@ -4291,7 +4271,7 @@ AcDbSymbolTableRecord
 100
 AcDbBlockTableRecord
   2
-*D43
+*D40
 340
 0
  70
@@ -4311,7 +4291,7 @@ AcDbSymbolTableRecord
 100
 AcDbBlockTableRecord
   2
-*D44
+*D41
 340
 0
  70
@@ -4421,7 +4401,7 @@ AcDbEntity
 100
 AcDbBlockBegin
   2
-*D1
+*D0
  70
      1
  10
@@ -4431,7 +4411,7 @@ AcDbBlockBegin
  30
 0.0
   3
-*D1
+*D0
   1
 
   0
@@ -4771,7 +4751,7 @@ AcDbEntity
 100
 AcDbBlockBegin
   2
-*D2
+*D1
  70
      1
  10
@@ -4781,7 +4761,7 @@ AcDbBlockBegin
  30
 0.0
   3
-*D2
+*D1
   1
 
   0
@@ -4793,7 +4773,7 @@ LINE
 100
 AcDbEntity
   8
-TC-metal
+tc-metal
  62
      0
 370
@@ -4821,7 +4801,7 @@ LINE
 100
 AcDbEntity
   8
-TC-metal
+tc-metal
  62
      0
 370
@@ -4849,7 +4829,7 @@ A00
 100
 AcDbEntity
   8
-TC-metal
+tc-metal
  62
      0
 370
@@ -4877,7 +4857,7 @@ A01
 100
 AcDbEntity
   8
-TC-metal
+tc-metal
  62
      0
 370
@@ -4905,7 +4885,7 @@ A02
 100
 AcDbEntity
   8
-TC-metal
+tc-metal
  62
      0
 100
@@ -4943,7 +4923,7 @@ A03
 100
 AcDbEntity
   8
-TC-metal
+tc-metal
  62
      0
 100
@@ -4981,7 +4961,7 @@ A04
 100
 AcDbEntity
   8
-TC-metal
+tc-metal
  62
      0
 100
@@ -5093,7 +5073,7 @@ AcDbEntity
 100
 AcDbBlockBegin
   2
-*D3
+*D2
  70
      1
  10
@@ -5103,7 +5083,7 @@ AcDbBlockBegin
  30
 0.0
   3
-*D3
+*D2
   1
 
   0
@@ -5115,7 +5095,7 @@ A0B
 100
 AcDbEntity
   8
-TC-metal
+tc-metal
  62
      0
 370
@@ -5143,7 +5123,7 @@ A0B
 100
 AcDbEntity
   8
-TC-metal
+tc-metal
  62
      0
 370
@@ -5171,7 +5151,7 @@ A0B
 100
 AcDbEntity
   8
-TC-metal
+tc-metal
  62
      0
 370
@@ -5199,7 +5179,7 @@ A0B
 100
 AcDbEntity
   8
-TC-metal
+tc-metal
  62
      0
 370
@@ -5227,7 +5207,7 @@ A0B
 100
 AcDbEntity
   8
-TC-metal
+tc-metal
  62
      0
 100
@@ -5265,7 +5245,7 @@ A0B
 100
 AcDbEntity
   8
-TC-metal
+tc-metal
  62
      0
 100
@@ -5303,7 +5283,7 @@ A0B
 100
 AcDbEntity
   8
-TC-metal
+tc-metal
  62
      0
 100
@@ -5415,7 +5395,7 @@ AcDbEntity
 100
 AcDbBlockBegin
   2
-*D4
+*D3
  70
      1
  10
@@ -5425,7 +5405,7 @@ AcDbBlockBegin
  30
 0.0
   3
-*D4
+*D3
   1
 
   0
@@ -5737,7 +5717,7 @@ AcDbEntity
 100
 AcDbBlockBegin
   2
-*D5
+*D4
  70
      1
  10
@@ -5747,7 +5727,7 @@ AcDbBlockBegin
  30
 0.0
   3
-*D5
+*D4
   1
 
   0
@@ -6059,7 +6039,7 @@ AcDbEntity
 100
 AcDbBlockBegin
   2
-*D6
+*D5
  70
      1
  10
@@ -6069,7 +6049,7 @@ AcDbBlockBegin
  30
 0.0
   3
-*D6
+*D5
   1
 
   0
@@ -6381,7 +6361,7 @@ AcDbEntity
 100
 AcDbBlockBegin
   2
-*D7
+*D6
  70
      1
  10
@@ -6391,7 +6371,7 @@ AcDbBlockBegin
  30
 0.0
   3
-*D7
+*D6
   1
 
   0
@@ -6759,7 +6739,7 @@ AcDbEntity
 100
 AcDbBlockBegin
   2
-*D8
+*D7
  70
      1
  10
@@ -6769,7 +6749,7 @@ AcDbBlockBegin
  30
 0.0
   3
-*D8
+*D7
   1
 
   0
@@ -7081,7 +7061,7 @@ AcDbEntity
 100
 AcDbBlockBegin
   2
-*D9
+*D8
  70
      1
  10
@@ -7091,7 +7071,7 @@ AcDbBlockBegin
  30
 0.0
   3
-*D9
+*D8
   1
 
   0
@@ -7403,7 +7383,7 @@ AcDbEntity
 100
 AcDbBlockBegin
   2
-*D10
+*D9
  70
      1
  10
@@ -7413,7 +7393,7 @@ AcDbBlockBegin
  30
 0.0
   3
-*D10
+*D9
   1
 
   0
@@ -7725,7 +7705,7 @@ AcDbEntity
 100
 AcDbBlockBegin
   2
-*D11
+*D10
  70
      1
  10
@@ -7735,7 +7715,7 @@ AcDbBlockBegin
  30
 0.0
   3
-*D11
+*D10
   1
 
   0
@@ -8047,7 +8027,7 @@ AcDbEntity
 100
 AcDbBlockBegin
   2
-*D12
+*D11
  70
      1
  10
@@ -8057,7 +8037,7 @@ AcDbBlockBegin
  30
 0.0
   3
-*D12
+*D11
   1
 
   0
@@ -8369,7 +8349,7 @@ AcDbEntity
 100
 AcDbBlockBegin
   2
-*D13
+*D12
  70
      1
  10
@@ -8379,7 +8359,7 @@ AcDbBlockBegin
  30
 0.0
   3
-*D13
+*D12
   1
 
   0
@@ -8691,7 +8671,7 @@ AcDbEntity
 100
 AcDbBlockBegin
   2
-*D14
+*D13
  70
      1
  10
@@ -8701,7 +8681,7 @@ AcDbBlockBegin
  30
 0.0
   3
-*D14
+*D13
   1
 
   0
@@ -8713,7 +8693,7 @@ E17
 100
 AcDbEntity
   8
-lightMask-large-lower
+lightmask-large-lower
  62
      0
 370
@@ -8741,7 +8721,7 @@ E17
 100
 AcDbEntity
   8
-lightMask-large-lower
+lightmask-large-lower
  62
      0
 370
@@ -8769,7 +8749,7 @@ E17
 100
 AcDbEntity
   8
-lightMask-large-lower
+lightmask-large-lower
  62
      0
 370
@@ -8797,7 +8777,7 @@ E17
 100
 AcDbEntity
   8
-lightMask-large-lower
+lightmask-large-lower
  62
      0
 370
@@ -8825,7 +8805,7 @@ E17
 100
 AcDbEntity
   8
-lightMask-large-lower
+lightmask-large-lower
  62
      0
 100
@@ -8863,7 +8843,7 @@ E17
 100
 AcDbEntity
   8
-lightMask-large-lower
+lightmask-large-lower
  62
      0
 100
@@ -8901,7 +8881,7 @@ E17
 100
 AcDbEntity
   8
-lightMask-large-lower
+lightmask-large-lower
  62
      0
 100
@@ -9013,7 +8993,7 @@ AcDbEntity
 100
 AcDbBlockBegin
   2
-*D15
+*D14
  70
      1
  10
@@ -9023,7 +9003,7 @@ AcDbBlockBegin
  30
 0.0
   3
-*D15
+*D14
   1
 
   0
@@ -9035,7 +9015,7 @@ E27
 100
 AcDbEntity
   8
-lightMask-large-lower
+lightmask-large-lower
  62
      0
 370
@@ -9063,7 +9043,7 @@ E27
 100
 AcDbEntity
   8
-lightMask-large-lower
+lightmask-large-lower
  62
      0
 370
@@ -9091,7 +9071,7 @@ E27
 100
 AcDbEntity
   8
-lightMask-large-lower
+lightmask-large-lower
  62
      0
 370
@@ -9119,7 +9099,7 @@ E27
 100
 AcDbEntity
   8
-lightMask-large-lower
+lightmask-large-lower
  62
      0
 370
@@ -9147,7 +9127,7 @@ E27
 100
 AcDbEntity
   8
-lightMask-large-lower
+lightmask-large-lower
  62
      0
 100
@@ -9185,7 +9165,7 @@ E27
 100
 AcDbEntity
   8
-lightMask-large-lower
+lightmask-large-lower
  62
      0
 100
@@ -9223,7 +9203,7 @@ E27
 100
 AcDbEntity
   8
-lightMask-large-lower
+lightmask-large-lower
  62
      0
 100
@@ -9335,7 +9315,7 @@ AcDbEntity
 100
 AcDbBlockBegin
   2
-*D16
+*D15
  70
      1
  10
@@ -9345,7 +9325,7 @@ AcDbBlockBegin
  30
 0.0
   3
-*D16
+*D15
   1
 
   0
@@ -9657,7 +9637,7 @@ AcDbEntity
 100
 AcDbBlockBegin
   2
-*D17
+*D16
  70
      1
  10
@@ -9667,7 +9647,7 @@ AcDbBlockBegin
  30
 0.0
   3
-*D17
+*D16
   1
 
   0
@@ -9979,7 +9959,7 @@ AcDbEntity
 100
 AcDbBlockBegin
   2
-*D18
+*D17
  70
      1
  10
@@ -9989,7 +9969,7 @@ AcDbBlockBegin
  30
 0.0
   3
-*D18
+*D17
   1
 
   0
@@ -10001,7 +9981,7 @@ LINE
 100
 AcDbEntity
   8
-glassOutline
+glass-outline
  62
      0
 370
@@ -10029,7 +10009,7 @@ LINE
 100
 AcDbEntity
   8
-glassOutline
+glass-outline
  62
      0
 370
@@ -10057,7 +10037,7 @@ LINE
 100
 AcDbEntity
   8
-glassOutline
+glass-outline
  62
      0
 370
@@ -10085,7 +10065,7 @@ LINE
 100
 AcDbEntity
   8
-glassOutline
+glass-outline
  62
      0
 370
@@ -10113,7 +10093,7 @@ SOLID
 100
 AcDbEntity
   8
-glassOutline
+glass-outline
  62
      0
 100
@@ -10151,7 +10131,7 @@ SOLID
 100
 AcDbEntity
   8
-glassOutline
+glass-outline
  62
      0
 100
@@ -10189,7 +10169,7 @@ MTEXT
 100
 AcDbEntity
   8
-glassOutline
+glass-outline
  62
      0
 100
@@ -10301,7 +10281,7 @@ AcDbEntity
 100
 AcDbBlockBegin
   2
-*D19
+*D18
  70
      1
  10
@@ -10311,7 +10291,7 @@ AcDbBlockBegin
  30
 0.0
   3
-*D19
+*D18
   1
 
   0
@@ -10323,7 +10303,7 @@ LINE
 100
 AcDbEntity
   8
-glassOutline
+glass-outline
  62
      0
 370
@@ -10351,7 +10331,7 @@ LINE
 100
 AcDbEntity
   8
-glassOutline
+glass-outline
  62
      0
 370
@@ -10379,7 +10359,7 @@ LINE
 100
 AcDbEntity
   8
-glassOutline
+glass-outline
  62
      0
 370
@@ -10407,7 +10387,7 @@ LINE
 100
 AcDbEntity
   8
-glassOutline
+glass-outline
  62
      0
 370
@@ -10435,7 +10415,7 @@ SOLID
 100
 AcDbEntity
   8
-glassOutline
+glass-outline
  62
      0
 100
@@ -10473,7 +10453,7 @@ SOLID
 100
 AcDbEntity
   8
-glassOutline
+glass-outline
  62
      0
 100
@@ -10511,7 +10491,7 @@ MTEXT
 100
 AcDbEntity
   8
-glassOutline
+glass-outline
  62
      0
 100
@@ -10623,7 +10603,7 @@ AcDbEntity
 100
 AcDbBlockBegin
   2
-*D20
+*D19
  70
      1
  10
@@ -10633,7 +10613,7 @@ AcDbBlockBegin
  30
 0.0
   3
-*D20
+*D19
   1
 
   0
@@ -10645,7 +10625,7 @@ LINE
 100
 AcDbEntity
   8
-glassOutline
+glass-outline
  62
      0
 370
@@ -10673,7 +10653,7 @@ LINE
 100
 AcDbEntity
   8
-glassOutline
+glass-outline
  62
      0
 370
@@ -10701,7 +10681,7 @@ LINE
 100
 AcDbEntity
   8
-glassOutline
+glass-outline
  62
      0
 370
@@ -10729,7 +10709,7 @@ LINE
 100
 AcDbEntity
   8
-glassOutline
+glass-outline
  62
      0
 370
@@ -10757,7 +10737,7 @@ SOLID
 100
 AcDbEntity
   8
-glassOutline
+glass-outline
  62
      0
 100
@@ -10795,7 +10775,7 @@ SOLID
 100
 AcDbEntity
   8
-glassOutline
+glass-outline
  62
      0
 100
@@ -10833,7 +10813,7 @@ MTEXT
 100
 AcDbEntity
   8
-glassOutline
+glass-outline
  62
      0
 100
@@ -10945,7 +10925,7 @@ AcDbEntity
 100
 AcDbBlockBegin
   2
-*D21
+*D20
  70
      1
  10
@@ -10955,7 +10935,7 @@ AcDbBlockBegin
  30
 0.0
   3
-*D21
+*D20
   1
 
   0
@@ -10967,7 +10947,7 @@ LINE
 100
 AcDbEntity
   8
-glassOutline
+glass-outline
  62
      0
 370
@@ -10995,7 +10975,7 @@ LINE
 100
 AcDbEntity
   8
-glassOutline
+glass-outline
  62
      0
 370
@@ -11023,7 +11003,7 @@ LINE
 100
 AcDbEntity
   8
-glassOutline
+glass-outline
  62
      0
 370
@@ -11051,7 +11031,7 @@ LINE
 100
 AcDbEntity
   8
-glassOutline
+glass-outline
  62
      0
 370
@@ -11079,7 +11059,7 @@ SOLID
 100
 AcDbEntity
   8
-glassOutline
+glass-outline
  62
      0
 100
@@ -11117,7 +11097,7 @@ SOLID
 100
 AcDbEntity
   8
-glassOutline
+glass-outline
  62
      0
 100
@@ -11155,7 +11135,7 @@ MTEXT
 100
 AcDbEntity
   8
-glassOutline
+glass-outline
  62
      0
 100
@@ -11267,7 +11247,7 @@ AcDbEntity
 100
 AcDbBlockBegin
   2
-*D22
+*D21
  70
      1
  10
@@ -11277,7 +11257,7 @@ AcDbBlockBegin
  30
 0.0
   3
-*D22
+*D21
   1
 
   0
@@ -11289,7 +11269,7 @@ LINE
 100
 AcDbEntity
   8
-glassOutline
+glass-outline
  62
      0
 370
@@ -11317,7 +11297,7 @@ LINE
 100
 AcDbEntity
   8
-glassOutline
+glass-outline
  62
      0
 370
@@ -11345,7 +11325,7 @@ LINE
 100
 AcDbEntity
   8
-glassOutline
+glass-outline
  62
      0
 370
@@ -11373,7 +11353,7 @@ LINE
 100
 AcDbEntity
   8
-glassOutline
+glass-outline
  62
      0
 370
@@ -11401,7 +11381,7 @@ SOLID
 100
 AcDbEntity
   8
-glassOutline
+glass-outline
  62
      0
 100
@@ -11439,7 +11419,7 @@ SOLID
 100
 AcDbEntity
   8
-glassOutline
+glass-outline
  62
      0
 100
@@ -11477,7 +11457,7 @@ MTEXT
 100
 AcDbEntity
   8
-glassOutline
+glass-outline
  62
      0
 100
@@ -11589,7 +11569,7 @@ AcDbEntity
 100
 AcDbBlockBegin
   2
-*D23
+*D22
  70
      1
  10
@@ -11599,7 +11579,7 @@ AcDbBlockBegin
  30
 0.0
   3
-*D23
+*D22
   1
 
   0
@@ -11611,7 +11591,7 @@ LINE
 100
 AcDbEntity
   8
-glassOutline
+glass-outline
  62
      0
 370
@@ -11639,7 +11619,7 @@ LINE
 100
 AcDbEntity
   8
-glassOutline
+glass-outline
  62
      0
 370
@@ -11667,7 +11647,7 @@ LINE
 100
 AcDbEntity
   8
-glassOutline
+glass-outline
  62
      0
 370
@@ -11695,7 +11675,7 @@ LINE
 100
 AcDbEntity
   8
-glassOutline
+glass-outline
  62
      0
 370
@@ -11723,7 +11703,7 @@ LINE
 100
 AcDbEntity
   8
-glassOutline
+glass-outline
  62
      0
 370
@@ -11751,7 +11731,7 @@ SOLID
 100
 AcDbEntity
   8
-glassOutline
+glass-outline
  62
      0
 100
@@ -11789,7 +11769,7 @@ SOLID
 100
 AcDbEntity
   8
-glassOutline
+glass-outline
  62
      0
 100
@@ -11827,7 +11807,7 @@ MTEXT
 100
 AcDbEntity
   8
-glassOutline
+glass-outline
  62
      0
 100
@@ -11939,7 +11919,7 @@ AcDbEntity
 100
 AcDbBlockBegin
   2
-*D24
+*D23
  70
      1
  10
@@ -11949,7 +11929,7 @@ AcDbBlockBegin
  30
 0.0
   3
-*D24
+*D23
   1
 
   0
@@ -12261,7 +12241,7 @@ AcDbEntity
 100
 AcDbBlockBegin
   2
-*D25
+*D24
  70
      1
  10
@@ -12271,7 +12251,7 @@ AcDbBlockBegin
  30
 0.0
   3
-*D25
+*D24
   1
 
   0
@@ -12583,7 +12563,7 @@ AcDbEntity
 100
 AcDbBlockBegin
   2
-*D26
+*D25
  70
      1
  10
@@ -12593,7 +12573,7 @@ AcDbBlockBegin
  30
 0.0
   3
-*D26
+*D25
   1
 
   0
@@ -12933,7 +12913,7 @@ AcDbEntity
 100
 AcDbBlockBegin
   2
-*D27
+*D26
  70
      1
  10
@@ -12943,7 +12923,7 @@ AcDbBlockBegin
  30
 0.0
   3
-*D27
+*D26
   1
 
   0
@@ -13255,7 +13235,7 @@ AcDbEntity
 100
 AcDbBlockBegin
   2
-*D28
+*D27
  70
      1
  10
@@ -13265,7 +13245,7 @@ AcDbBlockBegin
  30
 0.0
   3
-*D28
+*D27
   1
 
   0
@@ -13577,7 +13557,7 @@ AcDbEntity
 100
 AcDbBlockBegin
   2
-*D29
+*D28
  70
      1
  10
@@ -13587,7 +13567,7 @@ AcDbBlockBegin
  30
 0.0
   3
-*D29
+*D28
   1
 
   0
@@ -13599,7 +13579,7 @@ LINE
 100
 AcDbEntity
   8
-glassOutline
+glass-outline
  62
      0
 370
@@ -13627,7 +13607,7 @@ LINE
 100
 AcDbEntity
   8
-glassOutline
+glass-outline
  62
      0
 370
@@ -13655,7 +13635,7 @@ LINE
 100
 AcDbEntity
   8
-glassOutline
+glass-outline
  62
      0
 370
@@ -13683,7 +13663,7 @@ LINE
 100
 AcDbEntity
   8
-glassOutline
+glass-outline
  62
      0
 370
@@ -13711,7 +13691,7 @@ LINE
 100
 AcDbEntity
   8
-glassOutline
+glass-outline
  62
      0
 370
@@ -13739,7 +13719,7 @@ SOLID
 100
 AcDbEntity
   8
-glassOutline
+glass-outline
  62
      0
 100
@@ -13777,7 +13757,7 @@ SOLID
 100
 AcDbEntity
   8
-glassOutline
+glass-outline
  62
      0
 100
@@ -13815,7 +13795,7 @@ MTEXT
 100
 AcDbEntity
   8
-glassOutline
+glass-outline
  62
      0
 100
@@ -13927,7 +13907,7 @@ AcDbEntity
 100
 AcDbBlockBegin
   2
-*D30
+*D29
  70
      1
  10
@@ -13937,7 +13917,7 @@ AcDbBlockBegin
  30
 0.0
   3
-*D30
+*D29
   1
 
   0
@@ -13949,7 +13929,7 @@ LINE
 100
 AcDbEntity
   8
-glassOutline
+glass-outline
  62
      0
 370
@@ -13977,7 +13957,7 @@ LINE
 100
 AcDbEntity
   8
-glassOutline
+glass-outline
  62
      0
 370
@@ -14005,7 +13985,7 @@ LINE
 100
 AcDbEntity
   8
-glassOutline
+glass-outline
  62
      0
 370
@@ -14033,7 +14013,7 @@ LINE
 100
 AcDbEntity
   8
-glassOutline
+glass-outline
  62
      0
 370
@@ -14061,7 +14041,7 @@ SOLID
 100
 AcDbEntity
   8
-glassOutline
+glass-outline
  62
      0
 100
@@ -14099,7 +14079,7 @@ SOLID
 100
 AcDbEntity
   8
-glassOutline
+glass-outline
  62
      0
 100
@@ -14137,7 +14117,7 @@ MTEXT
 100
 AcDbEntity
   8
-glassOutline
+glass-outline
  62
      0
 100
@@ -14249,7 +14229,7 @@ AcDbEntity
 100
 AcDbBlockBegin
   2
-*D31
+*D30
  70
      1
  10
@@ -14259,7 +14239,7 @@ AcDbBlockBegin
  30
 0.0
   3
-*D31
+*D30
   1
 
   0
@@ -14571,7 +14551,7 @@ AcDbEntity
 100
 AcDbBlockBegin
   2
-*D32
+*D31
  70
      1
  10
@@ -14581,7 +14561,7 @@ AcDbBlockBegin
  30
 0.0
   3
-*D32
+*D31
   1
 
   0
@@ -14921,7 +14901,7 @@ AcDbEntity
 100
 AcDbBlockBegin
   2
-*D33
+*D32
  70
      1
  10
@@ -14931,7 +14911,7 @@ AcDbBlockBegin
  30
 0.0
   3
-*D33
+*D32
   1
 
   0
@@ -15243,7 +15223,7 @@ AcDbEntity
 100
 AcDbBlockBegin
   2
-*D34
+*D33
  70
      1
  10
@@ -15253,7 +15233,7 @@ AcDbBlockBegin
  30
 0.0
   3
-*D34
+*D33
   1
 
   0
@@ -15565,7 +15545,7 @@ AcDbEntity
 100
 AcDbBlockBegin
   2
-*D35
+*D34
  70
      1
  10
@@ -15575,7 +15555,7 @@ AcDbBlockBegin
  30
 0.0
   3
-*D35
+*D34
   1
 
   0
@@ -15943,7 +15923,7 @@ AcDbEntity
 100
 AcDbBlockBegin
   2
-*D36
+*D35
  70
      1
  10
@@ -15953,7 +15933,7 @@ AcDbBlockBegin
  30
 0.0
   3
-*D36
+*D35
   1
 
   0
@@ -16265,7 +16245,7 @@ AcDbEntity
 100
 AcDbBlockBegin
   2
-*D37
+*D36
  70
      1
  10
@@ -16275,7 +16255,7 @@ AcDbBlockBegin
  30
 0.0
   3
-*D37
+*D36
   1
 
   0
@@ -16615,7 +16595,7 @@ AcDbEntity
 100
 AcDbBlockBegin
   2
-*D38
+*D37
  70
      1
  10
@@ -16625,7 +16605,7 @@ AcDbBlockBegin
  30
 0.0
   3
-*D38
+*D37
   1
 
   0
@@ -16965,7 +16945,7 @@ AcDbEntity
 100
 AcDbBlockBegin
   2
-*D39
+*D38
  70
      1
  10
@@ -16975,7 +16955,7 @@ AcDbBlockBegin
  30
 0.0
   3
-*D39
+*D38
   1
 
   0
@@ -17315,7 +17295,7 @@ AcDbEntity
 100
 AcDbBlockBegin
   2
-*D40
+*D39
  70
      1
  10
@@ -17325,7 +17305,7 @@ AcDbBlockBegin
  30
 0.0
   3
-*D40
+*D39
   1
 
   0
@@ -17665,7 +17645,7 @@ AcDbEntity
 100
 AcDbBlockBegin
   2
-*D43
+*D40
  70
      1
  10
@@ -17675,7 +17655,7 @@ AcDbBlockBegin
  30
 0.0
   3
-*D43
+*D40
   1
 
   0
@@ -17987,7 +17967,7 @@ AcDbEntity
 100
 AcDbBlockBegin
   2
-*D44
+*D41
  70
      1
  10
@@ -17997,7 +17977,7 @@ AcDbBlockBegin
  30
 0.0
   3
-*D44
+*D41
   1
 
   0
@@ -18311,7 +18291,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-glassOutline
+glass-outline
 100
 AcDbPolyline
  90
@@ -18345,7 +18325,7 @@ LINE
 100
 AcDbEntity
   8
-TC-etch-lines-laser
+tc-etch-lines-laser
 100
 AcDbLine
  10
@@ -18517,7 +18497,7 @@ LINE
 100
 AcDbEntity
   8
-TC-etch-lines-laser
+tc-etch-lines-laser
 100
 AcDbLine
  10
@@ -18684,6 +18664,12 @@ GEN
 MTEXT
   5
 DF2
+102
+{ACAD_XDICTIONARY
+360
+4596
+102
+}
 330
 1F
 100
@@ -18693,7 +18679,7 @@ notes
 100
 AcDbMText
  10
-30.0
+31.0
  20
 29.99999999999909
  30
@@ -18701,9 +18687,9 @@ AcDbMText
  40
 0.4
  41
-30.0
+29.0
  46
-29.06666666666668
+29.99999999999909
  71
      1
  72
@@ -18724,6 +18710,18 @@ LLICENSE\P\l CC-BY-SA-4.0}
      1
  44
 1.0
+1001
+AcadAnnotative
+1000
+AnnotativeData
+1002
+{
+1070
+     1
+1070
+     0
+1002
+}
   0
 LINE
   5
@@ -18733,7 +18731,7 @@ LINE
 100
 AcDbEntity
   8
-TC-etch-lines-laser
+tc-etch-lines-laser
  62
      1
 100
@@ -18759,7 +18757,7 @@ LINE
 100
 AcDbEntity
   8
-TC-etch-lines-laser
+tc-etch-lines-laser
  62
      1
 100
@@ -18819,7 +18817,7 @@ CIRCLE
 100
 AcDbEntity
   8
-conn_mounts
+conn-mounts
 100
 AcDbCircle
  10
@@ -18839,7 +18837,7 @@ CIRCLE
 100
 AcDbEntity
   8
-conn_mounts
+conn-mounts
 100
 AcDbCircle
  10
@@ -18859,7 +18857,7 @@ CIRCLE
 100
 AcDbEntity
   8
-conn_mounts
+conn-mounts
 100
 AcDbCircle
  10
@@ -18879,7 +18877,7 @@ CIRCLE
 100
 AcDbEntity
   8
-conn_mounts
+conn-mounts
 100
 AcDbCircle
  10
@@ -18899,7 +18897,7 @@ CIRCLE
 100
 AcDbEntity
   8
-conn_mounts
+conn-mounts
 100
 AcDbCircle
  10
@@ -18919,7 +18917,7 @@ CIRCLE
 100
 AcDbEntity
   8
-conn_mounts
+conn-mounts
 100
 AcDbCircle
  10
@@ -18939,7 +18937,7 @@ CIRCLE
 100
 AcDbEntity
   8
-conn_mounts
+conn-mounts
 100
 AcDbCircle
  10
@@ -18959,7 +18957,7 @@ CIRCLE
 100
 AcDbEntity
   8
-conn_mounts
+conn-mounts
 100
 AcDbCircle
  10
@@ -18979,7 +18977,7 @@ CIRCLE
 100
 AcDbEntity
   8
-conn_mounts
+conn-mounts
 100
 AcDbCircle
  10
@@ -18999,7 +18997,7 @@ CIRCLE
 100
 AcDbEntity
   8
-conn_mounts
+conn-mounts
 100
 AcDbCircle
  10
@@ -19019,7 +19017,7 @@ CIRCLE
 100
 AcDbEntity
   8
-conn_mounts
+conn-mounts
 100
 AcDbCircle
  10
@@ -19039,7 +19037,7 @@ CIRCLE
 100
 AcDbEntity
   8
-conn_mounts
+conn-mounts
 100
 AcDbCircle
  10
@@ -19093,7 +19091,7 @@ CIRCLE
 100
 AcDbEntity
   8
-conn_mounts
+conn-mounts
 100
 AcDbCircle
  10
@@ -19113,7 +19111,7 @@ CIRCLE
 100
 AcDbEntity
   8
-conn_mounts
+conn-mounts
 100
 AcDbCircle
  10
@@ -19133,7 +19131,7 @@ CIRCLE
 100
 AcDbEntity
   8
-conn_mounts
+conn-mounts
 100
 AcDbCircle
  10
@@ -19153,7 +19151,7 @@ CIRCLE
 100
 AcDbEntity
   8
-conn_mounts
+conn-mounts
 100
 AcDbCircle
  10
@@ -19173,7 +19171,7 @@ CIRCLE
 100
 AcDbEntity
   8
-conn_mounts
+conn-mounts
 100
 AcDbCircle
  10
@@ -19193,7 +19191,7 @@ CIRCLE
 100
 AcDbEntity
   8
-conn_mounts
+conn-mounts
 100
 AcDbCircle
  10
@@ -19213,7 +19211,7 @@ CIRCLE
 100
 AcDbEntity
   8
-conn_mounts
+conn-mounts
 100
 AcDbCircle
  10
@@ -19233,7 +19231,7 @@ CIRCLE
 100
 AcDbEntity
   8
-conn_mounts
+conn-mounts
 100
 AcDbCircle
  10
@@ -19253,7 +19251,7 @@ CIRCLE
 100
 AcDbEntity
   8
-conn_mounts
+conn-mounts
 100
 AcDbCircle
  10
@@ -19273,7 +19271,7 @@ CIRCLE
 100
 AcDbEntity
   8
-conn_mounts
+conn-mounts
 100
 AcDbCircle
  10
@@ -19293,7 +19291,7 @@ CIRCLE
 100
 AcDbEntity
   8
-conn_mounts
+conn-mounts
 100
 AcDbCircle
  10
@@ -19313,7 +19311,7 @@ CIRCLE
 100
 AcDbEntity
   8
-conn_mounts
+conn-mounts
 100
 AcDbCircle
  10
@@ -19333,7 +19331,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact_pin_diameter
+contact-pin-diameter
 100
 AcDbCircle
  10
@@ -19353,7 +19351,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact_pin_diameter
+contact-pin-diameter
 100
 AcDbCircle
  10
@@ -19441,7 +19439,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact_pin_diameter
+contact-pin-diameter
 100
 AcDbCircle
  10
@@ -19461,7 +19459,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact_pin_diameter
+contact-pin-diameter
 100
 AcDbCircle
  10
@@ -19481,7 +19479,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact_pin_diameter
+contact-pin-diameter
 100
 AcDbCircle
  10
@@ -19501,7 +19499,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact_pin_diameter
+contact-pin-diameter
 100
 AcDbCircle
  10
@@ -19521,7 +19519,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact_pin_diameter
+contact-pin-diameter
 100
 AcDbCircle
  10
@@ -19541,7 +19539,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact_pin_diameter
+contact-pin-diameter
 100
 AcDbCircle
  10
@@ -19561,7 +19559,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact_pin_diameter
+contact-pin-diameter
 100
 AcDbCircle
  10
@@ -19581,7 +19579,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact_pin_diameter
+contact-pin-diameter
 100
 AcDbCircle
  10
@@ -19601,31 +19599,55 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-pcb_cutout
+pcb-cutout
 100
 AcDbPolyline
  90
-        4
+        8
  70
      1
  43
 0.0
  10
-1.500000000000011
+5.000000000000011
  20
-4.750000000000025
+5.100000000000015
  10
-28.49999999999999
+25.0
  20
-4.750000000000025
+5.100000000000008
+ 42
+0.414213562373095
  10
-28.5
+27.0
  20
-25.24999999999907
+7.100000000000006
  10
-1.5
+27.00000000000001
  20
-25.24999999999907
+22.89999999999909
+ 42
+0.4142135623730953
+ 10
+25.00000000000001
+ 20
+24.89999999999909
+ 10
+5.0
+ 20
+24.89999999999909
+ 42
+0.4142135623730955
+ 10
+3.000000000000001
+ 20
+22.89999999999909
+ 10
+3.000000000000011
+ 20
+7.100000000000014
+ 42
+0.4142135623730948
   0
 LWPOLYLINE
   5
@@ -19635,7 +19657,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-lightMask-large-upper
+lightmask-large-upper
 100
 AcDbPolyline
  90
@@ -19831,7 +19853,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-TC-etch-lines-chemical
+tc-etch-lines-chemical
 100
 AcDbPolyline
  90
@@ -19931,7 +19953,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-TC-etch-lines-chemical
+tc-etch-lines-chemical
 100
 AcDbPolyline
  90
@@ -20031,7 +20053,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-TC-etch-lines-chemical
+tc-etch-lines-chemical
 100
 AcDbPolyline
  90
@@ -20393,7 +20415,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-TC-etch-lines-chemical
+tc-etch-lines-chemical
 100
 AcDbPolyline
  90
@@ -20427,7 +20449,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-TC-etch-lines-chemical
+tc-etch-lines-chemical
 100
 AcDbPolyline
  90
@@ -20771,7 +20793,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-TC-etch-lines-laser
+tc-etch-lines-laser
 100
 AcDbPolyline
  90
@@ -20909,7 +20931,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-TC-etch-lines-laser
+tc-etch-lines-laser
 100
 AcDbPolyline
  90
@@ -21047,7 +21069,7 @@ LINE
 100
 AcDbEntity
   8
-TC-etch-lines-laser
+tc-etch-lines-laser
 100
 AcDbLine
  10
@@ -21071,7 +21093,7 @@ LINE
 100
 AcDbEntity
   8
-TC-etch-lines-laser
+tc-etch-lines-laser
 100
 AcDbLine
  10
@@ -21095,7 +21117,7 @@ LINE
 100
 AcDbEntity
   8
-TC-etch-lines-laser
+tc-etch-lines-laser
 100
 AcDbLine
  10
@@ -21119,7 +21141,7 @@ LINE
 100
 AcDbEntity
   8
-TC-etch-lines-laser
+tc-etch-lines-laser
 100
 AcDbLine
  10
@@ -21143,7 +21165,7 @@ LINE
 100
 AcDbEntity
   8
-TC-etch-lines-laser
+tc-etch-lines-laser
 100
 AcDbLine
  10
@@ -21167,7 +21189,7 @@ LINE
 100
 AcDbEntity
   8
-TC-etch-lines-laser
+tc-etch-lines-laser
 100
 AcDbLine
  10
@@ -21191,7 +21213,7 @@ LINE
 100
 AcDbEntity
   8
-TC-etch-lines-laser
+tc-etch-lines-laser
 100
 AcDbLine
  10
@@ -21215,7 +21237,7 @@ LINE
 100
 AcDbEntity
   8
-TC-etch-lines-laser
+tc-etch-lines-laser
 100
 AcDbLine
  10
@@ -21239,7 +21261,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-TC-metal
+tc-metal
 100
 AcDbPolyline
  90
@@ -21377,7 +21399,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-TC-metal
+tc-metal
 100
 AcDbPolyline
  90
@@ -21797,7 +21819,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-lightMask-small-lower
+lightmask-small-lower
 100
 AcDbPolyline
  90
@@ -21855,7 +21877,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-lightMask-small-lower
+lightmask-small-lower
 100
 AcDbPolyline
  90
@@ -22049,7 +22071,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-lightMask-small-lower
+lightmask-small-lower
 100
 AcDbPolyline
  90
@@ -22424,10 +22446,6 @@ LWPOLYLINE
 2B0E
 102
 {ACAD_REACTORS
-330
-4508
-330
-4518
 102
 }
 330
@@ -22435,7 +22453,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-lightMask-large-lower
+lightmask-large-lower
 100
 AcDbPolyline
  90
@@ -22493,7 +22511,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-lightMask-small-upper
+lightmask-small-upper
 100
 AcDbPolyline
  90
@@ -22551,7 +22569,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-lightMask-small-upper
+lightmask-small-upper
 100
 AcDbPolyline
  90
@@ -22609,7 +22627,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-lightMask-small-upper
+lightmask-small-upper
 100
 AcDbPolyline
  90
@@ -22667,7 +22685,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-lightMask-large-lower
+lightmask-large-lower
 100
 AcDbPolyline
  90
@@ -22701,7 +22719,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-lightMask-large-lower
+lightmask-large-lower
 100
 AcDbPolyline
  90
@@ -22735,7 +22753,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-lightMask-large-upper
+lightmask-large-upper
 100
 AcDbPolyline
  90
@@ -22769,7 +22787,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-lightMask-large-upper
+lightmask-large-upper
 100
 AcDbPolyline
  90
@@ -23180,40 +23198,6 @@ AcDbPolyline
 23.91114427146906
  42
 0.4142135623730961
-  0
-LWPOLYLINE
-  5
-2B82
-330
-1F
-100
-AcDbEntity
-  8
-kmlt_spacer
-100
-AcDbPolyline
- 90
-        4
- 70
-     1
- 43
-0.0
- 10
-0.5
- 20
-0.5
- 10
-29.5
- 20
-0.5
- 10
-29.5
- 20
-29.49999999999909
- 10
-0.5
- 20
-29.49999999999909
   0
 LWPOLYLINE
   5
@@ -23849,7 +23833,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact_point
+contact-point
 100
 AcDbCircle
  10
@@ -23869,7 +23853,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact_point
+contact-point
 100
 AcDbCircle
  10
@@ -23889,7 +23873,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact_point
+contact-point
 100
 AcDbCircle
  10
@@ -23909,7 +23893,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact_point
+contact-point
 100
 AcDbCircle
  10
@@ -23929,7 +23913,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact_point
+contact-point
 100
 AcDbCircle
  10
@@ -23949,7 +23933,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact_point
+contact-point
 100
 AcDbCircle
  10
@@ -23969,7 +23953,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact_point
+contact-point
 100
 AcDbCircle
  10
@@ -23989,7 +23973,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact_point
+contact-point
 100
 AcDbCircle
  10
@@ -24009,7 +23993,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact_point
+contact-point
 100
 AcDbCircle
  10
@@ -24029,7 +24013,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact_point
+contact-point
 100
 AcDbCircle
  10
@@ -26007,7 +25991,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-TC-etch-lines-chemical
+tc-etch-lines-chemical
 100
 AcDbPolyline
  90
@@ -26081,7 +26065,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-TC-etch-lines-chemical
+tc-etch-lines-chemical
 100
 AcDbPolyline
  90
@@ -26155,7 +26139,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-TC-etch-lines-chemical
+tc-etch-lines-chemical
 100
 AcDbPolyline
  90
@@ -26229,7 +26213,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-TC-etch-lines-chemical
+tc-etch-lines-chemical
 100
 AcDbPolyline
  90
@@ -26303,7 +26287,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-TC-etch-lines-chemical
+tc-etch-lines-chemical
 100
 AcDbPolyline
  90
@@ -26401,7 +26385,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-TC-etch-lines-chemical
+tc-etch-lines-chemical
 100
 AcDbPolyline
  90
@@ -26499,7 +26483,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact_pin_diameter
+contact-pin-diameter
 100
 AcDbCircle
  10
@@ -26519,7 +26503,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact_pin_diameter
+contact-pin-diameter
 100
 AcDbCircle
  10
@@ -26539,7 +26523,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact_pin_diameter
+contact-pin-diameter
 100
 AcDbCircle
  10
@@ -26559,7 +26543,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact_pin_diameter
+contact-pin-diameter
 100
 AcDbCircle
  10
@@ -26579,7 +26563,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact_pin_diameter
+contact-pin-diameter
 100
 AcDbCircle
  10
@@ -26599,7 +26583,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact_pin_diameter
+contact-pin-diameter
 100
 AcDbCircle
  10
@@ -26619,7 +26603,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact_pin_diameter
+contact-pin-diameter
 100
 AcDbCircle
  10
@@ -26639,7 +26623,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact_pin_diameter
+contact-pin-diameter
 100
 AcDbCircle
  10
@@ -26659,7 +26643,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact_pin_diameter
+contact-pin-diameter
 100
 AcDbCircle
  10
@@ -26679,7 +26663,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact_pin_diameter
+contact-pin-diameter
 100
 AcDbCircle
  10
@@ -26699,7 +26683,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact_point
+contact-point
 100
 AcDbCircle
  10
@@ -26719,7 +26703,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact_point
+contact-point
 100
 AcDbCircle
  10
@@ -26739,7 +26723,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact_point
+contact-point
 100
 AcDbCircle
  10
@@ -26759,7 +26743,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact_point
+contact-point
 100
 AcDbCircle
  10
@@ -26779,7 +26763,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact_point
+contact-point
 100
 AcDbCircle
  10
@@ -26799,7 +26783,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact_point
+contact-point
 100
 AcDbCircle
  10
@@ -26819,7 +26803,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact_point
+contact-point
 100
 AcDbCircle
  10
@@ -26839,7 +26823,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact_point
+contact-point
 100
 AcDbCircle
  10
@@ -26859,7 +26843,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact_point
+contact-point
 100
 AcDbCircle
  10
@@ -26879,7 +26863,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact_point
+contact-point
 100
 AcDbCircle
  10
@@ -27213,7 +27197,7 @@ ACAD_VISUALSTYLE
   3
 ACDB_RECOMPOSE_DATA
 350
-4595
+462A
   3
 AcDbVariableDictionary
 350
@@ -27273,7 +27257,7 @@ ACAD_LAYERSTATES
   3
 ACLYDICTIONARY
 360
-4551
+4612
   0
 DICTIONARY
   5
@@ -27290,6 +27274,22 @@ AcDbDictionary
 ACAD_SORTENTS
 360
 6DA
+  0
+DICTIONARY
+  5
+4596
+330
+DF2
+100
+AcDbDictionary
+280
+     1
+281
+     1
+  3
+AcDbContextDataManager
+360
+4597
   0
 SUN
   5
@@ -27877,7 +27877,7 @@ EA
   0
 XRECORD
   5
-4595
+462A
 102
 {ACAD_REACTORS
 330
@@ -27981,7 +27981,7 @@ AcDbDictionary
   0
 DICTIONARY
   5
-4551
+4612
 102
 {ACAD_REACTORS
 330
@@ -28082,6 +28082,26 @@ AcDbSortentsTable
 2B4D
   5
 2B4B
+  0
+DICTIONARY
+  5
+4597
+102
+{ACAD_REACTORS
+330
+4596
+102
+}
+330
+4596
+100
+AcDbDictionary
+281
+     1
+  3
+ACDB_ANNOTATIONSCALES
+350
+4598
   0
 XRECORD
   5
@@ -28297,7 +28317,7 @@ Model
  34
 0.0
  15
-54.13333333333331
+55.13333333333331
  25
 31.99999999999909
  35
@@ -29609,7 +29629,7 @@ TABLESTYLE
 102
 {ACAD_XDICTIONARY
 360
-4593
+4628
 102
 }
 330
@@ -36723,7 +36743,23 @@ DictionaryVariables
   0
 DICTIONARY
   5
-4593
+4598
+102
+{ACAD_REACTORS
+330
+4597
+102
+}
+330
+4597
+100
+AcDbDictionary
+281
+     1
+  0
+DICTIONARY
+  5
+4628
 330
 87
 100
@@ -36735,19 +36771,19 @@ AcDbDictionary
   3
 ACAD_ROUNDTRIP_2008_TABLESTYLE_CELLSTYLEMAP
 360
-4594
+4629
   0
 CELLSTYLEMAP
   5
-4594
+4629
 102
 {ACAD_REACTORS
 330
-4593
+4628
 102
 }
 330
-4593
+4628
 100
 AcDbCellStyleMap
  90
