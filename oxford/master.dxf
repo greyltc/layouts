@@ -501,19 +501,19 @@ $TDUCREATE
   9
 $TDUPDATE
  40
-2458909.391369676
+2458909.344810497
   9
 $TDUUPDATE
  40
-2458909.391369676
+2458909.344810497
   9
 $TDINDWG
  40
-0.0591100347
+0.0591100463
   9
 $TDUSRTIMER
  40
-0.046971088
+0.0004960764
   9
 $USRTIMER
  70
@@ -553,7 +553,7 @@ $SPLINESEGS
   9
 $HANDSEED
   5
-5B64
+5B67
   9
 $SURFTAB1
  70
@@ -19991,17 +19991,17 @@ AcDbMText
  72
      5
   3
-{\FARMono.shx|c0;\P\P 1 drawing scale length unit = 1 millimeter.\P Substrate is nominally 30mmx30mm\P \P \LLARGE CELL LIGHT MASK SHAPE DETAILS\P\l -area is ab = 100 [mm^ 2] = 1 [cm^ 2]\P -corner fillet radius is fr = 0.5 [mm]\P -width is wb = 21.5 [mm
+{\FARMono.shx|c0;\P\P 1 drawing scale length unit = 1 millimeter.\P Substrate is nominally 30mmx30mm\P \P \LLARGE CELL LIGHT MASK SHAPE DETAILS\P\l -area is ab = 100 [mm\\^ 2] = 1 [cm*cm]\P -corner fillet radius is fr = 0.5 [mm]\P -width is wb = 21.5 
   3
-]\P then\P -height is hb = (ab-fr*fr*(pi-4))/wb\P               = (100-0.5*0.5*(pi-4))/21.5\P              ~= 4.6611 [mm]\P and\P -aspect ratio is wb:hb ~= 21.5:4.6611 ~= 4.6126:1\P \P \LSMALL CELL LIGHT MASK SHAPE DETAILS\P\l -area is as = 25 [mm*mm
+[mm]\P then\P -height is hb = (ab-fr*fr*(pi-4))/wb\P               = (100-0.5*0.5*(pi-4))/21.5\P              ~= 4.6611 [mm]\P and\P -aspect ratio is wb:hb ~= 21.5:4.6611 ~= 4.6126:1\P \P \LSMALL CELL LIGHT MASK SHAPE DETAILS\P\l -area is as = 25 [mm
   3
-] = 0.25 [cm*cm]\P -corner fillet radius is fr = 0.5 [mm]\P -height is hs = hb ~= 4.6611 [mm]\P then\P -width is ws = (as-fr*fr*(pi-4))/hs\P              = wb*(as-fr*fr*(pi-4))/(ab-fr*fr*(pi-4))\P             ~= 5.4095 [mm]          \P and\P -aspect 
+*mm] = 0.25 [cm*cm]\P -corner fillet radius is fr = 0.5 [mm]\P -height is hs = hb ~= 4.6611 [mm]\P then\P -width is ws = (as-fr*fr*(pi-4))/hs\P              = wb*(as-fr*fr*(pi-4))/(ab-fr*fr*(pi-4))\P             ~= 5.4095 [mm]          \P and\P -aspe
   3
-ratio is ws:hs ~= 5.4095:4.6611 ~= 1.1606:1\P \P \LCELL DARK AREAS\P\l Found \FARSimp.shx|c0;empirically by inspection of this drawing:\FARMono.shx|c0;\P -large pixel dab~=113.9196 [mm*mm] (for ~114% of light area)\P -small pixel das~= 30.8744 [mm*mm
+ct ratio is ws:hs ~= 5.4095:4.6611 ~= 1.1606:1\P \P \LCELL DARK AREAS\P\l Found \FARSimp.shx|c0;empirically by inspection of this drawing:\FARMono.shx|c0;\P -large pixel dab~=113.9196 [mm*mm] (for ~114% of light area)\P -small pixel das~= 30.8744 [mm
   3
-] (for ~123% of light area)\P \P \LLED PIXEL AREAS\P\l -note that LED drawing layers are hidden by default\P -head area is pha ~= 3.6305*2.0000 = 7.2610 [mm*mm]\P -neck area is pna ~= 1.0000*2.3306 = 2.3306 [mm*mm]\P then\P -total area is pa = pha + 
+*mm] (for ~123% of light area)\P \P \LLED PIXEL AREAS\P\l -note that LED drawing layers are hidden by default\P -head area is pha ~= 3.6305*2.0000 = 7.2610 [mm*mm]\P -neck area is pna ~= 1.0000*2.3306 = 2.3306 [mm*mm]\P then\P -total area is pa = pha
   1
-pna = 9.5916 [mm*mm]\P \P\P\P \LLICENSE\P\l CC-BY-SA-4.0}
+ + pna = 9.5916 [mm*mm]\P \P\P\P \LLICENSE\P\l CC-BY-SA-4.0}
  73
      1
  44
@@ -32771,7 +32771,7 @@ AcDbCircle
 100
 AcDbArc
  50
-270.0000000035398
+270.0000000035399
  51
 270.0002297841004
   0
@@ -33901,7 +33901,7 @@ ACAD_VISUALSTYLE
   3
 ACDB_RECOMPOSE_DATA
 350
-5B63
+5B66
   3
 AcDbVariableDictionary
 350
@@ -34581,7 +34581,7 @@ EA
   0
 XRECORD
   5
-5B63
+5B66
 102
 {ACAD_REACTORS
 330
@@ -35050,10 +35050,6 @@ DF2
 2B26
   5
 2B8D
-331
-0
-  5
-3287
 331
 2B4D
   5
@@ -36993,7 +36989,7 @@ TABLESTYLE
 102
 {ACAD_XDICTIONARY
 360
-5B61
+5B64
 102
 }
 330
@@ -44123,7 +44119,7 @@ AcDbDictionary
   0
 DICTIONARY
   5
-5B61
+5B64
 330
 87
 100
@@ -44135,19 +44131,19 @@ AcDbDictionary
   3
 ACAD_ROUNDTRIP_2008_TABLESTYLE_CELLSTYLEMAP
 360
-5B62
+5B65
   0
 CELLSTYLEMAP
   5
-5B62
+5B65
 102
 {ACAD_REACTORS
 330
-5B61
+5B64
 102
 }
 330
-5B61
+5B64
 100
 AcDbCellStyleMap
  90
