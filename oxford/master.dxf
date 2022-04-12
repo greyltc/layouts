@@ -101,7 +101,7 @@ Standard
   9
 $CLAYER
   8
-aggressive_support_large_lower
+lightmask_small_upper
   9
 $CELTYPE
   6
@@ -501,19 +501,19 @@ $TDUCREATE
   9
 $TDUPDATE
  40
-2458909.344810497
+2458909.785854606
   9
 $TDUUPDATE
  40
-2458909.344810497
+2458909.785854606
   9
 $TDINDWG
  40
-0.0591100463
+0.059110081
   9
 $TDUSRTIMER
  40
-0.0004960764
+0.1402136574
   9
 $USRTIMER
  70
@@ -553,7 +553,7 @@ $SPLINESEGS
   9
 $HANDSEED
   5
-5B67
+5BFC
   9
 $SURFTAB1
  70
@@ -1405,9 +1405,9 @@ AcDbViewportTableRecord
  21
 1.0
  12
-56.08888284551142
+56.94877296323909
  22
-34.26429008025802
+34.44361398663163
  13
 0.0
  23
@@ -1427,15 +1427,15 @@ AcDbViewportTableRecord
  36
 1.0
  17
--27.66959356598002
+-27.66959356597999
  27
--19.53870295786222
+-19.53870295786223
  37
 0.0
  40
-35.80147453652093
+32.06177510544031
  41
-1.968807339449542
+1.968807339449541
  42
 50.0
  43
@@ -1611,7 +1611,7 @@ LAYER
 100
 AcDbSymbolTable
  70
-    59
+    61
   0
 LAYER
   5
@@ -1651,7 +1651,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  70
      0
  62
@@ -1687,7 +1687,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-tc-etch-lines-chemical
+tc_etch_chemical
  70
      0
  62
@@ -1759,7 +1759,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-lightmask-small-upper
+lightmask_small_upper
  70
      0
  62
@@ -1795,7 +1795,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-contact-pin-diameter
+contact_pin_diameter
  70
      0
  62
@@ -1831,7 +1831,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-glass-outline
+glass_extents
  70
      0
  62
@@ -1867,7 +1867,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-lightmask-small-lower
+lightmask_small_lower
  70
      0
  62
@@ -1903,7 +1903,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-pixel-electrodes-small-upper
+pixel_electrodes_small_upper
  70
      0
  62
@@ -1939,7 +1939,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-tc-metal
+tc_metal
  70
      0
  62
@@ -1975,7 +1975,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-pixel-electrode-large-lower
+pixel_electrodes_large_lower
  70
      0
  62
@@ -2011,7 +2011,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-pixel-electrode-large-upper
+pixel_electrodes_large_upper
  70
      0
  62
@@ -2047,7 +2047,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-lightmask-large-upper
+lightmask_large_upper
  70
      0
  62
@@ -2083,7 +2083,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-lightmask-large-lower
+lightmask_large_lower
  70
      0
  62
@@ -2119,7 +2119,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-tc-scribe-lines-laser
+tc_etch_laser_scribe
  70
      0
  62
@@ -2219,7 +2219,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-large-pixel-dark-area
+dark_large_pixel
  70
      0
  62
@@ -2255,7 +2255,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-small-pixel-dark-area
+dark_small_pixel
  70
      0
  62
@@ -2323,7 +2323,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-conn-mounts
+conn_mounts
  70
      0
  62
@@ -2355,7 +2355,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-pcb-cutout
+pcb_cutout
  70
      0
  62
@@ -2391,7 +2391,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-mask-support
+spacer_shim
  70
      0
  62
@@ -2427,11 +2427,11 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-active-layer-mask
+active_layer
  70
      0
  62
-     6
+    -6
   6
 Continuous
 370
@@ -2463,7 +2463,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-van-der-paw
+van_der_paw
  70
      0
  62
@@ -2535,7 +2535,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-ox-tandem-active
+ox_tandem_active
  70
      0
  62
@@ -2561,7 +2561,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-ox-tandem-ring-electrode
+ox_tandem_ring_electrode
  70
      0
  62
@@ -2587,7 +2587,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-ox-tandem-tco
+ox_tandem_tco
  70
      0
  62
@@ -2623,7 +2623,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-ox-tandem-insulation
+ox_tandem_insulation
  70
      0
  62
@@ -2659,7 +2659,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-p-p-tandem-bottom-metal
+pp_tandem_bottom_metal
  70
      0
  62
@@ -2691,7 +2691,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-p-p-tandem-bottom-metal-tco
+pp_tandem_bottom_metal_tco
  70
      0
  62
@@ -2723,7 +2723,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-p-p-tandem-bottom-ring-metal
+pp_tandem_bottom_ring_metal
  70
      0
  62
@@ -2755,7 +2755,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-ox-tandem-interlayer
+ox_tandem_interlayer
  70
      0
  62
@@ -2791,7 +2791,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-ox-tandem-interlayer-big
+ox_tandem_interlayer_big
  70
      0
  62
@@ -2827,7 +2827,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-contact-point
+contact_point
  70
      0
  62
@@ -2863,7 +2863,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-carbon-pixel-electrode-small-lower
+pixel_carbon_electrodes_small_lower
  70
      0
  62
@@ -2897,7 +2897,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-carbon-pixel-electrode-small-upper
+pixel_carbon_electrodes_small_upper
  70
      0
  62
@@ -2931,7 +2931,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-carbon-pixel-electrode-large-upper
+pixel_carbon_electrodes_large_upper
  70
      0
  62
@@ -2965,7 +2965,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-carbon-lightmask-small-lower
+lightmask_carbon_small_lower
  70
      0
  62
@@ -2999,7 +2999,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-carbon-lightmask-small-upper
+lightmask_carbon_small_upper
  70
      0
  62
@@ -3033,7 +3033,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-carbon-lightmask-large-upper
+lightmask_carbon_large_upper
  70
      0
  62
@@ -3067,7 +3067,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-recombination-slash-interlayer
+recombination_slash_interlayer
  70
      0
  62
@@ -3101,7 +3101,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-tc-metal-high-res
+tc_metal_high_res
  70
      0
  62
@@ -3137,7 +3137,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-pixel-electrode-large-lower-high-res
+pixel_electrodes_large_lower_high_res
  70
      0
  62
@@ -3173,7 +3173,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-pixel-electrode-large-upper-high-res
+pixel_electrodes_large_upper_high_res
  70
      0
  62
@@ -3209,7 +3209,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-pixel-electrodes-small-lower-high-res
+pixel_electrodes_small_lower_high_res
  70
      0
  62
@@ -3245,7 +3245,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-pixel-electrodes-small-upper-high-res
+pixel_electrodes_small_upper_high_res
  70
      0
  62
@@ -3281,7 +3281,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-pixel-electrodes-small-upper-finger
+pixel_electrodes_small_upper_finger
  70
      0
  62
@@ -3317,7 +3317,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-pixel-electrode-large-lower-finger
+pixel_electrodes_large_lower_finger
  70
      0
  62
@@ -3353,7 +3353,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-top-tco-large-lower
+top_tco_large_lower
  70
      0
  62
@@ -3389,7 +3389,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-top-tco-small-upper
+top_tco_small_upper
  70
      0
  62
@@ -3425,7 +3425,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-our-tandem-insulation
+our_tandem_insulation
  70
      0
  62
@@ -3461,7 +3461,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-active-layer2-mask
+active_layer_bigger
  70
      0
  62
@@ -3497,7 +3497,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-aggressive_support_small_upper
+aggressive_metal_support_small_upper
  70
      0
  62
@@ -3533,7 +3533,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-aggressive_support_small_lower
+aggressive_metal_support_small_lower
  70
      0
  62
@@ -3569,7 +3569,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-aggressive_support_large_lower
+aggressive_metal_support_large_lower
  70
      0
  62
@@ -3605,7 +3605,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-aggressive_support_large_upper
+aggressive_metal_support_large_upper
  70
      0
  62
@@ -3641,7 +3641,79 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-aggressive_support_tc_metal
+aggressive_metal_support_tc_metal
+ 70
+     0
+ 62
+    -9
+  6
+Continuous
+370
+    -3
+390
+F
+347
+98
+348
+0
+1001
+AcAecLayerStandard
+1000
+
+1000
+
+1001
+ACCMTRANSPARENCY
+1071
+ 33554687
+  0
+LAYER
+  5
+5B6C
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+spacer_shim_thin
+ 70
+     0
+ 62
+    -5
+  6
+Continuous
+370
+    -3
+390
+F
+347
+98
+348
+0
+1001
+AcAecLayerStandard
+1000
+
+1000
+
+1001
+ACCMTRANSPARENCY
+1071
+ 33554687
+  0
+LAYER
+  5
+5BB7
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+aggressive_support_active
  70
      0
  62
@@ -5657,7 +5729,7 @@ LINE
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 370
@@ -5685,7 +5757,7 @@ LINE
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 370
@@ -5713,7 +5785,7 @@ LINE
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 370
@@ -5741,7 +5813,7 @@ LINE
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 370
@@ -5769,7 +5841,7 @@ LINE
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 370
@@ -5797,7 +5869,7 @@ SOLID
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 100
@@ -5835,7 +5907,7 @@ SOLID
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 100
@@ -5873,7 +5945,7 @@ MTEXT
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 100
@@ -6007,7 +6079,7 @@ LINE
 100
 AcDbEntity
   8
-tc-metal
+tc_metal
  62
      0
 370
@@ -6035,7 +6107,7 @@ LINE
 100
 AcDbEntity
   8
-tc-metal
+tc_metal
  62
      0
 370
@@ -6063,7 +6135,7 @@ A00
 100
 AcDbEntity
   8
-tc-metal
+tc_metal
  62
      0
 370
@@ -6091,7 +6163,7 @@ A01
 100
 AcDbEntity
   8
-tc-metal
+tc_metal
  62
      0
 370
@@ -6119,7 +6191,7 @@ A02
 100
 AcDbEntity
   8
-tc-metal
+tc_metal
  62
      0
 100
@@ -6157,7 +6229,7 @@ A03
 100
 AcDbEntity
   8
-tc-metal
+tc_metal
  62
      0
 100
@@ -6195,7 +6267,7 @@ A04
 100
 AcDbEntity
   8
-tc-metal
+tc_metal
  62
      0
 100
@@ -6329,7 +6401,7 @@ A0B
 100
 AcDbEntity
   8
-tc-metal
+tc_metal
  62
      0
 370
@@ -6357,7 +6429,7 @@ A0B
 100
 AcDbEntity
   8
-tc-metal
+tc_metal
  62
      0
 370
@@ -6385,7 +6457,7 @@ A0B
 100
 AcDbEntity
   8
-tc-metal
+tc_metal
  62
      0
 370
@@ -6413,7 +6485,7 @@ A0B
 100
 AcDbEntity
   8
-tc-metal
+tc_metal
  62
      0
 370
@@ -6441,7 +6513,7 @@ A0B
 100
 AcDbEntity
   8
-tc-metal
+tc_metal
  62
      0
 100
@@ -6479,7 +6551,7 @@ A0B
 100
 AcDbEntity
   8
-tc-metal
+tc_metal
  62
      0
 100
@@ -6517,7 +6589,7 @@ A0B
 100
 AcDbEntity
   8
-tc-metal
+tc_metal
  62
      0
 100
@@ -6651,7 +6723,7 @@ AF9
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 370
@@ -6679,7 +6751,7 @@ AF9
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 370
@@ -6707,7 +6779,7 @@ AF9
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 370
@@ -6735,7 +6807,7 @@ AF9
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 370
@@ -6763,7 +6835,7 @@ AF9
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 100
@@ -6801,7 +6873,7 @@ AF9
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 100
@@ -6839,7 +6911,7 @@ AF9
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 100
@@ -6973,7 +7045,7 @@ C2B
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 370
@@ -7001,7 +7073,7 @@ C2B
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 370
@@ -7029,7 +7101,7 @@ C2B
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 370
@@ -7057,7 +7129,7 @@ C2B
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 370
@@ -7085,7 +7157,7 @@ C2B
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 100
@@ -7123,7 +7195,7 @@ C2B
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 100
@@ -7161,7 +7233,7 @@ C2B
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 100
@@ -7295,7 +7367,7 @@ C3B
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 370
@@ -7323,7 +7395,7 @@ C3B
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 370
@@ -7351,7 +7423,7 @@ C3B
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 370
@@ -7379,7 +7451,7 @@ C3B
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 370
@@ -7407,7 +7479,7 @@ C3B
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 100
@@ -7445,7 +7517,7 @@ C3B
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 100
@@ -7483,7 +7555,7 @@ C3B
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 100
@@ -7617,7 +7689,7 @@ C4B
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 370
@@ -7645,7 +7717,7 @@ C4B
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 370
@@ -7673,7 +7745,7 @@ C4B
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 370
@@ -7701,7 +7773,7 @@ C4B
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 370
@@ -7729,7 +7801,7 @@ C4B
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 370
@@ -7757,7 +7829,7 @@ C4B
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 370
@@ -7785,7 +7857,7 @@ C4B
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 100
@@ -7823,7 +7895,7 @@ C4B
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 100
@@ -7861,7 +7933,7 @@ C4B
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 100
@@ -7995,7 +8067,7 @@ C5D
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 370
@@ -8023,7 +8095,7 @@ C5D
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 370
@@ -8051,7 +8123,7 @@ C5D
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 370
@@ -8079,7 +8151,7 @@ C5D
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 370
@@ -8107,7 +8179,7 @@ C5D
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 100
@@ -8145,7 +8217,7 @@ C5D
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 100
@@ -8183,7 +8255,7 @@ C5D
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 100
@@ -8317,7 +8389,7 @@ C6D
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 370
@@ -8345,7 +8417,7 @@ C6D
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 370
@@ -8373,7 +8445,7 @@ C6D
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 370
@@ -8401,7 +8473,7 @@ C6D
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 370
@@ -8429,7 +8501,7 @@ C6D
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 100
@@ -8467,7 +8539,7 @@ C6D
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 100
@@ -8505,7 +8577,7 @@ C6D
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 100
@@ -8639,7 +8711,7 @@ C8B
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 370
@@ -8667,7 +8739,7 @@ C8B
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 370
@@ -8695,7 +8767,7 @@ C8B
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 370
@@ -8723,7 +8795,7 @@ C8B
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 370
@@ -8751,7 +8823,7 @@ C8B
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 100
@@ -8789,7 +8861,7 @@ C8B
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 100
@@ -8827,7 +8899,7 @@ C8B
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 100
@@ -8961,7 +9033,7 @@ C9C
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 370
@@ -8989,7 +9061,7 @@ C9C
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 370
@@ -9017,7 +9089,7 @@ C9C
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 370
@@ -9045,7 +9117,7 @@ C9C
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 370
@@ -9073,7 +9145,7 @@ C9C
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 100
@@ -9111,7 +9183,7 @@ C9C
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 100
@@ -9149,7 +9221,7 @@ C9C
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 100
@@ -9283,7 +9355,7 @@ DCC
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 370
@@ -9311,7 +9383,7 @@ DCC
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 370
@@ -9339,7 +9411,7 @@ DCC
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 370
@@ -9367,7 +9439,7 @@ DCC
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 370
@@ -9395,7 +9467,7 @@ DCC
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 100
@@ -9433,7 +9505,7 @@ DCC
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 100
@@ -9471,7 +9543,7 @@ DCC
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 100
@@ -9605,7 +9677,7 @@ DDC
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 370
@@ -9633,7 +9705,7 @@ DDC
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 370
@@ -9661,7 +9733,7 @@ DDC
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 370
@@ -9689,7 +9761,7 @@ DDC
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 370
@@ -9717,7 +9789,7 @@ DDC
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 100
@@ -9755,7 +9827,7 @@ DDC
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 100
@@ -9793,7 +9865,7 @@ DDC
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 100
@@ -9927,7 +9999,7 @@ E17
 100
 AcDbEntity
   8
-lightmask-large-lower
+lightmask_large_lower
  62
      0
 370
@@ -9955,7 +10027,7 @@ E17
 100
 AcDbEntity
   8
-lightmask-large-lower
+lightmask_large_lower
  62
      0
 370
@@ -9983,7 +10055,7 @@ E17
 100
 AcDbEntity
   8
-lightmask-large-lower
+lightmask_large_lower
  62
      0
 370
@@ -10011,7 +10083,7 @@ E17
 100
 AcDbEntity
   8
-lightmask-large-lower
+lightmask_large_lower
  62
      0
 370
@@ -10039,7 +10111,7 @@ E17
 100
 AcDbEntity
   8
-lightmask-large-lower
+lightmask_large_lower
  62
      0
 100
@@ -10077,7 +10149,7 @@ E17
 100
 AcDbEntity
   8
-lightmask-large-lower
+lightmask_large_lower
  62
      0
 100
@@ -10115,7 +10187,7 @@ E17
 100
 AcDbEntity
   8
-lightmask-large-lower
+lightmask_large_lower
  62
      0
 100
@@ -10249,7 +10321,7 @@ E27
 100
 AcDbEntity
   8
-lightmask-large-lower
+lightmask_large_lower
  62
      0
 370
@@ -10277,7 +10349,7 @@ E27
 100
 AcDbEntity
   8
-lightmask-large-lower
+lightmask_large_lower
  62
      0
 370
@@ -10305,7 +10377,7 @@ E27
 100
 AcDbEntity
   8
-lightmask-large-lower
+lightmask_large_lower
  62
      0
 370
@@ -10333,7 +10405,7 @@ E27
 100
 AcDbEntity
   8
-lightmask-large-lower
+lightmask_large_lower
  62
      0
 370
@@ -10361,7 +10433,7 @@ E27
 100
 AcDbEntity
   8
-lightmask-large-lower
+lightmask_large_lower
  62
      0
 100
@@ -10399,7 +10471,7 @@ E27
 100
 AcDbEntity
   8
-lightmask-large-lower
+lightmask_large_lower
  62
      0
 100
@@ -10437,7 +10509,7 @@ E27
 100
 AcDbEntity
   8
-lightmask-large-lower
+lightmask_large_lower
  62
      0
 100
@@ -10571,7 +10643,7 @@ LINE
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 370
@@ -10599,7 +10671,7 @@ LINE
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 370
@@ -10627,7 +10699,7 @@ LINE
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 370
@@ -10655,7 +10727,7 @@ LINE
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 370
@@ -10683,7 +10755,7 @@ SOLID
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 100
@@ -10721,7 +10793,7 @@ SOLID
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 100
@@ -10759,7 +10831,7 @@ MTEXT
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 100
@@ -10893,7 +10965,7 @@ LINE
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 370
@@ -10921,7 +10993,7 @@ LINE
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 370
@@ -10949,7 +11021,7 @@ LINE
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 370
@@ -10977,7 +11049,7 @@ LINE
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 370
@@ -11005,7 +11077,7 @@ SOLID
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 100
@@ -11043,7 +11115,7 @@ SOLID
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 100
@@ -11081,7 +11153,7 @@ MTEXT
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 100
@@ -11215,7 +11287,7 @@ LINE
 100
 AcDbEntity
   8
-glass-outline
+glass_extents
  62
      0
 370
@@ -11243,7 +11315,7 @@ LINE
 100
 AcDbEntity
   8
-glass-outline
+glass_extents
  62
      0
 370
@@ -11271,7 +11343,7 @@ LINE
 100
 AcDbEntity
   8
-glass-outline
+glass_extents
  62
      0
 370
@@ -11299,7 +11371,7 @@ LINE
 100
 AcDbEntity
   8
-glass-outline
+glass_extents
  62
      0
 370
@@ -11327,7 +11399,7 @@ SOLID
 100
 AcDbEntity
   8
-glass-outline
+glass_extents
  62
      0
 100
@@ -11365,7 +11437,7 @@ SOLID
 100
 AcDbEntity
   8
-glass-outline
+glass_extents
  62
      0
 100
@@ -11403,7 +11475,7 @@ MTEXT
 100
 AcDbEntity
   8
-glass-outline
+glass_extents
  62
      0
 100
@@ -11537,7 +11609,7 @@ LINE
 100
 AcDbEntity
   8
-glass-outline
+glass_extents
  62
      0
 370
@@ -11565,7 +11637,7 @@ LINE
 100
 AcDbEntity
   8
-glass-outline
+glass_extents
  62
      0
 370
@@ -11593,7 +11665,7 @@ LINE
 100
 AcDbEntity
   8
-glass-outline
+glass_extents
  62
      0
 370
@@ -11621,7 +11693,7 @@ LINE
 100
 AcDbEntity
   8
-glass-outline
+glass_extents
  62
      0
 370
@@ -11649,7 +11721,7 @@ SOLID
 100
 AcDbEntity
   8
-glass-outline
+glass_extents
  62
      0
 100
@@ -11687,7 +11759,7 @@ SOLID
 100
 AcDbEntity
   8
-glass-outline
+glass_extents
  62
      0
 100
@@ -11725,7 +11797,7 @@ MTEXT
 100
 AcDbEntity
   8
-glass-outline
+glass_extents
  62
      0
 100
@@ -11859,7 +11931,7 @@ LINE
 100
 AcDbEntity
   8
-glass-outline
+glass_extents
  62
      0
 370
@@ -11887,7 +11959,7 @@ LINE
 100
 AcDbEntity
   8
-glass-outline
+glass_extents
  62
      0
 370
@@ -11915,7 +11987,7 @@ LINE
 100
 AcDbEntity
   8
-glass-outline
+glass_extents
  62
      0
 370
@@ -11943,7 +12015,7 @@ LINE
 100
 AcDbEntity
   8
-glass-outline
+glass_extents
  62
      0
 370
@@ -11971,7 +12043,7 @@ SOLID
 100
 AcDbEntity
   8
-glass-outline
+glass_extents
  62
      0
 100
@@ -12009,7 +12081,7 @@ SOLID
 100
 AcDbEntity
   8
-glass-outline
+glass_extents
  62
      0
 100
@@ -12047,7 +12119,7 @@ MTEXT
 100
 AcDbEntity
   8
-glass-outline
+glass_extents
  62
      0
 100
@@ -12181,7 +12253,7 @@ LINE
 100
 AcDbEntity
   8
-glass-outline
+glass_extents
  62
      0
 370
@@ -12209,7 +12281,7 @@ LINE
 100
 AcDbEntity
   8
-glass-outline
+glass_extents
  62
      0
 370
@@ -12237,7 +12309,7 @@ LINE
 100
 AcDbEntity
   8
-glass-outline
+glass_extents
  62
      0
 370
@@ -12265,7 +12337,7 @@ LINE
 100
 AcDbEntity
   8
-glass-outline
+glass_extents
  62
      0
 370
@@ -12293,7 +12365,7 @@ SOLID
 100
 AcDbEntity
   8
-glass-outline
+glass_extents
  62
      0
 100
@@ -12331,7 +12403,7 @@ SOLID
 100
 AcDbEntity
   8
-glass-outline
+glass_extents
  62
      0
 100
@@ -12369,7 +12441,7 @@ MTEXT
 100
 AcDbEntity
   8
-glass-outline
+glass_extents
  62
      0
 100
@@ -12503,7 +12575,7 @@ LINE
 100
 AcDbEntity
   8
-glass-outline
+glass_extents
  62
      0
 370
@@ -12531,7 +12603,7 @@ LINE
 100
 AcDbEntity
   8
-glass-outline
+glass_extents
  62
      0
 370
@@ -12559,7 +12631,7 @@ LINE
 100
 AcDbEntity
   8
-glass-outline
+glass_extents
  62
      0
 370
@@ -12587,7 +12659,7 @@ LINE
 100
 AcDbEntity
   8
-glass-outline
+glass_extents
  62
      0
 370
@@ -12615,7 +12687,7 @@ SOLID
 100
 AcDbEntity
   8
-glass-outline
+glass_extents
  62
      0
 100
@@ -12653,7 +12725,7 @@ SOLID
 100
 AcDbEntity
   8
-glass-outline
+glass_extents
  62
      0
 100
@@ -12691,7 +12763,7 @@ MTEXT
 100
 AcDbEntity
   8
-glass-outline
+glass_extents
  62
      0
 100
@@ -12825,7 +12897,7 @@ LINE
 100
 AcDbEntity
   8
-glass-outline
+glass_extents
  62
      0
 370
@@ -12853,7 +12925,7 @@ LINE
 100
 AcDbEntity
   8
-glass-outline
+glass_extents
  62
      0
 370
@@ -12881,7 +12953,7 @@ LINE
 100
 AcDbEntity
   8
-glass-outline
+glass_extents
  62
      0
 370
@@ -12909,7 +12981,7 @@ LINE
 100
 AcDbEntity
   8
-glass-outline
+glass_extents
  62
      0
 370
@@ -12937,7 +13009,7 @@ LINE
 100
 AcDbEntity
   8
-glass-outline
+glass_extents
  62
      0
 370
@@ -12965,7 +13037,7 @@ SOLID
 100
 AcDbEntity
   8
-glass-outline
+glass_extents
  62
      0
 100
@@ -13003,7 +13075,7 @@ SOLID
 100
 AcDbEntity
   8
-glass-outline
+glass_extents
  62
      0
 100
@@ -13041,7 +13113,7 @@ MTEXT
 100
 AcDbEntity
   8
-glass-outline
+glass_extents
  62
      0
 100
@@ -13175,7 +13247,7 @@ LINE
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 370
@@ -13203,7 +13275,7 @@ LINE
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 370
@@ -13231,7 +13303,7 @@ LINE
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 370
@@ -13259,7 +13331,7 @@ LINE
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 370
@@ -13287,7 +13359,7 @@ SOLID
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 100
@@ -13325,7 +13397,7 @@ SOLID
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 100
@@ -13363,7 +13435,7 @@ MTEXT
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 100
@@ -13497,7 +13569,7 @@ LINE
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 370
@@ -13525,7 +13597,7 @@ LINE
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 370
@@ -13553,7 +13625,7 @@ LINE
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 370
@@ -13581,7 +13653,7 @@ LINE
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 370
@@ -13609,7 +13681,7 @@ SOLID
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 100
@@ -13647,7 +13719,7 @@ SOLID
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 100
@@ -13685,7 +13757,7 @@ MTEXT
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 100
@@ -13819,7 +13891,7 @@ LINE
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 370
@@ -13847,7 +13919,7 @@ LINE
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 370
@@ -13875,7 +13947,7 @@ LINE
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 370
@@ -13903,7 +13975,7 @@ LINE
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 370
@@ -13931,7 +14003,7 @@ LINE
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 370
@@ -13959,7 +14031,7 @@ SOLID
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 100
@@ -13997,7 +14069,7 @@ SOLID
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 100
@@ -14035,7 +14107,7 @@ MTEXT
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 100
@@ -14169,7 +14241,7 @@ LINE
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 370
@@ -14197,7 +14269,7 @@ LINE
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 370
@@ -14225,7 +14297,7 @@ LINE
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 370
@@ -14253,7 +14325,7 @@ LINE
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 370
@@ -14281,7 +14353,7 @@ SOLID
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 100
@@ -14319,7 +14391,7 @@ SOLID
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 100
@@ -14357,7 +14429,7 @@ MTEXT
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
  62
      0
 100
@@ -14813,7 +14885,7 @@ LINE
 100
 AcDbEntity
   8
-glass-outline
+glass_extents
  62
      0
 370
@@ -14841,7 +14913,7 @@ LINE
 100
 AcDbEntity
   8
-glass-outline
+glass_extents
  62
      0
 370
@@ -14869,7 +14941,7 @@ LINE
 100
 AcDbEntity
   8
-glass-outline
+glass_extents
  62
      0
 370
@@ -14897,7 +14969,7 @@ LINE
 100
 AcDbEntity
   8
-glass-outline
+glass_extents
  62
      0
 370
@@ -14925,7 +14997,7 @@ LINE
 100
 AcDbEntity
   8
-glass-outline
+glass_extents
  62
      0
 370
@@ -14953,7 +15025,7 @@ SOLID
 100
 AcDbEntity
   8
-glass-outline
+glass_extents
  62
      0
 100
@@ -14991,7 +15063,7 @@ SOLID
 100
 AcDbEntity
   8
-glass-outline
+glass_extents
  62
      0
 100
@@ -15029,7 +15101,7 @@ MTEXT
 100
 AcDbEntity
   8
-glass-outline
+glass_extents
  62
      0
 100
@@ -15163,7 +15235,7 @@ LINE
 100
 AcDbEntity
   8
-glass-outline
+glass_extents
  62
      0
 370
@@ -15191,7 +15263,7 @@ LINE
 100
 AcDbEntity
   8
-glass-outline
+glass_extents
  62
      0
 370
@@ -15219,7 +15291,7 @@ LINE
 100
 AcDbEntity
   8
-glass-outline
+glass_extents
  62
      0
 370
@@ -15247,7 +15319,7 @@ LINE
 100
 AcDbEntity
   8
-glass-outline
+glass_extents
  62
      0
 370
@@ -15275,7 +15347,7 @@ SOLID
 100
 AcDbEntity
   8
-glass-outline
+glass_extents
  62
      0
 100
@@ -15313,7 +15385,7 @@ SOLID
 100
 AcDbEntity
   8
-glass-outline
+glass_extents
  62
      0
 100
@@ -15351,7 +15423,7 @@ MTEXT
 100
 AcDbEntity
   8
-glass-outline
+glass_extents
  62
      0
 100
@@ -15485,7 +15557,7 @@ LINE
 100
 AcDbEntity
   8
-ox-tandem-ring-electrode
+ox_tandem_ring_electrode
  62
      0
 370
@@ -15513,7 +15585,7 @@ LINE
 100
 AcDbEntity
   8
-ox-tandem-ring-electrode
+ox_tandem_ring_electrode
  62
      0
 370
@@ -15541,7 +15613,7 @@ LINE
 100
 AcDbEntity
   8
-ox-tandem-ring-electrode
+ox_tandem_ring_electrode
  62
      0
 370
@@ -15569,7 +15641,7 @@ LINE
 100
 AcDbEntity
   8
-ox-tandem-ring-electrode
+ox_tandem_ring_electrode
  62
      0
 370
@@ -15597,7 +15669,7 @@ SOLID
 100
 AcDbEntity
   8
-ox-tandem-ring-electrode
+ox_tandem_ring_electrode
  62
      0
 100
@@ -15635,7 +15707,7 @@ SOLID
 100
 AcDbEntity
   8
-ox-tandem-ring-electrode
+ox_tandem_ring_electrode
  62
      0
 100
@@ -15673,7 +15745,7 @@ MTEXT
 100
 AcDbEntity
   8
-ox-tandem-ring-electrode
+ox_tandem_ring_electrode
  62
      0
 100
@@ -15807,7 +15879,7 @@ LINE
 100
 AcDbEntity
   8
-ox-tandem-interlayer
+ox_tandem_interlayer
  62
      0
 370
@@ -15835,7 +15907,7 @@ LINE
 100
 AcDbEntity
   8
-ox-tandem-interlayer
+ox_tandem_interlayer
  62
      0
 370
@@ -15863,7 +15935,7 @@ LINE
 100
 AcDbEntity
   8
-ox-tandem-interlayer
+ox_tandem_interlayer
  62
      0
 370
@@ -15891,7 +15963,7 @@ LINE
 100
 AcDbEntity
   8
-ox-tandem-interlayer
+ox_tandem_interlayer
  62
      0
 370
@@ -15919,7 +15991,7 @@ LINE
 100
 AcDbEntity
   8
-ox-tandem-interlayer
+ox_tandem_interlayer
  62
      0
 370
@@ -15947,7 +16019,7 @@ SOLID
 100
 AcDbEntity
   8
-ox-tandem-interlayer
+ox_tandem_interlayer
  62
      0
 100
@@ -15985,7 +16057,7 @@ SOLID
 100
 AcDbEntity
   8
-ox-tandem-interlayer
+ox_tandem_interlayer
  62
      0
 100
@@ -16023,7 +16095,7 @@ MTEXT
 100
 AcDbEntity
   8
-ox-tandem-interlayer
+ox_tandem_interlayer
  62
      0
 100
@@ -16157,7 +16229,7 @@ LINE
 100
 AcDbEntity
   8
-p-p-tandem-bottom-ring-metal
+pp_tandem_bottom_ring_metal
  62
      0
 370
@@ -16185,7 +16257,7 @@ LINE
 100
 AcDbEntity
   8
-p-p-tandem-bottom-ring-metal
+pp_tandem_bottom_ring_metal
  62
      0
 370
@@ -16213,7 +16285,7 @@ LINE
 100
 AcDbEntity
   8
-p-p-tandem-bottom-ring-metal
+pp_tandem_bottom_ring_metal
  62
      0
 370
@@ -16241,7 +16313,7 @@ LINE
 100
 AcDbEntity
   8
-p-p-tandem-bottom-ring-metal
+pp_tandem_bottom_ring_metal
  62
      0
 370
@@ -16269,7 +16341,7 @@ SOLID
 100
 AcDbEntity
   8
-p-p-tandem-bottom-ring-metal
+pp_tandem_bottom_ring_metal
  62
      0
 100
@@ -16307,7 +16379,7 @@ SOLID
 100
 AcDbEntity
   8
-p-p-tandem-bottom-ring-metal
+pp_tandem_bottom_ring_metal
  62
      0
 100
@@ -16345,7 +16417,7 @@ MTEXT
 100
 AcDbEntity
   8
-p-p-tandem-bottom-ring-metal
+pp_tandem_bottom_ring_metal
  62
      0
 100
@@ -16479,7 +16551,7 @@ LINE
 100
 AcDbEntity
   8
-p-p-tandem-bottom-ring-metal
+pp_tandem_bottom_ring_metal
  62
      0
 370
@@ -16507,7 +16579,7 @@ LINE
 100
 AcDbEntity
   8
-p-p-tandem-bottom-ring-metal
+pp_tandem_bottom_ring_metal
  62
      0
 370
@@ -16535,7 +16607,7 @@ LINE
 100
 AcDbEntity
   8
-p-p-tandem-bottom-ring-metal
+pp_tandem_bottom_ring_metal
  62
      0
 370
@@ -16563,7 +16635,7 @@ LINE
 100
 AcDbEntity
   8
-p-p-tandem-bottom-ring-metal
+pp_tandem_bottom_ring_metal
  62
      0
 370
@@ -16591,7 +16663,7 @@ SOLID
 100
 AcDbEntity
   8
-p-p-tandem-bottom-ring-metal
+pp_tandem_bottom_ring_metal
  62
      0
 100
@@ -16629,7 +16701,7 @@ SOLID
 100
 AcDbEntity
   8
-p-p-tandem-bottom-ring-metal
+pp_tandem_bottom_ring_metal
  62
      0
 100
@@ -16667,7 +16739,7 @@ MTEXT
 100
 AcDbEntity
   8
-p-p-tandem-bottom-ring-metal
+pp_tandem_bottom_ring_metal
  62
      0
 100
@@ -16801,7 +16873,7 @@ LINE
 100
 AcDbEntity
   8
-ox-tandem-ring-electrode
+ox_tandem_ring_electrode
  62
      0
 370
@@ -16829,7 +16901,7 @@ LINE
 100
 AcDbEntity
   8
-ox-tandem-ring-electrode
+ox_tandem_ring_electrode
  62
      0
 370
@@ -16857,7 +16929,7 @@ LINE
 100
 AcDbEntity
   8
-ox-tandem-ring-electrode
+ox_tandem_ring_electrode
  62
      0
 370
@@ -16885,7 +16957,7 @@ LINE
 100
 AcDbEntity
   8
-ox-tandem-ring-electrode
+ox_tandem_ring_electrode
  62
      0
 370
@@ -16913,7 +16985,7 @@ LINE
 100
 AcDbEntity
   8
-ox-tandem-ring-electrode
+ox_tandem_ring_electrode
  62
      0
 370
@@ -16941,7 +17013,7 @@ LINE
 100
 AcDbEntity
   8
-ox-tandem-ring-electrode
+ox_tandem_ring_electrode
  62
      0
 370
@@ -16969,7 +17041,7 @@ SOLID
 100
 AcDbEntity
   8
-ox-tandem-ring-electrode
+ox_tandem_ring_electrode
  62
      0
 100
@@ -17007,7 +17079,7 @@ SOLID
 100
 AcDbEntity
   8
-ox-tandem-ring-electrode
+ox_tandem_ring_electrode
  62
      0
 100
@@ -17045,7 +17117,7 @@ MTEXT
 100
 AcDbEntity
   8
-ox-tandem-ring-electrode
+ox_tandem_ring_electrode
  62
      0
 100
@@ -19587,7 +19659,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-glass-outline
+glass_extents
 100
 AcDbPolyline
  90
@@ -19621,7 +19693,7 @@ LINE
 100
 AcDbEntity
   8
-tc-scribe-lines-laser
+tc_etch_laser_scribe
 100
 AcDbLine
  10
@@ -19793,7 +19865,7 @@ LINE
 100
 AcDbEntity
   8
-tc-scribe-lines-laser
+tc_etch_laser_scribe
 100
 AcDbLine
  10
@@ -20027,7 +20099,7 @@ LINE
 100
 AcDbEntity
   8
-tc-scribe-lines-laser
+tc_etch_laser_scribe
  62
      1
 100
@@ -20053,7 +20125,7 @@ LINE
 100
 AcDbEntity
   8
-tc-scribe-lines-laser
+tc_etch_laser_scribe
  62
      1
 100
@@ -20113,7 +20185,7 @@ CIRCLE
 100
 AcDbEntity
   8
-conn-mounts
+conn_mounts
 100
 AcDbCircle
  10
@@ -20133,7 +20205,7 @@ CIRCLE
 100
 AcDbEntity
   8
-conn-mounts
+conn_mounts
 100
 AcDbCircle
  10
@@ -20153,7 +20225,7 @@ CIRCLE
 100
 AcDbEntity
   8
-conn-mounts
+conn_mounts
 100
 AcDbCircle
  10
@@ -20173,7 +20245,7 @@ CIRCLE
 100
 AcDbEntity
   8
-conn-mounts
+conn_mounts
 100
 AcDbCircle
  10
@@ -20193,7 +20265,7 @@ CIRCLE
 100
 AcDbEntity
   8
-conn-mounts
+conn_mounts
 100
 AcDbCircle
  10
@@ -20213,7 +20285,7 @@ CIRCLE
 100
 AcDbEntity
   8
-conn-mounts
+conn_mounts
 100
 AcDbCircle
  10
@@ -20233,7 +20305,7 @@ CIRCLE
 100
 AcDbEntity
   8
-conn-mounts
+conn_mounts
 100
 AcDbCircle
  10
@@ -20253,7 +20325,7 @@ CIRCLE
 100
 AcDbEntity
   8
-conn-mounts
+conn_mounts
 100
 AcDbCircle
  10
@@ -20273,7 +20345,7 @@ CIRCLE
 100
 AcDbEntity
   8
-conn-mounts
+conn_mounts
 100
 AcDbCircle
  10
@@ -20293,7 +20365,7 @@ CIRCLE
 100
 AcDbEntity
   8
-conn-mounts
+conn_mounts
 100
 AcDbCircle
  10
@@ -20313,7 +20385,7 @@ CIRCLE
 100
 AcDbEntity
   8
-conn-mounts
+conn_mounts
 100
 AcDbCircle
  10
@@ -20333,7 +20405,7 @@ CIRCLE
 100
 AcDbEntity
   8
-conn-mounts
+conn_mounts
 100
 AcDbCircle
  10
@@ -20387,7 +20459,7 @@ CIRCLE
 100
 AcDbEntity
   8
-conn-mounts
+conn_mounts
 100
 AcDbCircle
  10
@@ -20407,7 +20479,7 @@ CIRCLE
 100
 AcDbEntity
   8
-conn-mounts
+conn_mounts
 100
 AcDbCircle
  10
@@ -20427,7 +20499,7 @@ CIRCLE
 100
 AcDbEntity
   8
-conn-mounts
+conn_mounts
 100
 AcDbCircle
  10
@@ -20447,7 +20519,7 @@ CIRCLE
 100
 AcDbEntity
   8
-conn-mounts
+conn_mounts
 100
 AcDbCircle
  10
@@ -20467,7 +20539,7 @@ CIRCLE
 100
 AcDbEntity
   8
-conn-mounts
+conn_mounts
 100
 AcDbCircle
  10
@@ -20487,7 +20559,7 @@ CIRCLE
 100
 AcDbEntity
   8
-conn-mounts
+conn_mounts
 100
 AcDbCircle
  10
@@ -20507,7 +20579,7 @@ CIRCLE
 100
 AcDbEntity
   8
-conn-mounts
+conn_mounts
 100
 AcDbCircle
  10
@@ -20527,7 +20599,7 @@ CIRCLE
 100
 AcDbEntity
   8
-conn-mounts
+conn_mounts
 100
 AcDbCircle
  10
@@ -20547,7 +20619,7 @@ CIRCLE
 100
 AcDbEntity
   8
-conn-mounts
+conn_mounts
 100
 AcDbCircle
  10
@@ -20567,7 +20639,7 @@ CIRCLE
 100
 AcDbEntity
   8
-conn-mounts
+conn_mounts
 100
 AcDbCircle
  10
@@ -20587,7 +20659,7 @@ CIRCLE
 100
 AcDbEntity
   8
-conn-mounts
+conn_mounts
 100
 AcDbCircle
  10
@@ -20607,7 +20679,7 @@ CIRCLE
 100
 AcDbEntity
   8
-conn-mounts
+conn_mounts
 100
 AcDbCircle
  10
@@ -20627,7 +20699,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact-pin-diameter
+contact_pin_diameter
 100
 AcDbCircle
  10
@@ -20647,7 +20719,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact-pin-diameter
+contact_pin_diameter
 100
 AcDbCircle
  10
@@ -20735,7 +20807,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact-pin-diameter
+contact_pin_diameter
 100
 AcDbCircle
  10
@@ -20755,7 +20827,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact-pin-diameter
+contact_pin_diameter
 100
 AcDbCircle
  10
@@ -20775,7 +20847,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact-pin-diameter
+contact_pin_diameter
 100
 AcDbCircle
  10
@@ -20795,7 +20867,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact-pin-diameter
+contact_pin_diameter
 100
 AcDbCircle
  10
@@ -20815,7 +20887,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact-pin-diameter
+contact_pin_diameter
 100
 AcDbCircle
  10
@@ -20835,7 +20907,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact-pin-diameter
+contact_pin_diameter
 100
 AcDbCircle
  10
@@ -20855,7 +20927,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact-pin-diameter
+contact_pin_diameter
 100
 AcDbCircle
  10
@@ -20875,7 +20947,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact-pin-diameter
+contact_pin_diameter
 100
 AcDbCircle
  10
@@ -20895,7 +20967,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-pcb-cutout
+pcb_cutout
 100
 AcDbPolyline
  90
@@ -20953,7 +21025,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-lightmask-large-upper
+lightmask_large_upper
 100
 AcDbPolyline
  90
@@ -21011,7 +21083,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-pixel-electrode-large-upper
+pixel_electrodes_large_upper
 100
 AcDbPolyline
  90
@@ -21149,7 +21221,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-tc-etch-lines-chemical
+tc_etch_chemical
 100
 AcDbPolyline
  90
@@ -21183,7 +21255,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-pixel-electrode-large-upper
+pixel_electrodes_large_upper
 100
 AcDbPolyline
  90
@@ -21249,7 +21321,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-tc-etch-lines-chemical
+tc_etch_chemical
 100
 AcDbPolyline
  90
@@ -21283,7 +21355,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-pixel-electrode-large-upper
+pixel_electrodes_large_upper
 100
 AcDbPolyline
  90
@@ -21349,7 +21421,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-tc-etch-lines-chemical
+tc_etch_chemical
 100
 AcDbPolyline
  90
@@ -21711,7 +21783,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-tc-etch-lines-chemical
+tc_etch_chemical
 100
 AcDbPolyline
  90
@@ -21745,7 +21817,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-tc-etch-lines-chemical
+tc_etch_chemical
 100
 AcDbPolyline
  90
@@ -21779,7 +21851,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-small-pixel-dark-area
+dark_small_pixel
 100
 AcDbPolyline
  90
@@ -21865,7 +21937,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-large-pixel-dark-area
+dark_large_pixel
 100
 AcDbPolyline
  90
@@ -21951,7 +22023,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-tc-scribe-lines-laser
+tc_etch_laser_scribe
 100
 AcDbPolyline
  90
@@ -22089,7 +22161,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-tc-scribe-lines-laser
+tc_etch_laser_scribe
 100
 AcDbPolyline
  90
@@ -22227,7 +22299,7 @@ LINE
 100
 AcDbEntity
   8
-tc-scribe-lines-laser
+tc_etch_laser_scribe
 100
 AcDbLine
  10
@@ -22251,7 +22323,7 @@ LINE
 100
 AcDbEntity
   8
-tc-scribe-lines-laser
+tc_etch_laser_scribe
 100
 AcDbLine
  10
@@ -22275,7 +22347,7 @@ LINE
 100
 AcDbEntity
   8
-tc-scribe-lines-laser
+tc_etch_laser_scribe
 100
 AcDbLine
  10
@@ -22299,7 +22371,7 @@ LINE
 100
 AcDbEntity
   8
-tc-scribe-lines-laser
+tc_etch_laser_scribe
 100
 AcDbLine
  10
@@ -22323,7 +22395,7 @@ LINE
 100
 AcDbEntity
   8
-tc-scribe-lines-laser
+tc_etch_laser_scribe
 100
 AcDbLine
  10
@@ -22347,7 +22419,7 @@ LINE
 100
 AcDbEntity
   8
-tc-scribe-lines-laser
+tc_etch_laser_scribe
 100
 AcDbLine
  10
@@ -22371,7 +22443,7 @@ LINE
 100
 AcDbEntity
   8
-tc-scribe-lines-laser
+tc_etch_laser_scribe
 100
 AcDbLine
  10
@@ -22395,7 +22467,7 @@ LINE
 100
 AcDbEntity
   8
-tc-scribe-lines-laser
+tc_etch_laser_scribe
 100
 AcDbLine
  10
@@ -22419,7 +22491,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-pixel-electrode-large-lower
+pixel_electrodes_large_lower
 100
 AcDbPolyline
  90
@@ -22557,7 +22629,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-pixel-electrode-large-lower
+pixel_electrodes_large_lower
 100
 AcDbPolyline
  90
@@ -22623,7 +22695,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-pixel-electrode-large-lower
+pixel_electrodes_large_lower
 100
 AcDbPolyline
  90
@@ -22701,7 +22773,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-lightmask-small-lower
+lightmask_small_lower
 100
 AcDbPolyline
  90
@@ -22759,7 +22831,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-lightmask-small-lower
+lightmask_small_lower
 100
 AcDbPolyline
  90
@@ -22817,7 +22889,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
 100
 AcDbPolyline
  90
@@ -22953,7 +23025,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-lightmask-small-lower
+lightmask_small_lower
 100
 AcDbPolyline
  90
@@ -23011,7 +23083,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
 100
 AcDbPolyline
  90
@@ -23135,7 +23207,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-lightmask-large-lower
+lightmask_large_lower
 100
 AcDbPolyline
  90
@@ -23193,7 +23265,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-lightmask-small-upper
+lightmask_small_upper
 100
 AcDbPolyline
  90
@@ -23251,7 +23323,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-lightmask-small-upper
+lightmask_small_upper
 100
 AcDbPolyline
  90
@@ -23309,7 +23381,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-lightmask-small-upper
+lightmask_small_upper
 100
 AcDbPolyline
  90
@@ -23367,7 +23439,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-lightmask-large-lower
+lightmask_large_lower
 100
 AcDbPolyline
  90
@@ -23401,7 +23473,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-lightmask-large-lower
+lightmask_large_lower
 100
 AcDbPolyline
  90
@@ -23435,7 +23507,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-lightmask-large-upper
+lightmask_large_upper
 100
 AcDbPolyline
  90
@@ -23469,7 +23541,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-lightmask-large-upper
+lightmask_large_upper
 100
 AcDbPolyline
  90
@@ -23503,7 +23575,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-pixel-electrodes-small-upper
+pixel_electrodes_small_upper
 100
 AcDbPolyline
  90
@@ -23627,7 +23699,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-van-der-paw
+van_der_paw
 100
 AcDbPolyline
  90
@@ -24253,7 +24325,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact-point
+contact_point
 100
 AcDbCircle
  10
@@ -24273,7 +24345,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact-point
+contact_point
 100
 AcDbCircle
  10
@@ -24293,7 +24365,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact-point
+contact_point
 100
 AcDbCircle
  10
@@ -24313,7 +24385,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact-point
+contact_point
 100
 AcDbCircle
  10
@@ -24333,7 +24405,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact-point
+contact_point
 100
 AcDbCircle
  10
@@ -24353,7 +24425,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact-point
+contact_point
 100
 AcDbCircle
  10
@@ -24373,7 +24445,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact-point
+contact_point
 100
 AcDbCircle
  10
@@ -24393,7 +24465,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact-point
+contact_point
 100
 AcDbCircle
  10
@@ -24413,7 +24485,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact-point
+contact_point
 100
 AcDbCircle
  10
@@ -24433,7 +24505,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact-point
+contact_point
 100
 AcDbCircle
  10
@@ -24453,7 +24525,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-ox-tandem-active
+ox_tandem_active
 100
 AcDbPolyline
  90
@@ -24487,7 +24559,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-ox-tandem-insulation
+ox_tandem_insulation
 100
 AcDbPolyline
  90
@@ -24521,7 +24593,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-ox-tandem-insulation
+ox_tandem_insulation
 100
 AcDbPolyline
  90
@@ -24555,7 +24627,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-ox-tandem-insulation
+ox_tandem_insulation
 100
 AcDbPolyline
  90
@@ -24589,7 +24661,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-ox-tandem-active
+ox_tandem_active
 100
 AcDbPolyline
  90
@@ -24623,7 +24695,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-ox-tandem-ring-electrode
+ox_tandem_ring_electrode
 100
 AcDbPolyline
  90
@@ -24657,7 +24729,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-ox-tandem-tco
+ox_tandem_tco
 100
 AcDbPolyline
  90
@@ -24691,7 +24763,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-ox-tandem-insulation
+ox_tandem_insulation
 100
 AcDbPolyline
  90
@@ -24809,7 +24881,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-ox-tandem-insulation
+ox_tandem_insulation
 100
 AcDbPolyline
  90
@@ -24927,7 +24999,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-p-p-tandem-bottom-metal
+pp_tandem_bottom_metal
 100
 AcDbPolyline
  90
@@ -24961,7 +25033,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-p-p-tandem-bottom-metal-tco
+pp_tandem_bottom_metal_tco
 100
 AcDbPolyline
  90
@@ -25035,7 +25107,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-p-p-tandem-bottom-metal-tco
+pp_tandem_bottom_metal_tco
 100
 AcDbPolyline
  90
@@ -25131,7 +25203,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-p-p-tandem-bottom-metal-tco
+pp_tandem_bottom_metal_tco
 100
 AcDbPolyline
  90
@@ -25165,7 +25237,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-p-p-tandem-bottom-ring-metal
+pp_tandem_bottom_ring_metal
 100
 AcDbPolyline
  90
@@ -25199,7 +25271,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-ox-tandem-tco
+ox_tandem_tco
 100
 AcDbPolyline
  90
@@ -25305,7 +25377,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-ox-tandem-tco
+ox_tandem_tco
 100
 AcDbPolyline
  90
@@ -25411,7 +25483,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-ox-tandem-interlayer
+ox_tandem_interlayer
 100
 AcDbPolyline
  90
@@ -25445,7 +25517,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-ox-tandem-interlayer
+ox_tandem_interlayer
 100
 AcDbPolyline
  90
@@ -25479,7 +25551,7 @@ LINE
 100
 AcDbEntity
   8
-ox-tandem-interlayer-big
+ox_tandem_interlayer_big
 100
 AcDbLine
  10
@@ -25503,7 +25575,7 @@ LINE
 100
 AcDbEntity
   8
-ox-tandem-interlayer-big
+ox_tandem_interlayer_big
 100
 AcDbLine
  10
@@ -25527,7 +25599,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-ox-tandem-interlayer-big
+ox_tandem_interlayer_big
 100
 AcDbPolyline
  90
@@ -25561,7 +25633,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-ox-tandem-interlayer-big
+ox_tandem_interlayer_big
 100
 AcDbPolyline
  90
@@ -25595,7 +25667,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-ox-tandem-interlayer
+ox_tandem_interlayer
 100
 AcDbPolyline
  90
@@ -25629,7 +25701,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-ox-tandem-ring-electrode
+ox_tandem_ring_electrode
   6
 ByBlock
 100
@@ -25791,7 +25863,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-ox-tandem-ring-electrode
+ox_tandem_ring_electrode
   6
 ByBlock
 100
@@ -25923,7 +25995,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-p-p-tandem-bottom-ring-metal
+pp_tandem_bottom_ring_metal
 100
 AcDbPolyline
  90
@@ -26059,7 +26131,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-p-p-tandem-bottom-ring-metal
+pp_tandem_bottom_ring_metal
 100
 AcDbPolyline
  90
@@ -26165,7 +26237,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-p-p-tandem-bottom-metal
+pp_tandem_bottom_metal
 100
 AcDbPolyline
  90
@@ -26239,7 +26311,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-p-p-tandem-bottom-metal
+pp_tandem_bottom_metal
 100
 AcDbPolyline
  90
@@ -26343,65 +26415,55 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-mask-support
+spacer_shim
 100
 AcDbPolyline
  90
-        4
+        8
  70
      1
  43
 0.0
  10
-1.499999999999989
+1.499999999999993
  20
-28.4999999999991
+27.9999999999991
  10
 1.499999999999989
+ 20
+1.999999999999986
+ 42
+0.4142135623730952
+ 10
+1.999999999999989
  20
 1.499999999999986
  10
-28.5
+28.0
  20
 1.499999999999993
+ 42
+0.414213562373095
  10
 28.5
  20
+1.999999999999993
+ 10
+28.5
+ 20
+27.99999999999909
+ 42
+0.4142135623730951
+ 10
+28.0
+ 20
 28.49999999999909
-  0
-LWPOLYLINE
-  5
-4317
-330
-1F
-100
-AcDbEntity
-  8
-mask-support
-100
-AcDbPolyline
- 90
-        4
- 70
-     1
- 43
-0.0
  10
-0.0
+1.999999999999993
  20
-0.0
- 10
-0.0
- 20
-29.99999999999999
- 10
-30.0
- 20
-29.99999999999999
- 10
-30.0
- 20
-0.0
+28.4999999999991
+ 42
+0.4142135623730955
   0
 LWPOLYLINE
   5
@@ -26411,7 +26473,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-tc-etch-lines-chemical
+tc_etch_chemical
 100
 AcDbPolyline
  90
@@ -26485,7 +26547,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-tc-etch-lines-chemical
+tc_etch_chemical
 100
 AcDbPolyline
  90
@@ -26559,7 +26621,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-tc-etch-lines-chemical
+tc_etch_chemical
 100
 AcDbPolyline
  90
@@ -26633,7 +26695,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-tc-etch-lines-chemical
+tc_etch_chemical
 100
 AcDbPolyline
  90
@@ -26707,7 +26769,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-tc-etch-lines-chemical
+tc_etch_chemical
 100
 AcDbPolyline
  90
@@ -26805,7 +26867,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-tc-etch-lines-chemical
+tc_etch_chemical
 100
 AcDbPolyline
  90
@@ -26903,7 +26965,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact-pin-diameter
+contact_pin_diameter
 100
 AcDbCircle
  10
@@ -26923,7 +26985,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact-pin-diameter
+contact_pin_diameter
 100
 AcDbCircle
  10
@@ -26943,7 +27005,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact-pin-diameter
+contact_pin_diameter
 100
 AcDbCircle
  10
@@ -26963,7 +27025,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact-pin-diameter
+contact_pin_diameter
 100
 AcDbCircle
  10
@@ -26983,7 +27045,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact-pin-diameter
+contact_pin_diameter
 100
 AcDbCircle
  10
@@ -27003,7 +27065,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact-pin-diameter
+contact_pin_diameter
 100
 AcDbCircle
  10
@@ -27023,7 +27085,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact-pin-diameter
+contact_pin_diameter
 100
 AcDbCircle
  10
@@ -27043,7 +27105,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact-pin-diameter
+contact_pin_diameter
 100
 AcDbCircle
  10
@@ -27063,7 +27125,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact-pin-diameter
+contact_pin_diameter
 100
 AcDbCircle
  10
@@ -27083,7 +27145,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact-pin-diameter
+contact_pin_diameter
 100
 AcDbCircle
  10
@@ -27103,7 +27165,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact-point
+contact_point
 100
 AcDbCircle
  10
@@ -27123,7 +27185,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact-point
+contact_point
 100
 AcDbCircle
  10
@@ -27143,7 +27205,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact-point
+contact_point
 100
 AcDbCircle
  10
@@ -27163,7 +27225,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact-point
+contact_point
 100
 AcDbCircle
  10
@@ -27183,7 +27245,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact-point
+contact_point
 100
 AcDbCircle
  10
@@ -27203,7 +27265,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact-point
+contact_point
 100
 AcDbCircle
  10
@@ -27223,7 +27285,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact-point
+contact_point
 100
 AcDbCircle
  10
@@ -27243,7 +27305,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact-point
+contact_point
 100
 AcDbCircle
  10
@@ -27263,7 +27325,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact-point
+contact_point
 100
 AcDbCircle
  10
@@ -27283,7 +27345,7 @@ CIRCLE
 100
 AcDbEntity
   8
-contact-point
+contact_point
 100
 AcDbCircle
  10
@@ -27303,7 +27365,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-carbon-lightmask-small-lower
+lightmask_carbon_small_lower
 100
 AcDbPolyline
  90
@@ -27361,7 +27423,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-carbon-pixel-electrode-small-lower
+pixel_carbon_electrodes_small_lower
 100
 AcDbPolyline
  90
@@ -27463,7 +27525,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-carbon-lightmask-large-upper
+lightmask_carbon_large_upper
 100
 AcDbPolyline
  90
@@ -27521,7 +27583,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-carbon-pixel-electrode-large-upper
+pixel_carbon_electrodes_large_upper
 100
 AcDbPolyline
  90
@@ -27647,7 +27709,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-carbon-lightmask-small-lower
+lightmask_carbon_small_lower
 100
 AcDbPolyline
  90
@@ -27705,7 +27767,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-carbon-pixel-electrode-small-lower
+pixel_carbon_electrodes_small_lower
 100
 AcDbPolyline
  90
@@ -27807,7 +27869,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-carbon-lightmask-small-upper
+lightmask_carbon_small_upper
 100
 AcDbPolyline
  90
@@ -27865,7 +27927,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-carbon-pixel-electrode-small-upper
+pixel_carbon_electrodes_small_upper
 100
 AcDbPolyline
  90
@@ -27967,7 +28029,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-carbon-lightmask-small-upper
+lightmask_carbon_small_upper
 100
 AcDbPolyline
  90
@@ -28025,7 +28087,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-carbon-pixel-electrode-small-upper
+pixel_carbon_electrodes_small_upper
 100
 AcDbPolyline
  90
@@ -28127,7 +28189,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-pixel-electrodes-small-upper-high-res
+pixel_electrodes_small_upper_high_res
 100
 AcDbPolyline
  90
@@ -28213,7 +28275,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-pixel-electrodes-small-upper-high-res
+pixel_electrodes_small_upper_high_res
 100
 AcDbPolyline
  90
@@ -28295,7 +28357,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-pixel-electrode-large-lower-high-res
+pixel_electrodes_large_lower_high_res
 100
 AcDbPolyline
  90
@@ -28381,7 +28443,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-pixel-electrode-large-lower-high-res
+pixel_electrodes_large_lower_high_res
 100
 AcDbPolyline
  90
@@ -28415,7 +28477,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-pixel-electrode-large-lower-high-res
+pixel_electrodes_large_lower_high_res
 100
 AcDbPolyline
  90
@@ -28449,7 +28511,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-pixel-electrodes-small-upper-high-res
+pixel_electrodes_small_upper_high_res
 100
 AcDbPolyline
  90
@@ -28531,7 +28593,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-pixel-electrode-large-lower-finger
+pixel_electrodes_large_lower_finger
 100
 AcDbPolyline
  90
@@ -28741,7 +28803,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-pixel-electrodes-small-upper
+pixel_electrodes_small_upper
 100
 AcDbPolyline
  90
@@ -28879,7 +28941,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower
+pixel_electrodes_small_lower
 100
 AcDbPolyline
  90
@@ -29017,7 +29079,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-pixel-electrodes-small-upper-finger
+pixel_electrodes_small_upper_finger
 100
 AcDbPolyline
  90
@@ -29227,7 +29289,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-pixel-electrodes-small-upper-finger
+pixel_electrodes_small_upper_finger
 100
 AcDbPolyline
  90
@@ -29425,7 +29487,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-pixel-electrodes-small-upper-finger
+pixel_electrodes_small_upper_finger
 100
 AcDbPolyline
  90
@@ -29623,7 +29685,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-top-tco-small-upper
+top_tco_small_upper
 100
 AcDbPolyline
  90
@@ -29729,7 +29791,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-pixel-electrode-large-upper-high-res
+pixel_electrodes_large_upper_high_res
 100
 AcDbPolyline
  90
@@ -29815,7 +29877,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-pixel-electrode-large-upper-high-res
+pixel_electrodes_large_upper_high_res
 100
 AcDbPolyline
  90
@@ -29849,7 +29911,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-pixel-electrode-large-upper-high-res
+pixel_electrodes_large_upper_high_res
 100
 AcDbPolyline
  90
@@ -29883,7 +29945,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower-high-res
+pixel_electrodes_small_lower_high_res
 100
 AcDbPolyline
  90
@@ -29969,7 +30031,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower-high-res
+pixel_electrodes_small_lower_high_res
 100
 AcDbPolyline
  90
@@ -30051,7 +30113,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-pixel-electrodes-small-lower-high-res
+pixel_electrodes_small_lower_high_res
 100
 AcDbPolyline
  90
@@ -30133,7 +30195,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-our-tandem-insulation
+our_tandem_insulation
 100
 AcDbPolyline
  90
@@ -30191,7 +30253,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-our-tandem-insulation
+our_tandem_insulation
 100
 AcDbPolyline
  90
@@ -30249,7 +30311,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-our-tandem-insulation
+our_tandem_insulation
 100
 AcDbPolyline
  90
@@ -30347,7 +30409,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-our-tandem-insulation
+our_tandem_insulation
 100
 AcDbPolyline
  90
@@ -30425,7 +30487,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-our-tandem-insulation
+our_tandem_insulation
 100
 AcDbPolyline
  90
@@ -30523,7 +30585,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-our-tandem-insulation
+our_tandem_insulation
 100
 AcDbPolyline
  90
@@ -30601,7 +30663,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-our-tandem-insulation
+our_tandem_insulation
 100
 AcDbPolyline
  90
@@ -30679,7 +30741,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-our-tandem-insulation
+our_tandem_insulation
 100
 AcDbPolyline
  90
@@ -30757,7 +30819,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-recombination-slash-interlayer
+recombination_slash_interlayer
 100
 AcDbPolyline
  90
@@ -30815,7 +30877,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-recombination-slash-interlayer
+recombination_slash_interlayer
 100
 AcDbPolyline
  90
@@ -30873,7 +30935,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-recombination-slash-interlayer
+recombination_slash_interlayer
 100
 AcDbPolyline
  90
@@ -30931,7 +30993,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-recombination-slash-interlayer
+recombination_slash_interlayer
 100
 AcDbPolyline
  90
@@ -30989,7 +31051,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-top-tco-large-lower
+top_tco_large_lower
 100
 AcDbPolyline
  90
@@ -31115,7 +31177,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-top-tco-small-upper
+top_tco_small_upper
 100
 AcDbPolyline
  90
@@ -31241,7 +31303,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-top-tco-small-upper
+top_tco_small_upper
 100
 AcDbPolyline
  90
@@ -31347,7 +31409,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-active-layer-mask
+active_layer
 100
 AcDbPolyline
  90
@@ -31445,7 +31507,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-active-layer2-mask
+active_layer_bigger
 100
 AcDbPolyline
  90
@@ -31543,7 +31605,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-active-layer-mask
+active_layer
 100
 AcDbPolyline
  90
@@ -31641,7 +31703,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-active-layer2-mask
+active_layer_bigger
 100
 AcDbPolyline
  90
@@ -31739,7 +31801,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-tc-metal
+tc_metal
 100
 AcDbPolyline
  90
@@ -31897,7 +31959,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-tc-metal
+tc_metal
 100
 AcDbPolyline
  90
@@ -32055,7 +32117,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-aggressive_support_small_upper
+aggressive_metal_support_small_upper
 100
 AcDbPolyline
  90
@@ -32173,7 +32235,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-aggressive_support_small_upper
+aggressive_metal_support_small_upper
 100
 AcDbPolyline
  90
@@ -32287,7 +32349,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-pixel-electrodes-small-upper
+pixel_electrodes_small_upper
 100
 AcDbPolyline
  90
@@ -32411,7 +32473,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-aggressive_support_small_upper
+aggressive_metal_support_small_upper
 100
 AcDbPolyline
  90
@@ -32525,7 +32587,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-aggressive_support_small_lower
+aggressive_metal_support_small_lower
 100
 AcDbPolyline
  90
@@ -32643,7 +32705,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-aggressive_support_small_lower
+aggressive_metal_support_small_lower
 100
 AcDbPolyline
  90
@@ -32757,7 +32819,7 @@ ARC
 100
 AcDbEntity
   8
-aggressive_support_small_lower
+aggressive_metal_support_small_lower
 100
 AcDbCircle
  10
@@ -32783,7 +32845,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-aggressive_support_small_lower
+aggressive_metal_support_small_lower
 100
 AcDbPolyline
  90
@@ -32911,7 +32973,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-aggressive_support_large_lower
+aggressive_metal_support_large_lower
 100
 AcDbPolyline
  90
@@ -33097,7 +33159,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-aggressive_support_large_upper
+aggressive_metal_support_large_upper
 100
 AcDbPolyline
  90
@@ -33271,7 +33333,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-aggressive_support_tc_metal
+aggressive_metal_support_tc_metal
 100
 AcDbPolyline
  90
@@ -33429,7 +33491,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-aggressive_support_tc_metal
+aggressive_metal_support_tc_metal
 100
 AcDbPolyline
  90
@@ -33578,6 +33640,260 @@ AcDbPolyline
 23.01000137390392
  20
 5.969342058125543
+  0
+LWPOLYLINE
+  5
+5B93
+330
+1F
+100
+AcDbEntity
+  8
+spacer_shim_thin
+100
+AcDbPolyline
+ 90
+        8
+ 70
+     1
+ 43
+0.0
+ 10
+0.4999999999991154
+ 20
+28.99999999999908
+ 10
+0.4999999999991154
+ 20
+0.9999999999982201
+ 42
+0.4142135623730953
+ 10
+0.9999999999991156
+ 20
+0.4999999999982202
+ 10
+29.00000000000087
+ 20
+0.4999999999982271
+ 42
+0.414213562373095
+ 10
+29.50000000000087
+ 20
+0.9999999999982271
+ 10
+29.50000000000087
+ 20
+28.99999999999907
+ 42
+0.4142135623730948
+ 10
+29.00000000000087
+ 20
+29.49999999999907
+ 10
+0.9999999999991154
+ 20
+29.49999999999908
+ 42
+0.4142135623730953
+  0
+LWPOLYLINE
+  5
+5BB4
+330
+1F
+100
+AcDbEntity
+  8
+aggressive_support_active
+100
+AcDbPolyline
+ 90
+       16
+ 70
+     1
+ 43
+0.0
+ 10
+6.520001584283948
+ 20
+6.500000980114864
+ 10
+6.520001632074668
+ 20
+6.588855769568143
+ 42
+0.4142136685032257
+ 10
+6.270001675949956
+ 20
+6.838855904031122
+ 10
+4.749999913302249
+ 20
+6.838856170792965
+ 42
+-0.414213562373095
+ 10
+2.749999999999998
+ 20
+8.83885617548473
+ 10
+2.749999999999998
+ 20
+12.50000044226296
+ 42
+-0.414213562373095
+ 10
+4.750000000000004
+ 20
+14.50000044226296
+ 10
+25.25
+ 20
+14.50000044226295
+ 42
+-0.414213562373095
+ 10
+27.25
+ 20
+12.50000044226295
+ 10
+27.25
+ 20
+8.838856175484716
+ 42
+-0.414213562373095
+ 10
+25.25000008669775
+ 20
+6.838856170792948
+ 10
+23.72999832405004
+ 20
+6.838855904031109
+ 42
+0.4142136685032266
+ 10
+23.47999836792533
+ 20
+6.588855769568132
+ 10
+23.47999841571605
+ 20
+6.500000980114857
+ 42
+-0.4142137199062874
+ 10
+22.47999841571619
+ 20
+5.500000442262927
+ 10
+7.520001584283802
+ 20
+5.500000442262937
+ 42
+-0.4142137199062864
+  0
+LWPOLYLINE
+  5
+5BB5
+330
+1F
+100
+AcDbEntity
+  8
+aggressive_support_active
+100
+AcDbPolyline
+ 90
+       16
+ 70
+     1
+ 43
+0.0
+ 10
+6.520001584283952
+ 20
+23.49999946214714
+ 10
+6.520001632074671
+ 20
+23.41114467269387
+ 42
+-0.414213668503225
+ 10
+6.270001675949961
+ 20
+23.16114453823089
+ 10
+4.749999913302256
+ 20
+23.16114427146904
+ 42
+0.414213562373095
+ 10
+2.749999999999998
+ 20
+21.16114426677728
+ 10
+2.750000000000004
+ 20
+17.49999999999905
+ 42
+0.414213562373095
+ 10
+4.750000000000002
+ 20
+15.49999999999905
+ 10
+25.25
+ 20
+15.49999999999905
+ 42
+0.414213562373095
+ 10
+27.25
+ 20
+17.49999999999905
+ 10
+27.25
+ 20
+21.16114426677728
+ 42
+0.414213562373095
+ 10
+25.25000008669776
+ 20
+23.16114427146906
+ 10
+23.72999832405004
+ 20
+23.1611445382309
+ 42
+-0.4142136685032258
+ 10
+23.47999836792533
+ 20
+23.41114467269388
+ 10
+23.47999841571605
+ 20
+23.49999946214714
+ 42
+0.4142137199062874
+ 10
+22.4799984157162
+ 20
+24.49999999999908
+ 10
+7.520001584283808
+ 20
+24.49999999999908
+ 42
+0.4142137199062864
   0
 VIEWPORT
   5
@@ -33901,7 +34217,7 @@ ACAD_VISUALSTYLE
   3
 ACDB_RECOMPOSE_DATA
 350
-5B66
+5BFB
   3
 AcDbVariableDictionary
 350
@@ -33961,7 +34277,7 @@ ACAD_LAYERSTATES
   3
 ACLYDICTIONARY
 360
-5B4F
+5BD6
   0
 DICTIONARY
   5
@@ -34581,7 +34897,7 @@ EA
   0
 XRECORD
   5
-5B66
+5BFB
 102
 {ACAD_REACTORS
 330
@@ -34685,7 +35001,7 @@ AcDbDictionary
   0
 DICTIONARY
   5
-5B4F
+5BD6
 102
 {ACAD_REACTORS
 330
@@ -35243,7 +35559,7 @@ DF2
   5
 44FF
 331
-4317
+0
   5
 4500
 331
@@ -36989,7 +37305,7 @@ TABLESTYLE
 102
 {ACAD_XDICTIONARY
 360
-5B64
+5BF9
 102
 }
 330
@@ -44119,7 +44435,7 @@ AcDbDictionary
   0
 DICTIONARY
   5
-5B64
+5BF9
 330
 87
 100
@@ -44131,19 +44447,19 @@ AcDbDictionary
   3
 ACAD_ROUNDTRIP_2008_TABLESTYLE_CELLSTYLEMAP
 360
-5B65
+5BFA
   0
 CELLSTYLEMAP
   5
-5B65
+5BFA
 102
 {ACAD_REACTORS
 330
-5B64
+5BF9
 102
 }
 330
-5B64
+5BF9
 100
 AcDbCellStyleMap
  90
