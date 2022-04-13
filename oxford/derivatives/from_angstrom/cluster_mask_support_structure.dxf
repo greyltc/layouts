@@ -101,7 +101,7 @@ Standard
   9
 $CLAYER
   8
-mask-support
+mask_support_outline
   9
 $CELTYPE
   6
@@ -501,19 +501,19 @@ $TDUCREATE
   9
 $TDUPDATE
  40
-2458857.51200816
+2458911.390639039
   9
 $TDUUPDATE
  40
-2458857.51200816
+2458911.390639039
   9
 $TDINDWG
  40
-0.0000000231
+0.0000000347
   9
 $TDUSRTIMER
  40
-0.0049970023
+0.006044294
   9
 $USRTIMER
  70
@@ -553,7 +553,7 @@ $SPLINESEGS
   9
 $HANDSEED
   5
-4FA
+773
   9
 $SURFTAB1
  70
@@ -1365,9 +1365,9 @@ AcDbViewportTableRecord
  21
 1.0
  12
--2.960533964359541
+33.53140982842359
  22
-29.48058908900916
+20.46871533022409
  13
 0.0
  23
@@ -1387,15 +1387,15 @@ AcDbViewportTableRecord
  36
 1.0
  17
--27.66959356597988
+-27.66959356597985
  27
 -19.53870295786209
  37
 0.0
  40
-312.8012135026166
+205.3139872069266
  41
-1.751162790697674
+1.707482993197279
  42
 50.0
  43
@@ -1567,7 +1567,7 @@ LAYER
 100
 AcDbSymbolTable
  70
-     6
+     5
   0
 LAYER
   5
@@ -1605,7 +1605,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-glassOutline
+glass_extents_2
  70
      0
  62
@@ -1641,43 +1641,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-mask-support-grid
- 70
-     0
- 62
-    -7
-  6
-Continuous
-370
-    -3
-390
-F
-347
-98
-348
-0
-1001
-AcAecLayerStandard
-1000
-
-1000
-
-1001
-ACCMTRANSPARENCY
-1071
- 33554687
-  0
-LAYER
-  5
-228
-330
-2
-100
-AcDbSymbolTableRecord
-100
-AcDbLayerTableRecord
-  2
-mask-support
+mask_support_grid
  70
      0
  62
@@ -1698,6 +1662,10 @@ AcAecLayerStandard
 
 1000
 
+1001
+ACCMTRANSPARENCY
+1071
+ 33554687
   0
 LAYER
   5
@@ -1737,11 +1705,11 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-mask-support-outline
+mask_support_outline
  70
      0
  62
-    -7
+     7
   6
 Continuous
 370
@@ -1893,7 +1861,7 @@ APPID
 100
 AcDbSymbolTable
  70
-     6
+     7
   0
 APPID
   5
@@ -1976,6 +1944,20 @@ AcDbSymbolTableRecord
 AcDbRegAppTableRecord
   2
 ACAD_DSTYLE_DIMBREAK
+ 70
+     0
+  0
+APPID
+  5
+503
+330
+9
+100
+AcDbSymbolTableRecord
+100
+AcDbRegAppTableRecord
+  2
+ACAD_NAV_VCDISPLAY
  70
      0
   0
@@ -2411,7 +2393,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-glassOutline
+glass_extents_2
 100
 AcDbPolyline
  90
@@ -2437,58 +2419,6 @@ AcDbPolyline
  20
 -45.00000000000045
   0
-CIRCLE
-  5
-1E3
-330
-1F
-100
-AcDbEntity
-  8
-mask-support
-  6
-Continuous
- 62
-     7
-370
-    25
-100
-AcDbCircle
- 10
--54.99999999999998
- 20
--82.00000000000003
- 30
-0.0
- 40
-2.003249999999994
-  0
-CIRCLE
-  5
-1E4
-330
-1F
-100
-AcDbEntity
-  8
-mask-support
-  6
-Continuous
- 62
-     7
-370
-    25
-100
-AcDbCircle
- 10
-54.99999999999998
- 20
-82.00000000000003
- 30
-0.0
- 40
-2.003249999999994
-  0
 LWPOLYLINE
   5
 22C
@@ -2497,7 +2427,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-glassOutline
+glass_extents_2
 100
 AcDbPolyline
  90
@@ -2531,7 +2461,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-glassOutline
+glass_extents_2
 100
 AcDbPolyline
  90
@@ -2565,7 +2495,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-glassOutline
+glass_extents_2
 100
 AcDbPolyline
  90
@@ -2599,7 +2529,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-glassOutline
+glass_extents_2
 100
 AcDbPolyline
  90
@@ -2633,7 +2563,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-glassOutline
+glass_extents_2
 100
 AcDbPolyline
  90
@@ -2667,7 +2597,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-glassOutline
+glass_extents_2
 100
 AcDbPolyline
  90
@@ -2701,7 +2631,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-glassOutline
+glass_extents_2
 100
 AcDbPolyline
  90
@@ -2735,7 +2665,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-glassOutline
+glass_extents_2
 100
 AcDbPolyline
  90
@@ -2769,7 +2699,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-glassOutline
+glass_extents_2
 100
 AcDbPolyline
  90
@@ -2803,7 +2733,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-glassOutline
+glass_extents_2
 100
 AcDbPolyline
  90
@@ -2837,7 +2767,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-glassOutline
+glass_extents_2
 100
 AcDbPolyline
  90
@@ -2871,7 +2801,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-glassOutline
+glass_extents_2
 100
 AcDbPolyline
  90
@@ -2905,7 +2835,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-glassOutline
+glass_extents_2
 100
 AcDbPolyline
  90
@@ -2939,7 +2869,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-glassOutline
+glass_extents_2
 100
 AcDbPolyline
  90
@@ -2973,7 +2903,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-glassOutline
+glass_extents_2
 100
 AcDbPolyline
  90
@@ -3007,7 +2937,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-glassOutline
+glass_extents_2
 100
 AcDbPolyline
  90
@@ -3041,7 +2971,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-glassOutline
+glass_extents_2
 100
 AcDbPolyline
  90
@@ -3075,7 +3005,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-glassOutline
+glass_extents_2
 100
 AcDbPolyline
  90
@@ -3109,7 +3039,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-glassOutline
+glass_extents_2
 100
 AcDbPolyline
  90
@@ -3143,7 +3073,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-glassOutline
+glass_extents_2
 100
 AcDbPolyline
  90
@@ -3177,7 +3107,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-glassOutline
+glass_extents_2
 100
 AcDbPolyline
  90
@@ -3211,7 +3141,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-glassOutline
+glass_extents_2
 100
 AcDbPolyline
  90
@@ -3245,7 +3175,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-glassOutline
+glass_extents_2
 100
 AcDbPolyline
  90
@@ -3279,7 +3209,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-glassOutline
+glass_extents_2
 100
 AcDbPolyline
  90
@@ -3304,1268 +3234,6 @@ AcDbPolyline
 44.99999999999994
  20
 74.99999999999957
-  0
-LWPOLYLINE
-  5
-261
-330
-1F
-100
-AcDbEntity
-  8
-mask-support
-100
-AcDbPolyline
- 90
-        4
- 70
-     1
- 43
-0.0
- 10
--44.0
- 20
--46.00000000000045
- 10
--44.0
- 20
--73.99999999999955
- 10
--16.0
- 20
--73.99999999999955
- 10
--16.0
- 20
--46.00000000000045
-  0
-LWPOLYLINE
-  5
-262
-330
-1F
-100
-AcDbEntity
-  8
-mask-support
-100
-AcDbPolyline
- 90
-        4
- 70
-     1
- 43
-0.0
- 10
--14.0
- 20
--46.00000000000043
- 10
--14.0
- 20
--73.99999999999952
- 10
-14.0
- 20
--73.99999999999952
- 10
-14.0
- 20
--46.00000000000043
-  0
-LWPOLYLINE
-  5
-263
-330
-1F
-100
-AcDbEntity
-  8
-mask-support
-100
-AcDbPolyline
- 90
-        6
- 70
-     1
- 43
-0.0
- 10
-44.0
- 20
--70.50000000000047
- 10
-44.0
- 20
--46.00000000000043
- 10
-16.0
- 20
--46.00000000000043
- 10
-16.0
- 20
--73.99999999999952
- 10
-37.99999999999924
- 20
--73.99999999999952
- 10
-37.99999999999928
- 20
--70.5000000000004
-  0
-LWPOLYLINE
-  5
-264
-330
-1F
-100
-AcDbEntity
-  8
-mask-support
-100
-AcDbPolyline
- 90
-        6
- 70
-     1
- 43
-0.0
- 10
-51.99999999999925
- 20
--73.99999999999952
- 10
-74.0
- 20
--73.99999999999952
- 10
-74.0
- 20
--46.00000000000043
- 10
-46.0
- 20
--46.00000000000043
- 10
-46.0
- 20
--70.5000000000005
- 10
-51.99999999999928
- 20
--70.50000000000057
-  0
-LWPOLYLINE
-  5
-265
-330
-1F
-100
-AcDbEntity
-  8
-mask-support
-100
-AcDbPolyline
- 90
-        6
- 70
-     1
- 43
-0.0
- 10
--70.50000000000001
- 20
--43.99999999999955
- 10
--46.0
- 20
--43.99999999999955
- 10
--46.0
- 20
--16.00000000000045
- 10
--74.0
- 20
--16.00000000000045
- 10
--74.0
- 20
--38.00000000000001
- 10
--70.50000000000001
- 20
--38.00000000000001
-  0
-LWPOLYLINE
-  5
-266
-330
-1F
-100
-AcDbEntity
-  8
-mask-support
-100
-AcDbPolyline
- 90
-        4
- 70
-     1
- 43
-0.0
- 10
--44.0
- 20
--16.00000000000045
- 10
--44.0
- 20
--43.99999999999955
- 10
--16.0
- 20
--43.99999999999955
- 10
--16.0
- 20
--16.00000000000045
-  0
-LWPOLYLINE
-  5
-267
-330
-1F
-100
-AcDbEntity
-  8
-mask-support
-100
-AcDbPolyline
- 90
-        4
- 70
-     1
- 43
-0.0
- 10
--14.0
- 20
--16.00000000000045
- 10
--14.0
- 20
--43.99999999999955
- 10
-14.0
- 20
--43.99999999999955
- 10
-14.0
- 20
--16.00000000000045
-  0
-LWPOLYLINE
-  5
-268
-330
-1F
-100
-AcDbEntity
-  8
-mask-support
-100
-AcDbPolyline
- 90
-        4
- 70
-     1
- 43
-0.0
- 10
-16.0
- 20
--16.00000000000045
- 10
-16.0
- 20
--43.99999999999955
- 10
-44.0
- 20
--43.99999999999955
- 10
-44.0
- 20
--16.00000000000045
-  0
-LWPOLYLINE
-  5
-269
-330
-1F
-100
-AcDbEntity
-  8
-mask-support
-100
-AcDbPolyline
- 90
-        4
- 70
-     1
- 43
-0.0
- 10
-46.0
- 20
--16.0000000000004
- 10
-46.0
- 20
--43.99999999999949
- 10
-74.0
- 20
--43.99999999999949
- 10
-74.0
- 20
--16.0000000000004
-  0
-LWPOLYLINE
-  5
-26A
-330
-1F
-100
-AcDbEntity
-  8
-mask-support
-100
-AcDbPolyline
- 90
-        4
- 70
-     1
- 43
-0.0
- 10
--74.0
- 20
-13.99999999999955
- 10
--74.0
- 20
--13.99999999999955
- 10
--46.0
- 20
--13.99999999999955
- 10
--46.0
- 20
-13.99999999999955
-  0
-LWPOLYLINE
-  5
-26B
-330
-1F
-100
-AcDbEntity
-  8
-mask-support
-100
-AcDbPolyline
- 90
-        4
- 70
-     1
- 43
-0.0
- 10
--44.0
- 20
-13.99999999999955
- 10
--44.0
- 20
--13.99999999999955
- 10
--16.0
- 20
--13.99999999999955
- 10
--16.0
- 20
-13.99999999999955
-  0
-LWPOLYLINE
-  5
-26C
-330
-1F
-100
-AcDbEntity
-  8
-mask-support
-100
-AcDbPolyline
- 90
-        4
- 70
-     1
- 43
-0.0
- 10
--14.0
- 20
-13.99999999999955
- 10
--14.0
- 20
--13.99999999999955
- 10
-14.0
- 20
--13.99999999999955
- 10
-14.0
- 20
-13.99999999999955
-  0
-LWPOLYLINE
-  5
-26D
-330
-1F
-100
-AcDbEntity
-  8
-mask-support
-100
-AcDbPolyline
- 90
-        4
- 70
-     1
- 43
-0.0
- 10
-16.0
- 20
-13.99999999999955
- 10
-16.0
- 20
--13.99999999999955
- 10
-44.0
- 20
--13.99999999999955
- 10
-44.0
- 20
-13.99999999999955
-  0
-LWPOLYLINE
-  5
-26E
-330
-1F
-100
-AcDbEntity
-  8
-mask-support
-100
-AcDbPolyline
- 90
-        4
- 70
-     1
- 43
-0.0
- 10
-46.0
- 20
-13.9999999999996
- 10
-46.0
- 20
--13.99999999999949
- 10
-74.0
- 20
--13.99999999999949
- 10
-74.0
- 20
-13.9999999999996
-  0
-LWPOLYLINE
-  5
-26F
-330
-1F
-100
-AcDbEntity
-  8
-mask-support
-100
-AcDbPolyline
- 90
-        4
- 70
-     1
- 43
-0.0
- 10
--74.0
- 20
-43.99999999999955
- 10
--74.0
- 20
-16.00000000000045
- 10
--46.0
- 20
-16.00000000000045
- 10
--46.0
- 20
-43.99999999999955
-  0
-LWPOLYLINE
-  5
-270
-330
-1F
-100
-AcDbEntity
-  8
-mask-support
-100
-AcDbPolyline
- 90
-        4
- 70
-     1
- 43
-0.0
- 10
--44.0
- 20
-43.99999999999955
- 10
--44.0
- 20
-16.00000000000045
- 10
--16.0
- 20
-16.00000000000045
- 10
--16.0
- 20
-43.99999999999955
-  0
-LWPOLYLINE
-  5
-271
-330
-1F
-100
-AcDbEntity
-  8
-mask-support
-100
-AcDbPolyline
- 90
-        4
- 70
-     1
- 43
-0.0
- 10
--14.0
- 20
-43.99999999999955
- 10
--14.0
- 20
-16.00000000000045
- 10
-14.0
- 20
-16.00000000000045
- 10
-14.0
- 20
-43.99999999999955
-  0
-LWPOLYLINE
-  5
-272
-330
-1F
-100
-AcDbEntity
-  8
-mask-support
-100
-AcDbPolyline
- 90
-        4
- 70
-     1
- 43
-0.0
- 10
-16.0
- 20
-43.9999999999996
- 10
-16.0
- 20
-16.00000000000051
- 10
-44.0
- 20
-16.00000000000051
- 10
-44.0
- 20
-43.9999999999996
-  0
-LWPOLYLINE
-  5
-273
-330
-1F
-100
-AcDbEntity
-  8
-mask-support
-100
-AcDbPolyline
- 90
-        6
- 70
-     1
- 43
-0.0
- 10
-70.50000000000001
- 20
-43.9999999999996
- 10
-46.0
- 20
-43.9999999999996
- 10
-46.0
- 20
-16.00000000000051
- 10
-74.0
- 20
-16.00000000000051
- 10
-74.0
- 20
-38.00000000000004
- 10
-70.50000000000001
- 20
-38.00000000000001
-  0
-LWPOLYLINE
-  5
-274
-330
-1F
-100
-AcDbEntity
-  8
-mask-support
-100
-AcDbPolyline
- 90
-       10
- 70
-     1
- 43
-0.0
- 10
--74.00000000000006
- 20
-61.6458980337502
- 10
--74.00000000000006
- 20
-46.00000000000045
- 10
--46.00000000000006
- 20
-46.00000000000045
- 10
--46.00000000000006
- 20
-70.50000000000017
- 10
--51.99999999999977
- 20
-70.5000000000002
- 10
--51.99999999999976
- 20
-73.99999999999955
- 10
--61.64589803374817
- 20
-73.99999999999955
- 42
--0.4472135954986757
- 10
--68.35410196623472
- 20
-73.99999999999955
- 10
--74.00000000000006
- 20
-73.99999999999955
- 10
--74.00000000000006
- 20
-68.35410196624969
- 42
--0.4472135954999675
-  0
-LWPOLYLINE
-  5
-275
-330
-1F
-100
-AcDbEntity
-  8
-mask-support
-100
-AcDbPolyline
- 90
-        6
- 70
-     1
- 43
-0.0
- 10
--44.0
- 20
-70.50000000000016
- 10
--44.0
- 20
-46.00000000000045
- 10
--16.0
- 20
-46.00000000000045
- 10
--16.0
- 20
-73.99999999999955
- 10
--37.99999999999976
- 20
-73.99999999999955
- 10
--37.99999999999977
- 20
-70.50000000000013
-  0
-LWPOLYLINE
-  5
-276
-330
-1F
-100
-AcDbEntity
-  8
-mask-support
-100
-AcDbPolyline
- 90
-        4
- 70
-     1
- 43
-0.0
- 10
--14.0
- 20
-73.99999999999955
- 10
--14.0
- 20
-46.00000000000045
- 10
-14.0
- 20
-46.00000000000045
- 10
-14.0
- 20
-73.99999999999955
-  0
-LWPOLYLINE
-  5
-277
-330
-1F
-100
-AcDbEntity
-  8
-mask-support
-100
-AcDbPolyline
- 90
-        4
- 70
-     1
- 43
-0.0
- 10
-16.0
- 20
-73.9999999999996
- 10
-16.0
- 20
-46.00000000000051
- 10
-44.0
- 20
-46.00000000000051
- 10
-44.0
- 20
-73.9999999999996
-  0
-LWPOLYLINE
-  5
-27A
-330
-1F
-100
-AcDbEntity
-  8
-mask-support
-  6
-Continuous
- 62
-     7
-370
-    25
-100
-AcDbPolyline
- 90
-       64
- 70
-     1
- 43
-0.0
- 10
--80.78694975056389
- 20
--79.37273618818914
- 10
--79.3727361881908
- 20
--80.78694975056226
- 42
-0.4142135623730936
- 10
--76.54430906344463
- 20
--80.78694975056227
- 10
--74.13235931288152
- 20
--78.37500000000001
- 10
--58.99999999999999
- 20
--78.37500000000001
- 10
--58.99999999999998
- 20
--82.18750000000009
- 42
-0.9531250000000008
- 10
--50.99999999999999
- 20
--82.18750000000001
- 10
--50.99999999999999
- 20
--78.37500000000001
- 10
-39.99999999999919
- 20
--78.37500000000001
- 10
-39.99999999999926
- 20
--72.50000000000043
- 10
-49.99999999999926
- 20
--72.50000000000054
- 10
-49.9999999999992
- 20
--78.37500000000054
- 10
-74.13235931288072
- 20
--78.37499999999999
- 10
-76.54430906344379
- 20
--80.78694975056307
- 42
-0.4142135623730966
- 10
-79.37273618818998
- 20
--80.78694975056305
- 10
-80.7869497505631
- 20
--79.37273618818995
- 42
-0.4142135623730893
- 10
-80.78694975056308
- 20
--76.54430906344378
- 10
-78.37499999999999
- 20
--74.13235931288071
- 10
-78.37499999999999
- 20
-40.00000000000002
- 10
-72.50000000000001
- 20
-40.00000000000001
- 10
-72.50000000000001
- 20
-50.00000000000001
- 10
-78.37500000000001
- 20
-50.00000000000001
- 10
-78.37500000000026
- 20
-74.13235931288045
- 10
-80.78694975056335
- 20
-76.5443090634435
- 42
-0.4142135623730924
- 10
-80.78694975056334
- 20
-79.37273618818969
- 10
-79.37273618819026
- 20
-80.78694975056277
- 42
-0.414213562373098
- 10
-76.54430906344406
- 20
-80.78694975056278
- 10
-74.13235931288096
- 20
-78.37499999999999
- 10
-67.4999999999913
- 20
-78.37499999999999
- 10
-67.49999999999147
- 20
-77.00000000000674
- 42
--0.9999999999999999
- 10
-62.49999999999142
- 20
-77.00000000000674
- 10
-62.4999999999913
- 20
-78.37499999999999
- 10
-58.99999999999999
- 20
-78.37499999999999
- 10
-58.99999999999998
- 20
-82.18750000000003
- 42
-0.953125000000001
- 10
-50.99999999999999
- 20
-82.18750000000001
- 10
-50.99999999999999
- 20
-78.37500000000001
- 10
--39.99999999999974
- 20
-78.37500000000016
- 10
--39.99999999999977
- 20
-72.50000000000014
- 10
--49.99999999999977
- 20
-72.50000000000018
- 10
--49.99999999999974
- 20
-78.3750000000002
- 10
--62.49999999999156
- 20
-78.37499999999999
- 10
--62.49999999999142
- 20
-77.00000000000672
- 42
--0.9999999999999999
- 10
--67.49999999999146
- 20
-77.00000000000672
- 10
--67.49999999999156
- 20
-78.37499999999999
- 10
--74.13235931288072
- 20
-78.37499999999999
- 10
--76.54430906344378
- 20
-80.78694975056305
- 42
-0.4142135623730965
- 10
--79.37273618818998
- 20
-80.78694975056305
- 10
--80.78694975056308
- 20
-79.37273618818998
- 42
-0.4142135623730976
- 10
--80.78694975056308
- 20
-76.54430906344378
- 10
--78.37500000000001
- 20
-74.13235931288071
- 10
--78.37500000000001
- 20
-67.49999999999997
- 10
--77.0
- 20
-67.49999999999996
- 42
--0.9999999999999928
- 10
--77.0
- 20
-62.49999999999993
- 10
--78.37500000000001
- 20
-62.49999999999995
- 10
--78.37500000000001
- 20
--40.00000000000001
- 10
--72.50000000000001
- 20
--40.00000000000001
- 10
--72.50000000000001
- 20
--50.00000000000001
- 10
--78.37500000000001
- 20
--50.00000000000001
- 10
--78.37500000000001
- 20
--62.49999999999995
- 10
--77.0
- 20
--62.49999999999993
- 42
--0.9999999999999928
- 10
--76.99999999999997
- 20
--67.49999999999996
- 10
--78.37500000000001
- 20
--67.49999999999997
- 10
--78.37500000000077
- 20
--74.13235931287991
- 10
--80.78694975056386
- 20
--76.54430906344294
- 42
-0.4142135623731006
-  0
-LWPOLYLINE
-  5
-3CC
-330
-1F
-100
-AcDbEntity
-  8
-mask-support
-100
-AcDbPolyline
- 90
-        8
- 70
-     1
- 43
-0.0
- 10
-74.0
- 20
-52.00000000000001
- 10
-74.0
- 20
-73.9999999999996
- 10
-68.35410196623478
- 20
-73.9999999999996
- 42
--0.4472135954986823
- 10
-61.64589803374811
- 20
-73.9999999999996
- 10
-46.0
- 20
-73.9999999999996
- 10
-46.0
- 20
-46.00000000000051
- 10
-70.50000000000001
- 20
-46.00000000000051
- 10
-70.50000000000001
- 20
-52.00000000000001
-  0
-LWPOLYLINE
-  5
-3CD
-330
-1F
-100
-AcDbEntity
-  8
-mask-support
-100
-AcDbPolyline
- 90
-        8
- 70
-     1
- 43
-0.0
- 10
--74.0
- 20
--68.35410196624964
- 10
--74.0
- 20
--73.99999999999955
- 10
--46.0
- 20
--73.99999999999955
- 10
--46.0
- 20
--46.00000000000045
- 10
--70.50000000000001
- 20
--46.00000000000045
- 10
--70.50000000000001
- 20
--52.00000000000001
- 10
--74.0
- 20
--52.00000000000001
- 10
--74.0
- 20
--61.64589803375025
- 42
--0.447213595499957
   0
 LWPOLYLINE
   5
@@ -4575,7 +3243,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-mask-support-outline
+mask_support_outline
   6
 Continuous
  62
@@ -4883,7 +3551,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-mask-support-grid
+mask_support_grid
 100
 AcDbPolyline
  90
@@ -4917,7 +3585,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-mask-support-grid
+mask_support_grid
 100
 AcDbPolyline
  90
@@ -4951,7 +3619,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-mask-support-grid
+mask_support_grid
 100
 AcDbPolyline
  90
@@ -4985,7 +3653,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-mask-support-grid
+mask_support_grid
 100
 AcDbPolyline
  90
@@ -5019,7 +3687,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-mask-support-grid
+mask_support_grid
 100
 AcDbPolyline
  90
@@ -5053,7 +3721,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-mask-support-grid
+mask_support_grid
 100
 AcDbPolyline
  90
@@ -5087,7 +3755,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-mask-support-grid
+mask_support_grid
 100
 AcDbPolyline
  90
@@ -5121,7 +3789,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-mask-support-grid
+mask_support_grid
 100
 AcDbPolyline
  90
@@ -5155,7 +3823,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-mask-support-grid
+mask_support_grid
 100
 AcDbPolyline
  90
@@ -5189,7 +3857,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-mask-support-grid
+mask_support_grid
 100
 AcDbPolyline
  90
@@ -5223,7 +3891,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-mask-support-grid
+mask_support_grid
 100
 AcDbPolyline
  90
@@ -5257,7 +3925,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-mask-support-grid
+mask_support_grid
 100
 AcDbPolyline
  90
@@ -5291,7 +3959,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-mask-support-grid
+mask_support_grid
 100
 AcDbPolyline
  90
@@ -5325,7 +3993,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-mask-support-grid
+mask_support_grid
 100
 AcDbPolyline
  90
@@ -5359,7 +4027,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-mask-support-grid
+mask_support_grid
 100
 AcDbPolyline
  90
@@ -5393,7 +4061,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-mask-support-grid
+mask_support_grid
 100
 AcDbPolyline
  90
@@ -5427,7 +4095,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-mask-support-grid
+mask_support_grid
 100
 AcDbPolyline
  90
@@ -5461,7 +4129,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-mask-support-grid
+mask_support_grid
 100
 AcDbPolyline
  90
@@ -5523,7 +4191,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-mask-support-grid
+mask_support_grid
 100
 AcDbPolyline
  90
@@ -5565,7 +4233,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-mask-support-grid
+mask_support_grid
 100
 AcDbPolyline
  90
@@ -5617,7 +4285,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-mask-support-grid
+mask_support_grid
 100
 AcDbPolyline
  90
@@ -5659,7 +4327,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-mask-support-grid
+mask_support_grid
 100
 AcDbPolyline
  90
@@ -5701,7 +4369,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-mask-support-grid
+mask_support_grid
 100
 AcDbPolyline
  90
@@ -5743,7 +4411,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-mask-support-grid
+mask_support_grid
 100
 AcDbPolyline
  90
@@ -5795,7 +4463,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-mask-support-grid
+mask_support_grid
 100
 AcDbPolyline
  90
@@ -5831,43 +4499,15 @@ AcDbPolyline
   0
 CIRCLE
   5
-4D9
+6AF
 330
 1F
 100
 AcDbEntity
   8
-mask-support-outline
+mask_support_outline
   6
 Continuous
- 62
-     7
-370
-    25
-100
-AcDbCircle
- 10
-55.0
- 20
-81.99538934426232
- 30
-0.0
- 40
-2.003249999999994
-  0
-CIRCLE
-  5
-4EE
-330
-1F
-100
-AcDbEntity
-  8
-mask-support-outline
-  6
-Continuous
- 62
-     7
 370
     25
 100
@@ -5875,11 +4515,53 @@ AcDbCircle
  10
 -55.0
  20
--81.99538934426235
+-82.0
  30
 0.0
  40
-2.003249999999994
+2.034999999999996
+  0
+LWPOLYLINE
+  5
+6FB
+330
+1F
+100
+AcDbEntity
+  8
+mask_support_outline
+  6
+Continuous
+370
+    25
+100
+AcDbPolyline
+ 90
+        4
+ 70
+     1
+ 43
+0.0
+ 10
+53.84749413279997
+ 20
+83.93498843050001
+ 10
+52.77241616105908
+ 20
+82.33214490892436
+ 42
+1.000000000000019
+ 10
+56.15250586714091
+ 20
+80.06501156947567
+ 10
+57.22758383889999
+ 20
+81.66785509110001
+ 42
+1.000000000000014
   0
 ENDSEC
   0
@@ -5955,7 +4637,7 @@ ACAD_VISUALSTYLE
   3
 ACDB_RECOMPOSE_DATA
 350
-4F9
+772
   3
 AcDbVariableDictionary
 350
@@ -6015,7 +4697,7 @@ ACAD_LAYERSTATES
   3
 ACLYDICTIONARY
 360
-3DE
+724
   0
 DICTIONARY
   5
@@ -6533,7 +5215,7 @@ EA
   0
 XRECORD
   5
-4F9
+772
 102
 {ACAD_REACTORS
 330
@@ -6629,7 +5311,7 @@ AcDbDictionary
   0
 DICTIONARY
   5
-3DE
+724
 102
 {ACAD_REACTORS
 330
@@ -8173,7 +6855,7 @@ TABLESTYLE
 102
 {ACAD_XDICTIONARY
 360
-4F7
+770
 102
 }
 330
@@ -15303,7 +13985,7 @@ DictionaryVariables
   0
 DICTIONARY
   5
-4F7
+770
 330
 87
 100
@@ -15315,19 +13997,19 @@ AcDbDictionary
   3
 ACAD_ROUNDTRIP_2008_TABLESTYLE_CELLSTYLEMAP
 360
-4F8
+771
   0
 CELLSTYLEMAP
   5
-4F8
+771
 102
 {ACAD_REACTORS
 330
-4F7
+770
 102
 }
 330
-4F7
+770
 100
 AcDbCellStyleMap
  90
