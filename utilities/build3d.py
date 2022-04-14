@@ -35,39 +35,39 @@ class TwoDToThreeD(object):
         stacks = {}
         for stack_instructions in self.stacks:
             asy = cadquery.Assembly()
-            asy.name = stack_instructions["name"]
-            z_base = 0
-            for stack_layer in stack_instructions["layers"]:
-                t = stack_layer["thickness"]
-                boundary_layer_name = stack_layer["drawing_layer_names"][0]  # boundary layer must always be the first one listed
-                w0 = wires[boundary_layer_name][0]
-                wp = CQ().sketch().face(w0)
-                for w in wires[boundary_layer_name][1::]:
-                    wp = wp.face(w, mode="s")
-                wp = wp.finalize().extrude(t)  # the workpiece is now made
-                wp = wp.faces(">Z").sketch()
-                if "array" in stack_layer:
-                    array_points = stack_layer["array"]
-                else:
-                    array_points = [None]
-                for point in array_points:
-                    for drawing_layer_name in stack_layer["drawing_layer_names"][1::]:
+            if stack_instructions["name"] in stacks_to_build:
+                asy.name = stack_instructions["name"]
+                z_base = 0
+                for stack_layer in stack_instructions["layers"]:
+                    t = stack_layer["thickness"]
+                    boundary_layer_name = stack_layer["drawing_layer_names"][0]  # boundary layer must always be the first one listed
+                    w0 = wires[boundary_layer_name][0]
+                    wp = CQ().sketch().face(w0)
+                    for w in wires[boundary_layer_name][1::]:
+                        wp = wp.face(w, mode="s")
+                    wp = wp.finalize().extrude(t)  # the workpiece is now made
+                    wp = wp.faces(">Z").sketch()
+                    if "array" in stack_layer:
+                        array_points = stack_layer["array"]
+                    else:
+                        array_points = [(0, 0, 0)]
+
+                    for drawing_layer_name in stack_layer["drawing_layer_names"][1:]:
                         some_wires = wires[drawing_layer_name]
                         for awire in some_wires:
-                            if point is None:
-                                wp = wp.face(awire)
-                            else:
-                                wp = wp.face(awire.located(cadquery.Location(cadquery.Vector(point[0], point[1], 0))))
+                            wp = wp.push(array_points).face(awire, mode="a", ignore_selection=False)
 
-                # this handles the keepout regions at the edges of the holder
-                if "edge_case" in stack_layer:
-                    edge_wire = wires[stack_layer["edge_case"]][0]
-                    wp = wp.face(edge_wire, mode="i")
-                wp = wp.finalize().cutThruAll()
+                    wp = wp.faces()
+                    if "edge_case" in stack_layer:
+                        edge_wire = wires[stack_layer["edge_case"]][0]
+                        wp = wp.face(edge_wire, mode="i")
+                        wp = wp.clean()
+                    # wp = wp.finalize().cutThruAll()  # this is a fail, but should work
+                    wp = wp.finalize().extrude(-t, combine="cut")
 
-                asy.add(wp.translate([0, 0, z_base]), name=stack_layer["name"], color=cadquery.Color(stack_layer["color"]))
-                z_base = z_base + t
-            stacks[stack_instructions["name"]] = asy
+                    asy.add(wp.translate([0, 0, z_base]), name=stack_layer["name"], color=cadquery.Color(stack_layer["color"]))
+                    z_base = z_base + t
+                stacks[stack_instructions["name"]] = asy
         return stacks
         # asy.save(str(Path(__file__).parent / "output" / f"{stack_instructions['name']}.step"))
         # cq.Shape.exportBrep(cq.Compound.makeCompound(itertools.chain.from_iterable([x[1].shapes for x in asy.traverse()])), str(Path(__file__).parent / "output" / "badger.brep"))
@@ -114,7 +114,7 @@ def main():
 
     # define how we'll tile things
     spacing5 = 30
-    array5 = [(x * spacing5, y * spacing5) for x, y in itertools.product(range(-2, 3), range(-2, 3))]
+    array5 = [(x * spacing5, y * spacing5, 0) for x, y in itertools.product(range(-2, 3), range(-2, 3))]
 
     instructions = []
     instructions.append(
@@ -164,6 +164,7 @@ def main():
                         "outline_5x5",
                         "aggressive_support_active",
                     ],
+                    "edge_case": "inner_outline_5x5",
                     "array": array5,
                 },
                 {
@@ -174,6 +175,7 @@ def main():
                         "outline_no_alignment_5x5",
                         "active_layer",
                     ],
+                    "edge_case": "inner_outline_5x5",
                     "array": array5,
                 },
                 {
@@ -276,7 +278,10 @@ def main():
     )
 
     ttt = TwoDToThreeD(instructions=instructions, sources=sources)
-    asys = ttt.build()
+    # to_build = ["active_mask_stack", "metal_mask_stack"]
+    # to_build = ["active_mask_stack_5x5"]
+    to_build = [""]  # all of them
+    asys = ttt.build(to_build)
     # asy: cadquery.Assembly = list(asys.values())[0]  # TODO:take more than the first value
 
     for key, asy in asys.items():
