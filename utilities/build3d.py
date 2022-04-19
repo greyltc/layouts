@@ -34,9 +34,10 @@ class TwoDToThreeD(object):
 
         stacks = {}
         for stack_instructions in self.stacks:
-            asy = cadquery.Assembly()
+            # asy = cadquery.Assembly()
+            asy = None
             if stack_instructions["name"] in stacks_to_build:
-                asy.name = stack_instructions["name"]
+                # asy.name = stack_instructions["name"]
                 z_base = 0
                 for stack_layer in stack_instructions["layers"]:
                     t = stack_layer["thickness"]
@@ -65,7 +66,12 @@ class TwoDToThreeD(object):
                     # wp = wp.finalize().cutThruAll()  # this is a fail, but should work
                     wp = wp.finalize().extrude(-t, combine="cut")
 
-                    asy.add(wp.translate([0, 0, z_base]), name=stack_layer["name"], color=cadquery.Color(stack_layer["color"]))
+                    new = wp.translate([0, 0, z_base])
+                    if asy is None:  # some silly hack needed to work around https://github.com/CadQuery/cadquery/issues/993
+                        asy = cadquery.Assembly(new, name=stack_layer["name"], color=cadquery.Color(stack_layer["color"]))
+                        # asy.name = stack_instructions["name"]
+                    else:
+                        asy.add(new, name=stack_layer["name"], color=cadquery.Color(stack_layer["color"]))
                     z_base = z_base + t
                 stacks[stack_instructions["name"]] = asy
         return stacks
@@ -278,13 +284,13 @@ def main():
     )
 
     ttt = TwoDToThreeD(instructions=instructions, sources=sources)
-    # to_build = ["active_mask_stack", "metal_mask_stack"]
+    to_build = ["active_mask_stack", "metal_mask_stack"]
     # to_build = ["active_mask_stack_5x5"]
-    to_build = [""]  # all of them
+    # to_build = [""]  # all of them
     asys = ttt.build(to_build)
     # asy: cadquery.Assembly = list(asys.values())[0]  # TODO:take more than the first value
 
-    for key, asy in asys.items():
+    for stack_name, asy in asys.items():
         if "show_object" in globals():  # we're in cq-editor
             assembly_mode = True  # at the moment, when true we can't select/deselect subassembly parts
             if assembly_mode:
@@ -302,25 +308,34 @@ def main():
                         show_object(c.locate(val.loc), name=val.name, options=odict)
         else:
             # save assembly
-            asy.save(str(Path(__file__).parent / "output" / f"{asy.name}.step"))
-            # cadquery.exporters.assembly.exportCAF(asy, str(Path(__file__).parent / "output" / f"{asy.name}.std"))
-            # cq.Shape.exportBrep(cq.Compound.makeCompound(itertools.chain.from_iterable([x[1].shapes for x in asy.traverse()])), str(Path(__file__).parent / "output" / f"{asy.name}.brep"))
+            asy.save(str(Path(__file__).parent / "output" / f"{stack_name}.step"))
+            asy.save(str(Path(__file__).parent / "output" / f"{stack_name}.glb"), "GLTF")
+            # cadquery.exporters.assembly.exportCAF(asy, str(Path(__file__).parent / "output" / f"{stack_name}.std"))
+            # cq.Shape.exportBrep(cq.Compound.makeCompound(itertools.chain.from_iterable([x[1].shapes for x in asy.traverse()])), str(Path(__file__).parent / "output" / f"{stack_name}.brep"))
 
-            save_indivitual_stls = False
-            save_indivitual_steps = False
-            save_indivitual_breps = False
+            save_individual_stls = False
+            save_individual_steps = False
+            save_individual_breps = False
+            save_individual_dxfs = True
 
-            # save them
+            # save each shape individually
             for key, val in asy.traverse():
                 shapes = val.shapes
                 if shapes != []:
                     c = cq.Compound.makeCompound(shapes)
-                    if save_indivitual_stls == True:
-                        cadquery.exporters.export(c.locate(val.loc), str(Path(__file__).parent / "output" / f"{asy.name}-{val.name}.stl"))
-                    if save_indivitual_steps == True:
-                        cadquery.exporters.export(c.locate(val.loc), str(Path(__file__).parent / "output" / f"{asy.name}-{val.name}.step"))
-                    if save_indivitual_breps == True:
-                        cq.Shape.exportBrep(c.locate(val.loc), str(Path(__file__).parent / "output" / f"{asy.name}-{val.name}.brep"))
+                    if save_individual_stls == True:
+                        cadquery.exporters.export(c.locate(val.loc), str(Path(__file__).parent / "output" / f"{stack_name}-{val.name}.stl"))
+                    if save_individual_steps == True:
+                        cadquery.exporters.export(c.locate(val.loc), str(Path(__file__).parent / "output" / f"{stack_name}-{val.name}.step"))
+                    if save_individual_breps == True:
+                        cq.Shape.exportBrep(c.locate(val.loc), str(Path(__file__).parent / "output" / f"{stack_name}-{val.name}.brep"))
+                    if save_individual_dxfs == True:
+                        cl = c.locate(val.loc)
+                        bb = cl.BoundingBox()
+                        zmid = (bb.zmin + bb.zmax) / 2
+                        nwp = CQ("XY", origin=(0, 0, zmid)).add(cl)
+                        dxface = nwp.section()
+                        cadquery.exporters.export(dxface, str(Path(__file__).parent / "output" / f"{stack_name}-{val.name}.dxf"), cadquery.exporters.ExportTypes.DXF)
 
 
 # temp is what we get when run via cq-editor
