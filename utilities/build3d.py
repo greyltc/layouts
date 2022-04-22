@@ -115,7 +115,7 @@ def main():
         Path.cwd().parent / "oxford" / "derivatives" / "4x4_cluster_master.dxf",
     ]
 
-    support_thickness = 0.65
+    support_thickness = 0.75
     feature_thickness = 0.2
     shim_thickness = 0.05
 
