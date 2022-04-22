@@ -29,8 +29,8 @@ class TwoDToThreeD(object):
                         drawing_layers_needed.append(stack_layer["edge_case"])
         drawing_layers_needed_unique = list(set(drawing_layers_needed))
 
-        # all the wires we'll need here
-        wires = self.get_wires(self.sources, drawing_layers_needed_unique)
+        # all the faces we'll need here
+        layers = self.get_layers(self.sources, drawing_layers_needed_unique)
 
         stacks = {}
         for stack_instructions in self.stacks:
@@ -42,33 +42,35 @@ class TwoDToThreeD(object):
                 for stack_layer in stack_instructions["layers"]:
                     t = stack_layer["thickness"]
                     boundary_layer_name = stack_layer["drawing_layer_names"][0]  # boundary layer must always be the first one listed
-                    w0 = wires[boundary_layer_name][0]
-                    wp = CQ().sketch().face(w0)
-                    for w in wires[boundary_layer_name][1::]:
-                        wp = wp.face(w, mode="s")
-                    wp = wp.finalize().extrude(t)  # the workpiece is now made
-                    wp = wp.faces(">Z").sketch()
+                    layer_comp = cadquery.Compound.makeCompound(layers[boundary_layer_name].faces().vals())
+
                     if "array" in stack_layer:
                         array_points = stack_layer["array"]
                     else:
                         array_points = [(0, 0, 0)]
 
-                    for drawing_layer_name in stack_layer["drawing_layer_names"][1:]:
-                        some_wires = wires[drawing_layer_name]
-                        for awire in some_wires:
-                            wp = wp.push(array_points).face(awire, mode="a", ignore_selection=False)
+                    if len(stack_layer["drawing_layer_names"]) == 1:
+                        wp = CQ().sketch().push(array_points).face(layer_comp, mode="a", ignore_selection=False)
+                    else:
+                        wp = CQ().sketch().face(layer_comp, mode="a", ignore_selection=False)
 
-                    wp = wp.faces()
-                    if "edge_case" in stack_layer:
-                        edge_wire_sets = cadquery.sortWiresByBuildOrder(wires[stack_layer["edge_case"]])
-                        edge_wires = edge_wire_sets[0]
-                        es = CQ().sketch().face(edge_wires[0])
-                        for edge_wire in edge_wires[1:]:
-                            es = es.face(edge_wire, mode="s")
-                        wp = wp.face(es.faces(), mode="i")
-                        wp = wp.clean()
-                    # wp = wp.finalize().cutThruAll()  # this is a fail, but should work
-                    wp = wp.finalize().extrude(-t, combine="cut")
+                    wp = wp.finalize().extrude(t)  # the workpiece base is now made
+                    if len(stack_layer["drawing_layer_names"]) > 1:
+                        wp = wp.faces(">Z").sketch()
+
+                        for drawing_layer_name in stack_layer["drawing_layer_names"][1:]:
+                            layer_comp = cadquery.Compound.makeCompound(layers[drawing_layer_name].faces().vals())
+                            wp = wp.push(array_points).face(layer_comp, mode="a", ignore_selection=False)
+
+                        wp = wp.faces()
+                        if "edge_case" in stack_layer:
+                            edge_layer_name = stack_layer["edge_case"]
+                            layer_comp = cadquery.Compound.makeCompound(layers[edge_layer_name].faces().vals())
+                            es = CQ().sketch().face(layer_comp)
+                            wp = wp.face(es.faces(), mode="i")
+                            wp = wp.clean()
+                        # wp = wp.finalize().cutThruAll()  # this is a fail, but should work. if it's not a fail is slower than the below line
+                        wp = wp.finalize().extrude(-t, combine="cut")
 
                     new = wp.translate([0, 0, z_base])
                     if asy is None:  # some silly hack needed to work around https://github.com/CadQuery/cadquery/issues/993
@@ -82,8 +84,8 @@ class TwoDToThreeD(object):
         # asy.save(str(Path(__file__).parent / "output" / f"{stack_instructions['name']}.step"))
         # cq.Shape.exportBrep(cq.Compound.makeCompound(itertools.chain.from_iterable([x[1].shapes for x in asy.traverse()])), str(Path(__file__).parent / "output" / "badger.brep"))
 
-    def get_wires(self, dxf_filepaths: List[Path], layer_names: List[str] = []) -> List[cq.Workplane]:
-        """returns the wires from the given dxf layers"""
+    def get_layers(self, dxf_filepaths: List[Path], layer_names: List[str] = []) -> List[cq.Workplane]:
+        """returns the requested layers from dxfs"""
         # list of of all layers in the dxf
         layer_sets = []
         for filepath in dxf_filepaths:
@@ -95,16 +97,18 @@ class TwoDToThreeD(object):
             bad_intersection = set.intersection(*layer_sets)
             if bad_intersection:
                 raise ValueError(f"Identical layer names found in multiple drawings: {bad_intersection}")
-        wires = {}
+        layers = {}
         for layer_name in layer_names:
             for i, layer_set in enumerate(layer_sets):
                 if layer_name in layer_set:
                     which_file = dxf_filepaths[i]
                     break
             to_exclude = list(layer_set - set((layer_name,)))
-            wires[layer_name] = cadquery.importers.importDXF(which_file, exclude=to_exclude).wires().vals()
+            layers[layer_name] = cadquery.importers.importDXF(which_file, exclude=to_exclude)
+            # faces[layer_name] = wp.faces().vals()
+            # wires[layer_name] = faces[layer_name].wires().vals()
 
-        return wires
+        return layers
 
 
 def main():
@@ -118,10 +122,15 @@ def main():
     support_thickness = 0.75
     feature_thickness = 0.2
     shim_thickness = 0.05
+    glass_thickness = 1.0
+    tco_thickness = 0.15
 
     support_color = "GOLDENROD"
     feature_color = "SKYBLUE2"
     shim_color = "DARKGREEN"
+
+    glass_color = "CYAN"
+    tco_color = "RED"
 
     # define how we'll tile things
     spacing5 = 30
@@ -131,6 +140,56 @@ def main():
     array4 = [((x + 0.5) * spacing4, (y + 0.5) * spacing4, 0) for x, y in itertools.product(range(-2, 2), range(-2, 2))]
 
     instructions = []
+
+    instructions.append(
+        {
+            "name": "tco_150x150mm",
+            "layers": [
+                {
+                    "name": "cluster_sheet",
+                    "color": glass_color,
+                    "thickness": glass_thickness,
+                    "drawing_layer_names": [
+                        "cluster_sheet",
+                    ],
+                },
+                {
+                    "name": "cluster_tco",
+                    "color": tco_color,
+                    "thickness": tco_thickness,
+                    "drawing_layer_names": [
+                        "tc_etch_chemical",
+                    ],
+                    "array": array5,
+                },
+            ],
+        }
+    )
+
+    instructions.append(
+        {
+            "name": "tco_30x30mm",
+            "layers": [
+                {
+                    "name": "glass_piece",
+                    "color": glass_color,
+                    "thickness": glass_thickness,
+                    "drawing_layer_names": [
+                        "glass_extents",
+                    ],
+                },
+                {
+                    "name": "tco",
+                    "color": tco_color,
+                    "thickness": tco_thickness,
+                    "drawing_layer_names": [
+                        "tc_etch_chemical",
+                    ],
+                },
+            ],
+        }
+    )
+
     instructions.append(
         {
             "name": "active_mask_stack",
@@ -864,7 +923,7 @@ def main():
     )
 
     ttt = TwoDToThreeD(instructions=instructions, sources=sources)
-    # to_build = ["active_mask_stack", "metal_mask_stack"]
+    # to_build = ["active_mask_stack", "metal_mask_stack", "tco_30x30mm", "active_mask_stack_4x4", "tco_150x150mm"]
     # to_build = ["tandem_metal_mask_stack"]
     to_build = [""]  # all of them
     asys = ttt.build(to_build)
