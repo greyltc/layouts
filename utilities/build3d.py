@@ -126,7 +126,7 @@ def main():
     tco_thickness = 0.15
 
     support_color = "GOLDENROD"
-    feature_color = "SKYBLUE2"
+    feature_color = "GRAY55"
     shim_color = "DARKGREEN"
 
     glass_color = "CYAN"
