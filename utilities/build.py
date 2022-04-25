@@ -824,11 +824,11 @@ def main():
 
     ttt = TwoDToThreeD(instructions=instructions, sources=sources)
     # to_build = ["active_mask_stack", "metal_mask_stack", "tco_30x30mm", "active_mask_stack_4x4", "tco_150x150mm"]
-    # to_build = ["tandem_metal_mask_stack"]
+    #to_build = ["metal_mask_stack_4x4"]
     to_build = [""]  # all of them
     asys = ttt.build(to_build)
 
-    TwoDToThreeD.outputter(asys, wrk_dir, save_dxfs=True)
+    TwoDToThreeD.outputter(asys, wrk_dir, save_dxfs=True, save_steps=False)
 
 
 # temp is what we get when run via cq-editor
