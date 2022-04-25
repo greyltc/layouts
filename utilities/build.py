@@ -134,7 +134,7 @@ def main():
                     "color": support_color,
                     "thickness": support_thickness,
                     "drawing_layer_names": [
-                        "outline_5x5",
+                        "outline_loose_alignment_5x5",
                         "aggressive_support_active",
                     ],
                     "edge_case": "inner_outline_5x5",
@@ -145,7 +145,7 @@ def main():
                     "color": feature_color,
                     "thickness": feature_thickness,
                     "drawing_layer_names": [
-                        "outline_no_alignment_5x5",
+                        "outline_5x5",
                         "active_layer",
                     ],
                     "edge_case": "inner_outline_5x5",
@@ -175,7 +175,7 @@ def main():
                     "color": support_color,
                     "thickness": support_thickness,
                     "drawing_layer_names": [
-                        "outline_4x4",
+                        "outline_loose_alignment_4x4",
                         "aggressive_support_active",
                     ],
                     "edge_case": "inner_outline_4x4",
@@ -186,7 +186,7 @@ def main():
                     "color": feature_color,
                     "thickness": feature_thickness,
                     "drawing_layer_names": [
-                        "outline_no_alignment_4x4",
+                        "outline_4x4",
                         "active_layer",
                     ],
                     "edge_case": "inner_outline_4x4",
@@ -255,7 +255,7 @@ def main():
                     "color": support_color,
                     "thickness": support_thickness,
                     "drawing_layer_names": [
-                        "outline_5x5",
+                        "outline_loose_alignment_5x5",
                         "aggressive_metal_support_tc_metal",
                         "aggressive_metal_support_small_upper",
                         "aggressive_metal_support_large_lower",
@@ -268,7 +268,7 @@ def main():
                     "color": feature_color,
                     "thickness": feature_thickness,
                     "drawing_layer_names": [
-                        "outline_no_alignment_5x5",
+                        "outline_5x5",
                         "tc_metal",
                         "pixel_electrodes_small_upper",
                         "pixel_electrodes_large_lower",
@@ -300,7 +300,7 @@ def main():
                     "color": support_color,
                     "thickness": support_thickness,
                     "drawing_layer_names": [
-                        "outline_4x4",
+                        "outline_loose_alignment_4x4",
                         "aggressive_metal_support_tc_metal",
                         "aggressive_metal_support_small_upper",
                         "aggressive_metal_support_large_lower",
@@ -313,7 +313,7 @@ def main():
                     "color": feature_color,
                     "thickness": feature_thickness,
                     "drawing_layer_names": [
-                        "outline_no_alignment_4x4",
+                        "outline_4x4",
                         "tc_metal",
                         "pixel_electrodes_small_upper",
                         "pixel_electrodes_large_lower",
@@ -384,7 +384,7 @@ def main():
                     "color": support_color,
                     "thickness": support_thickness,
                     "drawing_layer_names": [
-                        "outline_5x5",
+                        "outline_loose_alignment_5x5",
                         "aggressive_metal_support_tc_metal",
                         "aggressive_metal_support_small_upper",
                         "aggressive_metal_support_small_lower",
@@ -397,7 +397,7 @@ def main():
                     "color": feature_color,
                     "thickness": feature_thickness,
                     "drawing_layer_names": [
-                        "outline_no_alignment_5x5",
+                        "outline_5x5",
                         "tc_metal",
                         "pixel_electrodes_small_upper",
                         "pixel_electrodes_small_lower",
@@ -429,7 +429,7 @@ def main():
                     "color": support_color,
                     "thickness": support_thickness,
                     "drawing_layer_names": [
-                        "outline_4x4",
+                        "outline_loose_alignment_4x4",
                         "aggressive_metal_support_tc_metal",
                         "aggressive_metal_support_small_upper",
                         "aggressive_metal_support_small_lower",
@@ -442,7 +442,7 @@ def main():
                     "color": feature_color,
                     "thickness": feature_thickness,
                     "drawing_layer_names": [
-                        "outline_no_alignment_4x4",
+                        "outline_4x4",
                         "tc_metal",
                         "pixel_electrodes_small_upper",
                         "pixel_electrodes_small_lower",
@@ -509,7 +509,7 @@ def main():
                     "color": support_color,
                     "thickness": support_thickness,
                     "drawing_layer_names": [
-                        "outline_5x5",
+                        "outline_loose_alignment_5x5",
                         "aggressive_support_recombi",
                     ],
                     "edge_case": "inner_outline_5x5",
@@ -520,7 +520,7 @@ def main():
                     "color": feature_color,
                     "thickness": feature_thickness,
                     "drawing_layer_names": [
-                        "outline_no_alignment_5x5",
+                        "outline_5x5",
                         "recombination_slash_interlayer",
                     ],
                     "edge_case": "inner_outline_5x5",
@@ -550,7 +550,7 @@ def main():
                     "color": support_color,
                     "thickness": support_thickness,
                     "drawing_layer_names": [
-                        "outline_4x4",
+                        "outline_loose_alignment_4x4",
                         "aggressive_support_recombi",
                     ],
                     "edge_case": "inner_outline_4x4",
@@ -561,7 +561,7 @@ def main():
                     "color": feature_color,
                     "thickness": feature_thickness,
                     "drawing_layer_names": [
-                        "outline_no_alignment_4x4",
+                        "outline_4x4",
                         "recombination_slash_interlayer",
                     ],
                     "edge_case": "inner_outline_4x4",
@@ -627,7 +627,7 @@ def main():
                     "color": support_color,
                     "thickness": support_thickness,
                     "drawing_layer_names": [
-                        "outline_5x5",
+                        "outline_loose_alignment_5x5",
                         "aggressive_support_tandem",
                     ],
                     "edge_case": "inner_outline_5x5",
@@ -638,7 +638,7 @@ def main():
                     "color": feature_color,
                     "thickness": feature_thickness,
                     "drawing_layer_names": [
-                        "outline_no_alignment_5x5",
+                        "outline_5x5",
                         "top_tco_large_lower",
                         "top_tco_small_upper",
                     ],
@@ -669,7 +669,7 @@ def main():
                     "color": support_color,
                     "thickness": support_thickness,
                     "drawing_layer_names": [
-                        "outline_4x4",
+                        "outline_loose_alignment_4x4",
                         "aggressive_support_tandem",
                     ],
                     "edge_case": "inner_outline_4x4",
@@ -680,7 +680,7 @@ def main():
                     "color": feature_color,
                     "thickness": feature_thickness,
                     "drawing_layer_names": [
-                        "outline_no_alignment_4x4",
+                        "outline_4x4",
                         "top_tco_large_lower",
                         "top_tco_small_upper",
                     ],
@@ -747,7 +747,7 @@ def main():
                     "color": support_color,
                     "thickness": support_thickness,
                     "drawing_layer_names": [
-                        "outline_5x5",
+                        "outline_loose_alignment_5x5",
                         "aggressive_support_tandem_metal",
                     ],
                     "edge_case": "inner_outline_5x5",
@@ -758,7 +758,7 @@ def main():
                     "color": feature_color,
                     "thickness": feature_thickness,
                     "drawing_layer_names": [
-                        "outline_no_alignment_5x5",
+                        "outline_5x5",
                         "pixel_electrodes_small_upper_finger",
                         "pixel_electrodes_large_lower_finger",
                     ],
@@ -789,7 +789,7 @@ def main():
                     "color": support_color,
                     "thickness": support_thickness,
                     "drawing_layer_names": [
-                        "outline_4x4",
+                        "outline_loose_alignment_4x4",
                         "aggressive_support_tandem_metal",
                     ],
                     "edge_case": "inner_outline_4x4",
@@ -800,7 +800,7 @@ def main():
                     "color": feature_color,
                     "thickness": feature_thickness,
                     "drawing_layer_names": [
-                        "outline_no_alignment_4x4",
+                        "outline_4x4",
                         "pixel_electrodes_small_upper_finger",
                         "pixel_electrodes_large_lower_finger",
                     ],
