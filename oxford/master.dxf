@@ -501,19 +501,19 @@ $TDUCREATE
   9
 $TDUPDATE
  40
-2458909.450365162
+2458909.369904699
   9
 $TDUUPDATE
  40
-2458909.450365162
+2458909.369904699
   9
 $TDINDWG
  40
-0.0591102315
+0.0591102662
   9
 $TDUSRTIMER
  40
-0.1052696065
+0.0255265162
   9
 $USRTIMER
  70
@@ -553,7 +553,7 @@ $SPLINESEGS
   9
 $HANDSEED
   5
-64A2
+64B5
   9
 $SURFTAB1
  70
@@ -1405,9 +1405,9 @@ AcDbViewportTableRecord
  21
 1.0
  12
-42.26710316582508
+42.13323315449214
  22
-17.83167369213626
+18.83655691823146
  13
 0.0
  23
@@ -1427,15 +1427,15 @@ AcDbViewportTableRecord
  36
 1.0
  17
--27.66959356597999
+-27.66959356597998
  27
 -19.53870295786224
  37
 0.0
  40
-46.21089814280666
+36.96871851424533
  41
-1.968807339449541
+1.992571959145775
  42
 50.0
  43
@@ -1655,7 +1655,7 @@ pixel_electrodes_small_lower
  70
      0
  62
-    -4
+     4
   6
 Continuous
 370
@@ -1691,7 +1691,7 @@ tc_etch_chemical
  70
      0
  62
-    -1
+     1
   6
 Continuous
 370
@@ -1871,7 +1871,7 @@ lightmask_small_lower
  70
      0
  62
-    -2
+     2
   6
 Continuous
 370
@@ -2015,7 +2015,7 @@ pixel_electrodes_large_upper
  70
      0
  62
-    -4
+     4
   6
 Continuous
 370
@@ -2051,7 +2051,7 @@ lightmask_large_upper
  70
      0
  62
-    -2
+     2
   6
 Continuous
 370
@@ -2431,7 +2431,7 @@ active_layer
  70
      0
  62
-    -6
+     6
   6
 Continuous
 370
@@ -3321,7 +3321,7 @@ pixel_electrodes_large_lower_finger
  70
      0
  62
-     4
+    -4
   6
 Continuous
 370
@@ -3825,7 +3825,7 @@ aggressive_support_tandem_metal
  70
      0
  62
-     9
+    -9
   6
 Continuous
 370
@@ -35157,7 +35157,7 @@ ACAD_VISUALSTYLE
   3
 ACDB_RECOMPOSE_DATA
 350
-64A1
+64B4
   3
 AcDbVariableDictionary
 350
@@ -35837,7 +35837,7 @@ EA
   0
 XRECORD
   5
-64A1
+64B4
 102
 {ACAD_REACTORS
 330
@@ -38237,7 +38237,7 @@ TABLESTYLE
 102
 {ACAD_XDICTIONARY
 360
-649F
+64B2
 102
 }
 330
@@ -45367,7 +45367,7 @@ AcDbDictionary
   0
 DICTIONARY
   5
-649F
+64B2
 330
 87
 100
@@ -45379,19 +45379,19 @@ AcDbDictionary
   3
 ACAD_ROUNDTRIP_2008_TABLESTYLE_CELLSTYLEMAP
 360
-64A0
+64B3
   0
 CELLSTYLEMAP
   5
-64A0
+64B3
 102
 {ACAD_REACTORS
 330
-649F
+64B2
 102
 }
 330
-649F
+64B2
 100
 AcDbCellStyleMap
  90
