@@ -24,6 +24,9 @@ def main():
     shim_thickness = 0.05
     glass_thickness = 1.0
     tco_thickness = 0.15
+    active_thickness = 0.2
+    metal_thickness = 0.1
+    contact_cylinder_height = 1
 
     support_color = "GOLDENROD"
     feature_color = "GRAY55"
@@ -822,11 +825,96 @@ def main():
         }
     )
 
+    instructions.append(
+        {
+            "name": "full_device_Stack",
+            "layers": [
+                {
+                    "name": "glass_piece",
+                    "color": glass_color,
+                    "thickness": glass_thickness,
+                    "drawing_layer_names": [
+                        "glass_extents",
+                    ],
+                },
+                {
+                    "name": "tco",
+                    "color": tco_color,
+                    "thickness": tco_thickness,
+                    "drawing_layer_names": [
+                        "tc_etch_chemical",
+                    ],
+                },
+                {
+                    "name": "active_layer",
+                    "color": "CHOCOLATE",
+                    "thickness": active_thickness,
+                    "drawing_layer_names": [
+                        "active_layer",
+                    ],
+                },
+                {
+                    "name": "small_pixels",
+                    "color": "GOLD",
+                    "thickness": metal_thickness,
+                    "drawing_layer_names": [
+                        "pixel_electrodes_small_lower",
+                    ],
+                },
+                {
+                    "name": "large_pixel",
+                    "color": "GOLD",
+                    "thickness": metal_thickness,
+                    "z_base": glass_thickness + tco_thickness + active_thickness,
+                    "drawing_layer_names": [
+                        "pixel_electrodes_large_upper",
+                    ],
+                },
+                {
+                    "name": "tc_metal",
+                    "color": "GOLD",
+                    "thickness": metal_thickness,
+                    "z_base": glass_thickness + tco_thickness,
+                    "drawing_layer_names": [
+                        "tc_metal",
+                    ],
+                },
+                {
+                    "name": "contact_points",
+                    "color": "WHITE",
+                    "thickness": contact_cylinder_height,
+                    "z_base": glass_thickness,
+                    "drawing_layer_names": [
+                        "contact_point",
+                    ],
+                },
+                {
+                    "name": "large_lightmask",
+                    "color": "CHOCOLATE",
+                    "thickness": active_thickness / 2,
+                    "z_base": glass_thickness + tco_thickness + active_thickness / 2,
+                    "drawing_layer_names": [
+                        "lightmask_large_upper",
+                    ],
+                },
+                {
+                    "name": "small_lightmask",
+                    "color": "CHOCOLATE",
+                    "thickness": active_thickness / 2,
+                    "z_base": glass_thickness + tco_thickness + active_thickness / 2,
+                    "drawing_layer_names": [
+                        "lightmask_small_lower",
+                    ],
+                },
+            ],
+        }
+    )
+
     ttt = TwoDToThreeD(instructions=instructions, sources=sources)
     # to_build = ["active_mask_stack", "metal_mask_stack", "tco_30x30mm", "active_mask_stack_4x4", "tco_150x150mm"]
-    #to_build = ["tco_30x30mm"]
-    #to_build = ["metal_mask_stack_4x4"]
-    to_build = [""]  # all of them
+    # to_build = ["tco_30x30mm"]
+    to_build = ["full_device_Stack"]
+    # to_build = [""]  # all of them
     asys = ttt.build(to_build)
 
     TwoDToThreeD.outputter(asys, wrk_dir, save_dxfs=False, save_steps=False, save_stls=False)
