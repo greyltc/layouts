@@ -22,11 +22,12 @@ def main():
     support_thickness = 0.75
     feature_thickness = 0.2
     shim_thickness = 0.05
-    glass_thickness = 1.0
-    tco_thickness = 0.15
-    active_thickness = 0.2
-    metal_thickness = 0.1
-    contact_cylinder_height = 1
+    glass_thickness = 1.1
+    device_layer_scale_factor = 1000
+    tco_thickness = 0.000145 * device_layer_scale_factor
+    active_thickness = 0.000600 * device_layer_scale_factor
+    metal_thickness = 0.000100 * device_layer_scale_factor
+    contact_cylinder_height = tco_thickness + active_thickness + metal_thickness
 
     support_color = "GOLDENROD"
     feature_color = "GRAY55"
@@ -913,7 +914,7 @@ def main():
     ttt = TwoDToThreeD(instructions=instructions, sources=sources)
     # to_build = ["active_mask_stack", "metal_mask_stack", "tco_30x30mm", "active_mask_stack_4x4", "tco_150x150mm"]
     # to_build = ["tco_30x30mm"]
-    to_build = ["full_device_Stack"]
+    to_build = ["full_device_Stack", "tco_30x30mm"]
     # to_build = [""]  # all of them
     asys = ttt.build(to_build)
 
