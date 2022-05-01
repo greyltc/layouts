@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 
+import enum
 from geometrics.toolbox.twod_to_threed import TwoDToThreeD
 from pathlib import Path
 import os
 import itertools
+import cadquery
 
 
 def main():
@@ -23,10 +25,10 @@ def main():
     feature_thickness = 0.2
     shim_thickness = 0.05
     glass_thickness = 1.1
-    device_layer_scale_factor = 1000
-    tco_thickness = 0.000145 * device_layer_scale_factor
-    active_thickness = 0.000600 * device_layer_scale_factor
-    metal_thickness = 0.000100 * device_layer_scale_factor
+    device_layer_scale_factor = 1
+    tco_thickness = 145e-6 * device_layer_scale_factor
+    active_thickness = 600e-6 * device_layer_scale_factor
+    metal_thickness = 100e-6 * device_layer_scale_factor
     contact_cylinder_height = tco_thickness + active_thickness + metal_thickness
 
     support_color = "GOLDENROD"
@@ -830,14 +832,14 @@ def main():
         {
             "name": "full_device_Stack",
             "layers": [
-                {
-                    "name": "glass_piece",
-                    "color": glass_color,
-                    "thickness": glass_thickness,
-                    "drawing_layer_names": [
-                        "glass_extents",
-                    ],
-                },
+                # {
+                #     "name": "glass_piece",
+                #     "color": glass_color,
+                #     "thickness": glass_thickness,
+                #     "drawing_layer_names": [
+                #         "glass_extents",
+                #     ],
+                # },
                 {
                     "name": "tco",
                     "color": tco_color,
@@ -866,7 +868,7 @@ def main():
                     "name": "large_pixel",
                     "color": "GOLD",
                     "thickness": metal_thickness,
-                    "z_base": glass_thickness + tco_thickness + active_thickness,
+                    "z_base": tco_thickness + active_thickness,
                     "drawing_layer_names": [
                         "pixel_electrodes_large_upper",
                     ],
@@ -875,7 +877,7 @@ def main():
                     "name": "tc_metal",
                     "color": "GOLD",
                     "thickness": metal_thickness,
-                    "z_base": glass_thickness + tco_thickness,
+                    "z_base": tco_thickness,
                     "drawing_layer_names": [
                         "tc_metal",
                     ],
@@ -884,7 +886,6 @@ def main():
                     "name": "contact_points",
                     "color": "WHITE",
                     "thickness": contact_cylinder_height,
-                    "z_base": glass_thickness,
                     "drawing_layer_names": [
                         "contact_point",
                     ],
@@ -892,17 +893,17 @@ def main():
                 {
                     "name": "large_lightmask",
                     "color": "CHOCOLATE",
-                    "thickness": active_thickness / 2,
-                    "z_base": glass_thickness + tco_thickness + active_thickness / 2,
+                    "thickness": active_thickness,
+                    "z_base": tco_thickness,
                     "drawing_layer_names": [
-                        "lightmask_large_upper",
+                        "large_upper_current_gen",
                     ],
                 },
                 {
                     "name": "small_lightmask",
                     "color": "CHOCOLATE",
-                    "thickness": active_thickness / 2,
-                    "z_base": glass_thickness + tco_thickness + active_thickness / 2,
+                    "thickness": active_thickness,
+                    "z_base": tco_thickness,
                     "drawing_layer_names": [
                         "lightmask_small_lower",
                     ],
@@ -914,11 +915,13 @@ def main():
     ttt = TwoDToThreeD(instructions=instructions, sources=sources)
     # to_build = ["active_mask_stack", "metal_mask_stack", "tco_30x30mm", "active_mask_stack_4x4", "tco_150x150mm"]
     # to_build = ["tco_30x30mm"]
-    to_build = ["full_device_Stack", "tco_30x30mm"]
+    to_build = ["full_device_Stack"]
     # to_build = [""]  # all of them
     asys = ttt.build(to_build)
 
-    TwoDToThreeD.outputter(asys, wrk_dir, save_dxfs=False, save_steps=False, save_stls=False)
+    ttt.faceputter(wrk_dir)  # output the face data for comsol
+
+    TwoDToThreeD.outputter(asys, wrk_dir, save_dxfs=False, save_steps=False, save_stls=True)
 
 
 # temp is what we get when run via cq-editor
