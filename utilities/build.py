@@ -1,11 +1,10 @@
 #!/usr/bin/env python3
 
-import enum
-from geometrics.toolbox.twod_to_threed import TwoDToThreeD
-from pathlib import Path
-import os
 import itertools
-import cadquery
+import os
+from pathlib import Path
+
+from geometrics.toolbox.twod_to_threed import TwoDToThreeD
 
 
 def main():
@@ -25,8 +24,8 @@ def main():
     feature_thickness = 0.2
     shim_thickness = 0.05
     glass_thickness = 1.1
-    device_layer_scale_factor = 1
-    tco_thickness = 145e-6 * device_layer_scale_factor
+    device_layer_scale_factor = 10000
+    tco_thickness = 140e-6 * device_layer_scale_factor
     active_thickness = 600e-6 * device_layer_scale_factor
     metal_thickness = 100e-6 * device_layer_scale_factor
     contact_cylinder_height = tco_thickness + active_thickness + metal_thickness
@@ -708,6 +707,163 @@ def main():
         }
     )
 
+    # NOTE this design is a fail. it shadows the fingers
+    instructions.append(
+        {
+            "name": "flappy_tandem_metal_mask_stack",
+            "layers": [
+                {
+                    "name": "tandem_metal_support",
+                    "color": support_color,
+                    "thickness": support_thickness,
+                    "drawing_layer_names": [
+                        "glass_extents",
+                        "aggressive_metal_support_tc_metal",
+                        "aggressive_metal_support_small_upper_flappy",
+                        "aggressive_metal_support_large_lower_flappy",
+                    ],
+                },
+                {
+                    "name": "tandem_metal_feature",
+                    "color": feature_color,
+                    "thickness": feature_thickness,
+                    "drawing_layer_names": [
+                        "glass_extents",
+                        "tc_metal",
+                        "pixel_electrodes_small_upper_flappy",
+                        "pixel_electrodes_large_lower_flappy",
+                    ],
+                },
+                {
+                    "name": "spacer_shim_thin",
+                    "color": shim_color,
+                    "thickness": shim_thickness,
+                    "drawing_layer_names": [
+                        "glass_extents",
+                        "spacer_shim_thin",
+                    ],
+                },
+            ],
+        }
+    )
+
+    instructions.append(
+        {
+            "name": "tc_metal_mask_stack",
+            "layers": [
+                {
+                    "name": "tandem_metal_support",
+                    "color": support_color,
+                    "thickness": support_thickness,
+                    "drawing_layer_names": [
+                        "glass_extents",
+                        "tc_metal_support",
+                    ],
+                },
+                {
+                    "name": "tandem_metal_feature",
+                    "color": feature_color,
+                    "thickness": feature_thickness,
+                    "drawing_layer_names": [
+                        "glass_extents",
+                        "tc_metal",
+                    ],
+                },
+                {
+                    "name": "spacer_shim_thin",
+                    "color": shim_color,
+                    "thickness": shim_thickness,
+                    "drawing_layer_names": [
+                        "glass_extents",
+                        "spacer_shim_thin",
+                    ],
+                },
+            ],
+        }
+    )
+
+    instructions.append(
+        {
+            "name": "tc_metal_mask_stack_5x5",
+            "layers": [
+                {
+                    "name": "tandem_metal_support",
+                    "color": support_color,
+                    "thickness": support_thickness,
+                    "drawing_layer_names": [
+                        "outline_loose_alignment_5x5",
+                        "tc_metal_support",
+                    ],
+                    "edge_case": "inner_outline_5x5",
+                    "array": array5,
+                },
+                {
+                    "name": "tandem_metal_feature",
+                    "color": feature_color,
+                    "thickness": feature_thickness,
+                    "drawing_layer_names": [
+                        "outline_5x5",
+                        "tc_metal",
+                    ],
+                    "edge_case": "inner_outline_5x5",
+                    "array": array5,
+                },
+                {
+                    "name": "spacer_shim_thin",
+                    "color": shim_color,
+                    "thickness": shim_thickness,
+                    "drawing_layer_names": [
+                        "outline_no_alignment_5x5",
+                        "spacer_shim_thin",
+                    ],
+                    "edge_case": "inner_outline_5x5",
+                    "array": array5,
+                },
+            ],
+        }
+    )
+
+    instructions.append(
+        {
+            "name": "tc_metal_mask_stack_4x4",
+            "layers": [
+                {
+                    "name": "tandem_metal_support",
+                    "color": support_color,
+                    "thickness": support_thickness,
+                    "drawing_layer_names": [
+                        "outline_loose_alignment_4x4",
+                        "tc_metal_support",
+                    ],
+                    "edge_case": "inner_outline_4x4",
+                    "array": array4,
+                },
+                {
+                    "name": "tandem_metal_feature",
+                    "color": feature_color,
+                    "thickness": feature_thickness,
+                    "drawing_layer_names": [
+                        "outline_4x4",
+                        "tc_metal",
+                    ],
+                    "edge_case": "inner_outline_4x4",
+                    "array": array4,
+                },
+                {
+                    "name": "spacer_shim_thin",
+                    "color": shim_color,
+                    "thickness": shim_thickness,
+                    "drawing_layer_names": [
+                        "outline_no_alignment_4x4",
+                        "spacer_shim_thin",
+                    ],
+                    "edge_case": "inner_outline_4x4",
+                    "array": array4,
+                },
+            ],
+        }
+    )
+
     instructions.append(
         {
             "name": "tandem_metal_mask_stack",
@@ -832,14 +988,15 @@ def main():
         {
             "name": "full_device_Stack",
             "layers": [
-                # {
-                #     "name": "glass_piece",
-                #     "color": glass_color,
-                #     "thickness": glass_thickness,
-                #     "drawing_layer_names": [
-                #         "glass_extents",
-                #     ],
-                # },
+                {
+                    "z_base": -glass_thickness,
+                    "name": "glass_piece",
+                    "color": glass_color,
+                    "thickness": glass_thickness,
+                    "drawing_layer_names": [
+                        "glass_extents",
+                    ],
+                },
                 {
                     "name": "tco",
                     "color": tco_color,
@@ -885,9 +1042,11 @@ def main():
                 {
                     "name": "contact_points",
                     "color": "WHITE",
+                    "z_base": 0,
                     "thickness": contact_cylinder_height,
                     "drawing_layer_names": [
-                        "contact_point",
+                        "contact_pin_diameter",
+                        # "contact_point",
                     ],
                 },
                 {
@@ -915,13 +1074,16 @@ def main():
     ttt = TwoDToThreeD(instructions=instructions, sources=sources)
     # to_build = ["active_mask_stack", "metal_mask_stack", "tco_30x30mm", "active_mask_stack_4x4", "tco_150x150mm"]
     # to_build = ["tco_30x30mm"]
-    to_build = ["full_device_Stack"]
-    # to_build = [""]  # all of them
+    # to_build = ["full_device_Stack"]
+    # to_build = ["tandem_metal_mask_stack"]
+    # to_build = ["metal_mask_stack"]
+    to_build = ["tc_metal_mask_stack", "tc_metal_mask_stack_5x5", "tc_metal_mask_stack_4x4"]
+    #to_build = [""]  # all of them
     asys = ttt.build(to_build)
 
-    ttt.faceputter(wrk_dir)  # output the face data for comsol
+    # ttt.faceputter(wrk_dir)  # output the face data for comsol
 
-    TwoDToThreeD.outputter(asys, wrk_dir, save_dxfs=False, save_steps=False, save_stls=True)
+    TwoDToThreeD.outputter(asys, wrk_dir, save_dxfs=True, save_steps=True, save_stls=False)
 
 
 # temp is what we get when run via cq-editor
