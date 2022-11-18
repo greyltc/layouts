@@ -1390,13 +1390,14 @@ def main():
     # to_build = ["metal_mask_stack"]
     # to_build = ["tc_metal_mask_stack", "tc_metal_mask_stack_5x5", "tc_metal_mask_stack_4x4"]
     # to_build = ["metal2_mask_stack", "metal2_mask_stack_4x4", "metal2_mask_stack_5x5", "one_big_lightmask"]
-    to_build = ["no_large_lightmask", "one_large_lightmask", "two_large_lightmask", "led_metal_mask_stack", "led_metal_mask_stack_5x5", "led_metal_mask_stack_4x4"]
-    # to_build = [""]  # all of them
-    asys = ttt.build(to_build)
+    # to_build = ["no_large_lightmask", "one_large_lightmask", "two_large_lightmask", "led_metal_mask_stack", "led_metal_mask_stack_5x5", "led_metal_mask_stack_4x4"]
+    # to_build = ["no_large_lightmask", "one_large_lightmask", "two_large_lightmask", "led_metal_mask_stack"]
+    to_build = [""]  # all of them
+    asys = ttt.build(to_build, nparallel=5)
 
     # ttt.faceputter(wrk_dir)  # output the face data for comsol
 
-    TwoDToThreeD.outputter(asys, wrk_dir, save_dxfs=True, save_steps=True, save_stls=False)
+    TwoDToThreeD.outputter(asys, wrk_dir, save_dxfs=True, save_steps=True, save_stls=False, nparallel=1)
 
 
 # temp is what we get when run via cq-editor
