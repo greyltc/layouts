@@ -7,7 +7,7 @@ from pathlib import Path
 from geometrics.toolbox.twod_to_threed import TwoDToThreeD
 
 
-def main():
+def main(do):
     # define where we'll read shapes from
     try:
         wrk_dir = Path(__file__).parent
@@ -1382,24 +1382,28 @@ def main():
         }
     )
 
-    ttt = TwoDToThreeD(instructions=instructions, sources=sources)
-    # to_build = ["active_mask_stack", "metal_mask_stack", "tco_30x30mm", "active_mask_stack_4x4", "tco_150x150mm"]
-    # to_build = ["tco_30x30mm"]
-    # to_build = ["full_device_Stack"]
-    # to_build = ["tandem_metal_mask_stack"]
-    # to_build = ["metal_mask_stack"]
-    # to_build = ["tc_metal_mask_stack", "tc_metal_mask_stack_5x5", "tc_metal_mask_stack_4x4"]
-    # to_build = ["metal2_mask_stack", "metal2_mask_stack_4x4", "metal2_mask_stack_5x5", "one_big_lightmask"]
-    # to_build = ["no_large_lightmask", "one_large_lightmask", "two_large_lightmask", "led_metal_mask_stack", "led_metal_mask_stack_5x5", "led_metal_mask_stack_4x4"]
-    # to_build = ["no_large_lightmask", "one_large_lightmask", "two_large_lightmask", "led_metal_mask_stack"]
-    to_build = [""]  # all of them
-    asys = ttt.build(to_build, nparallel=5)
+    if "masks" in do:
+        ttt = TwoDToThreeD(instructions=instructions, sources=sources)
+        # to_build = ["active_mask_stack", "metal_mask_stack", "tco_30x30mm", "active_mask_stack_4x4", "tco_150x150mm"]
+        # to_build = ["tco_30x30mm"]
+        # to_build = ["full_device_Stack"]
+        # to_build = ["tandem_metal_mask_stack"]
+        # to_build = ["metal_mask_stack"]
+        # to_build = ["tc_metal_mask_stack", "tc_metal_mask_stack_5x5", "tc_metal_mask_stack_4x4"]
+        # to_build = ["metal2_mask_stack", "metal2_mask_stack_4x4", "metal2_mask_stack_5x5", "one_big_lightmask"]
+        # to_build = ["no_large_lightmask", "one_large_lightmask", "two_large_lightmask", "led_metal_mask_stack", "led_metal_mask_stack_5x5", "led_metal_mask_stack_4x4"]
+        # to_build = ["no_large_lightmask", "one_large_lightmask", "two_large_lightmask", "led_metal_mask_stack"]
+        to_build = [""]  # all of them
+        asys = ttt.build(to_build, nparallel=5)
 
-    # ttt.faceputter(wrk_dir)  # output the face data for comsol
+        # ttt.faceputter(wrk_dir)  # output the face data for comsol
 
-    TwoDToThreeD.outputter(asys, wrk_dir, save_dxfs=True, save_steps=True, save_stls=False, nparallel=1)
+        TwoDToThreeD.outputter(asys, wrk_dir, save_dxfs=True, save_steps=True, save_stls=False, nparallel=6)
 
 
 # temp is what we get when run via cq-editor
 if __name__ in ["__main__", "temp"]:
-    main()
+    # define what to do
+    do = ("masks",)
+
+    main(do)
