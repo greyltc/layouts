@@ -270,6 +270,29 @@ def main(do):
 
     instructions.append(
         {
+            "name": "metal2_mask_stack_edm",
+            "layers": [
+                {
+                    "name": "metal_feature",
+                    "color": feature_color,
+                    "thickness": 1.0,
+                    "drawing_layer_names": [
+                        "glass_extents",
+                        "tc_metal",
+                        "pixel_electrodes_large_lower_high_res_edm",
+                        "pixel_electrodes_large_lower_high_res_edm2",
+                        "pixel_electrodes_large_lower_edm",
+                        "pixel_electrodes_large_upper_high_res_edm",
+                        "pixel_electrodes_large_upper_high_res_edm2",
+                        "pixel_electrodes_large_upper_edm",
+                    ],
+                },
+            ],
+        }
+    )
+
+    instructions.append(
+        {
             "name": "metal2_mask_stack",
             "layers": [
                 {
@@ -1393,7 +1416,8 @@ def main(do):
         # to_build = ["metal2_mask_stack", "metal2_mask_stack_4x4", "metal2_mask_stack_5x5", "one_big_lightmask"]
         # to_build = ["no_large_lightmask", "one_large_lightmask", "two_large_lightmask", "led_metal_mask_stack", "led_metal_mask_stack_5x5", "led_metal_mask_stack_4x4"]
         # to_build = ["no_large_lightmask", "one_large_lightmask", "two_large_lightmask", "led_metal_mask_stack"]
-        to_build = [""]  # all of them
+        to_build = ["metal2_mask_stack_edm"]  # all of them
+        # to_build = [""]  # all of them
         asys = ttt.build(to_build, nparallel=5)
 
         # ttt.faceputter(wrk_dir)  # output the face data for comsol
