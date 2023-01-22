@@ -312,26 +312,20 @@ def main(do):
             "name": "metal2_mask_stack_edm",
             "layers": [
                 {
-                    "name": "metal_feature",
+                    "name": "single_piece_mask",
                     "color": feature_color,
                     "thickness": 1.0,
-                    "edm_dent": ("spacer_shim_thick", 0.05),
+                    "edm_dent": "spacer_shim_thick",
+                    "edm_dent_depth": 0.05,
                     "drawing_layer_names": [
                         "glass_extents",
                         "tc_metal",
-                        "pixel_electrodes_large_lower_t1_a_edm_loft",
-                        "pixel_electrodes_large_lower_t1_b_edm_loft",
-                        "pixel_electrodes_large_lower_t2_a_edm_loft",
-                        "pixel_electrodes_large_lower_t2_b_edm_loft",
-                        "pixel_electrodes_large_lower_bp_a_edm_loft",
-                        "pixel_electrodes_large_lower_bp_b_edm_loft",
-                        "pixel_electrodes_large_upper_t1_a_edm_loft",
-                        "pixel_electrodes_large_upper_t1_b_edm_loft",
-                        "pixel_electrodes_large_upper_t2_a_edm_loft",
-                        "pixel_electrodes_large_upper_t2_b_edm_loft",
-                        "pixel_electrodes_large_upper_bp_a_edm_loft",
-                        "pixel_electrodes_large_upper_bp_b_edm_loft",
-                        "spacer_shim_thick",
+                        ("pixel_electrodes_large_lower_1_edm", "pixel_electrodes_large_lower_1_loft"),
+                        ("pixel_electrodes_large_lower_3", "pixel_electrodes_large_lower_3_loft"),
+                        ("pixel_electrodes_large_lower_5_edm", "pixel_electrodes_large_lower_5_loft"),
+                        ("pixel_electrodes_large_upper_2_edm", "pixel_electrodes_large_upper_2_loft"),
+                        ("pixel_electrodes_large_upper_4", "pixel_electrodes_large_upper_4_loft"),
+                        ("pixel_electrodes_large_upper_6_edm", "pixel_electrodes_large_upper_6_loft"),
                     ],
                 },
             ],
@@ -346,23 +340,17 @@ def main(do):
                     "name": "metal_feature",
                     "color": feature_color,
                     "thickness": 1.0,
-                    "edm_dent": ("spacer_shim_thick", 0.05),
+                    "edm_dent": "spacer_shim_thick",
+                    "edm_dent_depth": 0.05,
                     "drawing_layer_names": [
                         "outline_5x5",
                         "tc_metal",
-                        "pixel_electrodes_large_lower_t1_a_edm_loft",
-                        "pixel_electrodes_large_lower_t1_b_edm_loft",
-                        "pixel_electrodes_large_lower_t2_a_edm_loft",
-                        "pixel_electrodes_large_lower_t2_b_edm_loft",
-                        "pixel_electrodes_large_lower_bp_a_edm_loft",
-                        "pixel_electrodes_large_lower_bp_b_edm_loft",
-                        "pixel_electrodes_large_upper_t1_a_edm_loft",
-                        "pixel_electrodes_large_upper_t1_b_edm_loft",
-                        "pixel_electrodes_large_upper_t2_a_edm_loft",
-                        "pixel_electrodes_large_upper_t2_b_edm_loft",
-                        "pixel_electrodes_large_upper_bp_a_edm_loft",
-                        "pixel_electrodes_large_upper_bp_b_edm_loft",
-                        "spacer_shim_thick",
+                        ("pixel_electrodes_large_lower_1_edm", "pixel_electrodes_large_lower_1_loft"),
+                        ("pixel_electrodes_large_lower_3", "pixel_electrodes_large_lower_3_loft"),
+                        ("pixel_electrodes_large_lower_5_edm", "pixel_electrodes_large_lower_5_loft"),
+                        ("pixel_electrodes_large_upper_2_edm", "pixel_electrodes_large_upper_2_loft"),
+                        ("pixel_electrodes_large_upper_4", "pixel_electrodes_large_upper_4_loft"),
+                        ("pixel_electrodes_large_upper_6_edm", "pixel_electrodes_large_upper_6_loft"),
                     ],
                     "edge_case": "inner_outline_5x5",
                     "array": array5,
@@ -760,27 +748,48 @@ def main(do):
             "name": "metal6_mask_stack_edm",
             "layers": [
                 {
-                    "name": "metal_feature",
+                    "name": "single_piece_mask",
                     "color": feature_color,
                     "thickness": 1.0,
-                    "edm_dent": ("spacer_shim_thick", 0.05),
+                    "edm_dent": "spacer_shim_thick",
+                    "edm_dent_depth": 0.05,
                     "drawing_layer_names": [
                         "glass_extents",
                         "tc_metal",
-                        "pixel_electrodes_small_lower_m1_a_edm_loft",
-                        "pixel_electrodes_small_lower_m1_b_edm_loft",
-                        "pixel_electrodes_small_lower_m2_a_edm_loft",
-                        "pixel_electrodes_small_lower_m2_b_edm_loft",
-                        "pixel_electrodes_small_lower_m3_a_edm_loft",
-                        "pixel_electrodes_small_lower_m3_b_edm_loft",
-                        "pixel_electrodes_small_upper_m1_a_edm_loft",
-                        "pixel_electrodes_small_upper_m1_b_edm_loft",
-                        "pixel_electrodes_small_upper_m2_a_edm_loft",
-                        "pixel_electrodes_small_upper_m2_b_edm_loft",
-                        "pixel_electrodes_small_upper_m3_a_edm_loft",
-                        "pixel_electrodes_small_upper_m3_b_edm_loft",
-                        "spacer_shim_thick",
+                        ("pixel_electrodes_small_lower_1", "pixel_electrodes_small_lower_1_loft"),
+                        ("pixel_electrodes_small_lower_3", "pixel_electrodes_small_lower_3_loft"),
+                        ("pixel_electrodes_small_lower_5", "pixel_electrodes_small_lower_5_loft"),
+                        ("pixel_electrodes_small_upper_2", "pixel_electrodes_small_upper_2_loft"),
+                        ("pixel_electrodes_small_upper_4", "pixel_electrodes_small_upper_4_loft"),
+                        ("pixel_electrodes_small_upper_6", "pixel_electrodes_small_upper_6_loft"),
                     ],
+                },
+            ],
+        }
+    )
+
+    instructions.append(
+        {
+            "name": "metal6_mask_stack_edm_5x5",
+            "layers": [
+                {
+                    "name": "single_piece_mask",
+                    "color": feature_color,
+                    "thickness": 1.0,
+                    "edm_dent": "spacer_shim_thick",
+                    "edm_dent_depth": 0.05,
+                    "drawing_layer_names": [
+                        "outline_5x5",
+                        "tc_metal",
+                        ("pixel_electrodes_small_lower_1", "pixel_electrodes_small_lower_1_loft"),
+                        ("pixel_electrodes_small_lower_3", "pixel_electrodes_small_lower_3_loft"),
+                        ("pixel_electrodes_small_lower_5", "pixel_electrodes_small_lower_5_loft"),
+                        ("pixel_electrodes_small_upper_2", "pixel_electrodes_small_upper_2_loft"),
+                        ("pixel_electrodes_small_upper_4", "pixel_electrodes_small_upper_4_loft"),
+                        ("pixel_electrodes_small_upper_6", "pixel_electrodes_small_upper_6_loft"),
+                    ],
+                    "edge_case": "inner_outline_5x5",
+                    "array": array5,
                 },
             ],
         }
@@ -1488,13 +1497,16 @@ def main(do):
         # to_build = ["metal2_mask_stack", "metal2_mask_stack_4x4", "metal2_mask_stack_5x5", "one_big_lightmask"]
         # to_build = ["no_large_lightmask", "one_large_lightmask", "two_large_lightmask", "led_metal_mask_stack", "led_metal_mask_stack_5x5", "led_metal_mask_stack_4x4"]
         # to_build = ["no_large_lightmask", "one_large_lightmask", "two_large_lightmask", "led_metal_mask_stack"]
-        to_build = ["metal2_mask_stack_edm", "metal2_mask_stack_edm_5x5", "metal6_mask_stack_edm"]  # all of them
+        # to_build = ["metal2_mask_stack_edm", "metal2_mask_stack_edm_5x5", "metal6_mask_stack_edm"]  # all of them
+        # to_build = ["metal2_mask_stack_edm", "metal2_mask_stack_edm_5x5", "metal6_mask_stack_edm_5x5", "metal6_mask_stack_edm"]
+        to_build = ["metal6_mask_stack_edm_5x5"]
+        # to_build = ["metal6_mask_stack_edm"]
         # to_build = [""]  # all of them
         asys = ttt.build(to_build, nparallel=5)
 
         # ttt.faceputter(wrk_dir)  # output the face data for comsol
 
-        TwoDToThreeD.outputter(asys, wrk_dir, save_dxfs=True, save_steps=True, save_stls=False, nparallel=6)
+        TwoDToThreeD.outputter(asys, wrk_dir, save_dxfs=True, save_steps=False, save_stls=False, nparallel=6)
 
 
 # temp is what we get when run via cq-editor
