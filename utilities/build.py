@@ -30,6 +30,7 @@ def main(do):
     active_thickness = 600e-6 * device_layer_scale_factor
     metal_thickness = 100e-6 * device_layer_scale_factor
     contact_cylinder_height = tco_thickness + active_thickness + metal_thickness
+    angle = 30
 
     support_color = "GOLDENROD"
     feature_color = "GRAY55"
@@ -170,7 +171,7 @@ def main(do):
                     "thickness": feature_thickness,
                     "drawing_layer_names": [
                         "glass_extents",
-                        "active_layer",
+                        "active_layer_bigger",
                     ],
                 },
                 {
@@ -207,7 +208,7 @@ def main(do):
                     "thickness": feature_thickness,
                     "drawing_layer_names": [
                         "outline_5x5",
-                        "active_layer",
+                        "active_layer_bigger",
                     ],
                     "edge_case": "inner_outline_5x5",
                     "array": array5,
@@ -248,7 +249,7 @@ def main(do):
                     "thickness": feature_thickness,
                     "drawing_layer_names": [
                         "outline_4x4",
-                        "active_layer",
+                        "active_layer_bigger",
                     ],
                     "edge_case": "inner_outline_4x4",
                     "array": array4,
@@ -309,7 +310,7 @@ def main(do):
 
     instructions.append(
         {
-            "name": "metal2_mask_stack_edm",
+            "name": "metal2_mask_angle",
             "layers": [
                 {
                     "name": "single_piece_mask",
@@ -320,12 +321,16 @@ def main(do):
                     "drawing_layer_names": [
                         "glass_extents",
                         "tc_metal",
-                        ("pixel_electrodes_large_lower_1_edm", "pixel_electrodes_large_lower_1_loft"),
-                        ("pixel_electrodes_large_lower_3", "pixel_electrodes_large_lower_3_loft"),
-                        ("pixel_electrodes_large_lower_5_edm", "pixel_electrodes_large_lower_5_loft"),
-                        ("pixel_electrodes_large_upper_2_edm", "pixel_electrodes_large_upper_2_loft"),
-                        ("pixel_electrodes_large_upper_4", "pixel_electrodes_large_upper_4_loft"),
-                        ("pixel_electrodes_large_upper_6_edm", "pixel_electrodes_large_upper_6_loft"),
+                        # ("pixel_electrodes_large_upper_edm_2", "pixel_electrodes_large_upper_2_loft"),
+                        # ("pixel_electrodes_small_upper_4", "pixel_electrodes_large_upper_4_loft"),
+                        # ("pixel_electrodes_large_upper_edm_6", "pixel_electrodes_large_upper_6_loft"),
+                        ("pixel_electrodes_large_upper_edm_high_res", -angle),
+                        "pixel_electrodes_large_upper_edm",
+                        # ("pixel_electrodes_large_lower_edm_1", "pixel_electrodes_large_lower_1_loft"),
+                        # ("pixel_electrodes_large_lower_3", "pixel_electrodes_large_lower_3_loft"),
+                        # ("pixel_electrodes_large_lower_edm_5", "pixel_electrodes_large_lower_5_loft"),
+                        ("pixel_electrodes_large_lower_edm_high_res", -angle),
+                        "pixel_electrodes_large_lower_edm",
                     ],
                 },
             ],
@@ -334,10 +339,10 @@ def main(do):
 
     instructions.append(
         {
-            "name": "metal2_mask_stack_edm_5x5",
+            "name": "metal2_mask_angle_5x5",
             "layers": [
                 {
-                    "name": "metal_feature",
+                    "name": "single_piece_mask",
                     "color": feature_color,
                     "thickness": 1.0,
                     "edm_dent": "spacer_shim_thick",
@@ -345,12 +350,16 @@ def main(do):
                     "drawing_layer_names": [
                         "outline_5x5",
                         "tc_metal",
-                        ("pixel_electrodes_large_lower_1_edm", "pixel_electrodes_large_lower_1_loft"),
-                        ("pixel_electrodes_large_lower_3", "pixel_electrodes_large_lower_3_loft"),
-                        ("pixel_electrodes_large_lower_5_edm", "pixel_electrodes_large_lower_5_loft"),
-                        ("pixel_electrodes_large_upper_2_edm", "pixel_electrodes_large_upper_2_loft"),
-                        ("pixel_electrodes_large_upper_4", "pixel_electrodes_large_upper_4_loft"),
-                        ("pixel_electrodes_large_upper_6_edm", "pixel_electrodes_large_upper_6_loft"),
+                        # ("pixel_electrodes_large_upper_edm_2", "pixel_electrodes_large_upper_2_loft"),
+                        # ("pixel_electrodes_small_upper_4", "pixel_electrodes_large_upper_4_loft"),
+                        # ("pixel_electrodes_large_upper_edm_6", "pixel_electrodes_large_upper_6_loft"),
+                        ("pixel_electrodes_large_upper_edm_high_res", -angle),
+                        "pixel_electrodes_large_upper_edm",
+                        # ("pixel_electrodes_large_lower_edm_1", "pixel_electrodes_large_lower_1_loft"),
+                        # ("pixel_electrodes_large_lower_3", "pixel_electrodes_large_lower_3_loft"),
+                        # ("pixel_electrodes_large_lower_edm_5", "pixel_electrodes_large_lower_5_loft"),
+                        ("pixel_electrodes_large_lower_edm_high_res", -angle),
+                        "pixel_electrodes_large_lower_edm",
                     ],
                     "edge_case": "inner_outline_5x5",
                     "array": array5,
@@ -616,6 +625,66 @@ def main(do):
 
     instructions.append(
         {
+            "name": "metal_mask_angle",
+            "layers": [
+                {
+                    "name": "single_piece_mask",
+                    "color": feature_color,
+                    "thickness": 1.0,
+                    "edm_dent": "spacer_shim_thick",
+                    "edm_dent_depth": 0.05,
+                    "drawing_layer_names": [
+                        "glass_extents",
+                        "tc_metal",
+                        # ("pixel_electrodes_small_upper_2", "pixel_electrodes_small_upper_2_loft"),
+                        # ("pixel_electrodes_small_upper_4", "pixel_electrodes_small_upper_4_loft"),
+                        # ("pixel_electrodes_small_upper_6", "pixel_electrodes_small_upper_6_loft"),
+                        ("pixel_electrodes_small_upper_high_res", -angle),
+                        "pixel_electrodes_small_upper",
+                        # ("pixel_electrodes_large_lower_1", "pixel_electrodes_large_lower_1_loft"),
+                        # ("pixel_electrodes_large_lower_3", "pixel_electrodes_large_lower_3_loft"),
+                        # ("pixel_electrodes_large_lower_5", "pixel_electrodes_large_lower_5_loft"),
+                        ("pixel_electrodes_large_lower_edm_high_res", -angle),
+                        "pixel_electrodes_large_lower_edm",
+                    ],
+                },
+            ],
+        }
+    )
+
+    instructions.append(
+        {
+            "name": "metal_mask_angle_5x5",
+            "layers": [
+                {
+                    "name": "single_piece_mask",
+                    "color": feature_color,
+                    "thickness": 1.0,
+                    "edm_dent": "spacer_shim_thick",
+                    "edm_dent_depth": 0.05,
+                    "drawing_layer_names": [
+                        "outline_5x5",
+                        "tc_metal",
+                        # ("pixel_electrodes_small_upper_2", "pixel_electrodes_small_upper_2_loft"),
+                        # ("pixel_electrodes_small_upper_4", "pixel_electrodes_small_upper_4_loft"),
+                        # ("pixel_electrodes_small_upper_6", "pixel_electrodes_small_upper_6_loft"),
+                        ("pixel_electrodes_small_upper_high_res", -angle),
+                        "pixel_electrodes_small_upper",
+                        # ("pixel_electrodes_large_lower_1", "pixel_electrodes_large_lower_1_loft"),
+                        # ("pixel_electrodes_large_lower_3", "pixel_electrodes_large_lower_3_loft"),
+                        # ("pixel_electrodes_large_lower_5", "pixel_electrodes_large_lower_5_loft"),
+                        ("pixel_electrodes_large_lower_edm_high_res", -angle),
+                        "pixel_electrodes_large_lower_edm",
+                    ],
+                    "edge_case": "inner_outline_5x5",
+                    "array": array5,
+                },
+            ],
+        }
+    )
+
+    instructions.append(
+        {
             "name": "metal_mask_stack_5x5",
             "layers": [
                 {
@@ -745,7 +814,7 @@ def main(do):
 
     instructions.append(
         {
-            "name": "metal6_mask_stack_edm",
+            "name": "metal6_mask_angle",
             "layers": [
                 {
                     "name": "single_piece_mask",
@@ -756,12 +825,16 @@ def main(do):
                     "drawing_layer_names": [
                         "glass_extents",
                         "tc_metal",
-                        ("pixel_electrodes_small_lower_1", "pixel_electrodes_small_lower_1_loft"),
-                        ("pixel_electrodes_small_lower_3", "pixel_electrodes_small_lower_3_loft"),
-                        ("pixel_electrodes_small_lower_5", "pixel_electrodes_small_lower_5_loft"),
-                        ("pixel_electrodes_small_upper_2", "pixel_electrodes_small_upper_2_loft"),
-                        ("pixel_electrodes_small_upper_4", "pixel_electrodes_small_upper_4_loft"),
-                        ("pixel_electrodes_small_upper_6", "pixel_electrodes_small_upper_6_loft"),
+                        # ("pixel_electrodes_small_upper_2", "pixel_electrodes_small_upper_2_loft"),
+                        # ("pixel_electrodes_small_upper_4", "pixel_electrodes_small_upper_4_loft"),
+                        # ("pixel_electrodes_small_upper_6", "pixel_electrodes_small_upper_6_loft"),
+                        ("pixel_electrodes_small_upper_high_res", -angle),
+                        "pixel_electrodes_small_upper",
+                        # ("pixel_electrodes_small_lower_1", "pixel_electrodes_small_lower_1_loft"),
+                        # ("pixel_electrodes_small_lower_3", "pixel_electrodes_small_lower_3_loft"),
+                        # ("pixel_electrodes_small_lower_5", "pixel_electrodes_small_lower_5_loft"),
+                        ("pixel_electrodes_small_lower_high_res", -angle),
+                        "pixel_electrodes_small_lower",
                     ],
                 },
             ],
@@ -770,7 +843,7 @@ def main(do):
 
     instructions.append(
         {
-            "name": "metal6_mask_stack_edm_5x5",
+            "name": "metal6_mask_angle_5x5",
             "layers": [
                 {
                     "name": "single_piece_mask",
@@ -781,12 +854,16 @@ def main(do):
                     "drawing_layer_names": [
                         "outline_5x5",
                         "tc_metal",
-                        ("pixel_electrodes_small_lower_1", "pixel_electrodes_small_lower_1_loft"),
-                        ("pixel_electrodes_small_lower_3", "pixel_electrodes_small_lower_3_loft"),
-                        ("pixel_electrodes_small_lower_5", "pixel_electrodes_small_lower_5_loft"),
-                        ("pixel_electrodes_small_upper_2", "pixel_electrodes_small_upper_2_loft"),
-                        ("pixel_electrodes_small_upper_4", "pixel_electrodes_small_upper_4_loft"),
-                        ("pixel_electrodes_small_upper_6", "pixel_electrodes_small_upper_6_loft"),
+                        # ("pixel_electrodes_small_upper_2", "pixel_electrodes_small_upper_2_loft"),
+                        # ("pixel_electrodes_small_upper_4", "pixel_electrodes_small_upper_4_loft"),
+                        # ("pixel_electrodes_small_upper_6", "pixel_electrodes_small_upper_6_loft"),
+                        ("pixel_electrodes_small_upper_high_res", -angle),
+                        "pixel_electrodes_small_upper",
+                        # ("pixel_electrodes_small_lower_1", "pixel_electrodes_small_lower_1_loft"),
+                        # ("pixel_electrodes_small_lower_3", "pixel_electrodes_small_lower_3_loft"),
+                        # ("pixel_electrodes_small_lower_5", "pixel_electrodes_small_lower_5_loft"),
+                        ("pixel_electrodes_small_lower_high_res", -angle),
+                        "pixel_electrodes_small_lower",
                     ],
                     "edge_case": "inner_outline_5x5",
                     "array": array5,
@@ -904,7 +981,7 @@ def main(do):
                     "thickness": feature_thickness,
                     "drawing_layer_names": [
                         "glass_extents",
-                        "recombination_slash_interlayer",
+                        "recombination_slash_interlayer_precise",
                     ],
                 },
                 {
@@ -914,6 +991,25 @@ def main(do):
                     "drawing_layer_names": [
                         "glass_extents",
                         "spacer_shim",
+                    ],
+                },
+            ],
+        }
+    )
+
+    instructions.append(
+        {
+            "name": "interlayer_mask_angle",
+            "layers": [
+                {
+                    "name": "single_piece_mask",
+                    "color": feature_color,
+                    "thickness": 1.0,
+                    "edm_dent": "spacer_shim_thick",
+                    "edm_dent_depth": 0.05,
+                    "drawing_layer_names": [
+                        "glass_extents",
+                        ("recombination_slash_interlayer_precise", -angle),
                     ],
                 },
             ],
@@ -941,7 +1037,7 @@ def main(do):
                     "thickness": feature_thickness,
                     "drawing_layer_names": [
                         "outline_5x5",
-                        "recombination_slash_interlayer",
+                        "recombination_slash_interlayer_precise",
                     ],
                     "edge_case": "inner_outline_5x5",
                     "array": array5,
@@ -982,7 +1078,7 @@ def main(do):
                     "thickness": feature_thickness,
                     "drawing_layer_names": [
                         "outline_4x4",
-                        "recombination_slash_interlayer",
+                        "recombination_slash_interlayer_precise",
                     ],
                     "edge_case": "inner_outline_4x4",
                     "array": array4,
@@ -1421,11 +1517,11 @@ def main(do):
                     ],
                 },
                 {
-                    "name": "active_layer",
+                    "name": "active_layer_bigger",
                     "color": "CHOCOLATE",
                     "thickness": active_thickness,
                     "drawing_layer_names": [
-                        "active_layer",
+                        "active_layer_bigger",
                     ],
                 },
                 {
@@ -1497,10 +1593,10 @@ def main(do):
         # to_build = ["metal2_mask_stack", "metal2_mask_stack_4x4", "metal2_mask_stack_5x5", "one_big_lightmask"]
         # to_build = ["no_large_lightmask", "one_large_lightmask", "two_large_lightmask", "led_metal_mask_stack", "led_metal_mask_stack_5x5", "led_metal_mask_stack_4x4"]
         # to_build = ["no_large_lightmask", "one_large_lightmask", "two_large_lightmask", "led_metal_mask_stack"]
-        # to_build = ["metal2_mask_stack_edm", "metal2_mask_stack_edm_5x5", "metal6_mask_stack_edm"]  # all of them
-        # to_build = ["metal2_mask_stack_edm", "metal2_mask_stack_edm_5x5", "metal6_mask_stack_edm_5x5", "metal6_mask_stack_edm"]
-        to_build = ["metal6_mask_stack_edm_5x5"]
-        # to_build = ["metal6_mask_stack_edm"]
+        # to_build = ["metal2_mask_angle", "metal2_mask_angle_5x5", "metal6_mask_angle"]  # all of them
+        # to_build = ["metal2_mask_angle", "metal2_mask_angle_5x5", "metal6_mask_angle_5x5", "metal6_mask_angle"]
+        # to_build = ["metal6_mask_angle_5x5"]
+        to_build = ["metal_mask_angle", "metal2_mask_angle", "metal6_mask_angle", "interlayer_mask_angle"]
         # to_build = [""]  # all of them
         asys = ttt.build(to_build, nparallel=5)
 
