@@ -196,7 +196,7 @@ def main(do):
                     "color": feature_color,
                     "thickness": 1.0,
                     "edm_dent": "spacer_shim_active",
-                    "edm_dent_depth": 0.0,
+                    "edm_dent_depth": 0.05,
                     "drawing_layer_names": [
                         "glass_extents",
                         ("active_layer_bigger_upper", "active_layer_bigger_upper_loft"),
@@ -1155,6 +1155,27 @@ def main(do):
 
     instructions.append(
         {
+            "name": "interlayer_mask_angle_4x4",
+            "layers": [
+                {
+                    "name": "single_piece_mask",
+                    "color": feature_color,
+                    "thickness": 1.0,
+                    "edm_dent": "spacer_shim_thick",
+                    "edm_dent_depth": 0.05,
+                    "drawing_layer_names": [
+                        "outline_4x4",
+                        ("recombination_slash_interlayer_precise", -angle),
+                    ],
+                    "edge_case": "inner_outline_4x4",
+                    "array": array4,
+                },
+            ],
+        }
+    )
+
+    instructions.append(
+        {
             "name": "interlayer_mask_stack_4x4",
             "layers": [
                 {
@@ -1185,7 +1206,7 @@ def main(do):
                     "thickness": shim_thickness,
                     "drawing_layer_names": [
                         "outline_no_alignment_4x4",
-                        "spacer_shim",
+                        "spacer_shim_thin",
                     ],
                     "edge_case": "inner_outline_4x4",
                     "array": array4,
@@ -1693,8 +1714,9 @@ def main(do):
         # to_build = ["metal2_mask_angle", "metal2_mask_angle_5x5", "metal6_mask_angle_5x5", "metal6_mask_angle"]
         # to_build = ["metal6_mask_angle_5x5"]
         # to_build = ["metal_mask_loft", "metal_mask_angle", "metal2_mask_angle", "metal6_mask_angle", "interlayer_mask_angle"]
-        #to_build = ["metal_mask_loft", "metal6_mask_loft", "metal2_mask_loft"]
-        to_build = ["metal6_mask_loft", "metal2_mask_loft", "active_mask_loft"]
+        # to_build = ["metal_mask_loft", "metal6_mask_loft", "metal2_mask_loft"]
+        # to_build = ["metal_mask_loft", "metal6_mask_loft", "metal2_mask_loft", "active_mask_loft", "interlayer_mask_angle", "interlayer_mask_angle_4x4", "interlayer_mask_stack_4x4"]
+        to_build = ["interlayer_mask_stack_4x4"]
         # to_build = [""]  # all of them
         asys = ttt.build(to_build, nparallel=5)
 
