@@ -756,6 +756,33 @@ def main(do):
 
     instructions.append(
         {
+            "name": "metal_mask_loft_5x5",
+            "layers": [
+                {
+                    "name": "single_piece_mask",
+                    "color": feature_color,
+                    "thickness": 1.0,
+                    "edm_dent": "spacer_shim_thick",
+                    "edm_dent_depth": 0.05,
+                    "drawing_layer_names": [
+                        "outline_5x5",
+                        "tc_metal",
+                        ("pixel_electrodes_small_upper_2", "pixel_electrodes_small_upper_2_loft"),
+                        ("pixel_electrodes_small_upper_4", "pixel_electrodes_small_upper_4_loft"),
+                        ("pixel_electrodes_small_upper_6", "pixel_electrodes_small_upper_6_loft"),
+                        ("pixel_electrodes_large_lower_1_edm", "pixel_electrodes_large_lower_1_loft"),
+                        ("pixel_electrodes_large_lower_3", "pixel_electrodes_large_lower_3_loft"),
+                        ("pixel_electrodes_large_lower_5_edm", "pixel_electrodes_large_lower_5_loft"),
+                    ],
+                    "edge_case": "inner_outline_5x5",
+                    "array": array5,
+                },
+            ],
+        }
+    )
+
+    instructions.append(
+        {
             "name": "metal_mask_stack_5x5",
             "layers": [
                 {
@@ -794,6 +821,33 @@ def main(do):
                     ],
                     "edge_case": "inner_outline_5x5",
                     "array": array5,
+                },
+            ],
+        }
+    )
+
+    instructions.append(
+        {
+            "name": "metal_mask_loft_4x4",
+            "layers": [
+                {
+                    "name": "single_piece_mask",
+                    "color": feature_color,
+                    "thickness": 1.0,
+                    "edm_dent": "spacer_shim_thick",
+                    "edm_dent_depth": 0.05,
+                    "drawing_layer_names": [
+                        "outline_4x4",
+                        "tc_metal",
+                        ("pixel_electrodes_small_upper_2", "pixel_electrodes_small_upper_2_loft"),
+                        ("pixel_electrodes_small_upper_4", "pixel_electrodes_small_upper_4_loft"),
+                        ("pixel_electrodes_small_upper_6", "pixel_electrodes_small_upper_6_loft"),
+                        ("pixel_electrodes_large_lower_1_edm", "pixel_electrodes_large_lower_1_loft"),
+                        ("pixel_electrodes_large_lower_3", "pixel_electrodes_large_lower_3_loft"),
+                        ("pixel_electrodes_large_lower_5_edm", "pixel_electrodes_large_lower_5_loft"),
+                    ],
+                    "edge_case": "inner_outline_4x4",
+                    "array": array4,
                 },
             ],
         }
@@ -1161,7 +1215,7 @@ def main(do):
                     "name": "single_piece_mask",
                     "color": feature_color,
                     "thickness": 1.0,
-                    "edm_dent": "spacer_shim_thick",
+                    "edm_dent": "spacer_shim_active",
                     "edm_dent_depth": 0.05,
                     "drawing_layer_names": [
                         "outline_4x4",
@@ -1716,13 +1770,15 @@ def main(do):
         # to_build = ["metal_mask_loft", "metal_mask_angle", "metal2_mask_angle", "metal6_mask_angle", "interlayer_mask_angle"]
         # to_build = ["metal_mask_loft", "metal6_mask_loft", "metal2_mask_loft"]
         # to_build = ["metal_mask_loft", "metal6_mask_loft", "metal2_mask_loft", "active_mask_loft", "interlayer_mask_angle", "interlayer_mask_angle_4x4", "interlayer_mask_stack_4x4"]
-        to_build = ["interlayer_mask_stack_4x4"]
+        # to_build = ["interlayer_mask_angle_4x4", "metal_mask_loft_4x4"]
+        to_build = ["metal_mask_loft_5x5"]
+        # to_build = ["interlayer_mask_angle_4x4", "metal_mask_loft"]
         # to_build = [""]  # all of them
-        asys = ttt.build(to_build, nparallel=5)
+        built = ttt.build(to_build, nparallel=5)
 
         # ttt.faceputter(wrk_dir)  # output the face data for comsol
 
-        TwoDToThreeD.outputter(asys, wrk_dir, save_dxfs=True, save_steps=False, save_stls=False, nparallel=6)
+        TwoDToThreeD.outputter(built, wrk_dir, save_dxfs=False, save_steps=False, save_stls=False, edm_outputs=True, nparallel=6)
 
 
 # temp is what we get when run via cq-editor
