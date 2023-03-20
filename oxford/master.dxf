@@ -493,7 +493,7 @@ $SKPOLY
   9
 $TDCREATE
  40
-2452643.105050891
+2452643.063384225
   9
 $TDUCREATE
  40
@@ -501,19 +501,19 @@ $TDUCREATE
   9
 $TDUPDATE
  40
-2458909.344987454
+2458909.346594004
   9
 $TDUUPDATE
  40
-2458909.303320787
+2458909.346594004
   9
 $TDINDWG
  40
-0.0591109144
+0.0591110069
   9
 $TDUSRTIMER
  40
-0.0005680787
+0.0001774421
   9
 $USRTIMER
  70
@@ -553,7 +553,7 @@ $SPLINESEGS
   9
 $HANDSEED
   5
-B34D
+B3BB
   9
 $SURFTAB1
  70
@@ -1405,9 +1405,9 @@ AcDbViewportTableRecord
  21
 1.0
  12
--6723027.855583787
+-6723028.91937022
  22
--1861325.192534464
+-1861325.507773794
  13
 0.0
  23
@@ -1433,9 +1433,9 @@ AcDbViewportTableRecord
  37
 0.0
  40
-30.48853156723224
+38.5146514803029
  41
-2.487096774193549
+1.968807339449541
  42
 50.0
  43
@@ -5383,7 +5383,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-lightmask_top_contact_openings
+lightmask_top_con_holes
  70
      0
  62
@@ -17791,7 +17791,7 @@ AF5B
 100
 AcDbEntity
   8
-lightmask_top_contact_openings
+lightmask_top_con_holes
  62
      0
 370
@@ -17819,7 +17819,7 @@ AF5B
 100
 AcDbEntity
   8
-lightmask_top_contact_openings
+lightmask_top_con_holes
  62
      0
 370
@@ -17847,7 +17847,7 @@ AF5B
 100
 AcDbEntity
   8
-lightmask_top_contact_openings
+lightmask_top_con_holes
  62
      0
 370
@@ -17875,7 +17875,7 @@ AF5B
 100
 AcDbEntity
   8
-lightmask_top_contact_openings
+lightmask_top_con_holes
  62
      0
 370
@@ -17903,7 +17903,7 @@ AF5B
 100
 AcDbEntity
   8
-lightmask_top_contact_openings
+lightmask_top_con_holes
  62
      0
 370
@@ -17931,7 +17931,7 @@ AF5B
 100
 AcDbEntity
   8
-lightmask_top_contact_openings
+lightmask_top_con_holes
  62
      0
 100
@@ -17969,7 +17969,7 @@ AF5B
 100
 AcDbEntity
   8
-lightmask_top_contact_openings
+lightmask_top_con_holes
  62
      0
 100
@@ -18007,7 +18007,7 @@ AF5B
 100
 AcDbEntity
   8
-lightmask_top_contact_openings
+lightmask_top_con_holes
  62
      0
 100
@@ -41649,7 +41649,7 @@ AFB2
 100
 AcDbEntity
   8
-lightmask_top_contact_openings
+lightmask_top_con_holes
 100
 AcDbPolyline
  90
@@ -41707,7 +41707,7 @@ AFD2
 100
 AcDbEntity
   8
-lightmask_top_contact_openings
+lightmask_top_con_holes
 100
 AcDbPolyline
  90
@@ -41765,7 +41765,7 @@ AFF2
 100
 AcDbEntity
   8
-lightmask_top_contact_openings
+lightmask_top_con_holes
 100
 AcDbPolyline
  90
@@ -41823,7 +41823,7 @@ B012
 100
 AcDbEntity
   8
-lightmask_top_contact_openings
+lightmask_top_con_holes
 100
 AcDbPolyline
  90
@@ -41881,7 +41881,7 @@ B032
 100
 AcDbEntity
   8
-lightmask_top_contact_openings
+lightmask_top_con_holes
 100
 AcDbPolyline
  90
@@ -41939,7 +41939,7 @@ B033
 100
 AcDbEntity
   8
-lightmask_top_contact_openings
+lightmask_top_con_holes
 100
 AcDbPolyline
  90
@@ -41997,7 +41997,7 @@ B034
 100
 AcDbEntity
   8
-lightmask_top_contact_openings
+lightmask_top_con_holes
 100
 AcDbPolyline
  90
@@ -42055,7 +42055,7 @@ B035
 100
 AcDbEntity
   8
-lightmask_top_contact_openings
+lightmask_top_con_holes
 100
 AcDbPolyline
  90
@@ -42113,7 +42113,7 @@ B036
 100
 AcDbEntity
   8
-lightmask_top_contact_openings
+lightmask_top_con_holes
 100
 AcDbPolyline
  90
@@ -42171,7 +42171,7 @@ B037
 100
 AcDbEntity
   8
-lightmask_top_contact_openings
+lightmask_top_con_holes
 100
 AcDbPolyline
  90
@@ -42935,7 +42935,7 @@ ACAD_VISUALSTYLE
   3
 ACDB_RECOMPOSE_DATA
 350
-B34C
+B3BA
   3
 AcDbVariableDictionary
 350
@@ -42995,7 +42995,7 @@ ACAD_LAYERSTATES
   3
 ACLYDICTIONARY
 360
-B349
+B376
   0
 DICTIONARY
   5
@@ -43615,7 +43615,7 @@ EA
   0
 XRECORD
   5
-B34C
+B3BA
 102
 {ACAD_REACTORS
 330
@@ -43727,7 +43727,7 @@ B348
   0
 DICTIONARY
   5
-B349
+B376
 102
 {ACAD_REACTORS
 330
@@ -46155,7 +46155,7 @@ TABLESTYLE
 102
 {ACAD_XDICTIONARY
 360
-B34A
+B3B8
 102
 }
 330
@@ -56789,7 +56789,7 @@ AcDbDictionary
   0
 DICTIONARY
   5
-B34A
+B3B8
 330
 87
 100
@@ -56801,19 +56801,19 @@ AcDbDictionary
   3
 ACAD_ROUNDTRIP_2008_TABLESTYLE_CELLSTYLEMAP
 360
-B34B
+B3B9
   0
 CELLSTYLEMAP
   5
-B34B
+B3B9
 102
 {ACAD_REACTORS
 330
-B34A
+B3B8
 102
 }
 330
-B34A
+B3B8
 100
 AcDbCellStyleMap
  90
