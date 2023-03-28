@@ -24,6 +24,7 @@ def main(do):
     support_thickness = 0.75
     feature_thickness = 0.2
     shim_thickness = 0.05
+    shim_thickness_thicker = 0.1
     glass_thickness = 1.1
     device_layer_scale_factor = 10000
     tco_thickness = 140e-6 * device_layer_scale_factor
@@ -171,7 +172,8 @@ def main(do):
                     "thickness": feature_thickness,
                     "drawing_layer_names": [
                         "glass_extents",
-                        "active_layer_bigger",
+                        "active_layer_upper",
+                        "active_layer_lower",
                     ],
                 },
                 {
@@ -180,7 +182,7 @@ def main(do):
                     "thickness": shim_thickness,
                     "drawing_layer_names": [
                         "glass_extents",
-                        "spacer_shim",
+                        "spacer_shim_thin",
                     ],
                 },
             ],
@@ -199,8 +201,8 @@ def main(do):
                     "edm_dent_depth": 0.05,
                     "drawing_layer_names": [
                         "glass_extents",
-                        ("active_layer_bigger_upper", "active_layer_bigger_upper_loft"),
-                        ("active_layer_bigger_lower", "active_layer_bigger_lower_loft"),
+                        ("active_layer_upper", "active_layer_upper_loft"),
+                        ("active_layer_lower", "active_layer_lower_loft"),
                     ],
                 },
             ],
@@ -228,7 +230,8 @@ def main(do):
                     "thickness": feature_thickness,
                     "drawing_layer_names": [
                         "outline_5x5",
-                        "active_layer_bigger",
+                        "active_layer_upper",
+                        "active_layer_lower",
                     ],
                     "edge_case": "inner_outline_5x5",
                     "array": array5,
@@ -239,7 +242,7 @@ def main(do):
                     "thickness": shim_thickness,
                     "drawing_layer_names": [
                         "outline_no_alignment_5x5",
-                        "spacer_shim",
+                        "spacer_shim_thin",
                     ],
                     "edge_case": "inner_outline_5x5",
                     "array": array5,
@@ -269,7 +272,8 @@ def main(do):
                     "thickness": feature_thickness,
                     "drawing_layer_names": [
                         "outline_4x4",
-                        "active_layer_bigger",
+                        "active_layer_upper",
+                        "active_layer_lower",
                     ],
                     "edge_case": "inner_outline_4x4",
                     "array": array4,
@@ -280,7 +284,7 @@ def main(do):
                     "thickness": shim_thickness,
                     "drawing_layer_names": [
                         "outline_no_alignment_4x4",
-                        "spacer_shim",
+                        "spacer_shim_thin",
                     ],
                     "edge_case": "inner_outline_4x4",
                     "array": array4,
@@ -294,7 +298,7 @@ def main(do):
             "name": "metal2_mask_stack",
             "layers": [
                 {
-                    "name": "metal_support",
+                    "name": "support",
                     "color": support_color,
                     "thickness": support_thickness,
                     "drawing_layer_names": [
@@ -305,18 +309,22 @@ def main(do):
                     ],
                 },
                 {
-                    "name": "metal_feature",
+                    "name": "feature",
                     "color": feature_color,
                     "thickness": feature_thickness,
                     "drawing_layer_names": [
                         "glass_extents",
                         "tc_metal",
-                        "pixel_electrodes_large_upper",
-                        "pixel_electrodes_large_lower",
+                        "pixel_electrodes_large_upper_2",
+                        "pixel_electrodes_large_upper_4",
+                        "pixel_electrodes_large_upper_6",
+                        "pixel_electrodes_large_lower_1",
+                        "pixel_electrodes_large_lower_3",
+                        "pixel_electrodes_large_lower_5",
                     ],
                 },
                 {
-                    "name": "spacer_shim_thin",
+                    "name": "spacer_shim",
                     "color": shim_color,
                     "thickness": shim_thickness,
                     "drawing_layer_names": [
@@ -418,7 +426,7 @@ def main(do):
             "name": "metal2_mask_stack_5x5",
             "layers": [
                 {
-                    "name": "metal_support",
+                    "name": "support",
                     "color": support_color,
                     "thickness": support_thickness,
                     "drawing_layer_names": [
@@ -431,20 +439,24 @@ def main(do):
                     "array": array5,
                 },
                 {
-                    "name": "metal_feature",
+                    "name": "feature",
                     "color": feature_color,
                     "thickness": feature_thickness,
                     "drawing_layer_names": [
                         "outline_5x5",
                         "tc_metal",
-                        "pixel_electrodes_large_upper",
-                        "pixel_electrodes_large_lower",
+                        "pixel_electrodes_large_upper_2",
+                        "pixel_electrodes_large_upper_4",
+                        "pixel_electrodes_large_upper_6",
+                        "pixel_electrodes_large_lower_1",
+                        "pixel_electrodes_large_lower_3",
+                        "pixel_electrodes_large_lower_5",
                     ],
                     "edge_case": "inner_outline_5x5",
                     "array": array5,
                 },
                 {
-                    "name": "spacer_shim_thin",
+                    "name": "spacer_shim",
                     "color": shim_color,
                     "thickness": shim_thickness,
                     "drawing_layer_names": [
@@ -463,7 +475,7 @@ def main(do):
             "name": "metal2_mask_stack_4x4",
             "layers": [
                 {
-                    "name": "metal_support",
+                    "name": "support",
                     "color": support_color,
                     "thickness": support_thickness,
                     "drawing_layer_names": [
@@ -476,20 +488,24 @@ def main(do):
                     "array": array4,
                 },
                 {
-                    "name": "metal_feature",
+                    "name": "feature",
                     "color": feature_color,
                     "thickness": feature_thickness,
                     "drawing_layer_names": [
                         "outline_4x4",
                         "tc_metal",
-                        "pixel_electrodes_large_upper",
-                        "pixel_electrodes_large_lower",
+                        "pixel_electrodes_large_upper_2",
+                        "pixel_electrodes_large_upper_4",
+                        "pixel_electrodes_large_upper_6",
+                        "pixel_electrodes_large_lower_1",
+                        "pixel_electrodes_large_lower_3",
+                        "pixel_electrodes_large_lower_5",
                     ],
                     "edge_case": "inner_outline_4x4",
                     "array": array4,
                 },
                 {
-                    "name": "spacer_shim_thin",
+                    "name": "spacer_shim",
                     "color": shim_color,
                     "thickness": shim_thickness,
                     "drawing_layer_names": [
@@ -508,7 +524,7 @@ def main(do):
             "name": "led_metal_mask_stack",
             "layers": [
                 {
-                    "name": "metal_support",
+                    "name": "support",
                     "color": support_color,
                     "thickness": support_thickness,
                     "drawing_layer_names": [
@@ -519,7 +535,7 @@ def main(do):
                     ],
                 },
                 {
-                    "name": "metal_feature",
+                    "name": "feature",
                     "color": feature_color,
                     "thickness": feature_thickness,
                     "drawing_layer_names": [
@@ -529,7 +545,7 @@ def main(do):
                     ],
                 },
                 {
-                    "name": "spacer_shim_thin",
+                    "name": "spacer_shim",
                     "color": shim_color,
                     "thickness": shim_thickness,
                     "drawing_layer_names": [
@@ -546,7 +562,7 @@ def main(do):
             "name": "led_metal_mask_stack_5x5",
             "layers": [
                 {
-                    "name": "metal_support",
+                    "name": "support",
                     "color": support_color,
                     "thickness": support_thickness,
                     "drawing_layer_names": [
@@ -559,7 +575,7 @@ def main(do):
                     "array": array5,
                 },
                 {
-                    "name": "metal_feature",
+                    "name": "feature",
                     "color": feature_color,
                     "thickness": feature_thickness,
                     "drawing_layer_names": [
@@ -571,7 +587,7 @@ def main(do):
                     "array": array5,
                 },
                 {
-                    "name": "spacer_shim_thin",
+                    "name": "spacer_shim",
                     "color": shim_color,
                     "thickness": shim_thickness,
                     "drawing_layer_names": [
@@ -590,7 +606,7 @@ def main(do):
             "name": "led_metal_mask_stack_4x4",
             "layers": [
                 {
-                    "name": "metal_support",
+                    "name": "support",
                     "color": support_color,
                     "thickness": support_thickness,
                     "drawing_layer_names": [
@@ -603,7 +619,7 @@ def main(do):
                     "array": array4,
                 },
                 {
-                    "name": "metal_feature",
+                    "name": "feature",
                     "color": feature_color,
                     "thickness": feature_thickness,
                     "drawing_layer_names": [
@@ -615,7 +631,7 @@ def main(do):
                     "array": array4,
                 },
                 {
-                    "name": "spacer_shim_thin",
+                    "name": "spacer_shim",
                     "color": shim_color,
                     "thickness": shim_thickness,
                     "drawing_layer_names": [
@@ -634,7 +650,7 @@ def main(do):
             "name": "metal_mask_stack",
             "layers": [
                 {
-                    "name": "metal_support",
+                    "name": "support",
                     "color": support_color,
                     "thickness": support_thickness,
                     "drawing_layer_names": [
@@ -645,18 +661,22 @@ def main(do):
                     ],
                 },
                 {
-                    "name": "metal_feature",
+                    "name": "feature",
                     "color": feature_color,
                     "thickness": feature_thickness,
                     "drawing_layer_names": [
                         "glass_extents",
                         "tc_metal",
-                        "pixel_electrodes_small_upper",
-                        "pixel_electrodes_large_lower",
+                        "pixel_electrodes_small_upper_2",
+                        "pixel_electrodes_small_upper_4",
+                        "pixel_electrodes_small_upper_6",
+                        "pixel_electrodes_large_lower_1",
+                        "pixel_electrodes_large_lower_3",
+                        "pixel_electrodes_large_lower_5",
                     ],
                 },
                 {
-                    "name": "spacer_shim_thin",
+                    "name": "spacer_shim",
                     "color": shim_color,
                     "thickness": shim_thickness,
                     "drawing_layer_names": [
@@ -668,6 +688,48 @@ def main(do):
         }
     )
 
+    instructions.append(
+        {
+            "name": "metal_mask_stack_thick_shim",
+            "layers": [
+                {
+                    "name": "support",
+                    "color": support_color,
+                    "thickness": support_thickness,
+                    "drawing_layer_names": [
+                        "glass_extents",
+                        "aggressive_metal_support_tc_metal",
+                        "aggressive_metal_support_small_upper",
+                        "aggressive_metal_support_large_lower",
+                    ],
+                },
+                {
+                    "name": "feature",
+                    "color": feature_color,
+                    "thickness": feature_thickness,
+                    "drawing_layer_names": [
+                        "glass_extents",
+                        "tc_metal",
+                        "pixel_electrodes_small_upper_2",
+                        "pixel_electrodes_small_upper_4",
+                        "pixel_electrodes_small_upper_6",
+                        "pixel_electrodes_large_lower_1",
+                        "pixel_electrodes_large_lower_3",
+                        "pixel_electrodes_large_lower_5",
+                    ],
+                },
+                {
+                    "name": "spacer_shim",
+                    "color": shim_color,
+                    "thickness": shim_thickness_thicker,
+                    "drawing_layer_names": [
+                        "glass_extents",
+                        "spacer_shim_thin",
+                    ],
+                },
+            ],
+        }
+    )
 
     instructions.append(
         {
@@ -711,7 +773,9 @@ def main(do):
                         # ("pixel_electrodes_small_upper_4", "pixel_electrodes_small_upper_4_loft"),
                         # ("pixel_electrodes_small_upper_6", "pixel_electrodes_small_upper_6_loft"),
                         ("pixel_electrodes_small_upper_high_res", -angle),
-                        "pixel_electrodes_small_upper",
+                        "pixel_electrodes_small_upper_2",
+                        "pixel_electrodes_small_upper_4",
+                        "pixel_electrodes_small_upper_6",
                         # ("pixel_electrodes_large_lower_1", "pixel_electrodes_large_lower_1_loft"),
                         # ("pixel_electrodes_large_lower_3", "pixel_electrodes_large_lower_3_loft"),
                         # ("pixel_electrodes_large_lower_5", "pixel_electrodes_large_lower_5_loft"),
@@ -740,7 +804,9 @@ def main(do):
                         # ("pixel_electrodes_small_upper_4", "pixel_electrodes_small_upper_4_loft"),
                         # ("pixel_electrodes_small_upper_6", "pixel_electrodes_small_upper_6_loft"),
                         ("pixel_electrodes_small_upper_high_res", -angle),
-                        "pixel_electrodes_small_upper",
+                        "pixel_electrodes_small_upper_2",
+                        "pixel_electrodes_small_upper_4",
+                        "pixel_electrodes_small_upper_6",
                         # ("pixel_electrodes_large_lower_1", "pixel_electrodes_large_lower_1_loft"),
                         # ("pixel_electrodes_large_lower_3", "pixel_electrodes_large_lower_3_loft"),
                         # ("pixel_electrodes_large_lower_5", "pixel_electrodes_large_lower_5_loft"),
@@ -786,7 +852,7 @@ def main(do):
             "name": "metal_mask_stack_5x5",
             "layers": [
                 {
-                    "name": "metal_support",
+                    "name": "support",
                     "color": support_color,
                     "thickness": support_thickness,
                     "drawing_layer_names": [
@@ -799,20 +865,24 @@ def main(do):
                     "array": array5,
                 },
                 {
-                    "name": "metal_feature",
+                    "name": "feature",
                     "color": feature_color,
                     "thickness": feature_thickness,
                     "drawing_layer_names": [
                         "outline_5x5",
                         "tc_metal",
-                        "pixel_electrodes_small_upper",
-                        "pixel_electrodes_large_lower",
+                        "pixel_electrodes_small_upper_2",
+                        "pixel_electrodes_small_upper_4",
+                        "pixel_electrodes_small_upper_6",
+                        "pixel_electrodes_large_lower_1",
+                        "pixel_electrodes_large_lower_3",
+                        "pixel_electrodes_large_lower_5",
                     ],
                     "edge_case": "inner_outline_5x5",
                     "array": array5,
                 },
                 {
-                    "name": "spacer_shim_thin",
+                    "name": "spacer_shim",
                     "color": shim_color,
                     "thickness": shim_thickness,
                     "drawing_layer_names": [
@@ -858,7 +928,7 @@ def main(do):
             "name": "metal_mask_stack_4x4",
             "layers": [
                 {
-                    "name": "metal_support",
+                    "name": "support",
                     "color": support_color,
                     "thickness": support_thickness,
                     "drawing_layer_names": [
@@ -871,20 +941,24 @@ def main(do):
                     "array": array4,
                 },
                 {
-                    "name": "metal_feature",
+                    "name": "feature",
                     "color": feature_color,
                     "thickness": feature_thickness,
                     "drawing_layer_names": [
                         "outline_4x4",
                         "tc_metal",
-                        "pixel_electrodes_small_upper",
-                        "pixel_electrodes_large_lower",
+                        "pixel_electrodes_small_upper_2",
+                        "pixel_electrodes_small_upper_4",
+                        "pixel_electrodes_small_upper_6",
+                        "pixel_electrodes_large_lower_1",
+                        "pixel_electrodes_large_lower_3",
+                        "pixel_electrodes_large_lower_5",
                     ],
                     "edge_case": "inner_outline_4x4",
                     "array": array4,
                 },
                 {
-                    "name": "spacer_shim_thin",
+                    "name": "spacer_shim",
                     "color": shim_color,
                     "thickness": shim_thickness,
                     "drawing_layer_names": [
@@ -903,7 +977,7 @@ def main(do):
             "name": "metal6_mask_stack",
             "layers": [
                 {
-                    "name": "metal_support",
+                    "name": "support",
                     "color": support_color,
                     "thickness": support_thickness,
                     "drawing_layer_names": [
@@ -914,20 +988,67 @@ def main(do):
                     ],
                 },
                 {
-                    "name": "metal_feature",
+                    "name": "feature",
                     "color": feature_color,
                     "thickness": feature_thickness,
                     "drawing_layer_names": [
                         "glass_extents",
                         "tc_metal",
-                        "pixel_electrodes_small_upper",
-                        "pixel_electrodes_small_lower",
+                        "pixel_electrodes_small_upper_2",
+                        "pixel_electrodes_small_upper_4",
+                        "pixel_electrodes_small_upper_6",
+                        "pixel_electrodes_small_lower_1",
+                        "pixel_electrodes_small_lower_3",
+                        "pixel_electrodes_small_lower_5",
                     ],
                 },
                 {
-                    "name": "spacer_shim_thin",
+                    "name": "spacer_shim",
                     "color": shim_color,
                     "thickness": shim_thickness,
+                    "drawing_layer_names": [
+                        "glass_extents",
+                        "spacer_shim_thin",
+                    ],
+                },
+            ],
+        }
+    )
+
+    instructions.append(
+        {
+            "name": "metal6_mask_stack_thick_shim",
+            "layers": [
+                {
+                    "name": "support",
+                    "color": support_color,
+                    "thickness": support_thickness,
+                    "drawing_layer_names": [
+                        "glass_extents",
+                        "aggressive_metal_support_tc_metal",
+                        "aggressive_metal_support_small_upper",
+                        "aggressive_metal_support_small_lower",
+                    ],
+                },
+                {
+                    "name": "feature",
+                    "color": feature_color,
+                    "thickness": feature_thickness,
+                    "drawing_layer_names": [
+                        "glass_extents",
+                        "tc_metal",
+                        "pixel_electrodes_small_upper_2",
+                        "pixel_electrodes_small_upper_4",
+                        "pixel_electrodes_small_upper_6",
+                        "pixel_electrodes_small_lower_1",
+                        "pixel_electrodes_small_lower_3",
+                        "pixel_electrodes_small_lower_5",
+                    ],
+                },
+                {
+                    "name": "spacer_shim",
+                    "color": shim_color,
+                    "thickness": shim_thickness_thicker,
                     "drawing_layer_names": [
                         "glass_extents",
                         "spacer_shim_thin",
@@ -979,12 +1100,16 @@ def main(do):
                         # ("pixel_electrodes_small_upper_4", "pixel_electrodes_small_upper_4_loft"),
                         # ("pixel_electrodes_small_upper_6", "pixel_electrodes_small_upper_6_loft"),
                         ("pixel_electrodes_small_upper_high_res", -angle),
-                        "pixel_electrodes_small_upper",
+                        "pixel_electrodes_small_upper_2",
+                        "pixel_electrodes_small_upper_4",
+                        "pixel_electrodes_small_upper_6",
                         # ("pixel_electrodes_small_lower_1", "pixel_electrodes_small_lower_1_loft"),
                         # ("pixel_electrodes_small_lower_3", "pixel_electrodes_small_lower_3_loft"),
                         # ("pixel_electrodes_small_lower_5", "pixel_electrodes_small_lower_5_loft"),
                         ("pixel_electrodes_small_lower_high_res", -angle),
-                        "pixel_electrodes_small_lower",
+                        "pixel_electrodes_small_lower_1",
+                        "pixel_electrodes_small_lower_3",
+                        "pixel_electrodes_small_lower_5",
                     ],
                 },
             ],
@@ -1008,12 +1133,16 @@ def main(do):
                         # ("pixel_electrodes_small_upper_4", "pixel_electrodes_small_upper_4_loft"),
                         # ("pixel_electrodes_small_upper_6", "pixel_electrodes_small_upper_6_loft"),
                         ("pixel_electrodes_small_upper_high_res", -angle),
-                        "pixel_electrodes_small_upper",
+                        "pixel_electrodes_small_upper_2",
+                        "pixel_electrodes_small_upper_4",
+                        "pixel_electrodes_small_upper_6",
                         # ("pixel_electrodes_small_lower_1", "pixel_electrodes_small_lower_1_loft"),
                         # ("pixel_electrodes_small_lower_3", "pixel_electrodes_small_lower_3_loft"),
                         # ("pixel_electrodes_small_lower_5", "pixel_electrodes_small_lower_5_loft"),
                         ("pixel_electrodes_small_lower_high_res", -angle),
-                        "pixel_electrodes_small_lower",
+                        "pixel_electrodes_small_lower_1",
+                        "pixel_electrodes_small_lower_3",
+                        "pixel_electrodes_small_lower_5",
                     ],
                     "edge_case": "inner_outline_5x5",
                     "array": array5,
@@ -1027,7 +1156,7 @@ def main(do):
             "name": "metal6_mask_stack_5x5",
             "layers": [
                 {
-                    "name": "metal_support",
+                    "name": "support",
                     "color": support_color,
                     "thickness": support_thickness,
                     "drawing_layer_names": [
@@ -1040,20 +1169,24 @@ def main(do):
                     "array": array5,
                 },
                 {
-                    "name": "metal_feature",
+                    "name": "feature",
                     "color": feature_color,
                     "thickness": feature_thickness,
                     "drawing_layer_names": [
                         "outline_5x5",
                         "tc_metal",
-                        "pixel_electrodes_small_upper",
-                        "pixel_electrodes_small_lower",
+                        "pixel_electrodes_small_upper_2",
+                        "pixel_electrodes_small_upper_4",
+                        "pixel_electrodes_small_upper_6",
+                        "pixel_electrodes_small_lower_1",
+                        "pixel_electrodes_small_lower_3",
+                        "pixel_electrodes_small_lower_5",
                     ],
                     "edge_case": "inner_outline_5x5",
                     "array": array5,
                 },
                 {
-                    "name": "spacer_shim_thin",
+                    "name": "spacer_shim",
                     "color": shim_color,
                     "thickness": shim_thickness,
                     "drawing_layer_names": [
@@ -1072,7 +1205,7 @@ def main(do):
             "name": "metal6_mask_stack_4x4",
             "layers": [
                 {
-                    "name": "metal_support",
+                    "name": "support",
                     "color": support_color,
                     "thickness": support_thickness,
                     "drawing_layer_names": [
@@ -1085,20 +1218,24 @@ def main(do):
                     "array": array4,
                 },
                 {
-                    "name": "metal_feature",
+                    "name": "feature",
                     "color": feature_color,
                     "thickness": feature_thickness,
                     "drawing_layer_names": [
                         "outline_4x4",
                         "tc_metal",
-                        "pixel_electrodes_small_upper",
-                        "pixel_electrodes_small_lower",
+                        "pixel_electrodes_small_upper_2",
+                        "pixel_electrodes_small_upper_4",
+                        "pixel_electrodes_small_upper_6",
+                        "pixel_electrodes_small_lower_1",
+                        "pixel_electrodes_small_lower_3",
+                        "pixel_electrodes_small_lower_5",
                     ],
                     "edge_case": "inner_outline_4x4",
                     "array": array4,
                 },
                 {
-                    "name": "spacer_shim_thin",
+                    "name": "spacer_shim",
                     "color": shim_color,
                     "thickness": shim_thickness,
                     "drawing_layer_names": [
@@ -1131,7 +1268,7 @@ def main(do):
                     "thickness": feature_thickness,
                     "drawing_layer_names": [
                         "glass_extents",
-                        "recombination_slash_interlayer_precise",
+                        "recombination_slash_interlayer",
                     ],
                 },
                 {
@@ -1140,7 +1277,7 @@ def main(do):
                     "thickness": shim_thickness,
                     "drawing_layer_names": [
                         "glass_extents",
-                        "spacer_shim",
+                        "spacer_shim_thin",
                     ],
                 },
             ],
@@ -1159,7 +1296,7 @@ def main(do):
                     "edm_dent_depth": 0.05,
                     "drawing_layer_names": [
                         "glass_extents",
-                        ("recombination_slash_interlayer_precise", -angle),
+                        ("recombination_slash_interlayer", -angle),
                     ],
                 },
             ],
@@ -1187,7 +1324,7 @@ def main(do):
                     "thickness": feature_thickness,
                     "drawing_layer_names": [
                         "outline_5x5",
-                        "recombination_slash_interlayer_precise",
+                        "recombination_slash_interlayer",
                     ],
                     "edge_case": "inner_outline_5x5",
                     "array": array5,
@@ -1198,7 +1335,7 @@ def main(do):
                     "thickness": shim_thickness,
                     "drawing_layer_names": [
                         "outline_no_alignment_5x5",
-                        "spacer_shim",
+                        "spacer_shim_thin",
                     ],
                     "edge_case": "inner_outline_5x5",
                     "array": array5,
@@ -1219,7 +1356,7 @@ def main(do):
                     "edm_dent_depth": 0.05,
                     "drawing_layer_names": [
                         "outline_4x4",
-                        ("recombination_slash_interlayer_precise", -angle),
+                        ("recombination_slash_interlayer", -angle),
                     ],
                     "edge_case": "inner_outline_4x4",
                     "array": array4,
@@ -1249,7 +1386,7 @@ def main(do):
                     "thickness": feature_thickness,
                     "drawing_layer_names": [
                         "outline_4x4",
-                        "recombination_slash_interlayer_precise",
+                        "recombination_slash_interlayer",
                     ],
                     "edge_case": "inner_outline_4x4",
                     "array": array4,
@@ -1293,7 +1430,7 @@ def main(do):
                     ],
                 },
                 {
-                    "name": "spacer_shim_thin",
+                    "name": "spacer_shim",
                     "color": shim_color,
                     "thickness": shim_thickness,
                     "drawing_layer_names": [
@@ -1333,7 +1470,7 @@ def main(do):
                     "array": array5,
                 },
                 {
-                    "name": "spacer_shim_thin",
+                    "name": "spacer_shim",
                     "color": shim_color,
                     "thickness": shim_thickness,
                     "drawing_layer_names": [
@@ -1375,7 +1512,7 @@ def main(do):
                     "array": array4,
                 },
                 {
-                    "name": "spacer_shim_thin",
+                    "name": "spacer_shim",
                     "color": shim_color,
                     "thickness": shim_thickness,
                     "drawing_layer_names": [
@@ -1417,7 +1554,7 @@ def main(do):
                     ],
                 },
                 {
-                    "name": "spacer_shim_thin",
+                    "name": "spacer_shim",
                     "color": shim_color,
                     "thickness": shim_thickness,
                     "drawing_layer_names": [
@@ -1452,7 +1589,7 @@ def main(do):
                     ],
                 },
                 {
-                    "name": "spacer_shim_thin",
+                    "name": "spacer_shim",
                     "color": shim_color,
                     "thickness": shim_thickness,
                     "drawing_layer_names": [
@@ -1491,7 +1628,7 @@ def main(do):
                     "array": array5,
                 },
                 {
-                    "name": "spacer_shim_thin",
+                    "name": "spacer_shim",
                     "color": shim_color,
                     "thickness": shim_thickness,
                     "drawing_layer_names": [
@@ -1532,7 +1669,7 @@ def main(do):
                     "array": array4,
                 },
                 {
-                    "name": "spacer_shim_thin",
+                    "name": "spacer_shim",
                     "color": shim_color,
                     "thickness": shim_thickness,
                     "drawing_layer_names": [
@@ -1570,7 +1707,7 @@ def main(do):
                     ],
                 },
                 {
-                    "name": "spacer_shim_thin",
+                    "name": "spacer_shim",
                     "color": shim_color,
                     "thickness": shim_thickness,
                     "drawing_layer_names": [
@@ -1610,7 +1747,7 @@ def main(do):
                     "array": array5,
                 },
                 {
-                    "name": "spacer_shim_thin",
+                    "name": "spacer_shim",
                     "color": shim_color,
                     "thickness": shim_thickness,
                     "drawing_layer_names": [
@@ -1652,7 +1789,7 @@ def main(do):
                     "array": array4,
                 },
                 {
-                    "name": "spacer_shim_thin",
+                    "name": "spacer_shim",
                     "color": shim_color,
                     "thickness": shim_thickness,
                     "drawing_layer_names": [
@@ -1688,11 +1825,12 @@ def main(do):
                     ],
                 },
                 {
-                    "name": "active_layer_bigger",
+                    "name": "active_layer",
                     "color": "CHOCOLATE",
                     "thickness": active_thickness,
                     "drawing_layer_names": [
-                        "active_layer_bigger",
+                        "active_layer_upper",
+                        "active_layer_lower",
                     ],
                 },
                 {
@@ -1700,7 +1838,9 @@ def main(do):
                     "color": "GOLD",
                     "thickness": metal_thickness,
                     "drawing_layer_names": [
-                        "pixel_electrodes_small_lower",
+                        "pixel_electrodes_small_lower_1",
+                        "pixel_electrodes_small_lower_3",
+                        "pixel_electrodes_small_lower_5",
                     ],
                 },
                 {
@@ -1709,7 +1849,9 @@ def main(do):
                     "thickness": metal_thickness,
                     "z_base": tco_thickness + active_thickness,
                     "drawing_layer_names": [
-                        "pixel_electrodes_large_upper",
+                        "pixel_electrodes_large_upper_2",
+                        "pixel_electrodes_large_upper_4",
+                        "pixel_electrodes_large_upper_6",
                     ],
                 },
                 {
@@ -1771,14 +1913,22 @@ def main(do):
         # to_build = ["metal_mask_loft", "metal6_mask_loft", "metal2_mask_loft"]
         # to_build = ["metal_mask_loft", "metal6_mask_loft", "metal2_mask_loft", "active_mask_loft", "interlayer_mask_angle", "interlayer_mask_angle_4x4", "interlayer_mask_stack_4x4"]
         # to_build = ["interlayer_mask_angle_4x4", "metal_mask_loft_4x4"]
-        to_build = ["metal_mask_loft_5x5"]
+        # to_build = ["metal_mask_loft_5x5"]
         # to_build = ["interlayer_mask_angle_4x4", "metal_mask_loft"]
+        # to_build = ["metal_mask_stack_4x4", "metal_mask_stack_thick_shim", "metal6_mask_stack_thick_shim", "metal2_mask_stack_4x4", "metal6_mask_stack_4x4", "interlayer_mask_stack_4x4", "active_mask_stack_4x4"]  # march order = [2, 60, 60, 2, 2, 2, 2]
+        # to_build = ["metal_mask_stack_thick_shim"]
         # to_build = [""]  # all of them
-        built = ttt.build(to_build, nparallel=5)
+        # built = ttt.build(to_build, nparallel=5)
+
+        # TwoDToThreeD.outputter(built, wrk_dir, save_dxfs=False, save_steps=False, save_stls=False, edm_outputs=False, nparallel=6)
 
         # ttt.faceputter(wrk_dir)  # output the face data for comsol
 
-        TwoDToThreeD.outputter(built, wrk_dir, save_dxfs=False, save_steps=False, save_stls=False, edm_outputs=True, nparallel=6)
+        # march order = [2, 60, 60, 2, 2, 2, 2]
+        march_build = ["metal_mask_stack_4x4", "metal_mask_stack_thick_shim", "metal6_mask_stack_thick_shim", "metal2_mask_stack_4x4", "metal6_mask_stack_4x4", "interlayer_mask_stack_4x4", "active_mask_stack_4x4"]
+        # march_build = ["metal_mask_stack_thick_shim"]
+        march_built = ttt.build(march_build, nparallel=5)
+        TwoDToThreeD.outputter(march_built, wrk_dir, save_dxfs=True, save_steps=False, save_stls=False, edm_outputs=False, nparallel=6)
 
 
 # temp is what we get when run via cq-editor
