@@ -1914,21 +1914,21 @@ def main(do):
         # to_build = ["metal_mask_loft", "metal6_mask_loft", "metal2_mask_loft", "active_mask_loft", "interlayer_mask_angle", "interlayer_mask_angle_4x4", "interlayer_mask_stack_4x4"]
         # to_build = ["interlayer_mask_angle_4x4", "metal_mask_loft_4x4"]
         # to_build = ["metal_mask_loft_5x5"]
-        # to_build = ["interlayer_mask_angle_4x4", "metal_mask_loft"]
+        to_build = ["interlayer_mask_angle_4x4", "metal_mask_loft"]
         # to_build = ["metal_mask_stack_4x4", "metal_mask_stack_thick_shim", "metal6_mask_stack_thick_shim", "metal2_mask_stack_4x4", "metal6_mask_stack_4x4", "interlayer_mask_stack_4x4", "active_mask_stack_4x4"]  # march order = [2, 60, 60, 2, 2, 2, 2]
         # to_build = ["metal_mask_stack_thick_shim"]
         # to_build = [""]  # all of them
-        # built = ttt.build(to_build, nparallel=5)
+        built = ttt.build(to_build, nparallel=5)
 
-        # TwoDToThreeD.outputter(built, wrk_dir, save_dxfs=False, save_steps=False, save_stls=False, edm_outputs=False, nparallel=6)
+        TwoDToThreeD.outputter(built, wrk_dir, save_dxfs=False, save_steps=False, save_stls=False, edm_outputs=False, nparallel=6)
 
         # ttt.faceputter(wrk_dir)  # output the face data for comsol
 
         # march order = [2, 60, 60, 2, 2, 2, 2]
-        march_build = ["metal_mask_stack_4x4", "metal_mask_stack_thick_shim", "metal6_mask_stack_thick_shim", "metal2_mask_stack_4x4", "metal6_mask_stack_4x4", "interlayer_mask_stack_4x4", "active_mask_stack_4x4"]
+        #march_build = ["metal_mask_stack_4x4", "metal_mask_stack_thick_shim", "metal6_mask_stack_thick_shim", "metal2_mask_stack_4x4", "metal6_mask_stack_4x4", "interlayer_mask_stack_4x4", "active_mask_stack_4x4"]
         # march_build = ["metal_mask_stack_thick_shim"]
-        march_built = ttt.build(march_build, nparallel=5)
-        TwoDToThreeD.outputter(march_built, wrk_dir, save_dxfs=True, save_steps=False, save_stls=False, edm_outputs=False, nparallel=6)
+        #march_built = ttt.build(march_build, nparallel=5)
+        #TwoDToThreeD.outputter(march_built, wrk_dir, save_dxfs=True, save_steps=False, save_stls=False, edm_outputs=False, nparallel=6)
 
 
 # temp is what we get when run via cq-editor
