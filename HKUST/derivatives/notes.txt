@@ -5,9 +5,6 @@ h: height = 2.845 mm
 w: width = 3.6 mm
 governing equation: (a-r*r*(π-4))/h=w
 
-geometric dark area
-da: dark area = 16.038 mm^2
-dh: dark height = 0.8 + h = 3.645 mm
-dw: dark width = 0.8 + w = 4.4 mm
-governing equation: da = dw*dh
-
+nominal geometric dark area
+dark area = 15.6660 mm^2
+by inspection of the drawing
