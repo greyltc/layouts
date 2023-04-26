@@ -1252,7 +1252,87 @@ def main(do):
 
     instructions.append(
         {
-            "name": "metal_full_angle",
+            "name": "full_top_tco_angle",
+            "layers": [
+                {
+                    "name": "single_piece_mask",
+                    "color": feature_color,
+                    "thickness": 1,
+                    "drawing_layer_names": [
+                        "glass_extents",
+                        ("full_area_top_tco", -angle),
+                    ],
+                },
+            ],
+        }
+    )
+
+    instructions.append(
+        {
+            "name": "full_top_tco_angle_4x4",
+            "layers": [
+                {
+                    "name": "single_piece_mask",
+                    "color": feature_color,
+                    "thickness": 1.0,
+                    #"edm_dent": "spacer_shim_active",
+                    #"edm_dent_depth": 0.05,
+                    "drawing_layer_names": [
+                        "outline_4x4",
+                        ("full_area_top_tco", -angle),
+                    ],
+                    "edge_case": "inner_outline_4x4",
+                    "array": array4,
+                },
+            ],
+        }
+    )
+
+    instructions.append(
+        {
+            "name": "full_insulation_angle_4x4",
+            "layers": [
+                {
+                    "name": "single_piece_mask",
+                    "color": feature_color,
+                    "thickness": 1.0,
+                    #"edm_dent": "spacer_shim_active",
+                    #"edm_dent_depth": 0.05,
+                    "drawing_layer_names": [
+                        "outline_4x4",
+                        ("full_area_insulation", -angle),
+                    ],
+                    "edge_case": "inner_outline_4x4",
+                    "array": array4,
+                },
+            ],
+        }
+    )
+
+    instructions.append(
+        {
+            "name": "full_interlayer_angle_4x4",
+            "layers": [
+                {
+                    "name": "single_piece_mask",
+                    "color": feature_color,
+                    "thickness": 1.0,
+                    #"edm_dent": "spacer_shim_active",
+                    #"edm_dent_depth": 0.05,
+                    "drawing_layer_names": [
+                        "outline_4x4",
+                        ("full_area_recombination_slash_interlayer", -angle),
+                    ],
+                    "edge_case": "inner_outline_4x4",
+                    "array": array4,
+                },
+            ],
+        }
+    )
+
+    instructions.append(
+        {
+            "name": "full_metal_angle",
             "layers": [
                 {
                     "name": "single_piece_mask",
@@ -1269,7 +1349,7 @@ def main(do):
 
     instructions.append(
         {
-            "name": "metal_full_angle_4x4",
+            "name": "full_metal_angle_4x4",
             "layers": [
                 {
                     "name": "single_piece_mask",
@@ -1954,7 +2034,7 @@ def main(do):
         # to_build = ["interlayer_mask_angle_4x4", "metal_mask_loft_4x4"]
         # to_build = ["metal_mask_loft_5x5"]
         # to_build = ["interlayer_mask_angle_4x4", "metal_mask_loft"]
-        to_build = ["metal_full_angle", "metal_full_angle_4x4"]
+        to_build = ["full_metal_angle_4x4", "full_top_tco_angle_4x4", "full_insulation_angle_4x4", "full_interlayer_angle_4x4"]
         # to_build = ["metal_mask_stack_4x4", "metal_mask_stack_thick_shim", "metal6_mask_stack_thick_shim", "metal2_mask_stack_4x4", "metal6_mask_stack_4x4", "interlayer_mask_stack_4x4", "active_mask_stack_4x4"]  # march order = [2, 60, 60, 2, 2, 2, 2]
         # to_build = ["metal_mask_stack_thick_shim"]
         # to_build = [""]  # all of them
