@@ -58,11 +58,20 @@ def main(do):
             "layers": [
                 {
                     "name": "shelf_riser",
-                    "color": support_color,
-                    "thickness": 2.7,
+                    "color": shim_color,
+                    "thickness": 1.95,
                     "drawing_layer_names": [
                         "hoye_holder_extents",
                         "shelf_riser",
+                    ],
+                },
+                {
+                    "name": "support",
+                    "color": support_color,
+                    "thickness": 0.75,
+                    "drawing_layer_names": [
+                        "hoye_holder_extents",
+                        "hoye_metal_support",
                     ],
                 },
                 {
