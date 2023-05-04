@@ -17,6 +17,7 @@ def main(do):
         wrk_dir.parent / "oxford" / "master.dxf",
         wrk_dir.parent / "oxford" / "derivatives" / "5x5_cluster_master.dxf",
         wrk_dir.parent / "oxford" / "derivatives" / "4x4_cluster_master.dxf",
+        wrk_dir.parent / "oxford" / "derivatives" / "hoye_evap.dxf",
     ]
 
     # instructions for 2d->3d
@@ -50,6 +51,50 @@ def main(do):
     # array4 = array4[5:6]
 
     instructions = []
+
+    instructions.append(
+        {
+            "name": "hoye_metal_stack",
+            "layers": [
+                {
+                    "name": "shelf_riser",
+                    "color": support_color,
+                    "thickness": 2.7,
+                    "drawing_layer_names": [
+                        "hoye_holder_extents",
+                        "shelf_riser",
+                    ],
+                },
+                {
+                    "name": "hoye_metal_feature",
+                    "color": feature_color,
+                    "thickness": 0.2,
+                    "drawing_layer_names": [
+                        "hoye_holder_extents",
+                        "hoye_metal_feature",
+                    ],
+                },
+                {
+                    "name": "hoye_shim",
+                    "color": shim_color,
+                    "thickness": 0.1,
+                    "drawing_layer_names": [
+                        "hoye_holder_extents",
+                        "hoye_shim",
+                    ],
+                },
+                {
+                    "name": "hoye_holder",
+                    "color": feature_color,
+                    "thickness": 2,
+                    "drawing_layer_names": [
+                        "hoye_holder_extents",
+                        "hoye_holder",
+                    ],
+                },
+            ],
+        }
+    )
 
     instructions.append(
         {
@@ -2034,7 +2079,8 @@ def main(do):
         # to_build = ["interlayer_mask_angle_4x4", "metal_mask_loft_4x4"]
         # to_build = ["metal_mask_loft_5x5"]
         # to_build = ["interlayer_mask_angle_4x4", "metal_mask_loft"]
-        to_build = ["full_metal_angle_4x4", "full_top_tco_angle_4x4", "full_insulation_angle_4x4", "full_interlayer_angle_4x4"]
+        # to_build = ["full_metal_angle_4x4", "full_top_tco_angle_4x4", "full_insulation_angle_4x4", "full_interlayer_angle_4x4"]
+        to_build = ["hoye_metal_stack"]
         # to_build = ["metal_mask_stack_4x4", "metal_mask_stack_thick_shim", "metal6_mask_stack_thick_shim", "metal2_mask_stack_4x4", "metal6_mask_stack_4x4", "interlayer_mask_stack_4x4", "active_mask_stack_4x4"]  # march order = [2, 60, 60, 2, 2, 2, 2]
         # to_build = ["metal_mask_stack_thick_shim"]
         # to_build = [""]  # all of them
