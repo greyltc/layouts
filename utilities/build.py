@@ -584,9 +584,7 @@ def main(do):
                     "thickness": support_thickness,
                     "drawing_layer_names": [
                         "glass_extents",
-                        "aggressive_metal_support_tc_metal",
-                        "aggressive_metal_support_small_upper",
-                        "aggressive_metal_support_small_lower",
+                        "led_electrode_support",
                     ],
                 },
                 {
@@ -595,8 +593,13 @@ def main(do):
                     "thickness": feature_thickness,
                     "drawing_layer_names": [
                         "glass_extents",
-                        "tc_metal",
-                        "leds",
+                        "tc_metal_led",
+                        "led_electrode_1",
+                        "led_electrode_2",
+                        "led_electrode_3",
+                        "led_electrode_4",
+                        "led_electrode_5",
+                        "led_electrode_6",
                     ],
                 },
                 {
@@ -622,9 +625,7 @@ def main(do):
                     "thickness": support_thickness,
                     "drawing_layer_names": [
                         "outline_loose_alignment_5x5",
-                        "aggressive_metal_support_tc_metal",
-                        "aggressive_metal_support_small_upper",
-                        "aggressive_metal_support_small_lower",
+                        "led_electrode_support",
                     ],
                     "edge_case": "inner_outline_5x5",
                     "array": array5,
@@ -635,8 +636,13 @@ def main(do):
                     "thickness": feature_thickness,
                     "drawing_layer_names": [
                         "outline_5x5",
-                        "tc_metal",
-                        "leds",
+                        "tc_metal_led",
+                        "led_electrode_1",
+                        "led_electrode_2",
+                        "led_electrode_3",
+                        "led_electrode_4",
+                        "led_electrode_5",
+                        "led_electrode_6",
                     ],
                     "edge_case": "inner_outline_5x5",
                     "array": array5,
@@ -666,9 +672,7 @@ def main(do):
                     "thickness": support_thickness,
                     "drawing_layer_names": [
                         "outline_loose_alignment_4x4",
-                        "aggressive_metal_support_tc_metal",
-                        "aggressive_metal_support_small_upper",
-                        "aggressive_metal_support_small_lower",
+                        "led_electrode_support",
                     ],
                     "edge_case": "inner_outline_4x4",
                     "array": array4,
@@ -679,8 +683,13 @@ def main(do):
                     "thickness": feature_thickness,
                     "drawing_layer_names": [
                         "outline_4x4",
-                        "tc_metal",
-                        "leds",
+                        "tc_metal_led",
+                        "led_electrode_1",
+                        "led_electrode_2",
+                        "led_electrode_3",
+                        "led_electrode_4",
+                        "led_electrode_5",
+                        "led_electrode_6",
                     ],
                     "edge_case": "inner_outline_4x4",
                     "array": array4,
@@ -1506,6 +1515,82 @@ def main(do):
 
     instructions.append(
         {
+            "name": "interlayer2_mask_stack",
+            "layers": [
+                {
+                    "name": "interlayer_support",
+                    "color": support_color,
+                    "thickness": support_thickness,
+                    "drawing_layer_names": [
+                        "glass_extents",
+                        "aggressive_support_recombi",
+                    ],
+                },
+                {
+                    "name": "inerlayer_feature",
+                    "color": feature_color,
+                    "thickness": feature_thickness,
+                    "drawing_layer_names": [
+                        "glass_extents",
+                        "recombination_slash_interlayer2",
+                    ],
+                },
+                {
+                    "name": "spacer_shim",
+                    "color": shim_color,
+                    "thickness": shim_thickness,
+                    "drawing_layer_names": [
+                        "glass_extents",
+                        "spacer_shim_thin",
+                    ],
+                },
+            ],
+        }
+    )
+
+    instructions.append(
+        {
+            "name": "interlayer2_mask_stack_4x4",
+            "layers": [
+                {
+                    "name": "interlayer_support",
+                    "color": support_color,
+                    "thickness": support_thickness,
+                    "drawing_layer_names": [
+                        "outline_loose_alignment_4x4",
+                        "aggressive_support_recombi",
+                    ],
+                    "edge_case": "inner_outline_4x4",
+                    "array": array4,
+                },
+                {
+                    "name": "inerlayer_feature",
+                    "color": feature_color,
+                    "thickness": feature_thickness,
+                    "drawing_layer_names": [
+                        "outline_4x4",
+                        "recombination_slash_interlayer2",
+                    ],
+                    "edge_case": "inner_outline_4x4",
+                    "array": array4,
+                },
+                {
+                    "name": "spacer_shim",
+                    "color": shim_color,
+                    "thickness": shim_thickness,
+                    "drawing_layer_names": [
+                        "outline_no_alignment_4x4",
+                        "spacer_shim_thin",
+                    ],
+                    "edge_case": "inner_outline_4x4",
+                    "array": array4,
+                },
+            ],
+        }
+    )
+
+    instructions.append(
+        {
             "name": "interlayer_mask_stack",
             "layers": [
                 {
@@ -1642,6 +1727,48 @@ def main(do):
                     "drawing_layer_names": [
                         "outline_4x4",
                         "recombination_slash_interlayer",
+                    ],
+                    "edge_case": "inner_outline_4x4",
+                    "array": array4,
+                },
+                {
+                    "name": "spacer_shim",
+                    "color": shim_color,
+                    "thickness": shim_thickness,
+                    "drawing_layer_names": [
+                        "outline_no_alignment_4x4",
+                        "spacer_shim_thin",
+                    ],
+                    "edge_case": "inner_outline_4x4",
+                    "array": array4,
+                },
+            ],
+        }
+    )
+
+    instructions.append(
+        {
+            "name": "top_tco2_mask_stack_4x4",
+            "layers": [
+                {
+                    "name": "top_tco_support",
+                    "color": support_color,
+                    "thickness": support_thickness,
+                    "drawing_layer_names": [
+                        "outline_loose_alignment_4x4",
+                        "aggressive_support_tandem",
+                    ],
+                    "edge_case": "inner_outline_4x4",
+                    "array": array4,
+                },
+                {
+                    "name": "top_tco_feature",
+                    "color": feature_color,
+                    "thickness": feature_thickness,
+                    "drawing_layer_names": [
+                        "outline_4x4",
+                        "top_tco_large_lower",
+                        "top_tco_large_upper",
                     ],
                     "edge_case": "inner_outline_4x4",
                     "array": array4,
@@ -1940,6 +2067,84 @@ def main(do):
 
     instructions.append(
         {
+            "name": "tandem2_metal_mask_stack",
+            "layers": [
+                {
+                    "name": "tandem_metal_support",
+                    "color": support_color,
+                    "thickness": support_thickness,
+                    "drawing_layer_names": [
+                        "glass_extents",
+                        "aggressive_support_tandem2_metal",
+                    ],
+                },
+                {
+                    "name": "tandem_metal_feature",
+                    "color": feature_color,
+                    "thickness": feature_thickness,
+                    "drawing_layer_names": [
+                        "glass_extents",
+                        "pixel_electrodes_large_upper_finger",
+                        "pixel_electrodes_large_lower_finger",
+                    ],
+                },
+                {
+                    "name": "spacer_shim",
+                    "color": shim_color,
+                    "thickness": shim_thickness,
+                    "drawing_layer_names": [
+                        "glass_extents",
+                        "spacer_shim_thin",
+                    ],
+                },
+            ],
+        }
+    )
+
+    instructions.append(
+        {
+            "name": "tandem2_metal_mask_stack_4x4",
+            "layers": [
+                {
+                    "name": "tandem_metal_support",
+                    "color": support_color,
+                    "thickness": support_thickness,
+                    "drawing_layer_names": [
+                        "outline_loose_alignment_4x4",
+                        "aggressive_support_tandem2_metal",
+                    ],
+                    "edge_case": "inner_outline_4x4",
+                    "array": array4,
+                },
+                {
+                    "name": "tandem_metal_feature",
+                    "color": feature_color,
+                    "thickness": feature_thickness,
+                    "drawing_layer_names": [
+                        "outline_4x4",
+                        "pixel_electrodes_large_upper_finger",
+                        "pixel_electrodes_large_lower_finger",
+                    ],
+                    "edge_case": "inner_outline_4x4",
+                    "array": array4,
+                },
+                {
+                    "name": "spacer_shim",
+                    "color": shim_color,
+                    "thickness": shim_thickness,
+                    "drawing_layer_names": [
+                        "outline_no_alignment_4x4",
+                        "spacer_shim_thin",
+                    ],
+                    "edge_case": "inner_outline_4x4",
+                    "array": array4,
+                },
+            ],
+        }
+    )
+
+    instructions.append(
+        {
             "name": "tandem_metal_mask_stack",
             "layers": [
                 {
@@ -2172,7 +2377,8 @@ def main(do):
         # to_build = ["interlayer_mask_angle_4x4", "metal_mask_loft"]
         # to_build = ["full_metal_angle_4x4", "full_top_tco_angle_4x4", "full_insulation_angle_4x4", "full_interlayer_angle_4x4"]
         # to_build = ["hoye_metal_stack"]
-        to_build = ["tc_mask_4x4", "contact_insulation_4x4"]
+        to_build = ["tc_mask_4x4", "contact_insulation_4x4", "led_metal_mask_stack", "led_metal_mask_stack_4x4", "tandem2_metal_mask_stack_4x4", "interlayer2_mask_stack_4x4", "top_tco2_mask_stack_4x4"]  # june order
+        # to_build = ["metal_mask_stack_thick_shim"]
         # to_build = ["metal_mask_stack_4x4", "metal_mask_stack_thick_shim", "metal6_mask_stack_thick_shim", "metal2_mask_stack_4x4", "metal6_mask_stack_4x4", "interlayer_mask_stack_4x4", "active_mask_stack_4x4"]  # march order = [2, 60, 60, 2, 2, 2, 2]
         # to_build = ["metal_mask_stack_thick_shim"]
         # to_build = [""]  # all of them
