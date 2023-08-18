@@ -2501,7 +2501,7 @@ def main(do):
         # to_build = ["metal_mask_stack_4x4", "metal_mask_stack_thick_shim", "metal6_mask_stack_thick_shim", "metal2_mask_stack_4x4", "metal6_mask_stack_4x4", "interlayer_mask_stack_4x4", "active_mask_stack_4x4"]  # march order = [2, 60, 60, 2, 2, 2, 2]
         # to_build = ["metal_mask_stack_thick_shim"]
         # to_build = [""]  # all of them
-        built = ttt.build(to_build, nparallel=5)
+        built = ttt.build(to_build, nparallel=12)
 
         TwoDToThreeD.outputter(built, wrk_dir, save_dxfs=True, save_pdfs=True, save_steps=False, save_stls=False, edm_outputs=False, nparallel=12)
 
