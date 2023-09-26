@@ -1612,17 +1612,35 @@ def main(do):
 
     instructions.append(
         {
+            "name": "full_metal",
+            "layers": [
+                {
+                    "name": "single_piece_mask",
+                    "color": feature_color,
+                    "thickness": 1,
+                    "drawing_layer_names": [
+                        "glass_extents",
+                        "full_area_metal_20x20",
+                    ],
+                },
+            ],
+        }
+    )
+
+    instructions.append(
+        {
             "name": "full_metal_angle_4x4",
             "layers": [
                 {
                     "name": "single_piece_mask",
                     "color": feature_color,
                     "thickness": 1.0,
-                    #"edm_dent": "spacer_shim_active",
-                    #"edm_dent_depth": 0.05,
+                    "edm_dent": "spacer_shim_thin",
+                    "edm_dent_depth": 0.05,
                     "drawing_layer_names": [
                         "outline_4x4",
-                        ("full_area_metal", -angle),
+                       #("full_area_metal_20x20", -angle),
+                        ("full_area_metal_1sqin", -angle),
                     ],
                     "edge_case": "inner_outline_4x4",
                     "array": array4,
@@ -2494,8 +2512,9 @@ def main(do):
         # to_build = ["metal_mask_loft_5x5"]
         # to_build = ["interlayer_mask_angle_4x4", "metal_mask_loft"]
         # to_build = ["full_metal_angle_4x4", "full_top_tco_angle_4x4", "full_insulation_angle_4x4", "full_interlayer_angle_4x4"]
+        to_build = ["full_metal_angle_4x4"]
         # to_build = ["hoye_metal_stack_5x", "one_large_lightmask"]
-        to_build = ["tc_mask_4x4", "contact_insulation_4x4", "led_metal_mask_stack", "led_metal_mask_stack_4x4", "tandem2_metal_mask_stack_4x4", "interlayer2_mask_stack_4x4", "top_tco2_mask_stack_4x4", "vapor_deposition_encapsulation_4x4", "vapor_deposition_encapsulation", "tc_undermetal_mask_4x4", "active_mask_stack"]  # june order
+        # to_build = ["tc_mask_4x4", "contact_insulation_4x4", "led_metal_mask_stack", "led_metal_mask_stack_4x4", "tandem2_metal_mask_stack_4x4", "interlayer2_mask_stack_4x4", "top_tco2_mask_stack_4x4", "vapor_deposition_encapsulation_4x4", "vapor_deposition_encapsulation", "tc_undermetal_mask_4x4", "active_mask_stack"]  # june order
         # to_build = ["vapor_deposition_encapsulation_4x4", "vapor_deposition_encapsulation", "tc_undermetal_mask_4x4", "active_mask_stack"]
         # to_build = ["metal_mask_stack_thick_shim"]
         # to_build = ["metal_mask_stack_4x4", "metal_mask_stack_thick_shim", "metal6_mask_stack_thick_shim", "metal2_mask_stack_4x4", "metal6_mask_stack_4x4", "interlayer_mask_stack_4x4", "active_mask_stack_4x4"]  # march order = [2, 60, 60, 2, 2, 2, 2]
