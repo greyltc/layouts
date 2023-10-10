@@ -1639,8 +1639,7 @@ def main(do):
                     "edm_dent_depth": 0.05,
                     "drawing_layer_names": [
                         "outline_4x4",
-                       #("full_area_metal_20x20", -angle),
-                        ("full_area_metal_1sqin", -angle),
+                        ("full_area_metal", -angle),
                     ],
                     "edge_case": "inner_outline_4x4",
                     "array": array4,
