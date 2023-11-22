@@ -2530,8 +2530,8 @@ def main(do):
         # to_build = ["interlayer_mask_angle_4x4", "metal_mask_loft"]
         # to_build = ["full_metal_angle_4x4", "full_top_tco_angle_4x4", "full_insulation_angle_4x4", "full_interlayer_angle_4x4"]
         # to_build = ["full_metal_angle_4x4"]
-        to_build = ["lightmask_cal_angle"]
-        # to_build = ["hoye_metal_stack_5x", "one_large_lightmask"]
+        # to_build = ["lightmask_cal_angle"]
+        to_build = ["hoye_metal_stack_5x", "one_large_lightmask"]
         # to_build = ["tc_mask_4x4", "contact_insulation_4x4", "led_metal_mask_stack", "led_metal_mask_stack_4x4", "tandem2_metal_mask_stack_4x4", "interlayer2_mask_stack_4x4", "top_tco2_mask_stack_4x4", "vapor_deposition_encapsulation_4x4", "vapor_deposition_encapsulation", "tc_undermetal_mask_4x4", "active_mask_stack"]  # june order
         # to_build = ["vapor_deposition_encapsulation_4x4", "vapor_deposition_encapsulation", "tc_undermetal_mask_4x4", "active_mask_stack"]
         # to_build = ["metal_mask_stack_thick_shim"]
@@ -2540,7 +2540,7 @@ def main(do):
         # to_build = [""]  # all of them
         built = ttt.build(to_build, nparallel=12)
 
-        TwoDToThreeD.outputter(built, wrk_dir, save_dxfs=True, save_pdfs=True, save_steps=False, save_stls=False, edm_outputs=True, nparallel=12)
+        TwoDToThreeD.outputter(built, wrk_dir, save_dxfs=True, save_pdfs=True, save_steps=True, save_stls=True, edm_outputs=True, nparallel=12)
 
         # ttt.faceputter(wrk_dir)  # output the face data for comsol
 
