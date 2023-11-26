@@ -28,7 +28,7 @@ def main(do):
     shim_thickness_thicker = 0.1
     glass_thickness = 1.1
     device_layer_scale_factor = 10000
-    tco_thickness = 140e-6 * device_layer_scale_factor
+    tco_thickness = 60e-6 * device_layer_scale_factor
     active_thickness = 600e-6 * device_layer_scale_factor
     metal_thickness = 100e-6 * device_layer_scale_factor
     contact_cylinder_height = tco_thickness + active_thickness + metal_thickness
@@ -2508,11 +2508,55 @@ def main(do):
         }
     )
 
+    instructions.append(
+        {
+            "name": "sim_onesqcm_tandem",
+            "layers": [
+                # {
+                #     "name": "current_gen",
+                #     "color": "CHOCOLATE",
+                #     "thickness": 0,
+                #     "drawing_layer_names": [
+                #         "lightmask_large_upper",
+                #     ],
+                # },
+                {
+                    "name": "tco",
+                    "color": tco_color,
+                    "z_base": 0,
+                    "thickness": tco_thickness,
+                    "drawing_layer_names": [
+                        "top_tco_large_upper",
+                        ("lightmask_large_upper", 0)  # zero here means drawing layer shape should be embossed onto the 3D layer
+                    ],
+                },
+                {
+                    "name": "metal",
+                    "color": "GOLD",
+                    "thickness": metal_thickness,
+                    "drawing_layer_names": [
+                        "pixel_electrodes_large_upper_finger",
+                    ],
+                },
+                {
+                    "name": "contact_cutter",
+                    "color": "WHITE",
+                    "z_base": 0,
+                    "thickness": metal_thickness+tco_thickness,
+                    "drawing_layer_names": [
+                        "sim_neck_cutter_outer",
+                    ],
+                },
+            ],
+        }
+    )
+
     if "masks" in do:
         ttt = TwoDToThreeD(instructions=instructions, sources=sources)
         # to_build = ["active_mask_stack", "metal_mask_stack", "tco_30x30mm", "active_mask_stack_4x4", "tco_150x150mm"]
         # to_build = ["tco_30x30mm"]
-        # to_build = ["full_device_Stack"]
+        #to_build = ["full_device_Stack"]
+        to_build = ["sim_onesqcm_tandem"]
         # to_build = ["tandem_metal_mask_stack"]
         # to_build = ["metal_mask_stack"]
         # to_build = ["tc_metal_mask_stack", "tc_metal_mask_stack_5x5", "tc_metal_mask_stack_4x4"]
@@ -2531,7 +2575,7 @@ def main(do):
         # to_build = ["full_metal_angle_4x4", "full_top_tco_angle_4x4", "full_insulation_angle_4x4", "full_interlayer_angle_4x4"]
         # to_build = ["full_metal_angle_4x4"]
         # to_build = ["lightmask_cal_angle"]
-        to_build = ["hoye_metal_stack_5x", "one_large_lightmask"]
+        # to_build = ["hoye_metal_stack_5x", "one_large_lightmask"]
         # to_build = ["tc_mask_4x4", "contact_insulation_4x4", "led_metal_mask_stack", "led_metal_mask_stack_4x4", "tandem2_metal_mask_stack_4x4", "interlayer2_mask_stack_4x4", "top_tco2_mask_stack_4x4", "vapor_deposition_encapsulation_4x4", "vapor_deposition_encapsulation", "tc_undermetal_mask_4x4", "active_mask_stack"]  # june order
         # to_build = ["vapor_deposition_encapsulation_4x4", "vapor_deposition_encapsulation", "tc_undermetal_mask_4x4", "active_mask_stack"]
         # to_build = ["metal_mask_stack_thick_shim"]
@@ -2540,7 +2584,7 @@ def main(do):
         # to_build = [""]  # all of them
         built = ttt.build(to_build, nparallel=12)
 
-        TwoDToThreeD.outputter(built, wrk_dir, save_dxfs=True, save_pdfs=True, save_steps=True, save_stls=True, edm_outputs=True, nparallel=12)
+        TwoDToThreeD.outputter(built, wrk_dir, save_dxfs=True, save_pdfs=True, save_steps=True, save_stls=True, edm_outputs=True, simulation_outputs=True, nparallel=12)
 
         # ttt.faceputter(wrk_dir)  # output the face data for comsol
 
@@ -2549,7 +2593,6 @@ def main(do):
         # march_build = ["metal_mask_stack_thick_shim"]
         #march_built = ttt.build(march_build, nparallel=5)
         #TwoDToThreeD.outputter(march_built, wrk_dir, save_dxfs=True, save_steps=False, save_stls=False, edm_outputs=False, nparallel=6)
-
 
 # temp is what we get when run via cq-editor
 if __name__ in ["__main__", "temp"]:
