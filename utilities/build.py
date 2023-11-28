@@ -2511,6 +2511,9 @@ def main(do):
     instructions.append(
         {
             "name": "sim_onesqcm_tandem",
+            "xyscale": 1,
+            "final_scale": 1/device_layer_scale_factor,
+            "sim_mode": True,
             "layers": [
                 # {
                 #     "name": "current_gen",
@@ -2584,7 +2587,7 @@ def main(do):
         # to_build = [""]  # all of them
         built = ttt.build(to_build, nparallel=12)
 
-        TwoDToThreeD.outputter(built, wrk_dir, save_dxfs=True, save_pdfs=True, save_steps=True, save_stls=True, edm_outputs=True, simulation_outputs=True, nparallel=12)
+        TwoDToThreeD.outputter(built, wrk_dir, save_dxfs=True, save_pdfs=True, save_steps=True, save_stls=True, edm_outputs=True, nparallel=12)
 
         # ttt.faceputter(wrk_dir)  # output the face data for comsol
 
