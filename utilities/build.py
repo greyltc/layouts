@@ -2511,8 +2511,8 @@ def main(do):
     instructions.append(
         {
             "name": "sim_onesqcm_tandem",
-            "xyscale": 1,
-            "final_scale": 1/device_layer_scale_factor,
+            "xyscale": device_layer_scale_factor,
+            "final_scale": 0.1,  # 1/device_layer_scale_factor (0.0001, 1e-4) has units in mm, 1e-7 has them in m, 100 for nm, 0.1 for um
             "sim_mode": True,
             "layers": [
                 # {
@@ -2554,12 +2554,168 @@ def main(do):
         }
     )
 
+    instructions.append(
+        {
+            "name": "sim_onesqcm_tandem",
+            "xyscale": 1e6,  # 1 for mm, 
+            #"final_scale": 100,  # 1/device_layer_scale_factor (0.0001, 1e-4) has units in mm, 1e-7 has them in m, 100 for nm, 0.1 for um
+            "sim_mode": True,
+            "layers": [
+                {
+                    "name": "tco",
+                    "color": tco_color,
+                    "z_base": 0,
+                    "thickness": 0,  # tco_thickness
+                    "drawing_layer_names": [
+                        "top_tco_large_upper",
+                        ("lightmask_large_upper", 0),  # zero here means drawing layer shape should be embossed onto the 3D layer
+                        ("pixel_electrodes_large_upper_finger", 0)  # zero here means drawing layer shape should be embossed onto the 3D layer
+                    ],
+                },
+                {
+                    "name": "contact_cutter",
+                    "color": "WHITE",
+                    "z_base": 0,
+                    "thickness": metal_thickness+tco_thickness,
+                    "drawing_layer_names": [
+                        "sim_neck_cutter_outer",
+                    ],
+                },
+            ],
+        }
+    )
+
+    instructions.append(
+        {
+            "name": "sim_onesqcm_circle",
+            "xyscale": 1e6,  # 1 for mm, 
+            #"final_scale": 100,  # 1/device_layer_scale_factor (0.0001, 1e-4) has units in mm, 1e-7 has them in m, 100 for nm, 0.1 for um
+            "sim_mode": True,
+            "layers": [
+                {
+                    "name": "tco",
+                    "color": tco_color,
+                    "z_base": 0,
+                    "thickness": 0,  # tco_thickness
+                    "drawing_layer_names": [
+                        "top_tco_sim_circle",
+                        ("lightmask_sim_circle", 0),  # zero here means drawing layer shape should be embossed onto the 3D layer
+                        ("pixel_elec_sim_circle", 0)  # zero here means drawing layer shape should be embossed onto the 3D layer
+                    ],
+                },
+                {
+                    "name": "contact_cutter",
+                    "color": "WHITE",
+                    "z_base": 0,
+                    "thickness": metal_thickness+tco_thickness,
+                    "drawing_layer_names": [
+                        "sim_neck_cutter_outer",
+                    ],
+                },
+            ],
+        }
+    )
+
+    instructions.append(
+        {
+            "name": "sim_onesqcm_square",
+            "xyscale": 1e6,  # 1 for mm, 
+            #"final_scale": 100,  # 1/device_layer_scale_factor (0.0001, 1e-4) has units in mm, 1e-7 has them in m, 100 for nm, 0.1 for um
+            "sim_mode": True,
+            "layers": [
+                {
+                    "name": "tco",
+                    "color": tco_color,
+                    "z_base": 0,
+                    "thickness": 0,  # tco_thickness
+                    "drawing_layer_names": [
+                        "top_tco_sim_square",
+                        ("lightmask_sim_square", 0),  # zero here means drawing layer shape should be embossed onto the 3D layer
+                        ("pixel_elec_sim_square", 0)  # zero here means drawing layer shape should be embossed onto the 3D layer
+                    ],
+                },
+                {
+                    "name": "contact_cutter",
+                    "color": "WHITE",
+                    "z_base": 0,
+                    "thickness": metal_thickness+tco_thickness,
+                    "drawing_layer_names": [
+                        "sim_neck_cutter_outer",
+                    ],
+                },
+            ],
+        }
+    )
+
+    instructions.append(
+        {
+            "name": "sim_onesqcm_fingerA",
+            "xyscale": 1e6,  # 1 for mm, 
+            #"final_scale": 100,  # 1/device_layer_scale_factor (0.0001, 1e-4) has units in mm, 1e-7 has them in m, 100 for nm, 0.1 for um
+            "sim_mode": True,
+            "layers": [
+                {
+                    "name": "tco",
+                    "color": tco_color,
+                    "z_base": 0,
+                    "thickness": 0,  # tco_thickness
+                    "drawing_layer_names": [
+                        "top_tco_large_upper",
+                        ("lightmask_large_upper", 0),  # zero here means drawing layer shape should be embossed onto the 3D layer
+                        ("pixel_elec_sim_large_upper_finger_fingerA", 0)  # zero here means drawing layer shape should be embossed onto the 3D layer
+                    ],
+                },
+                {
+                    "name": "contact_cutter",
+                    "color": "WHITE",
+                    "z_base": 0,
+                    "thickness": metal_thickness+tco_thickness,
+                    "drawing_layer_names": [
+                        "sim_neck_cutter_outer",
+                    ],
+                },
+            ],
+        }
+    )
+
+    instructions.append(
+        {
+            "name": "sim_onesqcm_fingerB",
+            "xyscale": 1e6,  # 1 for mm, 
+            #"final_scale": 100,  # 1/device_layer_scale_factor (0.0001, 1e-4) has units in mm, 1e-7 has them in m, 100 for nm, 0.1 for um
+            "sim_mode": True,
+            "layers": [
+                {
+                    "name": "tco",
+                    "color": tco_color,
+                    "z_base": 0,
+                    "thickness": 0,  # tco_thickness
+                    "drawing_layer_names": [
+                        "top_tco_large_upper",
+                        ("lightmask_large_upper", 0),  # zero here means drawing layer shape should be embossed onto the 3D layer
+                        ("pixel_elec_sim_large_upper_finger_fingerB", 0)  # zero here means drawing layer shape should be embossed onto the 3D layer
+                    ],
+                },
+                {
+                    "name": "contact_cutter",
+                    "color": "WHITE",
+                    "z_base": 0,
+                    "thickness": metal_thickness+tco_thickness,
+                    "drawing_layer_names": [
+                        "sim_neck_cutter_outer",
+                    ],
+                },
+            ],
+        }
+    )
+
     if "masks" in do:
         ttt = TwoDToThreeD(instructions=instructions, sources=sources)
         # to_build = ["active_mask_stack", "metal_mask_stack", "tco_30x30mm", "active_mask_stack_4x4", "tco_150x150mm"]
         # to_build = ["tco_30x30mm"]
-        #to_build = ["full_device_Stack"]
-        to_build = ["sim_onesqcm_tandem"]
+        # to_build = ["full_device_Stack"]
+        # to_build = ["sim_onesqcm_tandem"]
+        to_build = ["sim_onesqcm_tandem_surfaces", "sim_onesqcm_circle", "sim_onesqcm_square", "sim_onesqcm_fingerA", "sim_onesqcm_fingerB"]
         # to_build = ["tandem_metal_mask_stack"]
         # to_build = ["metal_mask_stack"]
         # to_build = ["tc_metal_mask_stack", "tc_metal_mask_stack_5x5", "tc_metal_mask_stack_4x4"]
