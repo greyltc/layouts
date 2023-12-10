@@ -2756,13 +2756,137 @@ def main(do):
         }
     )
 
+    instructions.append(
+        {
+            "name": "sim_full_area_23finger",
+            "xyscale": 1e6,  # 1 for mm, 1e6 for nm
+            #"final_scale": 100,  # 1/device_layer_scale_factor (0.0001, 1e-4) has units in mm, 1e-7 has them in m, 100 for nm, 0.1 for um
+            "sim_mode": True,
+            "layers": [
+                {
+                    "name": "tco",
+                    "color": tco_color,
+                    "z_base": 0,
+                    "thickness": 0,  # tco_thickness
+                    "drawing_layer_names": [
+                        "full_area_top_tco",
+                        ("full_area_lightmask", 0),  # zero here means drawing layer shape should be embossed onto the 3D layer
+                        ("full_area_metal_23finger", 0)  # zero here means drawing layer shape should be embossed onto the 3D layer
+                    ],
+                },
+                {
+                    "name": "contact_cutter",
+                    "color": "WHITE",
+                    "z_base": 0,
+                    "thickness": metal_thickness+tco_thickness,
+                    "drawing_layer_names": [
+                        "sim_contact_point_cutter_ext",
+                    ],
+                },
+            ],
+        }
+    )
+
+    instructions.append(
+        {
+            "name": "sim_full_area_34finger",
+            "xyscale": 1e6,  # 1 for mm, 1e6 for nm
+            #"final_scale": 100,  # 1/device_layer_scale_factor (0.0001, 1e-4) has units in mm, 1e-7 has them in m, 100 for nm, 0.1 for um
+            "sim_mode": True,
+            "layers": [
+                {
+                    "name": "tco",
+                    "color": tco_color,
+                    "z_base": 0,
+                    "thickness": 0,  # tco_thickness
+                    "drawing_layer_names": [
+                        "full_area_top_tco",
+                        ("full_area_lightmask", 0),  # zero here means drawing layer shape should be embossed onto the 3D layer
+                        ("full_area_metal_34finger", 0)  # zero here means drawing layer shape should be embossed onto the 3D layer
+                    ],
+                },
+                {
+                    "name": "contact_cutter",
+                    "color": "WHITE",
+                    "z_base": 0,
+                    "thickness": metal_thickness+tco_thickness,
+                    "drawing_layer_names": [
+                        "sim_contact_point_cutter_ext",
+                    ],
+                },
+            ],
+        }
+    )
+
+    instructions.append(
+        {
+            "name": "sim_full_area_45finger",
+            "xyscale": 1e6,  # 1 for mm, 1e6 for nm
+            #"final_scale": 100,  # 1/device_layer_scale_factor (0.0001, 1e-4) has units in mm, 1e-7 has them in m, 100 for nm, 0.1 for um
+            "sim_mode": True,
+            "layers": [
+                {
+                    "name": "tco",
+                    "color": tco_color,
+                    "z_base": 0,
+                    "thickness": 0,  # tco_thickness
+                    "drawing_layer_names": [
+                        "full_area_top_tco",
+                        ("full_area_lightmask", 0),  # zero here means drawing layer shape should be embossed onto the 3D layer
+                        ("full_area_metal_45finger", 0)  # zero here means drawing layer shape should be embossed onto the 3D layer
+                    ],
+                },
+                {
+                    "name": "contact_cutter",
+                    "color": "WHITE",
+                    "z_base": 0,
+                    "thickness": metal_thickness+tco_thickness,
+                    "drawing_layer_names": [
+                        "sim_contact_point_cutter_ext",
+                    ],
+                },
+            ],
+        }
+    )
+
+    instructions.append(
+        {
+            "name": "sim_full_area_55finger",
+            "xyscale": 1e6,  # 1 for mm, 1e6 for nm
+            #"final_scale": 100,  # 1/device_layer_scale_factor (0.0001, 1e-4) has units in mm, 1e-7 has them in m, 100 for nm, 0.1 for um
+            "sim_mode": True,
+            "layers": [
+                {
+                    "name": "tco",
+                    "color": tco_color,
+                    "z_base": 0,
+                    "thickness": 0,  # tco_thickness
+                    "drawing_layer_names": [
+                        "full_area_top_tco",
+                        ("full_area_lightmask", 0),  # zero here means drawing layer shape should be embossed onto the 3D layer
+                        ("full_area_metal_55finger", 0)  # zero here means drawing layer shape should be embossed onto the 3D layer
+                    ],
+                },
+                {
+                    "name": "contact_cutter",
+                    "color": "WHITE",
+                    "z_base": 0,
+                    "thickness": metal_thickness+tco_thickness,
+                    "drawing_layer_names": [
+                        "sim_contact_point_cutter_ext",
+                    ],
+                },
+            ],
+        }
+    )
+
     if "masks" in do:
         ttt = TwoDToThreeD(instructions=instructions, sources=sources)
         # to_build = ["active_mask_stack", "metal_mask_stack", "tco_30x30mm", "active_mask_stack_4x4", "tco_150x150mm"]
         # to_build = ["tco_30x30mm"]
         # to_build = ["full_device_Stack"]
         # to_build = ["sim_onesqcm_tandem"]
-        to_build = ["sim_onesqcm_tandem_surfaces", "sim_onesqcm_circle", "sim_onesqcm_square", "sim_onesqcm_fingerA", "sim_onesqcm_fingerB", "sim_full_area", "sim_full_area_wide", "sim_full_area_4finger"]
+        to_build = ["sim_onesqcm_tandem_surfaces", "sim_onesqcm_circle", "sim_onesqcm_square", "sim_onesqcm_fingerA", "sim_onesqcm_fingerB", "sim_full_area", "sim_full_area_wide", "sim_full_area_4finger", "sim_full_area_23finger", "sim_full_area_34finger", "sim_full_area_45finger", "sim_full_area_55finger"]
         # to_build = ["tandem_metal_mask_stack"]
         # to_build = ["metal_mask_stack"]
         # to_build = ["tc_metal_mask_stack", "tc_metal_mask_stack_5x5", "tc_metal_mask_stack_4x4"]
