@@ -501,19 +501,19 @@ $TDUCREATE
   9
 $TDUPDATE
  40
-2458909.776598901
+2458909.416103947
   9
 $TDUUPDATE
  40
-2458910.068265567
+2458909.707770613
   9
 $TDINDWG
  40
-0.0591125347
+0.0591125694
   9
 $TDUSRTIMER
  40
-0.4319448495
+0.0716212269
   9
 $USRTIMER
  70
@@ -553,7 +553,7 @@ $SPLINESEGS
   9
 $HANDSEED
   5
-11DCB
+11F47
   9
 $SURFTAB1
  70
@@ -1405,9 +1405,9 @@ AcDbViewportTableRecord
  21
 1.0
  12
-6.672437559394968
+6.04379471855682
  22
-1.475023992265998
+-1.676084804515351
  13
 0.0
  23
@@ -1433,9 +1433,9 @@ AcDbViewportTableRecord
  37
 0.0
  40
-37.35463801472646
+43.61762819943269
  41
-1.967002749770852
+1.684563758389262
  42
 50.0
  43
@@ -1611,7 +1611,7 @@ LAYER
 100
 AcDbSymbolTable
  70
-   160
+   162
   0
 LAYER
   5
@@ -7219,7 +7219,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-pixel_electrodes_large_upper_finger_cross
+pixel_electrodes_large_upper_finger_extra_a
  70
      0
  62
@@ -7255,7 +7255,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-pixel_electrodes_large_lower_finger_cross
+pixel_electrodes_large_lower_finger_extra_a
  70
      0
  62
@@ -7291,7 +7291,7 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-pixel_electrodes_large_upper_finger_cross_thin
+pixel_electrodes_large_upper_finger_extra_b
  70
      0
  62
@@ -7327,7 +7327,79 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-pixel_electrodes_large_lower_finger_cross_thin
+pixel_electrodes_large_lower_finger_extra_b
+ 70
+     0
+ 62
+    -4
+  6
+Continuous
+370
+    -3
+390
+F
+347
+98
+348
+0
+1001
+AcAecLayerStandard
+1000
+
+1000
+
+1001
+ACCMTRANSPARENCY
+1071
+ 33554687
+  0
+LAYER
+  5
+11DEE
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+pixel_electrodes_large_lower_finger_extra_c
+ 70
+     0
+ 62
+    -4
+  6
+Continuous
+370
+    -3
+390
+F
+347
+98
+348
+0
+1001
+AcAecLayerStandard
+1000
+
+1000
+
+1001
+ACCMTRANSPARENCY
+1071
+ 33554687
+  0
+LAYER
+  5
+11F39
+330
+2
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+pixel_electrodes_large_upper_finger_extra_c
  70
      0
  62
@@ -27729,7 +27801,7 @@ LINE
 100
 AcDbEntity
   8
-pixel_electrodes_large_upper_finger_cross
+pixel_electrodes_large_upper_finger_extra_a
  62
      0
 370
@@ -27757,7 +27829,7 @@ LINE
 100
 AcDbEntity
   8
-pixel_electrodes_large_upper_finger_cross
+pixel_electrodes_large_upper_finger_extra_a
  62
      0
 370
@@ -27785,7 +27857,7 @@ LINE
 100
 AcDbEntity
   8
-pixel_electrodes_large_upper_finger_cross
+pixel_electrodes_large_upper_finger_extra_a
  62
      0
 370
@@ -27813,7 +27885,7 @@ LINE
 100
 AcDbEntity
   8
-pixel_electrodes_large_upper_finger_cross
+pixel_electrodes_large_upper_finger_extra_a
  62
      0
 370
@@ -27841,7 +27913,7 @@ SOLID
 100
 AcDbEntity
   8
-pixel_electrodes_large_upper_finger_cross
+pixel_electrodes_large_upper_finger_extra_a
  62
      0
 100
@@ -27879,7 +27951,7 @@ SOLID
 100
 AcDbEntity
   8
-pixel_electrodes_large_upper_finger_cross
+pixel_electrodes_large_upper_finger_extra_a
  62
      0
 100
@@ -27917,7 +27989,7 @@ MTEXT
 100
 AcDbEntity
   8
-pixel_electrodes_large_upper_finger_cross
+pixel_electrodes_large_upper_finger_extra_a
  62
      0
 100
@@ -60615,7 +60687,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-pixel_electrodes_large_upper_finger_cross
+pixel_electrodes_large_upper_finger_extra_a
 100
 AcDbPolyline
  90
@@ -60653,7 +60725,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-pixel_electrodes_large_upper_finger_cross
+pixel_electrodes_large_upper_finger_extra_a
 100
 AcDbPolyline
  90
@@ -60811,7 +60883,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-pixel_electrodes_large_lower_finger_cross
+pixel_electrodes_large_lower_finger_extra_a
 100
 AcDbPolyline
  90
@@ -60849,7 +60921,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-pixel_electrodes_large_lower_finger_cross
+pixel_electrodes_large_lower_finger_extra_a
 100
 AcDbPolyline
  90
@@ -61007,7 +61079,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-pixel_electrodes_large_lower_finger_cross_thin
+pixel_electrodes_large_lower_finger_extra_b
 100
 AcDbPolyline
  90
@@ -61165,7 +61237,7 @@ LWPOLYLINE
 100
 AcDbEntity
   8
-pixel_electrodes_large_upper_finger_cross_thin
+pixel_electrodes_large_upper_finger_extra_b
 100
 AcDbPolyline
  90
@@ -61314,6 +61386,294 @@ AcDbPolyline
 4.130572135734074
  42
 0.4142135623730954
+  0
+LWPOLYLINE
+  5
+11E93
+330
+1F
+100
+AcDbEntity
+  8
+pixel_electrodes_large_lower_finger_extra_c
+100
+AcDbPolyline
+ 90
+        4
+ 70
+     1
+ 43
+0.0
+ 10
+-5.449999999999996
+ 20
+-7.311144271469967
+ 10
+-5.449999999999989
+ 20
+-1.349999999999969
+ 42
+0.9999999999999999
+ 10
+-5.54999999999999
+ 20
+-1.349999999999969
+ 10
+-5.54999999999999
+ 20
+-7.311144271469967
+ 42
+0.9999999999999999
+  0
+LWPOLYLINE
+  5
+11ED5
+330
+1F
+100
+AcDbEntity
+  8
+pixel_electrodes_large_lower_finger_extra_c
+100
+AcDbPolyline
+ 90
+        4
+ 70
+     1
+ 43
+0.0
+ 10
+5.550000000000004
+ 20
+-7.311144271469967
+ 10
+5.550000000000011
+ 20
+-1.349999999999969
+ 42
+0.9999999999999999
+ 10
+5.45000000000001
+ 20
+-1.349999999999969
+ 10
+5.45000000000001
+ 20
+-7.311144271469967
+ 42
+0.9999999999999999
+  0
+LWPOLYLINE
+  5
+11EE1
+330
+1F
+100
+AcDbEntity
+  8
+pixel_electrodes_large_lower_finger_extra_c
+100
+AcDbPolyline
+ 90
+       10
+ 70
+     1
+ 43
+0.0
+ 10
+-0.0499999999999901
+ 20
+-1.849999999999984
+ 10
+-0.0499999999999901
+ 20
+-7.311144271469967
+ 42
+0.9999999999999999
+ 10
+0.0500000000000043
+ 20
+-7.311144271469967
+ 10
+0.0500000000000114
+ 20
+-1.849999999999987
+ 42
+-0.4142135623731054
+ 10
+0.1500000000000128
+ 20
+-1.749999999999986
+ 10
+1.899999999999999
+ 20
+-1.749999999999986
+ 42
+0.9999999999999999
+ 10
+1.899999999999999
+ 20
+-1.249999999999986
+ 10
+-1.899999999999999
+ 20
+-1.249999999999986
+ 42
+0.9999999999999999
+ 10
+-1.899999999999999
+ 20
+-1.749999999999986
+ 10
+-0.1499999999999915
+ 20
+-1.749999999999982
+ 42
+-0.4142135623730955
+  0
+LWPOLYLINE
+  5
+11F34
+330
+1F
+100
+AcDbEntity
+  8
+pixel_electrodes_large_upper_finger_extra_c
+100
+AcDbPolyline
+ 90
+        4
+ 70
+     1
+ 43
+0.0
+ 10
+5.450000000000003
+ 20
+7.311144271469061
+ 10
+5.449999999999989
+ 20
+1.349999999999056
+ 42
+0.9999999999999999
+ 10
+5.549999999999997
+ 20
+1.349999999999056
+ 10
+5.549999999999997
+ 20
+7.311144271469061
+ 42
+0.9999999999999999
+  0
+LWPOLYLINE
+  5
+11F35
+330
+1F
+100
+AcDbEntity
+  8
+pixel_electrodes_large_upper_finger_extra_c
+100
+AcDbPolyline
+ 90
+        4
+ 70
+     1
+ 43
+0.0
+ 10
+-5.549999999999997
+ 20
+7.311144271469061
+ 10
+-5.550000000000011
+ 20
+1.349999999999056
+ 42
+0.9999999999999999
+ 10
+-5.45000000000001
+ 20
+1.349999999999056
+ 10
+-5.450000000000003
+ 20
+7.311144271469061
+ 42
+0.9999999999999999
+  0
+LWPOLYLINE
+  5
+11F36
+330
+1F
+100
+AcDbEntity
+  8
+pixel_electrodes_large_upper_finger_extra_c
+100
+AcDbPolyline
+ 90
+       10
+ 70
+     1
+ 43
+0.0
+ 10
+0.0499999999999901
+ 20
+1.849999999999071
+ 10
+0.0499999999999972
+ 20
+7.311144271469061
+ 42
+0.9999999999999999
+ 10
+-0.0499999999999972
+ 20
+7.311144271469061
+ 10
+-0.0500000000000114
+ 20
+1.849999999999078
+ 42
+-0.4142135623731054
+ 10
+-0.1500000000000128
+ 20
+1.749999999999076
+ 10
+-1.899999999999999
+ 20
+1.749999999999076
+ 42
+0.9999999999999999
+ 10
+-1.899999999999999
+ 20
+1.249999999999076
+ 10
+1.899999999999999
+ 20
+1.249999999999076
+ 42
+0.9999999999999999
+ 10
+1.899999999999999
+ 20
+1.749999999999076
+ 10
+0.1499999999999915
+ 20
+1.749999999999076
+ 42
+-0.4142135623730955
   0
 VIEWPORT
   5
@@ -61637,7 +61997,7 @@ ACAD_VISUALSTYLE
   3
 ACDB_RECOMPOSE_DATA
 350
-11DCA
+11F46
   3
 AcDbVariableDictionary
 350
@@ -61697,7 +62057,7 @@ ACAD_LAYERSTATES
   3
 ACLYDICTIONARY
 360
-11DC7
+11F43
   0
 DICTIONARY
   5
@@ -62317,7 +62677,7 @@ EA
   0
 XRECORD
   5
-11DCA
+11F46
 102
 {ACAD_REACTORS
 330
@@ -62429,7 +62789,7 @@ B348
   0
 DICTIONARY
   5
-11DC7
+11F43
 102
 {ACAD_REACTORS
 330
@@ -66133,7 +66493,7 @@ TABLESTYLE
 102
 {ACAD_XDICTIONARY
 360
-11DC8
+11F44
 102
 }
 330
@@ -76767,7 +77127,7 @@ AcDbDictionary
   0
 DICTIONARY
   5
-11DC8
+11F44
 330
 87
 100
@@ -76779,19 +77139,19 @@ AcDbDictionary
   3
 ACAD_ROUNDTRIP_2008_TABLESTYLE_CELLSTYLEMAP
 360
-11DC9
+11F45
   0
 CELLSTYLEMAP
   5
-11DC9
+11F45
 102
 {ACAD_REACTORS
 330
-11DC8
+11F44
 102
 }
 330
-11DC8
+11F44
 100
 AcDbCellStyleMap
  90
