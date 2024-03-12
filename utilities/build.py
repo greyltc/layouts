@@ -1538,8 +1538,8 @@ def main(do):
                     "name": "single_piece_mask",
                     "color": feature_color,
                     "thickness": 1.0,
-                    #"edm_dent": "spacer_shim_active",
-                    #"edm_dent_depth": 0.05,
+                    # "edm_dent": "spacer_shim_active",
+                    # "edm_dent_depth": 0.05,
                     "drawing_layer_names": [
                         "outline_4x4",
                         ("full_area_top_tco", -angle),
@@ -1559,8 +1559,8 @@ def main(do):
                     "name": "single_piece_mask",
                     "color": feature_color,
                     "thickness": 1.0,
-                    #"edm_dent": "spacer_shim_active",
-                    #"edm_dent_depth": 0.05,
+                    # "edm_dent": "spacer_shim_active",
+                    # "edm_dent_depth": 0.05,
                     "drawing_layer_names": [
                         "outline_4x4",
                         ("full_area_insulation", -angle),
@@ -1580,8 +1580,8 @@ def main(do):
                     "name": "single_piece_mask",
                     "color": feature_color,
                     "thickness": 1.0,
-                    #"edm_dent": "spacer_shim_active",
-                    #"edm_dent_depth": 0.05,
+                    # "edm_dent": "spacer_shim_active",
+                    # "edm_dent_depth": 0.05,
                     "drawing_layer_names": [
                         "outline_4x4",
                         ("full_area_recombination_slash_interlayer", -angle),
@@ -2512,7 +2512,7 @@ def main(do):
         {
             "name": "sim_onesqcm_tandem",
             "xyscale": 1e6,  # 1 for mm, 1e6 for nm
-            #"final_scale": 100,  # 1/device_layer_scale_factor (0.0001, 1e-4) has units in mm, 1e-7 has them in m, 100 for nm, 0.1 for um
+            # "final_scale": 100,  # 1/device_layer_scale_factor (0.0001, 1e-4) has units in mm, 1e-7 has them in m, 100 for nm, 0.1 for um
             "sim_mode": True,
             "layers": [
                 {
@@ -2520,17 +2520,13 @@ def main(do):
                     "color": tco_color,
                     "z_base": 0,
                     "thickness": 0,  # tco_thickness
-                    "drawing_layer_names": [
-                        "top_tco_large_upper",
-                        ("lightmask_large_upper", 0),  # zero here means drawing layer shape should be embossed onto the 3D layer
-                        ("pixel_electrodes_large_upper_finger", 0)  # zero here means drawing layer shape should be embossed onto the 3D layer
-                    ],
+                    "drawing_layer_names": ["top_tco_large_upper", ("lightmask_large_upper", 0), ("pixel_electrodes_large_upper_finger", 0)],  # zero here means drawing layer shape should be embossed onto the 3D layer  # zero here means drawing layer shape should be embossed onto the 3D layer
                 },
                 {
                     "name": "contact_cutter",
                     "color": "WHITE",
                     "z_base": 0,
-                    "thickness": metal_thickness+tco_thickness,
+                    "thickness": metal_thickness + tco_thickness,
                     "drawing_layer_names": [
                         "sim_neck_cutter_outer",
                     ],
@@ -2543,7 +2539,7 @@ def main(do):
         {
             "name": "sim_onesqcm_circle",
             "xyscale": 1e6,  # 1 for mm, 1e6 for nm
-            #"final_scale": 100,  # 1/device_layer_scale_factor (0.0001, 1e-4) has units in mm, 1e-7 has them in m, 100 for nm, 0.1 for um
+            # "final_scale": 100,  # 1/device_layer_scale_factor (0.0001, 1e-4) has units in mm, 1e-7 has them in m, 100 for nm, 0.1 for um
             "sim_mode": True,
             "layers": [
                 {
@@ -2551,17 +2547,13 @@ def main(do):
                     "color": tco_color,
                     "z_base": 0,
                     "thickness": 0,  # tco_thickness
-                    "drawing_layer_names": [
-                        "top_tco_sim_circle",
-                        ("lightmask_sim_circle", 0),  # zero here means drawing layer shape should be embossed onto the 3D layer
-                        ("pixel_elec_sim_circle", 0)  # zero here means drawing layer shape should be embossed onto the 3D layer
-                    ],
+                    "drawing_layer_names": ["top_tco_sim_circle", ("lightmask_sim_circle", 0), ("pixel_elec_sim_circle", 0)],  # zero here means drawing layer shape should be embossed onto the 3D layer  # zero here means drawing layer shape should be embossed onto the 3D layer
                 },
                 {
                     "name": "contact_cutter",
                     "color": "WHITE",
                     "z_base": 0,
-                    "thickness": metal_thickness+tco_thickness,
+                    "thickness": metal_thickness + tco_thickness,
                     "drawing_layer_names": [
                         "sim_neck_cutter_outer",
                     ],
@@ -2574,7 +2566,7 @@ def main(do):
         {
             "name": "sim_onesqcm_square",
             "xyscale": 1e6,  # 1 for mm, 1e6 for nm
-            #"final_scale": 100,  # 1/device_layer_scale_factor (0.0001, 1e-4) has units in mm, 1e-7 has them in m, 100 for nm, 0.1 for um
+            # "final_scale": 100,  # 1/device_layer_scale_factor (0.0001, 1e-4) has units in mm, 1e-7 has them in m, 100 for nm, 0.1 for um
             "sim_mode": True,
             "layers": [
                 {
@@ -2582,17 +2574,13 @@ def main(do):
                     "color": tco_color,
                     "z_base": 0,
                     "thickness": 0,  # tco_thickness
-                    "drawing_layer_names": [
-                        "top_tco_sim_square",
-                        ("lightmask_sim_square", 0),  # zero here means drawing layer shape should be embossed onto the 3D layer
-                        ("pixel_elec_sim_square", 0)  # zero here means drawing layer shape should be embossed onto the 3D layer
-                    ],
+                    "drawing_layer_names": ["top_tco_sim_square", ("lightmask_sim_square", 0), ("pixel_elec_sim_square", 0)],  # zero here means drawing layer shape should be embossed onto the 3D layer  # zero here means drawing layer shape should be embossed onto the 3D layer
                 },
                 {
                     "name": "contact_cutter",
                     "color": "WHITE",
                     "z_base": 0,
-                    "thickness": metal_thickness+tco_thickness,
+                    "thickness": metal_thickness + tco_thickness,
                     "drawing_layer_names": [
                         "sim_neck_cutter_outer",
                     ],
@@ -2605,7 +2593,7 @@ def main(do):
         {
             "name": "sim_onesqcm_fingerA",
             "xyscale": 1e6,  # 1 for mm, 1e6 for nm
-            #"final_scale": 100,  # 1/device_layer_scale_factor (0.0001, 1e-4) has units in mm, 1e-7 has them in m, 100 for nm, 0.1 for um
+            # "final_scale": 100,  # 1/device_layer_scale_factor (0.0001, 1e-4) has units in mm, 1e-7 has them in m, 100 for nm, 0.1 for um
             "sim_mode": True,
             "layers": [
                 {
@@ -2613,17 +2601,13 @@ def main(do):
                     "color": tco_color,
                     "z_base": 0,
                     "thickness": 0,  # tco_thickness
-                    "drawing_layer_names": [
-                        "top_tco_large_upper",
-                        ("lightmask_large_upper", 0),  # zero here means drawing layer shape should be embossed onto the 3D layer
-                        ("pixel_elec_sim_large_upper_finger_fingerA", 0)  # zero here means drawing layer shape should be embossed onto the 3D layer
-                    ],
+                    "drawing_layer_names": ["top_tco_large_upper", ("lightmask_large_upper", 0), ("pixel_elec_sim_large_upper_finger_fingerA", 0)],  # zero here means drawing layer shape should be embossed onto the 3D layer  # zero here means drawing layer shape should be embossed onto the 3D layer
                 },
                 {
                     "name": "contact_cutter",
                     "color": "WHITE",
                     "z_base": 0,
-                    "thickness": metal_thickness+tco_thickness,
+                    "thickness": metal_thickness + tco_thickness,
                     "drawing_layer_names": [
                         "sim_neck_cutter_outer",
                     ],
@@ -2636,7 +2620,7 @@ def main(do):
         {
             "name": "sim_onesqcm_fingerB",
             "xyscale": 1e6,  # 1 for mm, 1e6 for nm
-            #"final_scale": 100,  # 1/device_layer_scale_factor (0.0001, 1e-4) has units in mm, 1e-7 has them in m, 100 for nm, 0.1 for um
+            # "final_scale": 100,  # 1/device_layer_scale_factor (0.0001, 1e-4) has units in mm, 1e-7 has them in m, 100 for nm, 0.1 for um
             "sim_mode": True,
             "layers": [
                 {
@@ -2644,17 +2628,13 @@ def main(do):
                     "color": tco_color,
                     "z_base": 0,
                     "thickness": 0,  # tco_thickness
-                    "drawing_layer_names": [
-                        "top_tco_large_upper",
-                        ("lightmask_large_upper", 0),  # zero here means drawing layer shape should be embossed onto the 3D layer
-                        ("pixel_elec_sim_large_upper_finger_fingerB", 0)  # zero here means drawing layer shape should be embossed onto the 3D layer
-                    ],
+                    "drawing_layer_names": ["top_tco_large_upper", ("lightmask_large_upper", 0), ("pixel_elec_sim_large_upper_finger_fingerB", 0)],  # zero here means drawing layer shape should be embossed onto the 3D layer  # zero here means drawing layer shape should be embossed onto the 3D layer
                 },
                 {
                     "name": "contact_cutter",
                     "color": "WHITE",
                     "z_base": 0,
-                    "thickness": metal_thickness+tco_thickness,
+                    "thickness": metal_thickness + tco_thickness,
                     "drawing_layer_names": [
                         "sim_neck_cutter_outer",
                     ],
@@ -2667,7 +2647,7 @@ def main(do):
         {
             "name": "sim_full_area",
             "xyscale": 1e6,  # 1 for mm, 1e6 for nm
-            #"final_scale": 100,  # 1/device_layer_scale_factor (0.0001, 1e-4) has units in mm, 1e-7 has them in m, 100 for nm, 0.1 for um
+            # "final_scale": 100,  # 1/device_layer_scale_factor (0.0001, 1e-4) has units in mm, 1e-7 has them in m, 100 for nm, 0.1 for um
             "sim_mode": True,
             "layers": [
                 {
@@ -2675,17 +2655,13 @@ def main(do):
                     "color": tco_color,
                     "z_base": 0,
                     "thickness": 0,  # tco_thickness
-                    "drawing_layer_names": [
-                        "full_area_top_tco",
-                        ("full_area_lightmask", 0),  # zero here means drawing layer shape should be embossed onto the 3D layer
-                        ("full_area_metal", 0)  # zero here means drawing layer shape should be embossed onto the 3D layer
-                    ],
+                    "drawing_layer_names": ["full_area_top_tco", ("full_area_lightmask", 0), ("full_area_metal", 0)],  # zero here means drawing layer shape should be embossed onto the 3D layer  # zero here means drawing layer shape should be embossed onto the 3D layer
                 },
                 {
                     "name": "contact_cutter",
                     "color": "WHITE",
                     "z_base": 0,
-                    "thickness": metal_thickness+tco_thickness,
+                    "thickness": metal_thickness + tco_thickness,
                     "drawing_layer_names": [
                         "sim_contact_point_cutter_ext",
                     ],
@@ -2698,7 +2674,7 @@ def main(do):
         {
             "name": "sim_full_area_wide",
             "xyscale": 1e6,  # 1 for mm, 1e6 for nm
-            #"final_scale": 100,  # 1/device_layer_scale_factor (0.0001, 1e-4) has units in mm, 1e-7 has them in m, 100 for nm, 0.1 for um
+            # "final_scale": 100,  # 1/device_layer_scale_factor (0.0001, 1e-4) has units in mm, 1e-7 has them in m, 100 for nm, 0.1 for um
             "sim_mode": True,
             "layers": [
                 {
@@ -2706,17 +2682,13 @@ def main(do):
                     "color": tco_color,
                     "z_base": 0,
                     "thickness": 0,  # tco_thickness
-                    "drawing_layer_names": [
-                        "full_area_top_tco_wide",
-                        ("full_area_lightmask", 0),  # zero here means drawing layer shape should be embossed onto the 3D layer
-                        ("full_area_metal_wide", 0)  # zero here means drawing layer shape should be embossed onto the 3D layer
-                    ],
+                    "drawing_layer_names": ["full_area_top_tco_wide", ("full_area_lightmask", 0), ("full_area_metal_wide", 0)],  # zero here means drawing layer shape should be embossed onto the 3D layer  # zero here means drawing layer shape should be embossed onto the 3D layer
                 },
                 {
                     "name": "contact_cutter",
                     "color": "WHITE",
                     "z_base": 0,
-                    "thickness": metal_thickness+tco_thickness,
+                    "thickness": metal_thickness + tco_thickness,
                     "drawing_layer_names": [
                         "sim_round_cutter",
                     ],
@@ -2729,7 +2701,7 @@ def main(do):
         {
             "name": "sim_full_area_4finger",
             "xyscale": 1e6,  # 1 for mm, 1e6 for nm
-            #"final_scale": 100,  # 1/device_layer_scale_factor (0.0001, 1e-4) has units in mm, 1e-7 has them in m, 100 for nm, 0.1 for um
+            # "final_scale": 100,  # 1/device_layer_scale_factor (0.0001, 1e-4) has units in mm, 1e-7 has them in m, 100 for nm, 0.1 for um
             "sim_mode": True,
             "layers": [
                 {
@@ -2737,17 +2709,13 @@ def main(do):
                     "color": tco_color,
                     "z_base": 0,
                     "thickness": 0,  # tco_thickness
-                    "drawing_layer_names": [
-                        "full_area_top_tco",
-                        ("full_area_lightmask", 0),  # zero here means drawing layer shape should be embossed onto the 3D layer
-                        ("full_area_metal_4finger", 0)  # zero here means drawing layer shape should be embossed onto the 3D layer
-                    ],
+                    "drawing_layer_names": ["full_area_top_tco", ("full_area_lightmask", 0), ("full_area_metal_4finger", 0)],  # zero here means drawing layer shape should be embossed onto the 3D layer  # zero here means drawing layer shape should be embossed onto the 3D layer
                 },
                 {
                     "name": "contact_cutter",
                     "color": "WHITE",
                     "z_base": 0,
-                    "thickness": metal_thickness+tco_thickness,
+                    "thickness": metal_thickness + tco_thickness,
                     "drawing_layer_names": [
                         "sim_contact_point_cutter_ext",
                     ],
@@ -2760,7 +2728,7 @@ def main(do):
         {
             "name": "sim_full_area_23finger",
             "xyscale": 1e6,  # 1 for mm, 1e6 for nm
-            #"final_scale": 100,  # 1/device_layer_scale_factor (0.0001, 1e-4) has units in mm, 1e-7 has them in m, 100 for nm, 0.1 for um
+            # "final_scale": 100,  # 1/device_layer_scale_factor (0.0001, 1e-4) has units in mm, 1e-7 has them in m, 100 for nm, 0.1 for um
             "sim_mode": True,
             "layers": [
                 {
@@ -2768,17 +2736,13 @@ def main(do):
                     "color": tco_color,
                     "z_base": 0,
                     "thickness": 0,  # tco_thickness
-                    "drawing_layer_names": [
-                        "full_area_top_tco",
-                        ("full_area_lightmask", 0),  # zero here means drawing layer shape should be embossed onto the 3D layer
-                        ("full_area_metal_23finger", 0)  # zero here means drawing layer shape should be embossed onto the 3D layer
-                    ],
+                    "drawing_layer_names": ["full_area_top_tco", ("full_area_lightmask", 0), ("full_area_metal_23finger", 0)],  # zero here means drawing layer shape should be embossed onto the 3D layer  # zero here means drawing layer shape should be embossed onto the 3D layer
                 },
                 {
                     "name": "contact_cutter",
                     "color": "WHITE",
                     "z_base": 0,
-                    "thickness": metal_thickness+tco_thickness,
+                    "thickness": metal_thickness + tco_thickness,
                     "drawing_layer_names": [
                         "sim_contact_point_cutter_ext",
                     ],
@@ -2791,7 +2755,7 @@ def main(do):
         {
             "name": "sim_full_area_34finger",
             "xyscale": 1e6,  # 1 for mm, 1e6 for nm
-            #"final_scale": 100,  # 1/device_layer_scale_factor (0.0001, 1e-4) has units in mm, 1e-7 has them in m, 100 for nm, 0.1 for um
+            # "final_scale": 100,  # 1/device_layer_scale_factor (0.0001, 1e-4) has units in mm, 1e-7 has them in m, 100 for nm, 0.1 for um
             "sim_mode": True,
             "layers": [
                 {
@@ -2799,17 +2763,13 @@ def main(do):
                     "color": tco_color,
                     "z_base": 0,
                     "thickness": 0,  # tco_thickness
-                    "drawing_layer_names": [
-                        "full_area_top_tco",
-                        ("full_area_lightmask", 0),  # zero here means drawing layer shape should be embossed onto the 3D layer
-                        ("full_area_metal_34finger", 0)  # zero here means drawing layer shape should be embossed onto the 3D layer
-                    ],
+                    "drawing_layer_names": ["full_area_top_tco", ("full_area_lightmask", 0), ("full_area_metal_34finger", 0)],  # zero here means drawing layer shape should be embossed onto the 3D layer  # zero here means drawing layer shape should be embossed onto the 3D layer
                 },
                 {
                     "name": "contact_cutter",
                     "color": "WHITE",
                     "z_base": 0,
-                    "thickness": metal_thickness+tco_thickness,
+                    "thickness": metal_thickness + tco_thickness,
                     "drawing_layer_names": [
                         "sim_contact_point_cutter_ext",
                     ],
@@ -2822,7 +2782,7 @@ def main(do):
         {
             "name": "sim_full_area_45finger",
             "xyscale": 1e6,  # 1 for mm, 1e6 for nm
-            #"final_scale": 100,  # 1/device_layer_scale_factor (0.0001, 1e-4) has units in mm, 1e-7 has them in m, 100 for nm, 0.1 for um
+            # "final_scale": 100,  # 1/device_layer_scale_factor (0.0001, 1e-4) has units in mm, 1e-7 has them in m, 100 for nm, 0.1 for um
             "sim_mode": True,
             "layers": [
                 {
@@ -2830,17 +2790,13 @@ def main(do):
                     "color": tco_color,
                     "z_base": 0,
                     "thickness": 0,  # tco_thickness
-                    "drawing_layer_names": [
-                        "full_area_top_tco",
-                        ("full_area_lightmask", 0),  # zero here means drawing layer shape should be embossed onto the 3D layer
-                        ("full_area_metal_45finger", 0)  # zero here means drawing layer shape should be embossed onto the 3D layer
-                    ],
+                    "drawing_layer_names": ["full_area_top_tco", ("full_area_lightmask", 0), ("full_area_metal_45finger", 0)],  # zero here means drawing layer shape should be embossed onto the 3D layer  # zero here means drawing layer shape should be embossed onto the 3D layer
                 },
                 {
                     "name": "contact_cutter",
                     "color": "WHITE",
                     "z_base": 0,
-                    "thickness": metal_thickness+tco_thickness,
+                    "thickness": metal_thickness + tco_thickness,
                     "drawing_layer_names": [
                         "sim_contact_point_cutter_ext",
                     ],
@@ -2853,7 +2809,7 @@ def main(do):
         {
             "name": "sim_full_area_55finger",
             "xyscale": 1e6,  # 1 for mm, 1e6 for nm
-            #"final_scale": 100,  # 1/device_layer_scale_factor (0.0001, 1e-4) has units in mm, 1e-7 has them in m, 100 for nm, 0.1 for um
+            # "final_scale": 100,  # 1/device_layer_scale_factor (0.0001, 1e-4) has units in mm, 1e-7 has them in m, 100 for nm, 0.1 for um
             "sim_mode": True,
             "layers": [
                 {
@@ -2861,17 +2817,13 @@ def main(do):
                     "color": tco_color,
                     "z_base": 0,
                     "thickness": 0,  # tco_thickness
-                    "drawing_layer_names": [
-                        "full_area_top_tco",
-                        ("full_area_lightmask", 0),  # zero here means drawing layer shape should be embossed onto the 3D layer
-                        ("full_area_metal_55finger", 0)  # zero here means drawing layer shape should be embossed onto the 3D layer
-                    ],
+                    "drawing_layer_names": ["full_area_top_tco", ("full_area_lightmask", 0), ("full_area_metal_55finger", 0)],  # zero here means drawing layer shape should be embossed onto the 3D layer  # zero here means drawing layer shape should be embossed onto the 3D layer
                 },
                 {
                     "name": "contact_cutter",
                     "color": "WHITE",
                     "z_base": 0,
-                    "thickness": metal_thickness+tco_thickness,
+                    "thickness": metal_thickness + tco_thickness,
                     "drawing_layer_names": [
                         "sim_contact_point_cutter_ext",
                     ],
@@ -2887,9 +2839,11 @@ def main(do):
         # to_build = ["full_device_Stack"]
         # to_build = ["sim_onesqcm_tandem"]
 
-        # simulation build
+        # simulation builds
+        to_build = ["sim_full_area"]
         # to_build = ["sim_onesqcm_tandem_surfaces", "sim_onesqcm_circle", "sim_onesqcm_square", "sim_onesqcm_fingerA", "sim_onesqcm_fingerB", "sim_full_area", "sim_full_area_wide", "sim_full_area_4finger", "sim_full_area_23finger", "sim_full_area_34finger", "sim_full_area_45finger", "sim_full_area_55finger"]
-        to_build = ["tandem_metal_mask_stack"]
+
+        # to_build = ["tandem_metal_mask_stack"]
         # to_build = ["metal_mask_stack"]
         # to_build = ["tc_metal_mask_stack", "tc_metal_mask_stack_5x5", "tc_metal_mask_stack_4x4"]
         # to_build = ["metal2_mask_stack", "metal2_mask_stack_4x4", "metal2_mask_stack_5x5", "one_big_lightmask"]
@@ -2906,18 +2860,18 @@ def main(do):
         # to_build = ["interlayer_mask_angle_4x4", "metal_mask_loft"]
 
         # 2024 feb order
-        #to_build = ["full_metal_angle_4x4", "full_top_tco_angle_4x4", "full_insulation_angle_4x4", "full_interlayer_angle_4x4"]
+        # to_build = ["full_metal_angle_4x4", "full_top_tco_angle_4x4", "full_insulation_angle_4x4", "full_interlayer_angle_4x4"]
         # to_build = ["full_metal_angle_4x4"]
         # to_build = ["lightmask_cal_angle"]
         # to_build = ["hoye_metal_stack_5x", "one_large_lightmask"]
-        
+
         # 2023 june order
-        #to_build = ["tc_mask_4x4", "contact_insulation_4x4", "led_metal_mask_stack", "led_metal_mask_stack_4x4", "tandem2_metal_mask_stack_4x4", "interlayer2_mask_stack_4x4", "top_tco2_mask_stack_4x4", "vapor_deposition_encapsulation_4x4", "vapor_deposition_encapsulation", "tc_undermetal_mask_4x4", "active_mask_stack"]
+        # to_build = ["tc_mask_4x4", "contact_insulation_4x4", "led_metal_mask_stack", "led_metal_mask_stack_4x4", "tandem2_metal_mask_stack_4x4", "interlayer2_mask_stack_4x4", "top_tco2_mask_stack_4x4", "vapor_deposition_encapsulation_4x4", "vapor_deposition_encapsulation", "tc_undermetal_mask_4x4", "active_mask_stack"]
         # to_build = ["vapor_deposition_encapsulation_4x4", "vapor_deposition_encapsulation", "tc_undermetal_mask_4x4", "active_mask_stack"]
         # to_build = ["metal_mask_stack_thick_shim"]
 
         # 2023 march order = [2, 60, 60, 2, 2, 2, 2]
-        #to_build = ["metal_mask_stack_4x4", "metal_mask_stack_thick_shim", "metal6_mask_stack_thick_shim", "metal2_mask_stack_4x4", "metal6_mask_stack_4x4", "interlayer_mask_stack_4x4", "active_mask_stack_4x4"]
+        # to_build = ["metal_mask_stack_4x4", "metal_mask_stack_thick_shim", "metal6_mask_stack_thick_shim", "metal2_mask_stack_4x4", "metal6_mask_stack_4x4", "interlayer_mask_stack_4x4", "active_mask_stack_4x4"]
         # to_build = ["metal_mask_stack_thick_shim"]
         # to_build = [""]  # all of them
         built = ttt.build(to_build, nparallel=12)
@@ -2927,10 +2881,11 @@ def main(do):
         # ttt.faceputter(wrk_dir)  # output the face data for comsol
 
         # march order = [2, 60, 60, 2, 2, 2, 2]
-        #march_build = ["metal_mask_stack_4x4", "metal_mask_stack_thick_shim", "metal6_mask_stack_thick_shim", "metal2_mask_stack_4x4", "metal6_mask_stack_4x4", "interlayer_mask_stack_4x4", "active_mask_stack_4x4"]
+        # march_build = ["metal_mask_stack_4x4", "metal_mask_stack_thick_shim", "metal6_mask_stack_thick_shim", "metal2_mask_stack_4x4", "metal6_mask_stack_4x4", "interlayer_mask_stack_4x4", "active_mask_stack_4x4"]
         # march_build = ["metal_mask_stack_thick_shim"]
-        #march_built = ttt.build(march_build, nparallel=5)
-        #TwoDToThreeD.outputter(march_built, wrk_dir, save_dxfs=True, save_steps=False, save_stls=False, edm_outputs=False, nparallel=6)
+        # march_built = ttt.build(march_build, nparallel=5)
+        # TwoDToThreeD.outputter(march_built, wrk_dir, save_dxfs=True, save_steps=False, save_stls=False, edm_outputs=False, nparallel=6)
+
 
 # temp is what we get when run via cq-editor
 if __name__ in ["__main__", "temp"]:
