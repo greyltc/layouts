@@ -1688,6 +1688,129 @@ def main(do):
 
     instructions.append(
         {
+            "name": "full_top_tco_stack_4x4",
+            "layers": [
+                {
+                    "name": "full_top_tco_support",
+                    "color": support_color,
+                    "thickness": support_thickness,
+                    "drawing_layer_names": [
+                        "outline_loose_alignment_4x4",
+                        "full_area_top_tco_spt",
+                    ],
+                    "edge_case": "inner_outline_4x4",
+                    "array": array4,
+                },
+                {
+                    "name": "full_top_tco_feature",
+                    "color": feature_color,
+                    "thickness": feature_thickness,
+                    "drawing_layer_names": [
+                        "outline_4x4",
+                        "full_area_top_tco",
+                    ],
+                    "edge_case": "inner_outline_4x4",
+                    "array": array4,
+                },
+                {
+                    "name": "spacer_shim",
+                    "color": shim_color,
+                    "thickness": shim_thickness,
+                    "drawing_layer_names": [
+                        "outline_no_alignment_4x4",
+                        "spacer_shim_thin",
+                    ],
+                    "edge_case": "inner_outline_4x4",
+                    "array": array4,
+                },
+            ],
+        }
+    )
+
+    instructions.append(
+        {
+            "name": "full_interlayer_stack_4x4",
+            "layers": [
+                {
+                    "name": "full_interlayer_support",
+                    "color": support_color,
+                    "thickness": support_thickness,
+                    "drawing_layer_names": [
+                        "outline_loose_alignment_4x4",
+                        "full_area_interlayer_spt",
+                    ],
+                    "edge_case": "inner_outline_4x4",
+                    "array": array4,
+                },
+                {
+                    "name": "full_interlayer_feature",
+                    "color": feature_color,
+                    "thickness": feature_thickness,
+                    "drawing_layer_names": [
+                        "outline_4x4",
+                        "full_area_recombination_slash_interlayer",
+                    ],
+                    "edge_case": "inner_outline_4x4",
+                    "array": array4,
+                },
+                {
+                    "name": "spacer_shim",
+                    "color": shim_color,
+                    "thickness": shim_thickness,
+                    "drawing_layer_names": [
+                        "outline_no_alignment_4x4",
+                        "spacer_shim_thin",
+                    ],
+                    "edge_case": "inner_outline_4x4",
+                    "array": array4,
+                },
+            ],
+        }
+    )
+
+    instructions.append(
+        {
+            "name": "full_insulation_stack_4x4",
+            "layers": [
+                {
+                    "name": "full_insulation_support",
+                    "color": support_color,
+                    "thickness": support_thickness,
+                    "drawing_layer_names": [
+                        "outline_loose_alignment_4x4",
+                        "full_area_insulation_spt",
+                    ],
+                    "edge_case": "inner_outline_4x4",
+                    "array": array4,
+                },
+                {
+                    "name": "full_insulation_feature",
+                    "color": feature_color,
+                    "thickness": feature_thickness,
+                    "drawing_layer_names": [
+                        "outline_4x4",
+                        "full_area_insulation",
+                    ],
+                    "edge_case": "inner_outline_4x4",
+                    "array": array4,
+                },
+                {
+                    "name": "spacer_shim",
+                    "color": shim_color,
+                    "thickness": shim_thickness,
+                    "drawing_layer_names": [
+                        "outline_no_alignment_4x4",
+                        "spacer_shim_thin",
+                    ],
+                    "edge_case": "inner_outline_4x4",
+                    "array": array4,
+                },
+            ],
+        }
+    )
+
+    instructions.append(
+        {
             "name": "full_metal_angle_4x4",
             "layers": [
                 {
@@ -2339,6 +2462,49 @@ def main(do):
 
     instructions.append(
         {
+            "name": "tandem2_metal_finger_conc_stack_4x4",
+            "layers": [
+                {
+                    "name": "tandem_metal_finger_support",
+                    "color": support_color,
+                    "thickness": support_thickness,
+                    "drawing_layer_names": [
+                        "outline_loose_alignment_4x4",
+                        "px_elec_lg_upp_finger_extra_spt",
+                        "px_elec_lg_low_finger_extra_spt",
+                    ],
+                    "edge_case": "inner_outline_4x4",
+                    "array": array4,
+                },
+                {
+                    "name": "tandem_metal_finger_feature",
+                    "color": feature_color,
+                    "thickness": feature_thickness,
+                    "drawing_layer_names": [
+                        "outline_4x4",
+                        "px_elec_lg_upp_finger_extra_conc_evap",
+                        "px_elec_lg_low_finger_extra_conc_evap",
+                    ],
+                    "edge_case": "inner_outline_4x4",
+                    "array": array4,
+                },
+                {
+                    "name": "spacer_shim",
+                    "color": shim_color,
+                    "thickness": shim_thickness,
+                    "drawing_layer_names": [
+                        "outline_no_alignment_4x4",
+                        "spacer_shim_thin",
+                    ],
+                    "edge_case": "inner_outline_4x4",
+                    "array": array4,
+                },
+            ],
+        }
+    )
+
+    instructions.append(
+        {
             "name": "tandem2_metal_finger_mask_stack_4x4",
             "layers": [
                 {
@@ -2944,11 +3110,14 @@ def main(do):
         # to_build = ["interlayer_mask_angle_4x4", "metal_mask_loft"]
 
         # 2024 march order
-        to_build = ["tandem2_metal_finger_mask_stack_4x4", "full_metal_mask_stack_4x4"]
-        # to_build = ["full_metal_angle_4x4", "full_top_tco_angle_4x4", "full_insulation_angle_4x4", "full_interlayer_angle_4x4"]
-        # to_build = ["full_metal_angle_4x4"]
-        # to_build = ["lightmask_cal_angle"]
-        # to_build = ["hoye_metal_stack_5x", "one_large_lightmask"]
+        to_build = ["tandem2_metal_finger_mask_stack_4x4",      # q 2
+                    "full_metal_mask_stack_4x4",                # q 2
+                    "full_top_tco_stack_4x4",                   # q 2
+                    "full_interlayer_stack_4x4",                # q 2
+                    "full_insulation_stack_4x4",                # q 2
+                    "tandem2_metal_finger_conc_stack_4x4",]     # q 2
+        # plus q 3 of vapor_deposition_encapsulation_4x4 from june 2023 order
+
 
         # 2023 june order
         # to_build = ["tc_mask_4x4", "contact_insulation_4x4", "led_metal_mask_stack", "led_metal_mask_stack_4x4", "tandem2_metal_mask_stack_4x4", "interlayer2_mask_stack_4x4", "top_tco2_mask_stack_4x4", "vapor_deposition_encapsulation_4x4", "vapor_deposition_encapsulation", "tc_undermetal_mask_4x4", "active_mask_stack"]
