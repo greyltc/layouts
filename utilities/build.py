@@ -1647,6 +1647,47 @@ def main(do):
 
     instructions.append(
         {
+            "name": "full_metal_mask_stack_4x4",
+            "layers": [
+                {
+                    "name": "full_metal_support",
+                    "color": support_color,
+                    "thickness": support_thickness,
+                    "drawing_layer_names": [
+                        "outline_loose_alignment_4x4",
+                        "full_area_metal_spt",
+                    ],
+                    "edge_case": "inner_outline_4x4",
+                    "array": array4,
+                },
+                {
+                    "name": "full_metal_feature",
+                    "color": feature_color,
+                    "thickness": feature_thickness,
+                    "drawing_layer_names": [
+                        "outline_4x4",
+                        "full_area_metal",
+                    ],
+                    "edge_case": "inner_outline_4x4",
+                    "array": array4,
+                },
+                {
+                    "name": "spacer_shim",
+                    "color": shim_color,
+                    "thickness": shim_thickness,
+                    "drawing_layer_names": [
+                        "outline_no_alignment_4x4",
+                        "spacer_shim_thin",
+                    ],
+                    "edge_case": "inner_outline_4x4",
+                    "array": array4,
+                },
+            ],
+        }
+    )
+
+    instructions.append(
+        {
             "name": "full_metal_angle_4x4",
             "layers": [
                 {
@@ -2237,8 +2278,8 @@ def main(do):
                     "thickness": feature_thickness,
                     "drawing_layer_names": [
                         "glass_extents",
-                        "pixel_electrodes_large_upper_finger",
-                        "pixel_electrodes_large_lower_finger",
+                        "px_elec_lg_upp_finger",
+                        "px_elec_lg_low_finger",
                     ],
                 },
                 {
@@ -2275,8 +2316,51 @@ def main(do):
                     "thickness": feature_thickness,
                     "drawing_layer_names": [
                         "outline_4x4",
-                        "pixel_electrodes_large_upper_finger",
-                        "pixel_electrodes_large_lower_finger",
+                        "px_elec_lg_upp_finger",
+                        "px_elec_lg_low_finger",
+                    ],
+                    "edge_case": "inner_outline_4x4",
+                    "array": array4,
+                },
+                {
+                    "name": "spacer_shim",
+                    "color": shim_color,
+                    "thickness": shim_thickness,
+                    "drawing_layer_names": [
+                        "outline_no_alignment_4x4",
+                        "spacer_shim_thin",
+                    ],
+                    "edge_case": "inner_outline_4x4",
+                    "array": array4,
+                },
+            ],
+        }
+    )
+
+    instructions.append(
+        {
+            "name": "tandem2_metal_finger_mask_stack_4x4",
+            "layers": [
+                {
+                    "name": "tandem_metal_finger_support",
+                    "color": support_color,
+                    "thickness": support_thickness,
+                    "drawing_layer_names": [
+                        "outline_loose_alignment_4x4",
+                        "px_elec_lg_upp_finger_extra_spt",
+                        "px_elec_lg_low_finger_extra_spt",
+                    ],
+                    "edge_case": "inner_outline_4x4",
+                    "array": array4,
+                },
+                {
+                    "name": "tandem_metal_finger_feature",
+                    "color": feature_color,
+                    "thickness": feature_thickness,
+                    "drawing_layer_names": [
+                        "outline_4x4",
+                        "px_elec_lg_upp_finger_extra",
+                        "px_elec_lg_low_finger_extra",
                     ],
                     "edge_case": "inner_outline_4x4",
                     "array": array4,
@@ -2315,8 +2399,8 @@ def main(do):
                     "thickness": feature_thickness,
                     "drawing_layer_names": [
                         "glass_extents",
-                        "pixel_electrodes_small_upper_finger",
-                        "pixel_electrodes_large_lower_finger",
+                        "px_elec_sm_upp_finger",
+                        "px_elec_lg_low_finger",
                     ],
                 },
                 {
@@ -2353,8 +2437,8 @@ def main(do):
                     "thickness": feature_thickness,
                     "drawing_layer_names": [
                         "outline_5x5",
-                        "pixel_electrodes_small_upper_finger",
-                        "pixel_electrodes_large_lower_finger",
+                        "px_elec_sm_upp_finger",
+                        "px_elec_lg_low_finger",
                     ],
                     "edge_case": "inner_outline_5x5",
                     "array": array5,
@@ -2395,8 +2479,8 @@ def main(do):
                     "thickness": feature_thickness,
                     "drawing_layer_names": [
                         "outline_4x4",
-                        "pixel_electrodes_small_upper_finger",
-                        "pixel_electrodes_large_lower_finger",
+                        "px_elec_sm_upp_finger",
+                        "px_elec_lg_low_finger",
                     ],
                     "edge_case": "inner_outline_4x4",
                     "array": array4,
@@ -2520,7 +2604,7 @@ def main(do):
                     "color": tco_color,
                     "z_base": 0,
                     "thickness": 0,  # tco_thickness
-                    "drawing_layer_names": ["top_tco_large_upper", ("lightmask_large_upper", 0), ("pixel_electrodes_large_upper_finger", 0)],  # zero here means drawing layer shape should be embossed onto the 3D layer  # zero here means drawing layer shape should be embossed onto the 3D layer
+                    "drawing_layer_names": ["top_tco_large_upper", ("lightmask_large_upper", 0), ("px_elec_lg_upp_finger", 0)],  # zero here means drawing layer shape should be embossed onto the 3D layer  # zero here means drawing layer shape should be embossed onto the 3D layer
                 },
                 {
                     "name": "contact_cutter",
@@ -2840,7 +2924,7 @@ def main(do):
         # to_build = ["sim_onesqcm_tandem"]
 
         # simulation builds
-        to_build = ["sim_full_area"]
+        #to_build = ["sim_full_area"]
         # to_build = ["sim_onesqcm_tandem_surfaces", "sim_onesqcm_circle", "sim_onesqcm_square", "sim_onesqcm_fingerA", "sim_onesqcm_fingerB", "sim_full_area", "sim_full_area_wide", "sim_full_area_4finger", "sim_full_area_23finger", "sim_full_area_34finger", "sim_full_area_45finger", "sim_full_area_55finger"]
 
         # to_build = ["tandem_metal_mask_stack"]
@@ -2859,7 +2943,8 @@ def main(do):
         # to_build = ["metal_mask_loft_5x5"]
         # to_build = ["interlayer_mask_angle_4x4", "metal_mask_loft"]
 
-        # 2024 feb order
+        # 2024 march order
+        to_build = ["tandem2_metal_finger_mask_stack_4x4", "full_metal_mask_stack_4x4"]
         # to_build = ["full_metal_angle_4x4", "full_top_tco_angle_4x4", "full_insulation_angle_4x4", "full_interlayer_angle_4x4"]
         # to_build = ["full_metal_angle_4x4"]
         # to_build = ["lightmask_cal_angle"]
