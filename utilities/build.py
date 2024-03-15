@@ -18,6 +18,7 @@ def main(do):
         wrk_dir.parent / "oxford" / "derivatives" / "5x5_cluster_master.dxf",
         wrk_dir.parent / "oxford" / "derivatives" / "4x4_cluster_master.dxf",
         wrk_dir.parent / "oxford" / "derivatives" / "hoye_evap.dxf",
+        wrk_dir.parent / "oxford" / "derivatives" / "nayak_evap.dxf",
     ]
 
     # instructions for 2d->3d
@@ -99,6 +100,154 @@ def main(do):
                     "drawing_layer_names": [
                         "hoye_holder_extents",
                         "hoye_holder",
+                    ],
+                },
+            ],
+        }
+    )
+
+    instructions.append(
+        {
+            "name": "nayak_metal4_holder_stack",
+            "layers": [
+                {
+                    "name": "support",
+                    "color": support_color,
+                    "thickness": 0.75,
+                    "drawing_layer_names": [
+                        "nayak_holder_extents",
+                        "nayak_base_metal_supt",
+                        "nayak_low_lg_metal_supt",
+                        "nayak_rivet_holes",
+                    ],
+                },
+                {
+                    "name": "feature",
+                    "color": feature_color,
+                    "thickness": 0.2,
+                    "drawing_layer_names": [
+                        "nayak_holder_extents",
+                        "nayak_base_metal_feat",
+                        "nayak_low_lg_metal_feat",
+                        "nayak_rivet_holes",
+                    ],
+                },
+                {
+                    "name": "shim",
+                    "color": shim_color,
+                    "thickness": 0.1,
+                    "drawing_layer_names": [
+                        "nayak_holder_extents",
+                        "nayak_shim",
+                        "nayak_rivet_holes",
+                    ],
+                },
+                {
+                    "name": "holder",
+                    "color": feature_color,
+                    "thickness": 2,
+                    "drawing_layer_names": [
+                        "nayak_holder_extents",
+                        "nayak_holder",
+                        "nayak_rivet_holes",
+                    ],
+                },
+            ],
+        }
+    )
+
+    instructions.append(
+        {
+            "name": "nayak_metal6_holder_stack",
+            "layers": [
+                {
+                    "name": "support",
+                    "color": support_color,
+                    "thickness": 0.75,
+                    "drawing_layer_names": [
+                        "nayak_holder_extents",
+                        "nayak_base_metal_supt",
+                        "nayak_low_sm_metal_supt",
+                        "nayak_rivet_holes",
+                    ],
+                },
+                {
+                    "name": "feature",
+                    "color": feature_color,
+                    "thickness": 0.2,
+                    "drawing_layer_names": [
+                        "nayak_holder_extents",
+                        "nayak_base_metal_feat",
+                        "nayak_low_sm_metal_feat",
+                        "nayak_rivet_holes",
+                    ],
+                },
+                {
+                    "name": "shim",
+                    "color": shim_color,
+                    "thickness": 0.1,
+                    "drawing_layer_names": [
+                        "nayak_holder_extents",
+                        "nayak_shim",
+                        "nayak_rivet_holes",
+                    ],
+                },
+                {
+                    "name": "holder",
+                    "color": feature_color,
+                    "thickness": 2,
+                    "drawing_layer_names": [
+                        "nayak_holder_extents",
+                        "nayak_holder",
+                        "nayak_rivet_holes",
+                    ],
+                },
+            ],
+        }
+    )
+
+    instructions.append(
+        {
+            "name": "nayak_active_holder_stack",
+            "layers": [
+                {
+                    "name": "support",
+                    "color": support_color,
+                    "thickness": 0.75,
+                    "drawing_layer_names": [
+                        "nayak_holder_extents",
+                        "nayak_active_supt",
+                        "nayak_rivet_holes",
+                    ],
+                },
+                {
+                    "name": "feature",
+                    "color": feature_color,
+                    "thickness": 0.2,
+                    "drawing_layer_names": [
+                        "nayak_holder_extents",
+                        "nayak_active",
+                        "nayak_rivet_holes",
+                    ],
+                },
+                {
+                    "name": "shim",
+                    "color": shim_color,
+                    "thickness": 0.1,
+                    "drawing_layer_names": [
+                        "nayak_holder_extents",
+                        "nayak_shim",
+                        "nayak_rivet_holes",
+                    ],
+                },
+                {
+                    "name": "holder",
+                    "color": feature_color,
+                    "thickness": 2,
+                    "drawing_layer_names": [
+                        "nayak_holder_extents",
+                        "nayak_holder",
+                        "nayak_rivet_holes",
                     ],
                 },
             ],
@@ -3110,14 +3259,27 @@ def main(do):
         # to_build = ["interlayer_mask_angle_4x4", "metal_mask_loft"]
 
         # 2024 march order
-        to_build = ["tandem2_metal_finger_mask_stack_4x4",      # q 2
-                    "full_metal_mask_stack_4x4",                # q 2
-                    "full_top_tco_stack_4x4",                   # q 2
-                    "full_interlayer_stack_4x4",                # q 2
-                    "full_insulation_stack_4x4",                # q 2
-                    "tandem2_metal_finger_conc_stack_4x4",]     # q 2
+        build_2024_03_snaith = [
+            "tandem2_metal_finger_mask_stack_4x4",      # q 2
+            "full_metal_mask_stack_4x4",                # q 2
+            "full_top_tco_stack_4x4",                   # q 2
+            "full_interlayer_stack_4x4",                # q 2
+            "full_insulation_stack_4x4",                # q 2
+            "tandem2_metal_finger_conc_stack_4x4",      # q 2
+            ]
         # plus q 3 of vapor_deposition_encapsulation_4x4 from june 2023 order
 
+        # hoye
+        build_hoye = [
+            "hoye_metal_stack_5x",
+            ]
+
+        # nayak
+        build_nayak = [
+            "nayak_metal4_holder_stack",
+            "nayak_metal6_holder_stack",
+            "nayak_active_holder_stack",
+            ]
 
         # 2023 june order
         # to_build = ["tc_mask_4x4", "contact_insulation_4x4", "led_metal_mask_stack", "led_metal_mask_stack_4x4", "tandem2_metal_mask_stack_4x4", "interlayer2_mask_stack_4x4", "top_tco2_mask_stack_4x4", "vapor_deposition_encapsulation_4x4", "vapor_deposition_encapsulation", "tc_undermetal_mask_4x4", "active_mask_stack"]
@@ -3128,6 +3290,10 @@ def main(do):
         # to_build = ["metal_mask_stack_4x4", "metal_mask_stack_thick_shim", "metal6_mask_stack_thick_shim", "metal2_mask_stack_4x4", "metal6_mask_stack_4x4", "interlayer_mask_stack_4x4", "active_mask_stack_4x4"]
         # to_build = ["metal_mask_stack_thick_shim"]
         # to_build = [""]  # all of them
+        
+        
+        to_build = []
+        to_build += build_nayak
         built = ttt.build(to_build, nparallel=12)
 
         TwoDToThreeD.outputter(built, wrk_dir, save_dxfs=True, save_pdfs=True, save_steps=True, save_stls=True, edm_outputs=True, nparallel=12)
