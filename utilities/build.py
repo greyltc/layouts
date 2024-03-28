@@ -22,7 +22,7 @@ def main(do):
     ]
 
     # instructions for 2d->3d
-    lightmask_thickness = 0.45
+    lightmask_thickness = 0.5
     support_thickness = 0.75
     feature_thickness = 0.2
     shim_thickness = 0.05
@@ -108,6 +108,25 @@ def main(do):
 
     instructions.append(
         {
+            "name": "nayak_holder_pos",
+            "layers": [
+                {
+
+                    "name": "holder",
+                    "color": feature_color,
+                    "thickness": 2,
+                    "drawing_layer_names": [
+                        "nayak_holder_extents",
+                        "nayak_holder",
+                        "nayak_rivet_holes",
+                    ],
+                },
+            ],
+        }
+    )
+
+    instructions.append(
+        {
             "name": "nayak_metal4_holder_stack",
             "layers": [
                 {
@@ -139,16 +158,6 @@ def main(do):
                     "drawing_layer_names": [
                         "nayak_holder_extents",
                         "nayak_shim",
-                        "nayak_rivet_holes",
-                    ],
-                },
-                {
-                    "name": "holder",
-                    "color": feature_color,
-                    "thickness": 2,
-                    "drawing_layer_names": [
-                        "nayak_holder_extents",
-                        "nayak_holder",
                         "nayak_rivet_holes",
                     ],
                 },
@@ -192,16 +201,6 @@ def main(do):
                         "nayak_rivet_holes",
                     ],
                 },
-                {
-                    "name": "holder",
-                    "color": feature_color,
-                    "thickness": 2,
-                    "drawing_layer_names": [
-                        "nayak_holder_extents",
-                        "nayak_holder",
-                        "nayak_rivet_holes",
-                    ],
-                },
             ],
         }
     )
@@ -240,16 +239,6 @@ def main(do):
                         "nayak_rivet_holes",
                     ],
                 },
-                {
-                    "name": "holder",
-                    "color": feature_color,
-                    "thickness": 2,
-                    "drawing_layer_names": [
-                        "nayak_holder_extents",
-                        "nayak_holder",
-                        "nayak_rivet_holes",
-                    ],
-                },
             ],
         }
     )
@@ -278,7 +267,7 @@ def main(do):
             "name": "two_large_lightmask",
             "layers": [
                 {
-                    "name": "lightholes",
+                    "name": "black_anodized_Al",
                     "color": lightmask_color,
                     "thickness": lightmask_thickness,
                     "drawing_layer_names": [
@@ -296,7 +285,7 @@ def main(do):
             "name": "no_large_lightmask",
             "layers": [
                 {
-                    "name": "lightholes",
+                    "name": "black_anodized_Al",
                     "color": lightmask_color,
                     "thickness": lightmask_thickness,
                     "drawing_layer_names": [
@@ -3266,19 +3255,25 @@ def main(do):
             "full_interlayer_stack_4x4",                # q 2
             "full_insulation_stack_4x4",                # q 2
             "tandem2_metal_finger_conc_stack_4x4",      # q 2
+            "one_large_lightmask",                      # q 200
+            "two_large_lightmask",                      # q 200
+            "no_large_lightmask",                       # q 200
             ]
         # plus q 3 of vapor_deposition_encapsulation_4x4 from june 2023 order
 
-        # hoye
+        # hoye evaporator holders
         build_hoye = [
             "hoye_metal_stack_5x",
             ]
 
-        # nayak
+        # nayak evaporator holders
         build_nayak = [
-            "nayak_metal4_holder_stack",
-            "nayak_metal6_holder_stack",
-            "nayak_active_holder_stack",
+            "nayak_metal4_holder_stack",      # q 1
+            "nayak_metal6_holder_stack",      # q 1
+            "nayak_active_holder_stack",      # q 1
+            "nayak_holder_pos",               # q 3
+            "one_large_lightmask",            # q 5
+            "no_large_lightmask",             # q 5
             ]
 
         # 2023 june order
@@ -3296,7 +3291,8 @@ def main(do):
         to_build += build_nayak
         built = ttt.build(to_build, nparallel=12)
 
-        TwoDToThreeD.outputter(built, wrk_dir, save_dxfs=True, save_pdfs=True, save_steps=True, save_stls=True, edm_outputs=True, nparallel=12)
+        # Note: exporting STLs screws up measurements https://github.com/CadQuery/cadquery/issues/798
+        TwoDToThreeD.outputter(built, wrk_dir, save_dxfs=True, save_pdfs=True, save_steps=True, save_stls=False, edm_outputs=True, nparallel=12)
 
         # ttt.faceputter(wrk_dir)  # output the face data for comsol
 
