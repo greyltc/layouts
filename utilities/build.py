@@ -3249,6 +3249,7 @@ def main(do):
 
         # 2024 march order
         build_2024_03_snaith = [
+            "vapor_deposition_encapsulation_4x4",       # q 4
             "tandem2_metal_finger_mask_stack_4x4",      # q 2
             "full_metal_mask_stack_4x4",                # q 2
             "full_top_tco_stack_4x4",                   # q 2
@@ -3259,7 +3260,7 @@ def main(do):
             "two_large_lightmask",                      # q 200
             "no_large_lightmask",                       # q 200
             ]
-        # plus q 3 of vapor_deposition_encapsulation_4x4 from june 2023 order
+        # plus q 4 of vapor_deposition_encapsulation_4x4 from june 2023 order
 
         # hoye evaporator holders
         build_hoye = [
@@ -3288,11 +3289,11 @@ def main(do):
         
         
         to_build = []
-        to_build += build_nayak
+        to_build += build_2024_03_snaith
         built = ttt.build(to_build, nparallel=12)
 
         # Note: exporting STLs screws up measurements https://github.com/CadQuery/cadquery/issues/798
-        TwoDToThreeD.outputter(built, wrk_dir, save_dxfs=True, save_pdfs=True, save_steps=True, save_stls=False, edm_outputs=True, nparallel=12)
+        TwoDToThreeD.outputter(built, wrk_dir, save_dxfs=True, save_pdfs=True, save_steps=True, save_stls=False, edm_outputs=False, nparallel=12)
 
         # ttt.faceputter(wrk_dir)  # output the face data for comsol
 
